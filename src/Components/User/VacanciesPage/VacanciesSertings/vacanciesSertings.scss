@@ -1,0 +1,30 @@
+.vacanciesSertings { 
+    .vacanciesSertings-container {
+        min-height: 150px;
+        border-radius: 20px;
+        margin: 10px 10px 0px 10px;
+        background-color:white;
+        .vacanciesSertings-nav {
+            padding: 10px 0px 10px 0px;
+            .vacanciesSertings-navbar {
+                .vacanciesSertings-navbar__item {
+                    font-size: 0.8rem;
+                    .vacanciesSertings-navbar__item-btn {
+                        width: 100%;
+                        color: rgb(99, 99, 248);
+                        cursor: pointer;
+                        padding: 10px 0px 10px 0px;
+                        background-color:white;
+                        justify-content: start;
+                        
+                        .vacanciesSertings-navbar__item-icon {
+                            color: rgb(99, 99, 248);
+                            margin-right: 5px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

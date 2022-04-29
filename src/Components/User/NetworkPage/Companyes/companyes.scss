@@ -1,0 +1,23 @@
+.companyes {
+    margin:20px 0px 10px 0px;
+    .companyes-header {
+        display: flex;
+        justify-content: space-between;
+        .companyes-header__title {
+            margin:20px 10px 10px 10px;
+            font-size: 1rem;
+            color: grey;
+        }
+        .companyes-header__more {
+            margin:20px 10px 10px 10px;
+            background-color:white;
+            text-transform: uppercase;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+    .companyes-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

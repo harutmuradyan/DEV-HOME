@@ -1,0 +1,16 @@
+.goPremium {
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    .goPremium__title{
+        font-size: 0.7rem;
+    }
+    .goPremium__block {
+        display: flex;
+        margin-top: 10px;
+        .goPremium-block__icon {
+            color: gold;
+            margin-right: 10px;
+        }
+    }
+}

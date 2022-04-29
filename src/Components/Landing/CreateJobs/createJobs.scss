@@ -1,0 +1,33 @@
+.createJobs {
+    max-width: 1440px;
+    margin:120px 0 auto;
+    .createJobs-content {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        .createJobs-block {
+            width: 50%;
+            .createJobs-block__title {
+                color:rgb(99, 99, 248);
+                width: 100%;
+                font-size: 2rem;
+                text-align: center;
+                margin: 160px 0px 50px 0px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        .createJobs-linq {
+            width: 50%;
+            .createJobs-linq__item {
+                cursor: pointer;
+                background-color:rgb(99, 99, 248);
+                width: 100%;
+                height: 400px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color:white;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.background {
+    width: 100%;
+    .background-container {
+        min-height: 150px;
+        border-radius: 20px;
+        margin: 10px 10px 0px 10px;
+        background-color:white;
+        .background-user {
+            border-bottom:solid 2px white;
+            .background-user__block {
+                min-height: 70px;
+                display: flex;
+                justify-content: center;
+                background-color:rgb(99, 99, 248);
+                border-radius: 20px 20px 0px 0px;
+                .background-user__block-logo {
+                    position: relative;
+                    top: 40px;
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                }
+            }
+            .background-user__name {
+                text-align: center;
+                font-size: 0.8rem;
+                margin: 40px 0px 5px 0px;
+                cursor: pointer;
+            }
+            .background-user__profession {
+                text-align: center;
+                font-size: 0.8rem;
+                margin: 5px 0px 5px 0px;
+                cursor: pointer;
+                color: grey;
+            }
+        }
+        .background-statistics {
+            margin: 10px 10px 0px 10px;
+            padding-bottom: 10px;
+            .background-statistics__block {
+                display: flex;
+                justify-content:space-between;
+                p {
+                    color: grey;
+                    font-size: 0.8rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

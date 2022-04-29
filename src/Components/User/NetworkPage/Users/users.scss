@@ -1,0 +1,23 @@
+.users {
+    margin:40px 0px 10px 0px;
+    .users-header {
+        display: flex;
+        justify-content: space-between;
+        .users-header__title {
+            margin:20px 10px 10px 10px;
+            font-size: 1rem;
+            color: grey;
+        }
+        .users-header__more {
+            margin:20px 10px 10px 10px;
+            background-color:white;
+            text-transform: uppercase;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+    .users-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

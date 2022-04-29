@@ -1,0 +1,34 @@
+.profileStatistics {
+    min-height: 150px;
+    border-radius: 20px;
+    margin: 10px 10px 0px 10px;
+    background-color:white;
+    .profileStatistics-title {
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 20px 20px 20px 20px;
+        border-bottom:solid 1px rgb(99, 99, 248);
+    }
+    .profileStatistics-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        .profileStatistics-block {
+            width: 30%;
+            display: flex;
+            .profileStatistics-text {
+                p {
+                    padding: 10px 10px 10px 10px;
+                    color: grey;
+                    font-size: 0.8rem;
+                }
+            }
+            .profileStatistics-icon {
+                padding: 10px 10px 10px 10px;
+                color: rgb(99, 99, 248);
+                font-size: 1.2rem;   
+            }
+        }
+    }
+}

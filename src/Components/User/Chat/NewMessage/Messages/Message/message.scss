@@ -1,0 +1,27 @@
+.newMessage-user {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    .newMessage-user__name {
+        font-size: 0.8rem;
+        color: grey;
+    }
+    .newMessage-user__img {
+        width: 30px;
+        height: 30px;
+    }
+    .newMessage-user__time {
+        font-size: 0.8rem;
+    }
+}
+.newMessage-user__message {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    .newMessage-user__message-text {
+        width: 90%;
+        display: block;
+        font-size: 0.8rem;
+    }
+}

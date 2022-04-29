@@ -1,0 +1,18 @@
+.profilePage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    background-color:rgb(248, 246, 246);
+    .profilePage-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .profilePage-content {
+            width: 70%;
+        }
+        .profilePage-sidebar {
+            width: 20%;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.sidebar {
+    width: 100%;
+    .sidebar-container {
+        min-height: 150px;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        background-color:white;  
+        .sidebar-container__block {
+            .sidebar-container__block-title {
+                h2 {
+                    text-align: center;
+                    padding: 10px 10px 10px 10px;
+                    font-size: 0.8rem;
+                }
+            }
+            .sidebar-container__seeMore {
+                padding: 20px 0px 20px 0px;
+                width: 80%;
+                margin: 0 auto;
+                .sidebar-container__seeMore-btn {
+                    width: 100%;
+                    color: white;
+                    border-radius:25px;
+                    background-color:rgb(99, 99, 248);
+                    height: 30px;
+                    cursor: pointer;
+                }
+            } 
+        }
+    }
+}

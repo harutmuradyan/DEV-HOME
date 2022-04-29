@@ -1,0 +1,16 @@
+.notification {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    background-color:rgb(248, 246, 246);
+    .notification-leftBlock {
+        width: 20%;
+    }
+    .notification-content {
+        width: 50%;
+    }
+    .notification-rightBlock {
+        width: 20%;
+    }
+}

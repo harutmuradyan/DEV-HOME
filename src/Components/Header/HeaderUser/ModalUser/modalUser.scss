@@ -1,0 +1,64 @@
+.modalUser {
+    padding: 20px 10px 20px 10px;
+    position:absolute;
+    width: 20%;
+    background-color:rgb(99, 99, 248);
+    z-index: 1;
+    top: 80px;
+    right: 0px;
+    border-radius:10px;
+    display: none;    
+    .modalUser-header {
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        .modalUser-header__img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .modalUser-block {
+            padding-left: 20px;
+            .modalUser-block__name{
+                font-size: 0.8rem;
+                cursor: pointer;
+            }
+            .modalUser-block__professisons {
+                font-size: 0.8rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .modalUser-page {
+        display: flex;
+        justify-content: center;
+        .modalUser-page__btn {
+            border:solid 1px white;
+            background-color:rgb(99, 99, 248);
+            color: white;
+            width: 80%;
+            margin: 5px 0px 5px;
+            padding: 5px 0px 5px;
+            cursor: pointer;
+            &:hover {
+                background-color:black;
+            }
+        }
+    }
+    .modalUser-btns {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .modalUser-btns__item {
+            margin: 5px 0px 5px;
+            border:solid 1px white;
+            background-color:rgb(99, 99, 248);
+            color: white;
+            width: 80%;
+            padding: 5px 0px 5px;
+            cursor: pointer;
+            &:hover {
+                background-color:black;
+            }
+        }
+    }
+}

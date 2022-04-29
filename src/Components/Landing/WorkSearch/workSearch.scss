@@ -1,0 +1,61 @@
+.workSearch {
+    width: 90%;
+    display: flex;
+    margin:100px 70px 0 auto;
+    background-image:linear-gradient( rgb(99, 99, 248), rgb(110, 110, 248));
+    min-height: 250px;
+    padding:40px 0px 60px 0px;
+    border-radius: 25px;
+    .workSearch-title {
+        text-align: center;
+        width: 50%;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color:white;
+        margin: 20px 0px 20px 0px;
+        padding-left: 20px;
+    }
+    .workSearch-category {
+        width: 50%;
+        .workSearch-category__bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .workSearch-category__item {
+                width: 30%;
+                border:solid 1px rgb(99, 99, 248);
+                height: 50px;
+                border-radius:25px;
+                text-align: center;
+                padding-top: 15px;
+                margin: 10px 5px 0px 5px;
+                background-color:white;
+                color:black;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size:0.7rem;
+                cursor: pointer;
+            }
+        }
+        .workSeacrh-category__more {
+            width: 30%;
+            border:solid 1px white;
+            height: 50px;
+            border-radius:25px;
+            text-align: center;
+            padding-top: 0px;
+            margin: 10px 5px 0px 5px;
+            background-color:rgb(99, 99, 248);
+            color:white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size:0.7rem;
+            cursor: pointer;
+            &:hover {
+              background-color:black;  
+            }
+        }
+    }
+}

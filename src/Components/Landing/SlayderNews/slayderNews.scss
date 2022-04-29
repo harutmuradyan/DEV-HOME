@@ -1,0 +1,57 @@
+.slayderNews {
+    max-width: 1440px;
+    margin:100px 0 auto;
+    .slayderNews-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding-right: 60px;
+        .slayderNews-buttons__item {
+            color:black;
+            background-color:white;
+            font-size: 1.5rem;
+            margin: 20px 5px 20px 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            .slayderNews-buttons__item-icon {
+                padding: 0px 10px 0px 10px;
+            }
+        }
+    }
+    .slayderNews-content {
+        min-height: 400px;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        .slayderNews-block {
+            width: 50%;
+            .slayderNews-block__title {
+                color:rgb(99, 99, 248);
+                width: 100%;
+                font-size: 2rem;
+                text-align: center;
+                margin: 100px 0px 50px 0px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .slayderNews-block__linq {
+                background:rgb(99, 99, 248);
+                width: 90%;
+                margin: 0px 20px 0px 20px;
+                border-radius:25px;
+                height: 50px;
+                color: white;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        .slayderNews-cover {
+            width: 50%;
+            .slayderNews-cover__img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

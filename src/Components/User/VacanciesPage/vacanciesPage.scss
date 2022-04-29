@@ -1,0 +1,16 @@
+.vacancies {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    background-color:rgb(248, 246, 246);
+    .vacancies-leftBlock {
+        width: 20%;
+    }
+    .vacancies-content {
+        width: 50%;
+    }
+    .vacancies-rightBlock {
+        width: 20%;
+    }
+}

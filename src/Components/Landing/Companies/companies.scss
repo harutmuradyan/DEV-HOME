@@ -1,0 +1,43 @@
+.companies {
+    margin: 100px 0px 100px 0px;
+    .companies-container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        .companies-block {
+            width: 20%;
+            .companies-block__item {
+                width: 100px;
+                height: 55px;
+                background: black;
+                position: relative;
+                margin: 10px auto;
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: -25px;
+                    left: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-bottom: 25px solid black;
+                }
+                
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-top: 25px solid black;
+                }
+            }
+        }
+    }
+}

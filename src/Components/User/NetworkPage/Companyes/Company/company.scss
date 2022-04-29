@@ -1,0 +1,54 @@
+.company {
+    width: 25%;
+    border-bottom:solid 2px white;
+    .company-block {
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        background-color:rgb(99, 99, 248);
+        border-radius: 20px 20px 0px 0px;
+        margin: 10px 10px 10px 10px;
+        .company-block__logo {
+            position: relative;
+            top: 40px;
+            right: 60px;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+    }
+    .company-name {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 40px 0px 5px 0px;
+        cursor: pointer;
+    }
+    .company-profession {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 5px 0px 5px 0px;
+        cursor: pointer;
+        color: grey;
+    }
+    .company-frends {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        .company-frends__btn {
+            width: 50%;
+            border:solid 1px rgb(99, 99, 248);
+            background-color:white;
+            color: rgb(99, 99, 248);
+            text-transform: uppercase;
+            border-radius:20px;
+            height: 30px;
+            cursor: pointer;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                    border:none;
+                }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.createPost {
+    padding: 20px 0 20px 0;
+    .createPost-header {
+        display: flex;
+        margin: 0px 10px 10px 10px;
+        .createPost-header__logo {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .createPost-header__input {
+            border:solid 1px  rgb(99, 99, 248);
+            margin-left: 20px;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            border-radius:25px;
+            background-color:white;
+        }
+    }
+    .createPost-category {
+        display: flex;
+        margin-top: 15px;
+        .createPost-category_bar {
+            display: flex;
+            width: 100%;
+            .createPost-category__item {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                font-size: 1rem;
+                cursor: pointer;
+                color: grey;
+                .createPost-category__item-icon {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.blue {color:rgb(70, 70, 236);}
+.green {color: green;}
+.yellow {color: rgb(199, 199, 68);}
+.red {color: rgb(223, 81, 81);}

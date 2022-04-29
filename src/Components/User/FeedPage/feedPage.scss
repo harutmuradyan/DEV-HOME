@@ -1,0 +1,20 @@
+.feed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+    background-color:rgb(248, 246, 246);
+    .feed-container {
+        width: 100%;
+        display: flex;
+        .feed-container__leftBlock {
+            width: 20%;
+        }
+        .feed-container__content {
+            width: 60%;
+        }
+        .feed-container__rightBlock {
+            width: 20%;
+        }
+    }
+}

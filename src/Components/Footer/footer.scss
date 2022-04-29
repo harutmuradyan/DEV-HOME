@@ -1,0 +1,79 @@
+.footer {
+    max-width:1440px;
+    margin: 0 auto;
+    min-height: 300px;
+    background-color:rgb(99, 99, 248);
+    .footer-container {
+        display: flex;
+        .footer-logo {
+            width: 20%;
+            color: white;
+            flex-basis: 20%;
+            justify-content: start;
+            h1 {
+                cursor: pointer;
+                margin: 20px 0px 0px 20px;
+            }
+        }
+        .footer-content {
+            width: 80%;
+            display: flex;
+            margin: 25px 0px 0px 20px;
+            .footer-block {
+                width: 25%;
+                .footer-block__title {
+                    font-weight: bold;
+                    text-align: start;
+                    width: 50%;
+                    height: 50px;
+                    font-size:1rem;
+                    color:white;
+                    text-transform: uppercase;
+                }
+                .footer-block__bar {
+                    .footer-block__item {
+                        font-weight: bold;
+                        margin: 5px 0 5px 0;
+                        color:white;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        &:hover {
+                            text-decoration:overline;
+                            color:white
+                        }
+                    }
+                }
+            }
+            .footer-company {
+                width: 100%;
+                display: flex;
+                .footer-company__item {
+                    width: 25%;
+                    margin: 10px 0px 10px 0px;
+                    cursor:pointer;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    .language {
+                        cursor: pointer;
+                        width: 50px;
+                        margin-left: 10px;
+                        padding: 3px 0px 3px 0px;
+                        border:solid 1px black;
+                        border-radius:5px; 
+                    }
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        width: 100%;
+        margin-top:20px;
+        .footer-copyright__item {
+            border-top:solid 1px white;
+            text-align: center;
+            padding:20px 0px 10px  0px ;
+            font-size: 1rem;
+        }
+    }
+}

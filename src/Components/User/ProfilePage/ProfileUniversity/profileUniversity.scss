@@ -1,0 +1,36 @@
+.profileUniversity {
+    min-height: 150px;
+    border-radius: 20px;
+    margin: 10px 10px 0px 10px;
+    background-color:white;
+    .profileUniversity-header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:solid 1px rgb(99, 99, 248);
+        .profileUniversity-header__title {
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 20px 20px 20px 20px;
+        }
+        .profileUniversity-header__block {
+            margin-right: 30px;
+            margin-top:10px;
+            .profileUniversity-header__btns {
+                background-color:white;
+                .profileUniversity-header__btn{
+                    background-color:white;
+                    margin: 0px 0px 0px 10px;
+                    padding: 10px 10px 10px 10px;
+                    color:  rgb(99, 99, 248);
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    border-radius:10px;
+                    &:hover {
+                        background-color:black;
+                        color: White;
+                    }
+                }
+            }
+        }
+    }
+}

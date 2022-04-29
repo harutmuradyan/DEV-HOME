@@ -1,0 +1,32 @@
+.noteficationContent {
+    .noteficationContent-container {
+        min-height: 150px;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        background-color:white;
+        .noteficationContent-block {
+            padding: 10px 20px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            .noteficationContent-block__img {
+                margin-top: 10px;
+                width: 60px;
+                height: 60px;
+                cursor: pointer;
+            }
+            .noteficationContent-block__text {
+                color: grey;
+                padding: 10px 20px 10px 20px;
+                cursor: pointer;
+                .noteficationContent-block__name {
+                    color: black;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            .noteficationContent-block__time {
+                padding: 20px 20px 20px 20px;
+            }
+        }
+    }
+}

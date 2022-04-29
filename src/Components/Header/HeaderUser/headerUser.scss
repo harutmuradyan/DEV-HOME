@@ -1,0 +1,78 @@
+.headerUser {
+    max-width:1440px;
+    margin: 0 auto;
+    height: 70px;
+    background-color:rgb(99, 99, 248);
+    .headerUser-content {
+        display: flex;
+        .headerUser-content__logo {
+            color: white;
+            flex-basis: 20%;
+            justify-content: start;
+            h1 {
+                cursor: pointer;
+                margin: 15px 0px 0px 20px;
+            }
+        }
+        .headerUser-content__search {
+            margin-top: 16px;
+            input {
+                height: 35px;
+                border-radius:10px;
+                cursor:pointer;
+            }
+        }
+        .headerUser-content__nav {
+            flex-basis: 80%;
+            margin-right: 20px;
+            .headerUser-content__block {
+                display: flex;
+                justify-content:end;
+                .headerUser-content__item{
+                    color: white;
+                    cursor: pointer;
+                    margin: 0px 5px 0px 5px;
+                    font-size: 1.2rem;
+                    display: flex;
+                    .count {
+                        background-color:red;
+                        border-radius:25px;
+                        width: 20px;
+                        height: 20px;
+                        position: relative;
+                        top: 15px;
+                        right: 15px;
+                        padding-left: 5px;
+                    }
+                    .headerUser-content__item-icon {
+                        margin: 25px 5px 10px 5px;
+                        padding-left: 25px;
+                        color:white;
+                    }
+                    .headerUser-content__item-img {
+                        width: 40px;
+                        height: 40px;
+                        margin: 15px 5px 0px 5px;
+                    }
+                    .headerUser-content__item-btn {
+                        text-transform: uppercase;
+                        border-radius:15px;
+                        padding: 0px 5px 0px 5px;
+                        height: 40px;
+                        margin-top: 16px;
+                        background-color:rgb(99, 99, 248);
+                        border:solid 1px white;
+                        cursor: pointer;
+                        color: white;
+                        &:hover {
+                            background-color:black;
+                        }
+                        .headerUser-content__btn-icon {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
