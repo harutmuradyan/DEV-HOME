@@ -11,10 +11,8 @@ import HeaderUser from './Components/Header/HeaderUser/HeaderUser';
 import Registration from './Components/Registration/Registration';
 import Login from './Components/Login/Login';
 import ProfilePage from './Components/User/ProfilePage/ProfilePage';
-
 import Footer from './Components/Footer/Footer';
 import VacanciesPage from './Components/User/VacanciesPage/VacanciesPage';
-
 
 
 

@@ -13,8 +13,14 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";
+import Chat from "./Messenger/Messenger";
 
 const HeaderUser = () => {
+
+    const [userModal,setlUserModal] = useState(false);
+    const [servicesModal,setServicesModal] = useState(false);
+    const [messenger,setMessenger] = useState(false);
+
     return (
         <header className="headerUser">
             <div className="headerUser-content">
@@ -51,24 +57,26 @@ const HeaderUser = () => {
                             </Link>
                             <span className="count">0</span>
                         </li>
-                        <li className="headerUser-content__item">
+
+                        <li className="headerUser-content__item" onClick={() => {setMessenger(true)}}>
                             <FontAwesomeIcon icon={faMessage} className="headerUser-content__item-icon"/>
                             <span className="count">0</span>
                         </li>
+                        <Chat messenger={messenger} setMessenger={setMessenger}/>
                         <li className="headerUser-content__item">
                             <Link to="/notification">
                                 <FontAwesomeIcon icon={faBell} className="headerUser-content__item-icon"/>
                             </Link>
                             <span className="count">0</span>
                         </li>
-                        <li className="headerUser-content__item" onClick={() => {}}>
-                            <ModalUser/>
+                        <li className="headerUser-content__item" onClick={() => {setlUserModal(true)}}>
+                            <ModalUser userModal={userModal}/>
                             <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="" className="headerUser-content__item-img"/>
                         </li>
-                        <li className="headerUser-content__item">
+                        <li className="headerUser-content__item" onClick={() => {setServicesModal(true)}}>
                             <FontAwesomeIcon icon={faBars} className="headerUser-content__item-icon"/>
                         </li>
-                        <ModalServices/>
+                        <ModalServices servicesModal={servicesModal} setServicesModal={setServicesModal}/>
                         <li className="headerUser-content__item">
                             <button className="headerUser-content__item-btn">
                                 Տեղխադրել

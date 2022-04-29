@@ -1,36 +1,36 @@
-.newMessage {
-    .newMessage-header {
+.newMessag {
+    .newMessag-header {
         display: flex;
         justify-content: space-between;
         padding: 10px 10px 10px 10px;
         border-bottom:solid 1px black;
-        .newMessage-header__name {
+        .newMessag-header__name {
             margin-top: 3px;
             font-size: 1rem;
         }
-        .newMessage-header__img {
+        .newMessag-header__img {
             width: 30px;
             height: 30px;
         }
-        .newMessage-header__close {
+        .newMessag-header__close {
             margin-top: 5px;
         }
     }
-    .newMessage-container {
+    .newMessag-container {
         overflow-y:scroll;
         height: 300px;
-        .newMessage-user__insertMess {
+        .newMessag-user__insertMess {
             padding: 10px 10px 10px 10px;
             width: 95%;
             position: absolute;
             bottom: 0;
-            .newMessage-user__insertMess-text {
+            .newMessag-user__insertMess-text {
                 width: 80%;
                 border:solid 1px black;
                 height: 40px;
                 border-radius:10px;
             }
-            .newMessage-user__insertMess-sent {
+            .newMessag-user__insertMess-sent {
                 width: 20%;
                 border:solid 1px black;
                 height: 40px;

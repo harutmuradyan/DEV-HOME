@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './modalUser.scss';
 
-const ModalUser = () => {
+const ModalUser = ({userModal}) => {
     return (
-        <div className="modalUser">
+        <div className={userModal ? "modalUser active" : "modalUser"}>
             <div className="modalUser-header">
                 <img className="modalUser-header__img" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
                 <div className="modalUser-block">
@@ -12,9 +13,11 @@ const ModalUser = () => {
                 </div>
             </div>
             <div className="modalUser-page">
-                <button className="modalUser-page__btn">
-                    Օգտվողի էջ
-                </button>
+                <Link to="/profile" className="modalUser-page__linq">
+                    <button className="modalUser-page__btn">
+                        Օգտվողի էջ
+                    </button>
+                </Link>
             </div>
             <div className="modalUser-btns">
                 <button className="modalUser-btns__item">ԼԵզու</button>

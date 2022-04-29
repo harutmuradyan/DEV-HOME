@@ -1,21 +1,21 @@
-.messageBtn-block {
+.messengerBtn-block {
     display: flex;
     width: 100%;
     justify-content:center ;
     
-    .messageBtn-block__img {
+    .messengerBtn-block__img {
         margin: 10px 5px 10px 5px;
         width: 40px;
         height: 40px;
         cursor: pointer;
     }
-    .messageBtn-block__name {
+    .messengerBtn-block__name {
         margin-top: 20px;
         margin-right: 10px;
         font-size: 0.8rem;
         cursor: pointer;
     }
-    .messageBtn-block__time {
+    .messengerBtn-block__time {
         font-size: 0.8rem;
         margin-top: 20px;
     }

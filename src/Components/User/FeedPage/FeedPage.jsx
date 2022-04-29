@@ -6,7 +6,7 @@ import GoNewSkill from "./GoNewSkill/GoNewSkill";
 import Sidebar from "./Sidebar/Sidebar";
 import SidebarFooter from "./SidebarFooter/SidebarFooter";
 import Background from "./Background/Background";
-import Chat from "../Chat/Chat";
+
 
 const FeedPage = () => {
     return (
@@ -22,9 +22,6 @@ const FeedPage = () => {
                 <div className="feed-container__rightBlock">
                     <Sidebar/>
                     <SidebarFooter/>
-                </div>
-                <div>
-                    <Chat/>
                 </div>
             </div>
         </div>

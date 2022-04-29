@@ -12,12 +12,12 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 
-const ModalServices = () => {
+const ModalServices = ({servicesModal , setServicesModal}) => {
     return (
-        <div className="modalServices">
+        <div className={servicesModal ? "modalServices active" : "modalServices"}>
             <div className="modalServices-block">
                 <h2 className="modalServices-block__title">Աշխատանքի համար</h2>
-                <FontAwesomeIcon className="modalServices-block__icon" icon={faClose}/>
+                <FontAwesomeIcon className="modalServices-block__icon" icon={faClose} onClick={() => {setServicesModal(false)}}/>
             </div>
             <nav className="modalServices-content__nav">
                 <h2 className="modalServices-content__nav-title">DEV HOME - Ի Ծառայություններ</h2>
