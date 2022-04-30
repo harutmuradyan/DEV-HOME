@@ -1,6 +1,9 @@
 import React,{useState} from "react";
 import './asd.scss';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
+
 const Asd = () => {
 
     const [modal,setModal] = useState(true);
@@ -8,7 +11,13 @@ const Asd = () => {
     return (
         <div className={modal ? "asd" : "asd active"} onClick={() => {setModal(false)}} >
             <div className="asd-b" onClick={(e) => {e.stopPropagation()}}>
-                <h2 onClick={() => {setModal(false)}}>asd</h2>
+                <div className="asd-y">
+                    <h2>Title</h2>
+                    <FontAwesomeIcon icon={faClose} onClick={() => {setModal(false)}} />
+                </div>
+                <div className="asd-l">
+                    <p>Content</p>
+                </div>
             </div>
         </div>
     )

@@ -6,15 +6,26 @@
     height: 100vw;
     background-color:rgba(0, 0, 0, 0.918);
     display: flex;
+    display: none;
     justify-content: center;
     .asd-b {
         margin-top: 60px;
-        width: 50%;
+        width: 40%;
         height: 500px;
         border-radius: 20px;
-        background-color:black;
-        h2 {
-            color: white;
+        background-color:white;
+        .asd-y {
+            padding: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            h2 {
+                color: black;
+            }
+        }
+        .asd-l {
+            padding: 10px 10px 10px 10px;
+            height:400px ;
+            overflow-y: scroll;
         }
     }
 }
@@ -22,3 +33,6 @@
 .asd.active {
     display: none;
 }
+
+    
+

@@ -40,34 +40,34 @@ const HeaderUser = () => {
                             </Link>
                         </li>
                         <li className="headerUser-content__item">
-                            <Link to="/network">
+                            <Link to="/network" className="headerUser-content__item">
                                 <FontAwesomeIcon icon={faUsers}  className="headerUser-content__item-icon"/>
+                                <span className="count"></span>
                             </Link>
-                            <span className="count">0</span>
                         </li>
                         <li className="headerUser-content__item">
-                            <Link to="">
+                            <Link to="/learning" className="headerUser-content__item">
                                 <FontAwesomeIcon icon={faGraduationCap} className="headerUser-content__item-icon"/>
+                                <span className="count"></span>
                             </Link>
-                            <span className="count">0</span>
                         </li>
                         <li className="headerUser-content__item">
-                            <Link to="/vacancies">
+                            <Link to="/vacancies" className="headerUser-content__item">
                                 <FontAwesomeIcon icon={faBriefcase} className="headerUser-content__item-icon"/>
+                                <span className="count"></span>
                             </Link>
-                            <span className="count">0</span>
                         </li>
 
                         <li className="headerUser-content__item" onClick={() => {setMessenger(true)}}>
                             <FontAwesomeIcon icon={faMessage} className="headerUser-content__item-icon"/>
-                            <span className="count">0</span>
+                            <span className="count"></span>
                         </li>
                         <Chat messenger={messenger} setMessenger={setMessenger}/>
                         <li className="headerUser-content__item">
-                            <Link to="/notification">
+                            <Link to="/notification" className="headerUser-content__item">
                                 <FontAwesomeIcon icon={faBell} className="headerUser-content__item-icon"/>
+                                <span className="count"></span>
                             </Link>
-                            <span className="count">0</span>
                         </li>
                         <li className="headerUser-content__item" onClick={() => {setlUserModal(true)}}>
                             <ModalUser userModal={userModal}/>

@@ -13,6 +13,7 @@ import Login from './Components/Login/Login';
 import ProfilePage from './Components/User/ProfilePage/ProfilePage';
 import Footer from './Components/Footer/Footer';
 import VacanciesPage from './Components/User/VacanciesPage/VacanciesPage';
+import LearningPage from './Components/User/LearningPage/LearningPage';
 
 
 
@@ -33,6 +34,7 @@ function App() {
             <Route path="notification" element={<NotificationPage />} />
             <Route path="profile" element={<ProfilePage />} />
             <Route path="vacancies" element={<VacanciesPage />} />
+            <Route path="learning" element={<LearningPage />} />
           </Routes>
         </main>
         <Footer/>
