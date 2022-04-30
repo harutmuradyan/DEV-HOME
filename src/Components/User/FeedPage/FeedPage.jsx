@@ -9,6 +9,7 @@ import Background from "./Background/Background";
 
 
 const FeedPage = () => {
+
     return (
         <div className="feed">
             <div className="feed-container">

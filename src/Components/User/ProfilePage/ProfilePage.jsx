@@ -12,6 +12,7 @@ import ProfileLicense from "./ProfileLicense/ProfileLicense";
 import ProfileSkills from "./ProfileSkills/ProfileSkills";
 import ProfileAbout from "./ProfileAbout/ProfileAbout";
 import ProfileExperience from "./ProfileExperience/ProfileExperience";
+import Asd from "./Asd/Asd";
 
 const ProfilePage = () => {
     return (
@@ -31,6 +32,7 @@ const ProfilePage = () => {
                     <ProfileFrends/>
                     <ProfileLearning/>
                     <ProfileSidebar/>
+                    <Asd/>
                 </div>
             </div>
         </div>

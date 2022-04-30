@@ -78,27 +78,28 @@
         }
         .post-content__follow {
             display: flex;
+            justify-content: start;
             .post-content__follow-peoples {
                 margin-top: 3px;
                 margin-left: 10px;
                 cursor: pointer;
                 color: grey;
+                font-size: 0.8rem;
             }
             .post-content__follow-name {
                 margin-left: 10px;
                 margin-top: 3px;
                 cursor: pointer;
                 color: grey;
+                font-size: 0.8rem;
             }
             .post-content__follow-icon {
-                width: 20px;
-                height: 20px;
-                margin: 0px 2px 0px 2px;
+                font-size: 1rem;
                 cursor: pointer;
             }
         }
         .post-content__btns {
-            margin: 20px 0px 30px 0px;
+            margin: 15px 0px 15px 0px;
             .post-content__nav {
                 display: flex;
                 width: 100%;
@@ -107,19 +108,57 @@
                     display: flex;
                     justify-content: center;
                     cursor: pointer;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     color: grey;
                     .post-content__item-icon {
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                         color:grey;
-                        margin-right: 3px;
+                        margin-right: 5px;
                     }
                 }
             } 
         }
+        .post-content__comment {
+            display: flex;
+            .post-content__comment-img {
+                margin: 10px 10px 10px 10px;
+                width: 30px;
+                height: 30px;
+            }
+            .post-content__comment-input {
+                border:solid 1px grey;
+                border-radius:10px;
+                width: 90%;
+                cursor:pointer;
+                padding: 10px 10px 10px 10px;
+            }
+            .post-content__comment-btn {
+                padding: 10px 10px 10px 10px;
+                background-color:white;
+                .post-content__comment-icon {
+                    color: grey;
+                    cursor: pointer;
+                }
+            }
+        }
+        .post-content__reaction {
+            position: relative;
+            z-index: 1;
+            background:white;
+            bottom: 0px;
+            height: 30px;
+            .post-content__reaction-icon {
+                cursor: pointer;
+                padding: 5px 5px 3px 5px;
+                font-size: auto;
+                &:hover {
+                    transform: scale(2);
+                }
+            }
+        }
     }
 }
 
-.red {  color:red;}
-.green { color:green;}
-.blue { color:blue;}
+.red {  color:rgb(252, 11, 11);}
+.green { color:rgb(9, 247, 9);}
+.blue { color:rgb(6, 6, 250);}

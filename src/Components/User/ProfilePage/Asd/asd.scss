@@ -1,0 +1,24 @@
+.asd {
+    position: fixed;
+    top:0;
+    left: 0;    
+    width: 100vw;
+    height: 100vw;
+    background-color:rgba(0, 0, 0, 0.918);
+    display: flex;
+    justify-content: center;
+    .asd-b {
+        margin-top: 60px;
+        width: 50%;
+        height: 500px;
+        border-radius: 20px;
+        background-color:black;
+        h2 {
+            color: white;
+        }
+    }
+}
+
+.asd.active {
+    display: none;
+}
