@@ -1,0 +1,51 @@
+.feedPostArticleModal {
+    position: fixed;
+    top:0;
+    left: 0;    
+    width: 100vw;
+    height: 100vw;
+    background-color:rgba(0, 0, 0, 0.918);
+    display: none;
+    .feedPostArticleModal-container {
+        position: relative;
+        top: 70px;
+        width: 60%;
+        margin: 0 auto;
+        height: 500px;
+        border-radius: 20px;
+        background-color:white;
+        .feedPostArticleModal-header {
+            padding: 15px 15px 15px 15px;
+            display: flex;
+            justify-content: space-between;
+            .feedPostArticleModal-header__title {
+                color: black;
+                font-size: 1rem;
+            }
+            .feedPostArticleModal-header__icon {
+                cursor: pointer;
+            }
+        }
+        .feedPostArticleModal-content {
+            padding: 15px 15px 15px 15px;
+            height:380px ;
+            overflow-y: scroll;
+        }
+        .feedPostArticleModal-footer {
+            padding: 15px 15px 15px 15px;
+            display: flex;
+            justify-content: end;
+            .feedPostArticleModal-footer__btn {
+                cursor: pointer;
+                padding: 15px 15px 15px 15px;
+                background-color:rgb(99, 99, 248);
+                color: white;
+                border-radius:10px;
+            }
+        }
+    }
+}
+
+.feedPostArticleModal.active {
+    display: block;
+}

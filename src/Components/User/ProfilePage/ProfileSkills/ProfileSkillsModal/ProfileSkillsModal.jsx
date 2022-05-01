@@ -1,28 +1,28 @@
 import React from "react";
-import './profileUniversityModal.scss';
+import './profileSkillsModal.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
-const ProfileUniversityModal = (
-    {   profileUniversityModal,
-        setProfileUniversityModal   }
+const ProfileSkillsModal = (
+    {   profileSkillsModal,
+        setProfileSkillsModal   }
     ) => {
     
     return (
-        <div className={profileUniversityModal ? "profileUniversityModal active" : "profileUniversityModal"} 
-             onClick={() => {setProfileUniversityModal(false)}} >
-            <div className="profileUniversityModal-container" 
+        <div className={profileSkillsModal ? "profileSkillsModal active" : "profileSkillsModal"} 
+             onClick={() => {setProfileSkillsModal(false)}} >
+            <div className="profileSkillsModal-container" 
                  onClick={(e) => {e.stopPropagation()}}>
-                <div className="profileUniversityModal-header">
-                    <h2 className="profileUniversityModal-header__title">Ուսուցում</h2>
+                <div className="profileSkillsModal-header">
+                    <h2 className="profileSkillsModal-header__title">Հմտություններ</h2>
                     <FontAwesomeIcon icon={faClose} 
-                                     onClick={() => {setProfileUniversityModal(false)}} 
-                                     className="profileUniversityModal-header__icon"
+                                     onClick={() => {setProfileSkillsModal(false)}} 
+                                     className="profileSkillsModal-header__icon"
                                      />
                 </div>
-                <div className="profileUniversityModal-content">
+                <div className="profileSkillsModal-content">
                     <p>Content</p>
                     <p>Content</p>
                     <p>Content</p>
@@ -45,12 +45,12 @@ const ProfileUniversityModal = (
                     <p>Content</p>
                     <p>Content</p>
                 </div>
-                <div className="profileUniversityModal-footer">
-                    <button className="profileUniversityModal-footer__btn">Հաստատել</button>
+                <div className="profileSkillsModal-footer">
+                    <button className="profileSkillsModal-footer__btn">Հաստատել</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProfileUniversityModal;
+export default ProfileSkillsModal;

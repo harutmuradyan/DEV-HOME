@@ -1,28 +1,28 @@
 import React from "react";
-import './profileUniversityModal.scss';
+import './feedPostEventModal.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
-const ProfileUniversityModal = (
-    {   profileUniversityModal,
-        setProfileUniversityModal   }
+const FeedPostEventModal = (
+    {   feedPostEventModal,
+        setFeedPostEventModal   }
     ) => {
     
     return (
-        <div className={profileUniversityModal ? "profileUniversityModal active" : "profileUniversityModal"} 
-             onClick={() => {setProfileUniversityModal(false)}} >
-            <div className="profileUniversityModal-container" 
+        <div className={feedPostEventModal ? "feedPostEventModal active" : "feedPostEventModal "} 
+             onClick={() => {setFeedPostEventModal(false)}} >
+            <div className="feedPostEventModal-container" 
                  onClick={(e) => {e.stopPropagation()}}>
-                <div className="profileUniversityModal-header">
-                    <h2 className="profileUniversityModal-header__title">Ուսուցում</h2>
+                <div className="feedPostEventModal-header">
+                    <h2 className="feedPostEventModal-header__title">Ստեղծել միջոցառում</h2>
                     <FontAwesomeIcon icon={faClose} 
-                                     onClick={() => {setProfileUniversityModal(false)}} 
-                                     className="profileUniversityModal-header__icon"
+                                     onClick={() => {setFeedPostEventModal(false)}} 
+                                     className="feedPostEventModal-header__icon"
                                      />
                 </div>
-                <div className="profileUniversityModal-content">
+                <div className="feedPostEventModal-content">
                     <p>Content</p>
                     <p>Content</p>
                     <p>Content</p>
@@ -45,12 +45,12 @@ const ProfileUniversityModal = (
                     <p>Content</p>
                     <p>Content</p>
                 </div>
-                <div className="profileUniversityModal-footer">
-                    <button className="profileUniversityModal-footer__btn">Հաստատել</button>
+                <div className="feedPostEventModal-footer">
+                    <button className="feedPostEventModal-footer__btn">Հաստատել</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProfileUniversityModal;
+export default FeedPostEventModal;

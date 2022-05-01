@@ -1,28 +1,28 @@
 import React from "react";
-import './profileUniversityModal.scss';
+import './feedPostArticleModal.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
-const ProfileUniversityModal = (
-    {   profileUniversityModal,
-        setProfileUniversityModal   }
+const FeedPostArticleModal = (
+    {   feedPostArticleModal,
+        setFeedPostArticleModal   }
     ) => {
     
     return (
-        <div className={profileUniversityModal ? "profileUniversityModal active" : "profileUniversityModal"} 
-             onClick={() => {setProfileUniversityModal(false)}} >
-            <div className="profileUniversityModal-container" 
+        <div className={feedPostArticleModal ? "feedPostArticleModal active" : "feedPostArticleModal"} 
+             onClick={() => {setFeedPostArticleModal(false)}} >
+            <div className="feedPostArticleModal-container" 
                  onClick={(e) => {e.stopPropagation()}}>
-                <div className="profileUniversityModal-header">
-                    <h2 className="profileUniversityModal-header__title">Ուսուցում</h2>
+                <div className="feedPostArticleModal-header">
+                    <h2 className="feedPostArticleModal-header__title">Գրել Հոդված</h2>
                     <FontAwesomeIcon icon={faClose} 
-                                     onClick={() => {setProfileUniversityModal(false)}} 
-                                     className="profileUniversityModal-header__icon"
+                                     onClick={() => {setFeedPostArticleModal(false)}} 
+                                     className="feedPostArticleModal-header__icon"
                                      />
                 </div>
-                <div className="profileUniversityModal-content">
+                <div className="feedPostArticleModal-content">
                     <p>Content</p>
                     <p>Content</p>
                     <p>Content</p>
@@ -45,12 +45,12 @@ const ProfileUniversityModal = (
                     <p>Content</p>
                     <p>Content</p>
                 </div>
-                <div className="profileUniversityModal-footer">
-                    <button className="profileUniversityModal-footer__btn">Հաստատել</button>
+                <div className="feedPostArticleModal-footer">
+                    <button className="feedPostArticleModal-footer__btn">Հաստատել</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProfileUniversityModal;
+export default FeedPostArticleModal;

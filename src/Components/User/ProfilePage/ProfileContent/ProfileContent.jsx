@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import './profileContent.scss';
 
 import { faAdd } from "@fortawesome/free-solid-svg-icons";
@@ -6,15 +6,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
+import ProfileContentModal from "./ProfileContentModal/ProfileContentModal";
+import ProfileUserBackgroundModal from "./ProfileUserBackgroundModal/ProfileUserBackgroundModal";
+import ProfileUserPhotoModal from "./ProfileUserPhotoModal/ProfileUserPhotoModal";
+import ProfileUserContactModal from "./ProfileUserContactModal/ProfileUserContactModal";
+import ProfileSearchWorkBtnModal from "./ProfileSearchWorkBtnModal/ProfileSearchWorkBtnModal";
+
 const ProfileContent = () => {
+
+    const [profileContentModal,setProfileContentModal] = useState(false);
+    const [profileUserBackgroundModal,setProfileUserBackgroundModal] = useState(false);
+    const [profileUserPhotoModal,setProfileUserPhotoModal] = useState(false);
+    const [profileUserContactModal,setProfileUserContactModal] = useState(false);
+    const [profileSearchWorkBtnModal,setProfileSearchWorkBtnModal] = useState(false);
+
     return (
         <div className="profileContent">
             <div className="profileContent-background">
-                <div className="profileContent-background__block ">
+                <div className="profileContent-background__block"
+                     onClick={() => {setProfileUserPhotoModal(true)}}>
                     <img className="profileContent-background__img" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
                 </div>
                 <div className="profileContent-background__block">
-                    <button className="profileContent-background__update">
+                    <button className="profileContent-background__update"
+                            onClick={() => {setProfileUserBackgroundModal(true)}}>
                         <FontAwesomeIcon className="profileContent-background__update-btn" icon={faAdd}/>
                     </button>
                 </div>
@@ -25,11 +40,15 @@ const ProfileContent = () => {
                     <p className="profileContent-info__profesion">WEB DEVELOPER</p>
                     <div className="profileContent-info__address">
                         Երևան Հայաստան 
-                        <button className="profileContent-info__phone">Կապի տվյալներ</button>
+                        <button className="profileContent-info__phone"
+                                onClick={() => {setProfileUserContactModal(true)}}>
+                            Կապի տվյալներ
+                        </button>
                     </div>
                 </div>
                 <div className="profileContent-info__right">
-                    <button className="profileContent-info__right-update">
+                    <button className="profileContent-info__right-update" 
+                            onClick={() => {setProfileContentModal(true)}}>
                         <FontAwesomeIcon icon={faPen}/>
                     </button>
                     <button className="profileContent-info__btn">
@@ -45,7 +64,10 @@ const ProfileContent = () => {
             <div className="profileContent-serachWork">
                 <div className="profileContent-serachWork__block">
                     <p className="profileContent-serachWork__text">Նշեք որպեսզի Ձեր ընկերները իմանան որ Դուք աշխատանքի փնտրման մեջ եք ։</p>
-                    <button className="profileContent-serachWork__start">Սկսել</button>
+                    <button className="profileContent-serachWork__start"
+                            onClick={() => {setProfileSearchWorkBtnModal(true)}}>
+                        Սկսել
+                    </button>
                 </div>
                 <div className="profileContent-serachWork__block">
                     <button className="profileContent-serachWork__close">
@@ -53,6 +75,17 @@ const ProfileContent = () => {
                     </button>
                 </div>
             </div>
+
+            <ProfileContentModal            profileContentModal={profileContentModal} 
+                                            setProfileContentModal={setProfileContentModal}/>
+            <ProfileUserBackgroundModal     profileUserBackgroundModal={profileUserBackgroundModal} 
+                                            setProfileUserBackgroundModal={setProfileUserBackgroundModal}/>
+            <ProfileUserPhotoModal          profileUserPhotoModal={profileUserPhotoModal} 
+                                            setProfileUserPhotoModal={setProfileUserPhotoModal}/>
+            <ProfileUserContactModal        profileUserContactModal={profileUserContactModal} 
+                                            setProfileUserContactModal={setProfileUserContactModal}/>
+            <ProfileSearchWorkBtnModal      profileSearchWorkBtnModal={profileSearchWorkBtnModal} 
+                                            setProfileSearchWorkBtnModal={setProfileSearchWorkBtnModal}/>
         </div>
     )
 }

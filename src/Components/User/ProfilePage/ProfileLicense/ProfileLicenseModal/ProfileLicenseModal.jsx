@@ -1,28 +1,28 @@
 import React from "react";
-import './profileUniversityModal.scss';
+import './profileLicenseModal.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
-const ProfileUniversityModal = (
-    {   profileUniversityModal,
-        setProfileUniversityModal   }
+const ProfileLicenseModal = (
+    {   profileLicenseModal,
+        setProfileLicenseModal   }
     ) => {
     
     return (
-        <div className={profileUniversityModal ? "profileUniversityModal active" : "profileUniversityModal"} 
-             onClick={() => {setProfileUniversityModal(false)}} >
-            <div className="profileUniversityModal-container" 
+        <div className={profileLicenseModal ? "profileLicenseModal active" : "profileLicenseModal"} 
+             onClick={() => {setProfileLicenseModal(false)}} >
+            <div className="profileLicenseModal-container" 
                  onClick={(e) => {e.stopPropagation()}}>
-                <div className="profileUniversityModal-header">
-                    <h2 className="profileUniversityModal-header__title">Ուսուցում</h2>
+                <div className="profileLicenseModal-header">
+                    <h2 className="profileLicenseModal-header__title">Լիազորագրեր</h2>
                     <FontAwesomeIcon icon={faClose} 
-                                     onClick={() => {setProfileUniversityModal(false)}} 
-                                     className="profileUniversityModal-header__icon"
+                                     onClick={() => {setProfileLicenseModal(false)}} 
+                                     className="profileLicenseModal-header__icon"
                                      />
                 </div>
-                <div className="profileUniversityModal-content">
+                <div className="profileLicenseModal-content">
                     <p>Content</p>
                     <p>Content</p>
                     <p>Content</p>
@@ -45,12 +45,12 @@ const ProfileUniversityModal = (
                     <p>Content</p>
                     <p>Content</p>
                 </div>
-                <div className="profileUniversityModal-footer">
-                    <button className="profileUniversityModal-footer__btn">Հաստատել</button>
+                <div className="profileLicenseModal-footer">
+                    <button className="profileLicenseModal-footer__btn">Հաստատել</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProfileUniversityModal;
+export default ProfileLicenseModal;

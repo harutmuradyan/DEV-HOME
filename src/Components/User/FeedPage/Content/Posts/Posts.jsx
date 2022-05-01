@@ -3,6 +3,7 @@ import './posts.scss';
 import Post from "./Post/Post";
 
 const Posts = () => {
+
     return (
         <div className="posts">
             <div className="posts-filtr">

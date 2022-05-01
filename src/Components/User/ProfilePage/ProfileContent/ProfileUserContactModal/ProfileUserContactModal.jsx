@@ -1,28 +1,28 @@
 import React from "react";
-import './profileUniversityModal.scss';
+import './profileUserContactModal.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
-const ProfileUniversityModal = (
-    {   profileUniversityModal,
-        setProfileUniversityModal   }
+const ProfileUserContactModal = (
+    {   profileUserContactModal,
+        setProfileUserContactModal   }
     ) => {
     
     return (
-        <div className={profileUniversityModal ? "profileUniversityModal active" : "profileUniversityModal"} 
-             onClick={() => {setProfileUniversityModal(false)}} >
-            <div className="profileUniversityModal-container" 
+        <div className={profileUserContactModal ? "profileUserContactModal active" : "profileUserContactModal"} 
+             onClick={() => {setProfileUserContactModal(false)}} >
+            <div className="profileUserContactModal-container" 
                  onClick={(e) => {e.stopPropagation()}}>
-                <div className="profileUniversityModal-header">
-                    <h2 className="profileUniversityModal-header__title">Ուսուցում</h2>
+                <div className="profileUserContactModal-header">
+                    <h2 className="profileUserContactModal-header__title">Կապի տվյալներ</h2>
                     <FontAwesomeIcon icon={faClose} 
-                                     onClick={() => {setProfileUniversityModal(false)}} 
-                                     className="profileUniversityModal-header__icon"
+                                     onClick={() => {setProfileUserContactModal(false)}} 
+                                     className="profileUserContactModal-header__icon"
                                      />
                 </div>
-                <div className="profileUniversityModal-content">
+                <div className="profileUserContactModal-content">
                     <p>Content</p>
                     <p>Content</p>
                     <p>Content</p>
@@ -45,12 +45,12 @@ const ProfileUniversityModal = (
                     <p>Content</p>
                     <p>Content</p>
                 </div>
-                <div className="profileUniversityModal-footer">
-                    <button className="profileUniversityModal-footer__btn">Հաստատել</button>
+                <div className="profileUserContactModal-footer">
+                    <button className="profileUserContactModal-footer__btn">Հաստատել</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProfileUniversityModal;
+export default ProfileUserContactModal;

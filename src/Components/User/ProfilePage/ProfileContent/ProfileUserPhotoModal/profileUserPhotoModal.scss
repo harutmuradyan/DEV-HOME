@@ -1,0 +1,51 @@
+.profileUserPhotoModal {
+    position: fixed;
+    top:0;
+    left: 0;    
+    width: 100vw;
+    height: 100vw;
+    background-color:rgba(0, 0, 0, 0.918);
+    display: none;
+    .profileUserPhotoModal-container {
+        position: relative;
+        top: 70px;
+        width: 60%;
+        margin: 0 auto;
+        height: 500px;
+        border-radius: 20px;
+        background-color:white;
+        .profileUserPhotoModal-header {
+            padding: 15px 15px 15px 15px;
+            display: flex;
+            justify-content: space-between;
+            .profileUserPhotoModal-header__title {
+                color: black;
+                font-size: 1rem;
+            }
+            .profileUserPhotoModal-header__icon {
+                cursor: pointer;
+            }
+        }
+        .profileUserPhotoModal-content {
+            padding: 15px 15px 15px 15px;
+            height:380px ;
+            overflow-y: scroll;
+        }
+        .profileUserPhotoModal-footer {
+            padding: 15px 15px 15px 15px;
+            display: flex;
+            justify-content: end;
+            .profileUserPhotoModal-footer__btn {
+                cursor: pointer;
+                padding: 15px 15px 15px 15px;
+                background-color:rgb(99, 99, 248);
+                color: white;
+                border-radius:10px;
+            }
+        }
+    }
+}
+
+.profileUserPhotoModal.active {
+    display: block;
+}

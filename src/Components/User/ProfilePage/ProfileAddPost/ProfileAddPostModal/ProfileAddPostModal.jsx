@@ -1,28 +1,28 @@
 import React from "react";
-import './profileUniversityModal.scss';
+import './profileAddPostModal.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
-const ProfileUniversityModal = (
-    {   profileUniversityModal,
-        setProfileUniversityModal   }
+const ProfileAddPostModal = (
+    {   profileAddPostModal,
+        setProfileAddPostModal   }
     ) => {
     
     return (
-        <div className={profileUniversityModal ? "profileUniversityModal active" : "profileUniversityModal"} 
-             onClick={() => {setProfileUniversityModal(false)}} >
-            <div className="profileUniversityModal-container" 
+        <div className={profileAddPostModal ? "profileAddPostModal active" : "profileAddPostModal"} 
+             onClick={() => {setProfileAddPostModal(false)}} >
+            <div className="profileAddPostModal-container" 
                  onClick={(e) => {e.stopPropagation()}}>
-                <div className="profileUniversityModal-header">
-                    <h2 className="profileUniversityModal-header__title">Ուսուցում</h2>
+                <div className="profileAddPostModal-header">
+                    <h2 className="profileAddPostModal-header__title">Ավելացնել գրառում</h2>
                     <FontAwesomeIcon icon={faClose} 
-                                     onClick={() => {setProfileUniversityModal(false)}} 
-                                     className="profileUniversityModal-header__icon"
+                                     onClick={() => {setProfileAddPostModal(false)}} 
+                                     className="profileAddPostModal-header__icon"
                                      />
                 </div>
-                <div className="profileUniversityModal-content">
+                <div className="profileAddPostModal-content">
                     <p>Content</p>
                     <p>Content</p>
                     <p>Content</p>
@@ -45,12 +45,12 @@ const ProfileUniversityModal = (
                     <p>Content</p>
                     <p>Content</p>
                 </div>
-                <div className="profileUniversityModal-footer">
-                    <button className="profileUniversityModal-footer__btn">Հաստատել</button>
+                <div className="profileAddPostModal-footer">
+                    <button className="profileAddPostModal-footer__btn">Հաստատել</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProfileUniversityModal;
+export default ProfileAddPostModal;
