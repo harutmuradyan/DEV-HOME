@@ -1,9 +1,6 @@
 import React from "react";
 import './profileAddFrends.scss';
 
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const ProfileAddFrends = () => {
     return (
         <div className="profileAddFrends">
@@ -17,8 +14,7 @@ const ProfileAddFrends = () => {
                 </div>
             </div>
             <div className="profileAddFrends-btn">
-                <button>
-                    <FontAwesomeIcon icon={faPlus} className="profileAddFrends-content__follow-icon"/>
+                <button className="profileAddFrends-content__follow">
                     Հետևել
                 </button>
             </div>

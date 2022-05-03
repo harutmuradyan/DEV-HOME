@@ -38,7 +38,7 @@
             justify-content: end;
             background-color:white;
 
-            button {
+            .post-header__follow-btn {
                 width: 100%;
                 background-color:white;
                 border:solid 1px rgb(99, 99, 248);
@@ -47,13 +47,9 @@
                 border-radius:25px;
                 cursor: pointer;
                 color:rgb(99, 99, 248);
-                .post-header__follow-icon {
-                    margin-right: 5px;
-                    color: rgb(99, 99, 248);;
-                    font-size: 1rem;
-                }
                 &:hover {
                     background-color:black;
+                    color: white;
                 }
             }
         }

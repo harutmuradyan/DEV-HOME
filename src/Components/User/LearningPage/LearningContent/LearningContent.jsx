@@ -9,7 +9,6 @@ const LearningContent = () => {
                     <p className="learningContent-left__info">Բարի գալուտ գիտելիքի մեծ աշխարհ ։ Այստեղ դուք ունեք մեծ հնարավորություններ նոր գիտելիքներ ձեռք բերելու։</p>
                     <p className="learningContent-left__followers">Արդեն Օգտագործում են շատերը</p>
                     <button className="learningContent-left__start">Սկսել ուսուցումը մեկ ամիս անվճար</button>
-                
                 </div>
                 <div className="learningContent-right">
                     <img    className="learningContent-right__img" 

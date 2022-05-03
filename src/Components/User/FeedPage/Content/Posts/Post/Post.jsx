@@ -2,7 +2,6 @@ import React from "react";
 import './post.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { faHands } from "@fortawesome/free-solid-svg-icons";
@@ -24,8 +23,7 @@ const Post = () => {
                     <p>1 օր</p>
                 </div>
                 <div className="post-header__follow">
-                    <button>
-                        <FontAwesomeIcon icon={faPlus} className="post-header__follow-icon"/>
+                    <button className="post-header__follow-btn">
                         Հետևել
                     </button>
                 </div>

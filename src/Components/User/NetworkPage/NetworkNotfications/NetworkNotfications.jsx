@@ -1,11 +1,15 @@
 import React from "react";
+import './networkNotfications.scss';
 
 import NetworkNotification from "./NetworkNotfication/NetworkNotfication";
 
 
 const NetworkNotfications = () => {
     return (
-        <div>
+        <div className="networkNotfications">
+            <NetworkNotification/>
+            <NetworkNotification/>
+            <NetworkNotification/>
             <NetworkNotification/>
         </div>
     )

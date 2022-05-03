@@ -16,6 +16,18 @@ const NetworkPage = () => {
     return (
         <div className="networkPage">
             <div className="networkPage-container">
+                <div className="networkPage-content">
+                    <div className="networkPage-content__notification">
+                        <p className="networkPage-content__notification-title">Նոր ընկերության առաջարկներ չկան</p>
+                        <NetworkNotfications/>                        
+                    </div>
+                    <div className="networkPage-content__users">
+                        <Companyes/>
+                    </div>
+                    <div className="networkPage-content__companyes">
+                        <Users/>
+                    </div>
+                </div>
                 <div className="networkPage-sidebar">
                     <nav className="networkPage-nav">
                         <ul className="networkPage-nav__bar">
@@ -30,18 +42,6 @@ const NetworkPage = () => {
                         </ul>
                     </nav>
                     <NetworkSidebar/>
-                </div>
-                <div className="networkPage-content">
-                    <div className="networkPage-content__notification">
-                        <p>Նոր ընկերության առաջարկներ չկան</p>
-                        <NetworkNotfications/>                        
-                    </div>
-                    <div className="networkPage-content__users">
-                        <Companyes/>
-                    </div>
-                    <div className="networkPage-content__companyes">
-                        <Users/>
-                    </div>
                 </div>
             </div>
         </div>

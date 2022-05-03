@@ -13,11 +13,11 @@
             min-height: 150px;
             border-radius: 20px;
             margin: 10px 10px 10px 10px;
-            background-color:white;
             .networkPage-nav {
-                padding: 15px 10px 15px 10px;
-                border-bottom:solid 1px rgb(99, 99, 248);
+                padding: 0px 10px 15px 10px;
                 .networkPage-nav__bar {
+                    background-color:white;
+                    border-radius: 20px;
                     .networkPage-nav__item {
                         padding: 15px 0px 15px 10px;
                         cursor: pointer;
@@ -34,14 +34,19 @@
         .networkPage-content {
             min-height: 150px;
             border-radius: 20px;
-            margin: 10px 10px 10px 10px;
-            background-color:white;
+            margin: 0px 10px 10px 10px;
             width: 70%;
             .networkPage-content__notification {
+                background-color:white;
+                border-radius: 20px;
                 margin-top: 10px;
-                border-bottom:solid 1px rgb(99, 99, 248);
-                padding: 15px 10px 15px 10px;
+                padding: 5px 10px15px 10px;
                 width: 100%;
+                .networkPage-content__notification-title {
+                    padding: 20px 10px 20px 10px;
+                    font-size: 1rem;
+                    border-bottom:solid 1px rgb(99, 99, 248);
+                }
                 p {
                     font-size: 0.8rem;
                     color: grey;
@@ -49,9 +54,13 @@
             }
             .networkPage-content__users {
                 width: 100%;
+                background-color:white;
+                border-radius: 20px;
             }
             .networkPage-content__companyes {
                 width: 100%;
+                background-color:white;
+                border-radius: 20px;
             }
         }
     }

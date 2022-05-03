@@ -1,9 +1,6 @@
 import React from "react";
 import './companyFollow.scss'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-
 const CompanyFollow = () => {
     return (
         <div className="companyFollow">
@@ -17,8 +14,7 @@ const CompanyFollow = () => {
                 </div>
             </div>
             <div className="companyFollow-btn">
-                <button>
-                    <FontAwesomeIcon icon={faPlus} className="companyFollow-content__follow-icon"/>
+                <button className="companyFollow-content__follow">
                     Հետևել
                 </button>
             </div>
