@@ -1,0 +1,33 @@
+.learningTeachers {
+    background-color:white;
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    .learningTeachers-header {
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        .learningTeachers-header__title {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+        .learningTeachers-header__btn {
+            background-color:white;
+            border:solid 1px black;
+            padding: 10px 10px 10px 10px;
+            cursor: pointer;
+            &:hover {
+                background-color:black;
+                color: white;
+                border:solid 1px white; 
+            }
+        }
+    }
+    .learningTeachers-block {
+        width: 100%;
+        display: flex;
+    } 
+}

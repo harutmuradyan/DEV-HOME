@@ -1,0 +1,44 @@
+.learningContent {
+    background-color:white;
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    .learningContent-container {
+        display: flex;
+        width: 100%;
+        .learningContent-left {
+            width: 70%;
+            padding: 10px 10px 10px 10px;
+            .learningContent-left__info {
+                padding: 50px 10px 10px 10px;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .learningContent-left__followers {
+                padding: 10px 10px 10px 10px;
+                color: grey;
+                font-size: 1.2rem;
+            }
+            .learningContent-left__start {
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 25px;
+                color: rgb(44, 231, 91);
+                padding: 20px 50px;
+                position: relative;
+                
+            }
+        }
+        .learningContent-right {
+            width: 30%;
+            padding: 10px 10px 10px 10px;
+            .learningContent-right__img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

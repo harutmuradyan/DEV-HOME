@@ -1,0 +1,37 @@
+.learningLessons {
+    background-color:white;
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    .learningLessons-conatiner{
+        width: 100%;
+        .learningLessons-title {
+            padding: 5px 0px 5px 10px;
+            font-size: 1.2rem;
+        }
+    }
+    .learningLessons-slides {
+        width: 100%;
+        .learningLessons-slides__block {
+            display: flex;
+        }
+        .learningLessons-slides__btns {
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            height: 30px;
+            right: 10px;
+            bottom: 40px;
+            .learningLessons-slides__btns-item {
+                padding: 5px 10px 5px 10px;
+                background-color:white;
+                cursor: pointer;   
+                font-size: 1.2rem;
+                margin-top: 12px;  
+            }
+        }
+    }
+}

@@ -27,8 +27,7 @@ function App() {
             <Route path="/" element={<Landing/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/registration" element={<Registration/>} />
-          </Routes>
-          <Routes>
+      
             <Route path="index" element={<FeedPage/>} />
             <Route path="network" element={<NetworkPage />} />
             <Route path="notification" element={<NotificationPage />} />
