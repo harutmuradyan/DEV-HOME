@@ -1,0 +1,123 @@
+.companyPost {
+    width: 44%;
+    background-color:white;
+    border-radius:25px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 0px;
+    .companyPost-header {
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        width: 100%;
+        border-bottom:solid 1px rgb(99, 99, 248);
+        .companyPost-header__img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;   
+            img {
+                width: 100%;
+                height:  100%;
+            }
+        }
+        .companyPost-header__info {
+            padding-left: 20px;
+            width: 80%;
+            h2 {
+                color:rgb(99, 99, 248);
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            p {
+                padding: 2px 0px 2px 0px;
+                font-size: 0.8rem;
+                cursor: pointer;
+                color: grey;
+            }
+        }
+        .companyPost-header__follow {
+            width: 20%;
+            display: flex;
+            justify-content: end;
+            background-color:white;
+
+            .companyPost-header__follow-btn {
+                width: 100%;
+                background-color:white;
+                border:solid 1px rgb(99, 99, 248);
+                font-size: 0.8rem;
+                height: 40px;
+                border-radius:25px;
+                cursor: pointer;
+                color:rgb(99, 99, 248);
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
+            }
+        }
+    }
+    .companyPost-content {
+        padding: 10px 10px 10px 10px;
+        .companyPost-content__title {
+            padding: 10px 10px 10px 10px;
+            span {
+                display: flex;
+                justify-content: end;
+                margin-top: 5px;
+                color: rgb(99, 99, 248);
+                cursor: pointer;
+            }
+        }
+        .companyPost-content__photo {
+            img {
+                width: 100%;
+                max-height:400px;
+            }
+        }
+        .companyPost-content__follow {
+            display: flex;
+            justify-content: start;
+            .companyPost-content__follow-peoples {
+                margin-top: 3px;
+                margin-left: 10px;
+                cursor: pointer;
+                color: grey;
+                font-size: 0.8rem;
+            }
+            .companyPost-content__follow-name {
+                margin-left: 10px;
+                margin-top: 3px;
+                cursor: pointer;
+                color: grey;
+                font-size: 0.8rem;
+            }
+            .companyPost-content__follow-icon {
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+        .companyPost-content__btns {
+            margin: 15px 0px 15px 0px;
+            .companyPost-content__nav {
+                display: flex;
+                width: 100%;
+                .companyPost-content__item {
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-size: 0.8rem;
+                    color: grey;
+                    .companyPost-content__item-icon {
+                        font-size: 0.8rem;
+                        color:grey;
+                        margin-right: 5px;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+.red {  color:rgb(252, 11, 11);}
+.green { color:rgb(9, 247, 9);}
+.blue { color:rgb(6, 6, 250);}

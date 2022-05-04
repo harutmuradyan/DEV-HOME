@@ -14,6 +14,7 @@ import ProfilePage from './Components/User/ProfilePage/ProfilePage';
 import Footer from './Components/Footer/Footer';
 import VacanciesPage from './Components/User/VacanciesPage/VacanciesPage';
 import LearningPage from './Components/User/LearningPage/LearningPage';
+import CompanyPage from './Components/User/CompanyPage/CompanyPage';
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="profile" element={<ProfilePage />} />
             <Route path="vacancies" element={<VacanciesPage />} />
             <Route path="learning" element={<LearningPage />} />
+            <Route path="company" element={<CompanyPage />} />
           </Routes>
         </main>
         <Footer/>

@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import './profileContent.scss';
 
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
@@ -23,15 +22,15 @@ const ProfileContent = () => {
     return (
         <div className="profileContent">
             <div className="profileContent-background">
-                <div className="profileContent-background__block"
-                     onClick={() => {setProfileUserPhotoModal(true)}}>
-                    <img className="profileContent-background__img" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
-                </div>
-                <div className="profileContent-background__block">
-                    <button className="profileContent-background__update"
-                            onClick={() => {setProfileUserBackgroundModal(true)}}>
-                        <FontAwesomeIcon className="profileContent-background__update-btn" icon={faAdd}/>
-                    </button>
+                <div    className="profileContent-background__header">
+                    <img    className="profileContent-background__cover" 
+                            src="" 
+                            alt=""
+                            onClick={() => {setProfileUserBackgroundModal(true)}}></img>
+                    <img    className="profileContent-background__logo" 
+                            src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                            alt=""
+                            onClick={() => {setProfileUserPhotoModal(true)}}></img>
                 </div>
             </div>
             <div className="profileContent-info">
@@ -52,11 +51,15 @@ const ProfileContent = () => {
                         <FontAwesomeIcon icon={faPen}/>
                     </button>
                     <button className="profileContent-info__btn">
-                        <img className="profileContent-info__btn-work" src="https://static-s.aa-cdn.net/img/ios/1467174481/20e17c76201c22ba136d1728a4352c76?v=1" alt=""></img>
+                        <img    className="profileContent-info__btn-work" 
+                                src="https://static-s.aa-cdn.net/img/ios/1467174481/20e17c76201c22ba136d1728a4352c76?v=1" 
+                                alt=""></img>
                         <p className="profileContent-info__btn-text">FL.RU Frilance</p>
                     </button>
                     <button className="profileContent-info__btn">
-                        <img className="profileContent-info__btn-university" src="https://upload.wikimedia.org/wikipedia/commons/3/35/GorSU_logo.png" alt=""></img>
+                        <img    className="profileContent-info__btn-university" 
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/35/GorSU_logo.png" 
+                                alt=""></img>
                         <p className="profileContent-info__btn-text">Հ Պ Ճ Հ</p>
                     </button>
                 </div>

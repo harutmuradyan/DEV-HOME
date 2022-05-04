@@ -1,0 +1,22 @@
+.companyAbout {
+    padding: 40px 20px 0px 20px;
+    .companyAbout-container {
+        .companyAbout-block {
+            display: flex;
+            justify-content: space-between;
+            border-bottom:solid 1px rgb(99, 99, 248);
+            .companyAbout-block__title {
+                text-transform: uppercase;
+                font-size: 1rem;
+                padding: 20px 20px 20px 20px;
+            }
+        }
+        .companyAbout-text {
+            display: block;
+            padding: 20px 0px 20px 10px;
+            margin-left: 10px;
+            color: grey;
+            font-size: 0.8rem;
+        }
+    }
+}

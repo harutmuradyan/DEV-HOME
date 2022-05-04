@@ -1,0 +1,35 @@
+.companyPosts {
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 30px;
+    .companyPosts-filtr {
+        margin-right: 10px;
+        padding: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: end;
+        .companyPosts-filtr__title {
+            color:grey;
+        }
+        .companyPosts-filtr__category {
+            border-radius:10px;
+            margin-left: 20px;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+    .companyPosts-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .companyPosts-seeMore {
+        display: flex;
+        justify-content: center;
+        .companyPosts-seeMore__btn {
+            width: 50%;
+            height: 30px;
+            background-color:rgb(99, 99, 248);
+            border-radius:25px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

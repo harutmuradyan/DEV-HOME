@@ -17,15 +17,18 @@ const Header = () => {
                 <nav className="header-content__nav">
                     <ul className="header-content__block">
                         <li className="header-content__item">
-                            <FontAwesomeIcon icon={faUsers}  className="header-content__item-icon"/>
+                            <FontAwesomeIcon    icon={faUsers}  
+                                                className="header-content__item-icon"/>
                             <p className="header-content__item-name">Ընկերներ</p>
                         </li>
                         <li className="header-content__item">
-                            <FontAwesomeIcon icon={faGraduationCap} className="header-content__item-icon"/>
+                            <FontAwesomeIcon    icon={faGraduationCap} 
+                                                className="header-content__item-icon"/>
                             <p className="header-content__item-name">Ուսուցում</p>
                         </li>
                         <li className="header-content__item" >
-                            <FontAwesomeIcon icon={faBriefcase} className="header-content__item-icon"/>
+                            <FontAwesomeIcon    icon={faBriefcase} 
+                                                className="header-content__item-icon"/>
                             <p className="header-content__item-name">Աշխատանք</p>
                         </li>
                     </ul>
