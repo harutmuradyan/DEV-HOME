@@ -1,42 +1,42 @@
-.feedPostPhotoModal {
+.modalSearch {
     position: fixed;
-    top:0;
+    top:60px;
     left: 0;    
     width: 100vw;
     height: 100vw;
     background-color:rgba(0, 0, 0, 0.918);
     display: none;
     z-index: 1;
-    .feedPostPhotoModal-container {
-        position: relative;
+    .modalSearch-container {
+        position: absolute;
         top: 70px;
-        width: 60%;
-        margin: 0 auto;
-        height: 500px;
+        width:80%;
+        left: 100px;
+        height: 300px;
         border-radius: 20px;
         background-color:white;
-        .feedPostPhotoModal-header {
+        .modalSearch-header {
             padding: 15px 15px 15px 15px;
             display: flex;
             justify-content: space-between;
-            .feedPostPhotoModal-header__title {
+            .modalSearch-header__title {
                 color: black;
                 font-size: 1rem;
             }
-            .feedPostPhotoModal-header__icon {
+            .modalSearch-header__icon {
                 cursor: pointer;
             }
         }
-        .feedPostPhotoModal-content {
+        .modalSearch-content {
             padding: 15px 15px 15px 15px;
             height:380px ;
             overflow-y: scroll;
         }
-        .feedPostPhotoModal-footer {
+        .modalSearch-footer {
             padding: 15px 15px 15px 15px;
             display: flex;
             justify-content: end;
-            .feedPostPhotoModal-footer__btn {
+            .modalSearch-footer__btn {
                 cursor: pointer;
                 padding: 15px 15px 15px 15px;
                 background-color:rgb(99, 99, 248);
@@ -47,6 +47,6 @@
     }
 }
 
-.feedPostPhotoModal.active {
+.modalSearch.active {
     display: block;
 }
