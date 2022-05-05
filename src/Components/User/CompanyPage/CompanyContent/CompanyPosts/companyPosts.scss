@@ -20,16 +20,4 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .companyPosts-seeMore {
-        display: flex;
-        justify-content: center;
-        .companyPosts-seeMore__btn {
-            width: 50%;
-            height: 30px;
-            background-color:rgb(99, 99, 248);
-            border-radius:25px;
-            color: white;
-            cursor: pointer;
-        }
-    }
 }

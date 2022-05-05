@@ -27,27 +27,22 @@
                 cursor: pointer;
                 color: grey;
             }
-        }
-    }  
-    .companyFollowBarItem-btn {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        background-color:white;
-        padding: 0px 10px 0px 10px;
-        .companyFollowBarItem-content__follow {
-            width: 100%;
-            background-color:white;
-            border:solid 1px rgb(99, 99, 248);
-            font-size: 0.8rem;
-            height: 30px;
-            border-radius:25px;
-            cursor: pointer;
-            color:rgb(99, 99, 248);
-            &:hover {
-                background-color:black;
-                color:white;
+            .companyFollowBarItem-content__follow {
+                width: 100%;
+                background-color:white;
+                border:solid 1px rgb(99, 99, 248);
+                font-size: 0.8rem;
+                height: 30px;
+                border-radius:10px;
+                margin-top: 5px;
+                cursor: pointer;
+                text-transform: uppercase;
+                color:rgb(99, 99, 248);
+                &:hover {
+                    background-color:black;
+                    color:white;
+                }
             }
         }
-    }
+    }          
 }

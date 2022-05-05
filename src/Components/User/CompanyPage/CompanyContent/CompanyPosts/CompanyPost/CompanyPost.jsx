@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { faHands } from "@fortawesome/free-solid-svg-icons";
-
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const CompanyPost = () => {
 
@@ -20,11 +20,6 @@ const CompanyPost = () => {
                     <h2>Քրիստինե Գրիգորյան</h2>
                     <p>DEVOPS DEVELOPER</p>
                     <p>1 օր</p>
-                </div>
-                <div className="companyPost-header__follow">
-                    <button className="companyPost-header__follow-btn">
-                        Հետևել
-                    </button>
                 </div>
             </div>
             <div className="companyPost-content">
@@ -55,6 +50,13 @@ const CompanyPost = () => {
                                         className="companyPost-content__follow-icon blue"></FontAwesomeIcon>
                     <p className="companyPost-content__follow-name">Գագիկ Նալբանդյան</p>
                     <p className="companyPost-content__follow-peoples">և 15 հետևորդ</p>
+                </div>
+                <div className="companyPost-content__comment">
+                    <img className="companyPost-content__comment-img" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
+                    <input className="companyPost-content__comment-input" placeholder=" Մեկնաբանություն"/>
+                    <button className="companyPost-content__comment-btn">
+                        <FontAwesomeIcon icon={faPaperPlane} className="companyPost-content__comment-icon"/>
+                    </button>
                 </div>
             </div>
         </div>

@@ -12,12 +12,11 @@ const CompanyFollowBarItem = () => {
                 <div className="companyFollowBarItem-content__info">
                     <h2>Քրիստինե Գրիգորյան</h2>
                     <p>DEVOPS DEVELOPER</p>
+                    <p>700 Հետևորդ</p>
+                    <button className="companyFollowBarItem-content__follow">
+                        Հետևել
+                    </button>
                 </div>
-            </div>
-            <div className="companyFollowBarItem-btn">
-                <button className="companyFollowBarItem-content__follow">
-                    Հետևել
-                </button>
             </div>
         </div>
     )

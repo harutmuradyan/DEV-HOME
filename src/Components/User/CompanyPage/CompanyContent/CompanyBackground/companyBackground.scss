@@ -20,4 +20,77 @@
             cursor: pointer;
         }
     }
+    .company-backgroundContent {
+        padding: 60px 40px 10px 40px;
+        .company-backgroundContent__name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding-bottom: 3px;
+        }
+        .company-backgroundContent__title {
+            color: grey;
+            padding-bottom: 5px;
+            font-size: 1rem;
+        }
+        .company-backgroundContent__conatacts {
+            display: flex;
+            padding: 5px 0px 5px 0px;
+            .company-backgroundContent__conatacts-city {
+                font-size: 1rem;
+                color: grey;
+                padding-right: 5px;
+            }
+            .company-backgroundContent__conatacts-country {
+                font-size: 1rem;
+                color: grey;
+                padding-right: 5px;
+            }
+            .company-backgroundContent__conatacts-followers {
+                font-size: 1rem;
+                color: grey;
+            }
+        }
+        .company-backgroundContent__employee {
+            display: flex;
+            .company-backgroundContent__employee-img {
+                width: 30px;
+                height: 30px;
+            }
+            .company-backgroundContent__employee-user {
+                padding: 5px 5px 5px 5px;
+                color: grey;
+                font-size: 1rem;
+            }
+            .company-backgroundContent__employee-count {
+                padding: 5px 2px 5px 2px;
+                color: grey;
+                font-size: 1rem;
+            }
+        }
+        .company-backgroundContent__btns {
+            margin-top: 10px;
+            .company-backgroundContent__btns-follow {
+                padding: 10px 30px 10px 30px;
+                background-color:white;
+                border:solid 1px rgb(99, 99, 248);
+                color: rgb(99, 99, 248);
+                border-radius:10px;
+                margin-right: 5px;
+                cursor: pointer;
+                text-transform: uppercase;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
+            }
+            .company-backgroundContent__btns-contact {
+                padding: 10px 30px 10px 30px;
+                background-color:rgb(99, 99, 248);
+                color: white;
+                border-radius:10px;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+        }
+    }
 }

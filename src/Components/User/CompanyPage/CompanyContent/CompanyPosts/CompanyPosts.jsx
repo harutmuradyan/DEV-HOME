@@ -16,9 +16,6 @@ const CompanyPosts = () => {
                 <CompanyPost/>
                 <CompanyPost/>
             </div>
-            <div className="companyPosts-seeMore">
-                <button className="posts-seeMore__btn">Դիտել ավելին</button>
-            </div>
         </div>
     )
 } 

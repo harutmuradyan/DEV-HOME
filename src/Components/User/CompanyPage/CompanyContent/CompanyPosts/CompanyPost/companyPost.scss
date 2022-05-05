@@ -1,9 +1,9 @@
 .companyPost {
-    width: 44%;
+    width: 45%;
     background-color:white;
     border-radius:25px;
     margin: 10px 10px 10px 10px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     .companyPost-header {
         padding: 10px 10px 10px 10px;
         display: flex;
@@ -33,27 +33,7 @@
                 color: grey;
             }
         }
-        .companyPost-header__follow {
-            width: 20%;
-            display: flex;
-            justify-content: end;
-            background-color:white;
-
-            .companyPost-header__follow-btn {
-                width: 100%;
-                background-color:white;
-                border:solid 1px rgb(99, 99, 248);
-                font-size: 0.8rem;
-                height: 40px;
-                border-radius:25px;
-                cursor: pointer;
-                color:rgb(99, 99, 248);
-                &:hover {
-                    background-color:black;
-                    color: white;
-                }
-            }
-        }
+        
     }
     .companyPost-content {
         padding: 10px 10px 10px 10px;
@@ -74,6 +54,7 @@
             }
         }
         .companyPost-content__follow {
+            padding: 10px 10px 10px 10px;
             display: flex;
             justify-content: start;
             .companyPost-content__follow-peoples {
@@ -114,6 +95,29 @@
                     }
                 }
             } 
+        }
+        .companyPost-content__comment {
+            display: flex;
+            .companyPost-content__comment-img {
+                margin: 10px 10px 10px 10px;
+                width: 30px;
+                height: 30px;
+            }
+            .companyPost-content__comment-input {
+                border:solid 1px grey;
+                border-radius:10px;
+                width: 90%;
+                cursor:pointer;
+                padding: 10px 10px 10px 10px;
+            }
+            .companyPost-content__comment-btn {
+                padding: 10px 10px 10px 10px;
+                background-color:white;
+                .post-content__comment-icon {
+                    color: grey;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
