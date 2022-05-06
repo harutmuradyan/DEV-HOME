@@ -17,6 +17,7 @@ import LearningPage from './Components/User/LearningPage/LearningPage';
 import CompanyPage from './Components/User/CompanyPage/CompanyPage';
 import VacanciesItemPage from './Components/User/VacanciesPage/VacanciesItemPage/VacanciesItemPage';
 import NotFound from './Components/NotFound/NotFound';
+import LearningItemPage from './Components/User/LearningPage/LearningItemPage/LearningItemPage';
 
 
 
@@ -40,6 +41,8 @@ function App() {
             <Route path="/vacancies/item" element={<VacanciesItemPage />} />
 
             <Route path="/learning" element={<LearningPage />} />
+            <Route path="/learning/item" element={<LearningItemPage />} />
+
             <Route path="/company" element={<CompanyPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
