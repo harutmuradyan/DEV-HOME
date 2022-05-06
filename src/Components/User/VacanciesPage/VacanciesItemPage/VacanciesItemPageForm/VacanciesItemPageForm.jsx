@@ -1,7 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import './VacanciesItemPageForm.scss';
+import VacanciesItemPageSendOnlineModal from "./VacanciesItemPageSendOnlineModal/VacanciesItemPageSendOnlineModal";
+import VacanciesItemPageSendSvModal from "./VacanciesItemPageSendSvModal/VacanciesItemPageSendSvModal";
 
 const VacanciesItemPageForm = () => {
+
+    const [vacanciesItemPageSendOnlineModal,setVacanciesItemPageSendOnlineModal] = useState(false);
+    const [vacanciesItemPageSendSvModal,setVacanciesItemPageSendSvModal] = useState(false);
+
     return (
         <div className="vacanciesItemPageForm">
             <div className="vacanciesItemPageForm-header">
@@ -15,8 +21,8 @@ const VacanciesItemPageForm = () => {
                     </div>
                 </div>
                 <div className="vacanciesItemPageForm-header__btns">
-                    <button>Դիմել օնլայն</button>
-                    <button>Ուղղարկել SV</button>
+                    <button onClick={() => {setVacanciesItemPageSendOnlineModal(true)}}>Դիմել օնլայն</button>
+                    <button onClick={() => {setVacanciesItemPageSendSvModal(true)}}>Ուղղարկել SV</button>
                 </div>
             </div>
             <nav className="vacanciesItemPageForm-nav">
@@ -80,6 +86,11 @@ const VacanciesItemPageForm = () => {
                 <p className="vacanciesItemPageForm-company__emploee">3000 Աշխատող</p>
                 <p className="vacanciesItemPageForm-company__info">Toptal is a network of the world's top talent in business, design, and technology that enables companies to scale their teams, on demand. With $200+ million in annual revenue and over 40% year-over-year growth, Toptal is the largest fully distributed workforce in the world.</p>
             </div>
+            <VacanciesItemPageSendOnlineModal       vacanciesItemPageSendOnlineModal={vacanciesItemPageSendOnlineModal} 
+                                                    setVacanciesItemPageSendOnlineModal={setVacanciesItemPageSendOnlineModal}/>
+            <VacanciesItemPageSendSvModal           vacanciesItemPageSendSvModal={vacanciesItemPageSendSvModal} 
+                                                    setVacanciesItemPageSendSvModal={setVacanciesItemPageSendSvModal}/>
+                                        
         </div>
     )
 }
