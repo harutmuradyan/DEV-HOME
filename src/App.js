@@ -15,6 +15,8 @@ import Footer from './Components/Footer/Footer';
 import VacanciesPage from './Components/User/VacanciesPage/VacanciesPage';
 import LearningPage from './Components/User/LearningPage/LearningPage';
 import CompanyPage from './Components/User/CompanyPage/CompanyPage';
+import VacanciesItemPage from './Components/User/VacanciesPage/VacanciesItemPage/VacanciesItemPage';
+import NotFound from './Components/NotFound/NotFound';
 
 
 
@@ -29,13 +31,17 @@ function App() {
             <Route path="/login" element={<Login/>} />
             <Route path="/registration" element={<Registration/>} />
       
-            <Route path="index" element={<FeedPage/>} />
-            <Route path="network" element={<NetworkPage />} />
-            <Route path="notification" element={<NotificationPage />} />
-            <Route path="profile" element={<ProfilePage />} />
-            <Route path="vacancies" element={<VacanciesPage />} />
-            <Route path="learning" element={<LearningPage />} />
-            <Route path="company" element={<CompanyPage />} />
+            <Route index path="/index" element={<FeedPage/>} />
+            <Route path="/network" element={<NetworkPage />} />
+            <Route path="/notification" element={<NotificationPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+
+            <Route path="/vacancies" element={<VacanciesPage />} />
+            <Route path="/vacancies/item" element={<VacanciesItemPage />} />
+
+            <Route path="/learning" element={<LearningPage />} />
+            <Route path="/company" element={<CompanyPage />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer/>
