@@ -1,0 +1,41 @@
+.learningItemPageContentComment {
+    margin:10px 10px 10px 10px ;
+    padding: 10px 10px 10px 10px;
+   
+    margin-bottom: 10px;
+    .learningItemPageContentComment-container {
+        display: flex;
+        .learningItemPageContentComment-container__img {
+            width: 40px;
+            height: 40px;
+        }
+        .learningItemPageContentComment-block {
+            padding: 0px 10px 0px 10px;
+            .learningItemPageContentComment-block__name {
+                padding: 2px 0px 2px 0px;
+                font-size: 1rem;
+            }
+            .learningItemPageContentComment-block__profession {
+                padding: 2px 0px 2px 0px;
+                font-size: 1rem;
+                color: grey;
+            }
+            .learningItemPageContentComment-block__star {
+                padding-top: 5px;
+                display: flex;
+                .learningItemPageContentComment__star-item {
+                    color: gold;
+                    font-size: 1rem;
+                }
+                p {
+                    color: grey;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .learningItemPageContentComment-block__text {
+            padding-top: 10px;
+            color: grey;
+        }
+    }
+}

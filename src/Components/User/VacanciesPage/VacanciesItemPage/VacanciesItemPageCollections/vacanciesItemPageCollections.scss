@@ -1,9 +1,12 @@
 .vacanciesItemPageCollections {
     width: 100%;
     .vacanciesItemPageCollections-title {
-        font-size: 1.2rem;
+        background-color:rgb(99, 99, 248);
+        font-size: 1rem;
+        color: white;
         text-transform: uppercase;
         padding: 25px 20px 20px 20px;
+        border-radius:15px 15px 0px 0px;
     }
     .vacanciesItemPageCollections-conatiner {
         width: 100%;

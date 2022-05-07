@@ -1,0 +1,65 @@
+.learningItemPageHeader {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    .learningItemPageHeader-container {
+        display: flex;
+        width: 100%;
+        .learningItemPageHeader-left {
+            width: 70%;
+            padding: 10px 10px 10px 10px;
+            .learningItemPageHeader-left__name {
+                padding: 50px 10px 10px 10px;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: rgb(99, 99, 248);
+            }
+            .learningItemPageHeader-left__info{
+                display: flex;
+                p {
+                    padding: 10px 10px 10px 10px;
+                    color: grey;
+                    font-size: 1.2rem;
+                }
+            }
+            .learningItemPageHeader-left__start {
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 25px;
+                color: rgb(44, 231, 91);
+                margin-top: 10px;
+                padding: 20px 20px;
+                position: relative;
+                background-color:white;
+                border:solid 1px rgb(44, 231, 91);
+                &:hover {
+                    background-color:rgb(44, 231, 91);
+                    color: white;
+                }
+            }
+            .learningItemPageHeader-left__star {
+                display: flex;
+                padding: 10px 10px 10px 10px;
+                cursor: pointer;
+                .learningItemPageHeader-left__star-item {
+                    padding: 0px 3px 0px 3px;
+                    color:gold;
+                }
+                p {
+                    margin-right: 5px ;
+                    color: grey;
+                }
+            }
+        }
+        .learningItemPageHeader-right {
+            width: 30%;
+            padding: 10px 10px 10px 10px;
+            .learningItemPageHeader-right__img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

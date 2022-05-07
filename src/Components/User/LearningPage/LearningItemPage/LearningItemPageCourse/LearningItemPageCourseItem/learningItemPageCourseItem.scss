@@ -1,0 +1,24 @@
+.learningItemPageCourseItem {
+    display: flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-between;
+    .learningItemPageCourseItem-icon {
+        font-size: 1.2rem;
+        color: rgb(99, 99, 248);
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+    .learningItemPageCourseItem-block {
+        cursor: pointer;
+        .learningItemPageCourseItem-block__name {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: grey;
+        }
+        .learningItemPageCourseItem-block__clock {
+            color: grey;
+        }
+    }
+}
