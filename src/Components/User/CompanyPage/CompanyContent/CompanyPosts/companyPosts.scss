@@ -1,9 +1,15 @@
 .companyPosts {
-    margin: 10px 10px 10px 10px;
     padding-bottom: 30px;
+    min-height: 150px;
+    border-radius: 20px;
+    background-color:white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px;
     .companyPosts-filtr {
-        margin-right: 10px;
-        padding: 10px 0px 10px 0px;
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px 30px 20px 30px;
         display: flex;
         justify-content: end;
         .companyPosts-filtr__title {
@@ -16,8 +22,5 @@
             cursor: pointer;
         }
     }
-    .companyPosts-items {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
 }

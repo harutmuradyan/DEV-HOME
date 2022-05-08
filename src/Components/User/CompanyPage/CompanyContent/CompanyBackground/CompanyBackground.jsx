@@ -4,7 +4,7 @@ import './companyBackground.scss';
 const CompanyBackground = () => {
     return (
         <div className="company-background">
-            <div    className="company-background__header">
+            <div className="company-background__header">
                 <img    className="company-background__cover" 
                         src="" 
                         alt=""
@@ -30,8 +30,14 @@ const CompanyBackground = () => {
                     <p className="company-backgroundContent__employee-count">և 5</p>
                 </div>
                 <div className="company-backgroundContent__btns">
-                    <button className="company-backgroundContent__btns-follow">Հետևել</button>
-                    <button className="company-backgroundContent__btns-contact">Կապնվել</button>
+                    <div className="company-backgroundContent__btns-left">
+                        <button className="company-backgroundContent__btns-follow">Հետևել</button>
+                        <button className="company-backgroundContent__btns-contact">Կապնվել</button>
+                    </div>
+                    <div className="company-backgroundContent__btns-right">
+                        <button className="company-backgroundContent__btns-work">Աշխատատեղեր</button>
+                        <button className="company-backgroundContent__btns-empolee">Մարդիք</button>
+                    </div>
                 </div>
             </div>
         </div>

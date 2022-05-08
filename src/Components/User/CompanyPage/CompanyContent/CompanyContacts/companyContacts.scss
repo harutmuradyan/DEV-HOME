@@ -1,0 +1,42 @@
+.companyContacts {
+    display: flex;
+    min-height: 150px;
+    border-radius: 20px;
+    background-color:white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px 40px 20px 40px;
+    .companyContacts-container {
+        width: 100%;
+        .companyContacts-title {
+            font-size: 1rem;
+            padding-right: 20px;
+            color: black;
+            text-transform: uppercase;
+            padding: 10px 0px 10px 0px;
+        }
+        .companyContacts-block {
+            width: 100%;
+            display: flex;
+            padding: 10px 0px 10px 0px;
+            .companyContacts-block__title {
+                width: 50%;
+                font-size: 0.9rem;
+                padding-right: 20px;
+                color: rgb(99, 99, 248);
+                text-transform: uppercase;
+            }
+            .companyContacts-block__text {
+                width: 50%;
+                font-size: 0.9rem;
+                color: grey;
+            }
+        }
+        .companyContacts-gps {
+            width: 100%;
+            height: 100%;
+            background-color:rgb(99, 99, 248);
+        }
+    }
+}
