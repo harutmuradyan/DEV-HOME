@@ -5,7 +5,7 @@
         margin-right: 10px;
         padding: 10px 0px 10px 0px;
         display: flex;
-        justify-content: end;
+        justify-content:flex-end;
         .posts-filtr__title {
             color:grey;
         }
@@ -21,7 +21,7 @@
     }
     .posts-seeMore {
         display: flex;
-        justify-content: center;
+        justify-content:center;
         .posts-seeMore__btn {
             width: 50%;
             height: 30px;
