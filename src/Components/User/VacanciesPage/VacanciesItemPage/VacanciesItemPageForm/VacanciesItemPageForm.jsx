@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import './VacanciesItemPageForm.scss';
+
 import VacanciesItemPageSendOnlineModal from "./VacanciesItemPageSendOnlineModal/VacanciesItemPageSendOnlineModal";
 import VacanciesItemPageSendSvModal from "./VacanciesItemPageSendSvModal/VacanciesItemPageSendSvModal";
 

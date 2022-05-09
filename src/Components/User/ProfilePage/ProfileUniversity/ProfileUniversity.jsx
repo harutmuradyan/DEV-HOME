@@ -2,8 +2,7 @@ import React,{useState} from "react";
 import './profileUniversity.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { faAdd , faPen} from "@fortawesome/free-solid-svg-icons";
 
 import ProfileUniversityItem from "./ProfileUniversityItem/ProfileUniversityItem";
 import ProfileUniversityModal from "./ProfileUniversityModal/ProfileUniversityModal";
@@ -19,10 +18,12 @@ const ProfileUniversity = () => {
                 <div className="profileUniversity-header__block">
                     <button className="profileUniversity-header__btns" 
                             onClick={() => {setProfileUniversityModal(true)}}>
-                        <FontAwesomeIcon className="profileUniversity-header__btn" icon={faAdd}/>
+                        <FontAwesomeIcon    className="profileUniversity-header__btn" 
+                                            icon={faAdd}/>
                     </button>
                     <button className="profileUniversity-header__btns">
-                        <FontAwesomeIcon className="profileUniversity-header__btn" icon={faPen}/>
+                        <FontAwesomeIcon    className="profileUniversity-header__btn" 
+                                            icon={faPen}/>
                     </button>
                 </div>
             </div>
@@ -31,8 +32,8 @@ const ProfileUniversity = () => {
             <ProfileUniversityItem/>
             <ProfileUniversityItem/>
 
-            <ProfileUniversityModal profileUniversityModal={profileUniversityModal} 
-                                    setProfileUniversityModal={setProfileUniversityModal}/>
+            <ProfileUniversityModal     profileUniversityModal={profileUniversityModal} 
+                                        setProfileUniversityModal={setProfileUniversityModal}/>
         </div>
     )
 }

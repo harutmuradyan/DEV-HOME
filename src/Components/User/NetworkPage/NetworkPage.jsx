@@ -1,16 +1,14 @@
 import React from "react";
 import './networkPage.scss';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {    faUserFriends , 
+            faBuilding} from "@fortawesome/free-solid-svg-icons";
+
 import Companyes from "./Companyes/Companyes";
 import Users from "./Users/Users";
 import NetworkSidebar from "./NetworcSidebar/MetworkSidebar";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
-import { faBuilding } from "@fortawesome/free-solid-svg-icons";
 import NetworkNotfications from "./NetworkNotfications/NetworkNotfications";
-
-
 
 const NetworkPage = () => {
     return (
@@ -32,11 +30,13 @@ const NetworkPage = () => {
                     <nav className="networkPage-nav">
                         <ul className="networkPage-nav__bar">
                             <li className="networkPage-nav__item">
-                                <FontAwesomeIcon className="networkPage-nav__item-icon" icon={faUserFriends}/>
+                                <FontAwesomeIcon    className="networkPage-nav__item-icon" 
+                                                    icon={faUserFriends}/>
                                 Ընկերներ
                             </li>
                             <li className="networkPage-nav__item">
-                                <FontAwesomeIcon className="networkPage-nav__item-icon" icon={faBuilding} />
+                                <FontAwesomeIcon    className="networkPage-nav__item-icon" 
+                                                    icon={faBuilding} />
                                 Ընկերություններ
                             </li>
                         </ul>

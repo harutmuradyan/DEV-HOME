@@ -2,10 +2,10 @@ import React,{useState} from "react";
 import './createPost.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import { faVideo } from "@fortawesome/free-solid-svg-icons";
-import { faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { faFlag } from "@fortawesome/free-solid-svg-icons";
+import {    faCamera  , 
+            faVideo , 
+            faCalendar , 
+            faFlag} from "@fortawesome/free-solid-svg-icons";
 
 import FeedPostPhotoModal from "./FeedPostPhotoModal/FeedPostPhotoModal";
 import FeedPostVideoModal from "./FeedPostVideoModal/FeedPostVideoModal";

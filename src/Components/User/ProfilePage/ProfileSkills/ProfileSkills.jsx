@@ -2,8 +2,8 @@ import React,{useState} from "react";
 import './profileSkills.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
+import {    faAdd , 
+            faPen } from "@fortawesome/free-solid-svg-icons";
 
 import ProfileSkillsItem from "./ProfileSkillsItem/ProfileSkillsItem";
 import ProfileSkillsModal from "./ProfileSkillsModal/ProfileSkillsModal";
@@ -19,14 +19,17 @@ const ProfileSkills= () => {
                 <div className="profileSkills-header__block">
                     <button className="profileSkills-header__btns"
                             onClick={() => {setProfileSkillsModal(true)}}>
-                        <FontAwesomeIcon className="profileSkills-header__btn" icon={faAdd}/>
+                        <FontAwesomeIcon    className="profileSkills-header__btn" 
+                                            icon={faAdd}/>
                     </button>
                     <button className="profileSkills-header__btns">
-                        <FontAwesomeIcon className="profileSkills-header__btn" icon={faPen}/>
+                        <FontAwesomeIcon    className="profileSkills-header__btn" 
+                                            icon={faPen}/>
                     </button>
                     <button className="profileSkills-header__btns">
                         Անցնել թեստ 
-                        <FontAwesomeIcon className="profileSkills-header__btn" icon={faPen}/>
+                        <FontAwesomeIcon    className="profileSkills-header__btn" 
+                                            icon={faPen}/>
                     </button>
                 </div>
             </div>
@@ -34,7 +37,7 @@ const ProfileSkills= () => {
             <ProfileSkillsItem/>
             <ProfileSkillsItem/>
 
-            <ProfileSkillsModal    profileSkillsModal={profileSkillsModal} 
+            <ProfileSkillsModal     profileSkillsModal={profileSkillsModal} 
                                     setProfileSkillsModal={setProfileSkillsModal}/>
         </div>
     )

@@ -15,7 +15,8 @@ const ModalUser = ({userModal}) => {
                 </div>
             </div>
             <div className="modalUser-page">
-                <Link to="/profile" className="modalUser-page__linq">
+                <Link   to="/profile" 
+                        className="modalUser-page__linq">
                     <button className="modalUser-page__btn">
                         Օգտվողի էջ
                     </button>

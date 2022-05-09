@@ -6,7 +6,8 @@ const NetworkSidebar = () => {
         <div className="networkSidebar">
             <div className="networkSidebar-container">
                 <div className="networkSidebar-contaier__img">
-                    <img src="https://us.123rf.com/450wm/lassedesignen/lassedesignen1901/lassedesignen190100018/126282291-megaphone-with-speech-bubble.jpg?ver=6" alt=""></img>
+                    <img    src="https://us.123rf.com/450wm/lassedesignen/lassedesignen1901/lassedesignen190100018/126282291-megaphone-with-speech-bubble.jpg?ver=6" 
+                            alt=""></img>
                 </div>
                 <div className="networkSidebar-block">
                     <ul className="networkSidebar-bar">

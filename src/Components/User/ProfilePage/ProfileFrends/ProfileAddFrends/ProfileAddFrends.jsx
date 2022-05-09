@@ -6,7 +6,8 @@ const ProfileAddFrends = () => {
         <div className="profileAddFrends">
             <div className="profileAddFrends-content">
                 <div className="profileAddFrends-content__img">
-                    <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
+                    <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                            alt=""></img>
                 </div>
                 <div className="profileAddFrends-content__info">
                     <h2>Քրիստինե Գրիգորյան</h2>

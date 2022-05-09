@@ -10,12 +10,14 @@ const SlayderNews = () => {
         <div className="slayderNews">
             <div className="slayderNews-buttons">
                 <button className="slayderNews-buttons__item">
-                    <FontAwesomeIcon icon={faLeftLong} className="slayderNews-buttons__item-icon"></FontAwesomeIcon>
+                    <FontAwesomeIcon    icon={faLeftLong} 
+                                        className="slayderNews-buttons__item-icon"></FontAwesomeIcon>
                     Հետ
                 </button>
                 <button className="slayderNews-buttons__item">
                     Առաջ
-                    <FontAwesomeIcon icon={faRightLong} className="slayderNews-buttons__item-icon"></FontAwesomeIcon>
+                    <FontAwesomeIcon    icon={faRightLong} 
+                                        className="slayderNews-buttons__item-icon"></FontAwesomeIcon>
                 </button>
             </div>
             <div className="slayderNews-content">
@@ -28,7 +30,9 @@ const SlayderNews = () => {
                     </button>
                 </div>
                 <div className="slayderNews-cover">
-                    <img className="slayderNews-cover__img" src="https://woobro.design/thumbnails/60/virtual-meeting-608a93aa8d8ec.png" alt=""></img>
+                    <img    className="slayderNews-cover__img" 
+                            src="https://woobro.design/thumbnails/60/virtual-meeting-608a93aa8d8ec.png" 
+                            alt=""></img>
                 </div>
             </div>
         </div>

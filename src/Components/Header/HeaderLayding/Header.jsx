@@ -1,10 +1,11 @@
 import React from "react";
 import './header.scss';
 
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {    faUsers , 
+            faGraduationCap , 
+            faBriefcase } from "@fortawesome/free-solid-svg-icons";
+
 
 const Header = () => {
     return(

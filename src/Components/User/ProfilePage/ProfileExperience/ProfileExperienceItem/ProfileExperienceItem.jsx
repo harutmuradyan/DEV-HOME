@@ -6,7 +6,8 @@ const ProfileExperienceItem = () => {
         <div className="profileExperienceItem">
             <div className="profileExperienceItem-content">
                 <div className="profileExperienceItem-content__img">
-                    <img src="https://www.pngitem.com/pimgs/m/112-1127599_erp-software-development-company-png-images-for-software.png" alt=""></img>
+                    <img    src="https://www.pngitem.com/pimgs/m/112-1127599_erp-software-development-company-png-images-for-software.png" 
+                            alt=""></img>
                 </div>
                 <div className="profileExperienceItem-content__info">
                     <h2>Code Academy</h2>

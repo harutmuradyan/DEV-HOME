@@ -2,8 +2,9 @@ import React from "react";
 import './learningItemPageCourseItem.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLockOpen } from "@fortawesome/free-solid-svg-icons";
-import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import {    faLockOpen , 
+            faBookmark } from "@fortawesome/free-solid-svg-icons";
+
 
 const VacanciesItemPageCourseItem = () => {
     return (

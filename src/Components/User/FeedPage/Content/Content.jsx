@@ -1,5 +1,6 @@
 import React from "react";
 import './content.scss';
+
 import CreatePost from "./CreatePost/CreatePost";
 import Posts from "./Posts/Posts";
 

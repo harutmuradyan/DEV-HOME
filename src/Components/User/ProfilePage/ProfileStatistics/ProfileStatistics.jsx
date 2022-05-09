@@ -2,9 +2,9 @@ import React from "react";
 import './profileStatistics.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
-import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {    faUserFriends , 
+            faChartColumn , 
+            faSearch} from "@fortawesome/free-solid-svg-icons";
 
 const ProfileStatistics = () => {
     return (
@@ -12,21 +12,24 @@ const ProfileStatistics = () => {
             <h2 className="profileStatistics-title">Վիճակագրություն</h2>
             <div className="profileStatistics-container">
                 <div className="profileStatistics-block">
-                    <FontAwesomeIcon className="profileStatistics-icon" icon={faUserFriends}/>
+                    <FontAwesomeIcon    className="profileStatistics-icon" 
+                                        icon={faUserFriends}/>
                     <div className="profileStatistics-text">
                         <p>190 Դիտում Ձեր էջի</p>
                         <p>Դիտեք եվ է դիտել Ձեր էջը</p>
                     </div>
                 </div>
                 <div className="profileStatistics-block">
-                    <FontAwesomeIcon className="profileStatistics-icon" icon={faChartColumn}/>
+                    <FontAwesomeIcon    className="profileStatistics-icon" 
+                                        icon={faChartColumn}/>
                     <div className="profileStatistics-text">
                         <p>17 փոստի ցուցադրություն</p>
                         <p>իմացեց ովքեր են գործողություն կատարել Փեր փոստի հետ</p>
                     </div>
                 </div>
                 <div className="profileStatistics-block">
-                    <FontAwesomeIcon className="profileStatistics-icon" icon={faSearch}/>
+                    <FontAwesomeIcon    className="profileStatistics-icon" 
+                                        icon={faSearch}/>
                     <div className="profileStatistics-text">
                         <p>5 անգամ հայտնվել եք փնտրման դաշտում</p>
                         <p>Իմացեք որքան շատ եք հատնվել փնտրման դաշտում</p>

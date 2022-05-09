@@ -5,7 +5,9 @@ const Company = () => {
     return (
         <div className="company">
             <div className="company-block">
-                <img className="company-block__logo" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
+                <img    className="company-block__logo" 
+                        src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                        alt=""></img>
             </div>
             <h2 className="company-name">Խաչիկ Բալասանյան</h2>
             <p className="company-profession">React Developer | C# DEV</p>

@@ -12,8 +12,10 @@ const VacanciesSearch = () => {
             </div>
             <div className="vacanciesSearch-block">
                 <button className="vacanciesSearch-block__btn">
-                    <FontAwesomeIcon icon={faSearch} className="vacanciesSearch-block__btn-icon"/>
-                    <input className="vacanciesSearch-block__btn-input" placeholder="   Փնտրել"/>
+                    <FontAwesomeIcon    icon={faSearch} 
+                                        className="vacanciesSearch-block__btn-icon"/>
+                    <input  className="vacanciesSearch-block__btn-input" 
+                            placeholder="   Փնտրել"/>
                 </button>
             </div>
             <div className="vacanciesSearch-category">

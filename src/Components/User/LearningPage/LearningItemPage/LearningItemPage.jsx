@@ -4,7 +4,6 @@ import './learningItemPage.scss';
 
 import LearningItemPageContent from "./LearningItemPageContent/LearningItemPageContent";
 import LearningItemPageCourse from "./LearningItemPageCourse/LearningItemPageCourse";
-
 import LearningItemPageHeader from "./LearningItemPageHeader/LearningItemPageHeader";
 import LearningItemPageRandomItems from "./LearningItemPageRandomItems/LearningItemPageRandomItems";
 

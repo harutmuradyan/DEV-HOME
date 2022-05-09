@@ -2,10 +2,11 @@ import React from "react";
 import './companyPost.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import { faHands } from "@fortawesome/free-solid-svg-icons";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import {    faHeart , 
+            faThumbsUp , 
+            faHands , 
+            faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+
 
 const CompanyPost = () => {
 
@@ -52,10 +53,14 @@ const CompanyPost = () => {
                     <p className="companyPost-content__follow-peoples">և 15 հետևորդ</p>
                 </div>
                 <div className="companyPost-content__comment">
-                    <img className="companyPost-content__comment-img" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
-                    <input className="companyPost-content__comment-input" placeholder=" Մեկնաբանություն"/>
+                    <img    className="companyPost-content__comment-img" 
+                            src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                            alt=""></img>
+                    <input  className="companyPost-content__comment-input" 
+                            placeholder=" Մեկնաբանություն"/>
                     <button className="companyPost-content__comment-btn">
-                        <FontAwesomeIcon icon={faPaperPlane} className="companyPost-content__comment-icon"/>
+                        <FontAwesomeIcon    icon={faPaperPlane} 
+                                            className="companyPost-content__comment-icon"/>
                     </button>
                 </div>
             </div>

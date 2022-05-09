@@ -14,7 +14,9 @@ const StartProject = () => {
                     </button>
                 </div>
                 <div className="startProject-cover">
-                    <img className="startProject-cover__img" src="https://www.lrec.coop/application/files/5816/0754/3341/virtual-meetings.png" alt=""></img>
+                    <img    className="startProject-cover__img" 
+                            src="https://www.lrec.coop/application/files/5816/0754/3341/virtual-meetings.png" 
+                            alt=""></img>
                 </div>
             </div>
         </div>

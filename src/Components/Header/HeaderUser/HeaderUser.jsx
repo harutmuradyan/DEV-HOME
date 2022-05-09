@@ -2,14 +2,14 @@ import React , {useState} from "react";
 import { Link } from "react-router-dom";
 import './headerUser.scss';
 
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faMessage } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {    faUsers , 
+            faGraduationCap , 
+            faHome , 
+            faMessage , 
+            faBell , 
+            faBriefcase , 
+            faBars} from "@fortawesome/free-solid-svg-icons";
 
 import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";

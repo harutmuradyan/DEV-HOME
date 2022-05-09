@@ -1,12 +1,11 @@
 import React from "react";
 import './posts.scss';
+
 import Post from "./Post/Post";
 
 const Posts = () => {
 
-    
-
-    return (
+ return (
         <div className="posts">
             <div className="posts-filtr">
                 <p className="posts-filtr__title">Դասակարգել</p>

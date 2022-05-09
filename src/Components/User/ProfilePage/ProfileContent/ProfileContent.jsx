@@ -2,8 +2,8 @@ import React,{useState} from "react";
 import './profileContent.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
+import {    faPen , 
+            faClose } from "@fortawesome/free-solid-svg-icons";
 
 import ProfileContentModal from "./ProfileContentModal/ProfileContentModal";
 import ProfileUserBackgroundModal from "./ProfileUserBackgroundModal/ProfileUserBackgroundModal";

@@ -6,7 +6,8 @@ const CompanyFollow = () => {
         <div className="companyFollow">
             <div className="companyFollow-content">
                 <div className="companyFollow-content__img">
-                    <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
+                    <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                            alt=""></img>
                 </div>
                 <div className="companyFollow-content__info">
                     <h2>Քրիստինե Գրիգորյան</h2>

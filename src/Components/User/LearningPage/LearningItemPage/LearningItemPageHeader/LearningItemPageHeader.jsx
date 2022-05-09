@@ -34,8 +34,8 @@ const LearningItemPageHeader = () => {
                 </div>
                 <div className="learningItemPageHeader-right">
                     <img    className="learningItemPageHeader-right__img" 
-                                src="https://cdn.dribbble.com/users/2918596/screenshots/9246326/media/d2a065d587a99f32128f223b2d8e7d69.gif" 
-                                alt=""></img>
+                            src="https://cdn.dribbble.com/users/2918596/screenshots/9246326/media/d2a065d587a99f32128f223b2d8e7d69.gif" 
+                            alt=""></img>
                 </div>
             </div>
         </div>

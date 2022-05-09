@@ -6,48 +6,64 @@ const Registration = () => {
         <div className="registration">
             <div className="registration-container">
                 <h2 className="registration-title">Գրանցում համակարգում</h2>
-                <form method="post" className="registration-form">
+                <form   method="post" 
+                        className="registration-form">
                     <div className="registration-form__group">
                         <label className="registration-form__label">Էլ․հասցե կամ Հեռ․`</label>
-                        <input required className="registration-form__input" placeholder="Էլ հասցե"/>
+                        <input  required 
+                                className="registration-form__input" 
+                                placeholder="Էլ հասցե"/>
                     </div>
                     <div className="registration-form__group">
                         <label className="registration-form__label">Հեռ.</label>
-                        <input required className="registration-form__input" placeholder="Հեռախոսահամար"/>
+                        <input  required 
+                                className="registration-form__input" 
+                                placeholder="Հեռախոսահամար"/>
                     </div>
                     <div className="registration-form__groups">
                         <div className="registration-form__group">
                             <label className="registration-form__label">Գախ. `</label>
-                            <input required className="registration-form__input" placeholder="Գախնաբառ"/>
+                            <input  required 
+                                    className="registration-form__input" 
+                                    placeholder="Գախնաբառ"/>
                         </div>
                         <div className="registration-form__group">
                             <label className="registration-form__label">Կրկ `</label>
-                            <input required className="registration-form__input" placeholder="Գախնաբառօ կրկ․"/>
+                            <input  required 
+                                    className="registration-form__input" 
+                                    placeholder="Գախնաբառօ կրկ․"/>
                         </div>
                     </div>
                     <div className="registration-form__groups">
                         <div className="registration-form__group gender">
                             <label className="registration-form__label">Տղամարդ `</label>
-                            <input required type="checkbox" className="registration-form__input"/>
+                            <input  required 
+                                    type="checkbox" 
+                                    className="registration-form__input"/>
                         </div>
                         <div className="registration-form__group gender">
                             <label className="registration-form__label">Կին `</label>
-                            <input required type="checkbox" className="registration-form__input"/>
+                            <input  required 
+                                    type="checkbox" 
+                                    className="registration-form__input"/>
                         </div>
                     </div>
                     <div className="registration-form__groups">
                         <div className="registration-form__group">
-                            <select required className="registration-form__input">
+                            <select required 
+                                    className="registration-form__input">
                                 <option>Օր՝</option>                
                             </select>
                         </div>
                         <div className="registration-form__group">
-                            <select required className="registration-form__input">
+                            <select required 
+                                    className="registration-form__input">
                                 <option>Ամիս՝</option>
                             </select>
                         </div>
                         <div className="registration-form__group">
-                            <select required className="registration-form__input">
+                            <select required 
+                                    className="registration-form__input">
                                 <option>Տարեթիվ՝</option>
                             </select>
                         </div>

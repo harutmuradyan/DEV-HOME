@@ -1,7 +1,7 @@
 import React from "react";
-import CompanyFollow from "./CompanyFollow/CompanyFollow";
 import './sidebar.scss';
 
+import CompanyFollow from "./CompanyFollow/CompanyFollow";
 
 const Sidebar = () => {
     return (

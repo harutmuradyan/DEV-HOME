@@ -3,6 +3,7 @@ import './profileAddPost.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
+
 import ProfileAddPostModal from "./ProfileAddPostModal/ProfileAddPostModal";
 
 const ProfileAddPost = () => {
@@ -14,7 +15,8 @@ const ProfileAddPost = () => {
             <h2 className="profileAddPost-title">գործողություններ</h2>
             <div className="profileAddPost-container">
                 <div className="profileAddPost-block">
-                    <FontAwesomeIcon className="profileAddPost-icon" icon={faUserFriends}/>
+                    <FontAwesomeIcon    className="profileAddPost-icon" 
+                                        icon={faUserFriends}/>
                     <div className="profileAddPost-text">
                         <p>1900 Հետևողներ</p>
                     </div>
@@ -25,7 +27,7 @@ const ProfileAddPost = () => {
                     </div>
                 </div>
             </div>
-            <ProfileAddPostModal profileAddPostModal={profileAddPostModal} 
+            <ProfileAddPostModal    profileAddPostModal={profileAddPostModal} 
                                     setProfileAddPostModal={setProfileAddPostModal}/>
         </div>
     )

@@ -1,5 +1,6 @@
 import React from "react";
 import './profileLearning.scss';
+
 import ProfileLearningItem from "./ProfileLearningItem/ProfileLearningItem";
 
 const ProfileLearning = () => {

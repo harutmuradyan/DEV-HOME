@@ -8,7 +8,9 @@ const Background = () => {
             <div className="background-container">
                 <div className="background-user">
                     <div className="background-user__block">
-                        <img className="background-user__block-logo" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt=""></img>
+                        <img    className="background-user__block-logo" 
+                                src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                                alt=""></img>
                     </div>
                     <h2 className="background-user__name">Խաչիկ Բալասանյան</h2>
                     <p className="background-user__profession">React Developer | C# DEV</p>

@@ -4,8 +4,9 @@ import './learningLessons.scss';
 import LearningLesson from "./LearningLesson/LearningLesson";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
-import { faRightLong } from "@fortawesome/free-solid-svg-icons";
+import {    faLeftLong , 
+            faRightLong } from "@fortawesome/free-solid-svg-icons";
+
 
 const LearningLessons = () => {
     return (
