@@ -98,6 +98,7 @@
         }
         .companyPost-content__comment {
             display: flex;
+            display: none;
             .companyPost-content__comment-img {
                 margin: 10px 10px 10px 10px;
                 width: 30px;
@@ -118,6 +119,29 @@
                     cursor: pointer;
                 }
             }
+        }
+        .companyPost-content__comment.active {
+            display: block;
+            display: flex;
+        }
+        .companyPost-content__reaction {
+            position: relative;
+            z-index: 1;
+            background:white;
+            bottom: 0px;
+            height: 30px;
+            display: none;
+            .companyPost-content__reaction-icon {
+                cursor: pointer;
+                padding: 5px 5px 3px 5px;
+                font-size: auto;
+                &:hover {
+                    transform: scale(2);
+                }
+            }
+        }
+        .companyPost-content__reaction.active {
+            display: block;
         }
     }
 }

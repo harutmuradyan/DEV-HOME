@@ -116,6 +116,7 @@
         }
         .post-content__comment {
             display: flex;
+            display: none;
             .post-content__comment-img {
                 margin: 10px 10px 10px 10px;
                 width: 30px;
@@ -137,12 +138,17 @@
                 }
             }
         }
+        .post-content__comment.active {
+            display: block;
+            display: flex;
+        }
         .post-content__reaction {
             position: relative;
             z-index: 1;
             background:white;
             bottom: 0px;
             height: 30px;
+            display: none;
             .post-content__reaction-icon {
                 cursor: pointer;
                 padding: 5px 5px 3px 5px;
@@ -152,9 +158,13 @@
                 }
             }
         }
+        .post-content__reaction.active {
+            display: block;
+        }
     }
 }
 
 .red {  color:rgb(252, 11, 11);}
 .green { color:rgb(9, 247, 9);}
 .blue { color:rgb(6, 6, 250);}
+

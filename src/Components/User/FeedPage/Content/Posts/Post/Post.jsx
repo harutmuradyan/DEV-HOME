@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import './post.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +10,9 @@ import {    faHeart ,
             faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
 const Post = () => {
+
+    const [feedPostReactionOppen , setFeedPostReactionOppen] = useState(false);
+    const [feedPostCommentOppen , setFeedPostCommentOppen] = useState(false);
 
     return (
         <div className="post">
@@ -58,25 +61,30 @@ const Post = () => {
                     <p className="post-content__follow-name">Գագիկ Նալբանդյան</p>
                     <p className="post-content__follow-peoples">և 15 հետևորդ</p>
                 </div>
-                <div className="post-content__reaction">
+                <div className={feedPostReactionOppen ? "post-content__reaction active" : "post-content__reaction"}>
                     <FontAwesomeIcon    icon={faHeart}  
                                         alt="" 
+                                        onClick={() => {setFeedPostReactionOppen(false)}}
                                         className="post-content__reaction-icon red"></FontAwesomeIcon>
                     <FontAwesomeIcon    icon={faHands}  
+                                        onClick={() => {setFeedPostReactionOppen(false)}}
                                         alt="" 
                                         className="post-content__reaction-icon green"></FontAwesomeIcon>
                     <FontAwesomeIcon    icon={faThumbsUp}  
+                                        onClick={() => {setFeedPostReactionOppen(false)}}
                                         alt="" 
                                         className="post-content__reaction-icon blue"></FontAwesomeIcon>
                 </div>
                 <div className="post-content__btns">
                     <ul className="post-content__nav">
-                        <li className="post-content__item">
+                        <li     className="post-content__item" 
+                                onClick={() => {setFeedPostReactionOppen(true)}}>
                             <FontAwesomeIcon    icon={faThumbsUp} 
                                                 className="post-content__item-icon"/>
                             Հավանել
                         </li>
-                        <li className="post-content__item">
+                        <li     className="post-content__item " 
+                                onClick={() => {setFeedPostCommentOppen(true)}}>
                             <FontAwesomeIcon    icon={faComment} 
                                                 className="post-content__item-icon"/>
                             Մեկնաբանել
@@ -93,7 +101,7 @@ const Post = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="post-content__comment">
+                <div className={feedPostCommentOppen ? "post-content__comment active" : "post-content__comment"}>
                     <img    className="post-content__comment-img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
