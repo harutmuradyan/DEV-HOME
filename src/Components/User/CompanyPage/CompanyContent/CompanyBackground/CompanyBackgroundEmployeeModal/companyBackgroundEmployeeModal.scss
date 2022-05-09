@@ -1,0 +1,52 @@
+.companyBackgroundEmployeeModal {
+    position: fixed;
+    top:0;
+    left: 0;    
+    width: 100vw;
+    height: 100vw;
+    background-color:rgba(0, 0, 0, 0.918);
+    display: none;
+    z-index: 1;
+    .companyBackgroundEmployeeModal-container {
+        position: relative;
+        top: 70px;
+        width: 60%;
+        margin: 0 auto;
+        height: 500px;
+        border-radius: 20px;
+        background-color:white;
+        .companyBackgroundEmployeeModal-header {
+            padding: 15px 15px 15px 15px;
+            display: flex;
+            justify-content: space-between;
+            .companyBackgroundEmployeeModal-header__title {
+                color: black;
+                font-size: 1rem;
+            }
+            .companyBackgroundEmployeeModal-header__icon {
+                cursor: pointer;
+            }
+        }
+        .companyBackgroundEmployeeModal-content {
+            padding: 15px 15px 15px 15px;
+            height:380px ;
+            overflow-y: scroll;
+        }
+        .companyBackgroundEmployeeModal-footer {
+            padding: 15px 15px 15px 15px;
+            display: flex;
+            justify-content: end;
+            .companyBackgroundEmployeeModal-footer__btn {
+                cursor: pointer;
+                padding: 15px 15px 15px 15px;
+                background-color:rgb(99, 99, 248);
+                color: white;
+                border-radius:10px;
+            }
+        }
+    }
+}
+
+.companyBackgroundEmployeeModal.active {
+    display: block;
+}

@@ -1,7 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import './companyBackground.scss';
+import CompanyBackgroundEmployeeModal from "./CompanyBackgroundEmployeeModal/CompanyBackgroundEmployeeModal";
+
+import CompanyBackgroundExperienceModal from "./CompanyBackgroundExperienceModal/CompanyBackgroundExperienceModal";
 
 const CompanyBackground = () => {
+
+    const [companyBackgroundExperienceModal,setCompanyBackgroundExperienceModal] = useState(false);
+    const [companyBackgroundEmployeeModal,setCompanyBackgroundEmployeeModal] = useState(false);
+
     return (
         <div className="company-background">
             <div className="company-background__header">
@@ -35,9 +42,20 @@ const CompanyBackground = () => {
                         <button className="company-backgroundContent__btns-contact">Կապնվել</button>
                     </div>
                     <div className="company-backgroundContent__btns-right">
-                        <button className="company-backgroundContent__btns-work">Աշխատատեղեր</button>
-                        <button className="company-backgroundContent__btns-empolee">Մարդիք</button>
+                        <button className="company-backgroundContent__btns-experience"
+                                onClick={() => {setCompanyBackgroundExperienceModal(true)}}>
+                                Աշխատատեղեր
+                        </button>
+                        <button className="company-backgroundContent__btns-employee"
+                                onClick={() => {setCompanyBackgroundEmployeeModal(true)}}>
+                                Մարդիք
+                        </button>
                     </div>
+                    <CompanyBackgroundExperienceModal   companyBackgroundExperienceModal={companyBackgroundExperienceModal} 
+                                                        setCompanyBackgroundExperienceModal={setCompanyBackgroundExperienceModal}/>
+                    <CompanyBackgroundEmployeeModal     companyBackgroundEmployeeModal={companyBackgroundEmployeeModal} 
+                                                        setCompanyBackgroundEmployeeModal={setCompanyBackgroundEmployeeModal}/>
+                                        
                 </div>
             </div>
         </div>
