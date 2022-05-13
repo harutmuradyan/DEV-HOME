@@ -19,7 +19,7 @@ import ModalSearch from "./ModalSearch/ModalSearch";
 
 const HeaderUser = () => {
 
-    const [userModal,setlUserModal] = useState(false);
+    const [userModal,setUserModal] = useState(false);
     const [servicesModal,setServicesModal] = useState(false);
     const [messenger,setMessenger] = useState(false);
     const [modalSearch,setModalSearch] = useState(false);
@@ -90,8 +90,8 @@ const HeaderUser = () => {
                                 </Link>
                             </li>
                             <li     className="headerUser-content__item" 
-                                    onClick={() => {setlUserModal(true)}}>
-                                <ModalUser userModal={userModal}/>
+                                    onClick={() => {setUserModal(true)}}>
+                                <ModalUser  userModal={userModal}/>
                                 <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                                         alt="" className="headerUser-content__item-img"/>
                             </li>

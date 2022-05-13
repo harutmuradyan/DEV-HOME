@@ -1,61 +1,65 @@
 .modalServices {
-    position: absolute;
-    z-index: 1;
-    background-color:rgb(99, 99, 248);
-    width: 30%;
-    height: 600px;
-    border-radius:10px;
-    top: 80px;
-    right: 0px;
-    overflow-y: scroll;
+    position: fixed;
+    top:60px;
+    left: 0;    
+    width: 100vw;
+    height: 100vw;
+    background-color:rgba(0, 0, 0, 0.918);
     display: none;
-    .modalServices-block {
-        display: flex;
-        width: 100%;
-        padding: 20px 0px 20px 10px;
-        .modalServices-block__title {
-            width: 80%;
-            text-align: center;
-            color: white;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-        }
-        .modalServices-block__icon {
-            width: 20%;
-            color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-    }
-    .modalServices-content__nav {
-        border:solid 1px white;
-        .modalServices-content__nav-title {
-            text-align: center;
-            color: yellow;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            padding: 10px 0px 10px 0px;
-        }
-        .modalServices-content__block {
+    .modalServices-container {
+        z-index: 1;
+        background-color:rgb(99, 99, 248);
+        width: 30%;
+        height: 600px;
+        overflow-y: scroll;
+        .modalServices-block {
             display: flex;
-            flex-wrap: wrap;
             width: 100%;
-            justify-content: center;
-            .modalServices-content__item {
+            padding: 20px 0px 20px 10px;
+            .modalServices-block__title {
+                width: 80%;
+                text-align: center;
+                color: white;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+            .modalServices-block__icon {
                 width: 20%;
-                display: flex;
-                justify-content: center;
-                border:solid 1px white;
-                border-radius:15px;
-                margin: 10px 10px 10px 10px;
-                padding: 20px 10px 20px 10px;
+                color: white;
+                font-size: 1.2rem;
                 cursor: pointer;
-                .modalServices-content__item-icon {
-                    color:white;
-                    font-size: 1.2rem;
-                }
-                &:hover {
-                    background-color:black;
+            }
+        }
+        .modalServices-content__nav {
+            border:solid 1px white;
+            .modalServices-content__nav-title {
+                text-align: center;
+                color: yellow;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                padding: 10px 0px 10px 0px;
+            }
+            .modalServices-content__block {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                .modalServices-content__item {
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    border:solid 1px white;
+                    border-radius:15px;
+                    margin: 10px 10px 10px 10px;
+                    padding: 20px 10px 20px 10px;
+                    cursor: pointer;
+                    .modalServices-content__item-icon {
+                        color:white;
+                        font-size: 1.2rem;
+                    }
+                    &:hover {
+                        background-color:black;
+                    }
                 }
             }
         }

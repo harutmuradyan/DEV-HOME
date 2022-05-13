@@ -12,13 +12,13 @@
     .modalUser-header {
         padding: 10px 10px 10px 10px;
         display: flex;
+        justify-content: space-between;
         .modalUser-header__img {
             width: 40px;
             height: 40px;
             cursor: pointer;
         }
         .modalUser-block {
-            padding-left: 20px;
             .modalUser-block__name{
                 font-size: 0.8rem;
                 cursor: pointer;
@@ -27,6 +27,9 @@
                 font-size: 0.8rem;
                 cursor: pointer;
             }
+        }
+        .modalUser-header__close {
+            margin-top: 5px;
         }
     }
     .modalUser-page {

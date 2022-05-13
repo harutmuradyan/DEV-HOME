@@ -1,6 +1,8 @@
 import React from 'react';
-import {  BrowserRouter,Routes,Route,} from "react-router-dom";
 import './app.scss';
+
+import {  BrowserRouter,Routes,Route,} from "react-router-dom";
+import {ErrorBoundary} from 'react-error-boundary'
 
 //import Header from './Components/Header/HeaderLayding/Header';
 import Landing from './Pages/Landing/Landing';
@@ -19,36 +21,40 @@ import NotFound from './Components/NotFound/NotFound';
 import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
 import Company from './Pages/User/Company/Company';
 
-
+import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
 
 function App() {
+
+
   return (
     <div className='app'>
-      <BrowserRouter>
-        <HeaderUser/>
-        <main className='main'>
-          <Routes>
-            <Route path="/" element={<Landing/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/registration" element={<Registration/>} />
-      
-            <Route index path="/index" element={<Feed/>} />
-            <Route path="/network" element={<Network />} />
-            <Route path="/notification" element={<Notifications />} />
-            <Route path="/profile" element={<Profile />} />
+      <ErrorBoundary FallbackComponent={ErrorHandler}>
+        <BrowserRouter>
+          <HeaderUser/>
+          <main className='main'>
+            <Routes>
+              <Route path="/" element={<Landing/>} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/registration" element={<Registration/>} />
+        
+              <Route index path="/index" element={<Feed/>} />
+              <Route path="/network" element={<Network />} />
+              <Route path="/notification" element={<Notifications />} />
+              <Route path="/profile" element={<Profile />} />
 
-            <Route path="/vacancies" element={<Vacancies />} />
-            <Route path="/vacancies/item" element={<VacanciesItem />} />
+              <Route path="/vacancies" element={<Vacancies />} />
+              <Route path="/vacancies/item" element={<VacanciesItem />} />
 
-            <Route path="/learning" element={<Learning />} />
-            <Route path="/learning/item" element={<LearningItem />} />
+              <Route path="/learning" element={<Learning />} />
+              <Route path="/learning/item" element={<LearningItem />} />
 
-            <Route path="/company" element={<Company />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-        <Footer/>
-      </BrowserRouter>
+              <Route path="/company" element={<Company />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer/>
+        </BrowserRouter>
+      </ErrorBoundary>
     </div>
   );
 }

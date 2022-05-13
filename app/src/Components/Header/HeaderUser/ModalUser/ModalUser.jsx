@@ -1,6 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './modalUser.scss';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpLong } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 
 const ModalUser = ({userModal}) => {
     return (
@@ -13,6 +17,9 @@ const ModalUser = ({userModal}) => {
                     <h2 className="modalUser-block__name">Գագիկ Խաչատրյան</h2>
                     <p className="modalUser-block__profesisons">WEB DEVELOPER</p>
                 </div>
+                <FontAwesomeIcon    className="modalUser-header__close" 
+                                    icon={faUpLong}
+                                    />
             </div>
             <div className="modalUser-page">
                 <Link   to="/profile" 
