@@ -1,5 +1,5 @@
 import React from "react";
-import './profilePage.scss';
+import './profile.scss';
 
 import ProfileContent from "./ProfileContent/ProfileContent";
 import ProfileSidebar from "./ProfileSidebar/ProfileSidebar";
@@ -13,7 +13,7 @@ import ProfileSkills from "./ProfileSkills/ProfileSkills";
 import ProfileAbout from "./ProfileAbout/ProfileAbout";
 import ProfileExperience from "./ProfileExperience/ProfileExperience";
 
-const ProfilePage = () => {
+const Profile = () => {
     return (
         <div className="profilePage">
             <div className="profilePage-container">
@@ -37,4 +37,4 @@ const ProfilePage = () => {
     )
 }
 
-export default ProfilePage;
+export default Profile;

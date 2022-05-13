@@ -1,5 +1,5 @@
 import React from "react";
-import './networkPage.scss';
+import './network.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faUserFriends , 
@@ -10,7 +10,7 @@ import Users from "./Users/Users";
 import NetworkSidebar from "./NetworcSidebar/MetworkSidebar";
 import NetworkNotfications from "./NetworkNotfications/NetworkNotfications";
 
-const NetworkPage = () => {
+const Network = () => {
     return (
         <div className="networkPage">
             <div className="networkPage-container">
@@ -48,4 +48,4 @@ const NetworkPage = () => {
     )
 }
 
-export default NetworkPage;
+export default Network;

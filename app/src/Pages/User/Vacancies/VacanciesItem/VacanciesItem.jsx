@@ -1,10 +1,10 @@
 import React from "react";
-import './vacanciesItemPage.scss';
+import './vacanciesItem.scss';
 
 import VacanciesItemPageCollections from "./VacanciesItemPageCollections/VacanciesItemPageCollections";
 import VacanciesItemPageForm from "./VacanciesItemPageForm/VacanciesItemPageForm";
 
-const VacanciesItemPage = () => {
+const VacanciesItem = () => {
     return (
         <div className="vacanciesItemPage">
             <div className="vacanciesItemPage-conatiner">
@@ -19,4 +19,4 @@ const VacanciesItemPage = () => {
     )
 }
 
-export default VacanciesItemPage;
+export default VacanciesItem;

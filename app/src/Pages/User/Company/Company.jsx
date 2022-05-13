@@ -1,10 +1,10 @@
 import React from "react";
-import './companyPage.scss';
+import './company.scss';
 
 import CompanyContent from "./CompanyContent/CompanyContent";
 import CompanySidebar from "./CompanySidebar/CompanySidebar";
 
-const CompanyPage = () => {
+const Company = () => {
     return (
         <div className="companyPage">
             <div className="companyPage-container">
@@ -19,4 +19,4 @@ const CompanyPage = () => {
     )
 }
 
-export default CompanyPage;
+export default Company;

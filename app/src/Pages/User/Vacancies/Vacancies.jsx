@@ -1,11 +1,11 @@
 import React from "react";
-import './vacanciesPage.scss';
+import './vacancies.scss';
 
 import VacanciesContent from "./VacanciesContent/VacanciesContent";
 import VacanciesSertings from "./VacanciesSertings/VacanciesSertings";
 import VacanciesSidebar from "./VacanciesSidebar/VacanciesSidebar";
 
-const VacanciesPage = () => {
+const Vacancies = () => {
     return (
         <div className="vacancies">
             <div className="vacancies-leftBlock">
@@ -21,4 +21,4 @@ const VacanciesPage = () => {
     )
 }
 
-export default VacanciesPage;
+export default Vacancies;

@@ -1,5 +1,5 @@
 import React from "react";
-import './feedPage.scss';
+import './feed.scss';
 
 import Content from "./Content/Content";
 import GoNewSkill from "./GoNewSkill/GoNewSkill";
@@ -8,7 +8,7 @@ import SidebarFooter from "./SidebarFooter/SidebarFooter";
 import Background from "./Background/Background";
 
 
-const FeedPage = () => {
+const Feed = () => {
 
     return (
         <div className="feed">
@@ -29,4 +29,4 @@ const FeedPage = () => {
     )
 }
 
-export default FeedPage;
+export default Feed;

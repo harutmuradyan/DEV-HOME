@@ -1,11 +1,11 @@
 import React from "react";
-import './learningPage.scss';
+import './learning.scss';
 
 import LearningContent from "./LearningContent/LearningContent";
 import LearningLessons from "./LearningLessons/LearningLessons";
 import LearningTeachers from "./LearningTeachers/LearningTeachers";
 
-const LearningPage = () => {
+const Learning = () => {
     return (
         <div className="learningPage">
             <div className="learningPage-conatiner">
@@ -24,4 +24,4 @@ const LearningPage = () => {
     )
 }
 
-export default LearningPage;
+export default Learning;

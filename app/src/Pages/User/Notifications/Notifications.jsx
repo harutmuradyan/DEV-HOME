@@ -1,11 +1,11 @@
 import React from "react";
-import './notificationPage.scss';
+import './notifications.scss';
 
 import NotifikationContent from "./NotificationContent/NotificationContent";
 import NotifikationSertings from "./NotifikationSertings/NotificationSertings";
 import NotifikationSidebar from "./NotifikationSidebar/NotifikationSidebar";
 
-const NotificationPage = () => {
+const Notifications = () => {
     return (
         <div className="notification">
             <div className="notification-leftBlock">
@@ -21,4 +21,4 @@ const NotificationPage = () => {
     )
 }
 
-export default NotificationPage;
+export default Notifications;
