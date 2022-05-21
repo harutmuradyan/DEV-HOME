@@ -14,8 +14,9 @@ import {    faClose ,
 
 const ModalServices = ({servicesModal , setServicesModal}) => {
     return (
-        <div className={servicesModal ? "modalServices active" : "modalServices"} onClick={() => {setServicesModal(false)}}>
-            <div className="modalServices-container">
+        <div    className={servicesModal ? "modalServices active" : "modalServices"} 
+                onClick={() => {setServicesModal(false) }}>
+            <div className="modalServices-container" onClick={(e) => {e.stopPropagation()}}>
                 <div className="modalServices-block">
                     <h2 className="modalServices-block__title">Աշխատանքի համար</h2>
                     <FontAwesomeIcon    className="modalServices-block__icon" 
@@ -63,6 +64,9 @@ const ModalServices = ({servicesModal , setServicesModal}) => {
                         </li>
                     </ul>
                 </nav>
+                <div className="modalServices-btns">
+                    <button className="modalServices-btns__createCompany">Ստեծել կազմակերպության էջ</button>
+                </div>
             </div>
         </div>
     )

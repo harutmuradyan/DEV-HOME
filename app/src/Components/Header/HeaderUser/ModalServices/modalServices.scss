@@ -8,9 +8,9 @@
     display: none;
     .modalServices-container {
         z-index: 1;
-        background-color:rgb(99, 99, 248);
         width: 30%;
         height: 600px;
+        background-color:white;
         overflow-y: scroll;
         .modalServices-block {
             display: flex;
@@ -19,22 +19,23 @@
             .modalServices-block__title {
                 width: 80%;
                 text-align: center;
-                color: white;
+                color: rgb(99, 99, 248);
                 font-size: 1.2rem;
                 text-transform: uppercase;
             }
             .modalServices-block__icon {
                 width: 20%;
-                color: white;
+                color: rgb(99, 99, 248);
                 font-size: 1.2rem;
                 cursor: pointer;
             }
         }
         .modalServices-content__nav {
-            border:solid 1px white;
+            border:solid 1px grey;
+            margin: 10px 10px 10px 10px;
             .modalServices-content__nav-title {
                 text-align: center;
-                color: yellow;
+                color:grey;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 padding: 10px 0px 10px 0px;
@@ -48,19 +49,32 @@
                     width: 20%;
                     display: flex;
                     justify-content: center;
-                    border:solid 1px white;
+                    border:solid 1px grey;
                     border-radius:15px;
                     margin: 10px 10px 10px 10px;
                     padding: 20px 10px 20px 10px;
                     cursor: pointer;
                     .modalServices-content__item-icon {
-                        color:white;
+                        color:rgb(99, 99, 248);
                         font-size: 1.2rem;
                     }
                     &:hover {
                         background-color:black;
                     }
                 }
+            }
+        }
+        .modalServices-btns {
+            margin: 10px 10px 10px 10px;
+            .modalServices-btns__createCompany {
+                padding: 10px 10px 10px 10px;
+                cursor: pointer;
+                color: grey;
+                text-transform: uppercase;
+                font-weight: bold;
+                width: 100%;
+                border :solid 1px grey;
+                background-color:white;
             }
         }
     }

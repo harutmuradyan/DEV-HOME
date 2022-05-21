@@ -91,7 +91,7 @@ const HeaderUser = () => {
                             </li>
                             <li     className="headerUser-content__item" 
                                     onClick={() => {setUserModal(true)}}>
-                                <ModalUser  userModal={userModal}/>
+                                <ModalUser  userModal={userModal} />
                                 <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                                         alt="" className="headerUser-content__item-img"/>
                             </li>
