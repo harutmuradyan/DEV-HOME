@@ -17,6 +17,7 @@
             width: 100%;
             .servicesBlock-content__item {
                 padding-left: 20px;
+                background-color:white;
                 color: rgb(99, 99, 248);
                 text-transform: uppercase;
                 margin: 10px 0px 10px 0px;
@@ -24,9 +25,12 @@
                 text-align: left;
                 width: 100%;
                 cursor: pointer;
-                background-color:rgba(241, 240, 240, 0.863);
                 border:solid 2px rgb(99, 99, 248);
                 border-radius: 25px;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
                 .servicesBlock-content__item-icon {
                     float:right;
                     color:rgb(99, 99, 248);
@@ -42,13 +46,38 @@
         justify-content:flex-end;
         height: 430px;
         .servicesBlock-background__img {
-            width: 80%;
+            width: 100%;
         }
     }
 }
 
-$xs:320px;
-$sm:576px;
-$md:768px;
-$md:768px;
-$xl:1200px;
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .servicesBlock  {
+        display: block;
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        padding: 0px 0px 0px 0px;       
+        .servicesBlock-content {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1rem;
+            padding-top: 50px;
+            .servicesBlock-content__title {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        .servicesBlock-background {
+            width: 80%;
+            height: 300px;
+            margin: 0 auto;
+            .servicesBlock-background__img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

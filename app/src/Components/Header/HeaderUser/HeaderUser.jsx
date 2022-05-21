@@ -13,7 +13,7 @@ import {    faUsers ,
 
 import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";
-import Chat from "./Messenger/Messenger";
+import Messenger from "./Messenger/Messenger";
 import ModalSearch from "./ModalSearch/ModalSearch";
 
 
@@ -79,7 +79,7 @@ const HeaderUser = () => {
                                                     className="headerUser-content__item-icon"/>
                                 <span className="count"></span>
                             </li>
-                            <Chat   messenger={messenger} 
+                            <Messenger   messenger={messenger} 
                                     setMessenger={setMessenger}/>
                             <li className="headerUser-content__item">
                                 <Link   to="/notification" 

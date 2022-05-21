@@ -28,7 +28,7 @@ const ServicesBlock = () => {
                 </div>
             </div>
             <div className="servicesBlock-background">
-                <img    src="https://images.squarespace-cdn.com/content/v1/5d01440fc4bd93000125725d/1616616510334-DSTJFK6A7UD51T52EA5H/CalendarHero-HeroImage.png" 
+                <img    src="https://converge.colorado.edu/wp-content/uploads/2021/04/ss_Social-Work.jpg" 
                         alt="asd" 
                         className="servicesBlock-background__img"></img>
             </div>

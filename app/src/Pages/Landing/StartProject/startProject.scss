@@ -7,7 +7,7 @@
         margin: 0 auto;
         min-height: 400px;
         .startProject-block {
-            width: 50%;
+            width: 40%;
             .startProject-block__title {
                 color:rgb(99, 99, 248);
                 width: 100%;
@@ -19,22 +19,49 @@
             }
             .startProject-block__linq {
                 background:rgb(99, 99, 248);
-                width: 90%;
-                margin: 0px 20px 0px 20px;
-                border-radius:25px;
+                width: 100%;
+                margin: 0px 10px 0px 10px;
+                border-radius:10px;
                 height: 50px;
                 color: white;
                 cursor: pointer;
                 text-transform: uppercase;
                 font-weight: bold;
+                &:hover {
+                    background-color:black;
+                }
             }
         }
         .startProject-cover {
-            width: 50%;
+            width: 60%;
             .startProject-cover__img {
                 width: 100%;
                 height:100%;
             }
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .startProject {
+        .startProject-content {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            .startProject-block {
+                width: 100%;
+                .startProject-block__title {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+            .startProject-cover {
+                width: 100%;
+            }
+        }
+    }   
 }

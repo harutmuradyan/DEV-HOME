@@ -1,5 +1,5 @@
 .companies {
-    margin: 100px 0px 100px 0px;
+    margin: 100px 0px 140px 0px;
     .companies-container {
         width: 60%;
         display: flex;
@@ -11,9 +11,10 @@
             .companies-block__item {
                 width: 100px;
                 height: 55px;
-                background: black;
+                background: rgb(99, 99, 248);
                 position: relative;
-                margin: 10px auto;
+                cursor: pointer;
+                margin: 10px;
                 &:before {
                     content: "";
                     width: 0;
@@ -23,7 +24,7 @@
                     left: 0;
                     border-left: 50px solid transparent;
                     border-right: 50px solid transparent;
-                    border-bottom: 25px solid black;
+                    border-bottom: 25px solid rgb(99, 99, 248);
                 }
                 
                 &:after {
@@ -35,9 +36,38 @@
                     left: 0;
                     border-left: 50px solid transparent;
                     border-right: 50px solid transparent;
-                    border-top: 25px solid black;
+                    border-top: 25px solid rgb(99, 99, 248);
                 }
             }
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $md) and (max-width : $xl) {
+    .companies {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        .companies-container {
+            width: 100%;
+            margin: 0 auto;
+            .companies-block {
+                width: 20%;
+                .companies-block__item {
+                    height: 30px;
+                }
+            }
+        }   
+    }   
+}
+
+@media  (max-width : $lg) {
+    .companies {
+       display: none;
+    }   
 }

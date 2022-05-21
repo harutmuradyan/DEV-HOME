@@ -4,12 +4,12 @@ import './app.scss';
 import {  BrowserRouter,Routes,Route,} from "react-router-dom";
 import {ErrorBoundary} from 'react-error-boundary'
 
-//import Header from './Components/Header/HeaderLayding/Header';
+import Header from './Components/Header/HeaderLayding/Header';
 import Landing from './Pages/Landing/Landing';
 import Feed from './Pages/User/Feed/Feed';
 import Notifications from './Pages/User/Notifications/Notifications';
 import Network from './Pages/User/Network/Network';
-import HeaderUser from './Components/Header/HeaderUser/HeaderUser';
+//import HeaderUser from './Components/Header/HeaderUser/HeaderUser';
 import Registration from './Pages/Registration/Registration';
 import Login from './Pages/Login/Login';
 import Profile from './Pages/User/Profile/Profile';
@@ -23,6 +23,7 @@ import Company from './Pages/User/Company/Company';
 
 import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
 import Search from './Pages/User/Search/Search';
+import Messaging from './Pages/User/Messaging/Messaging';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
     <div className='app'>
       <ErrorBoundary FallbackComponent={ErrorHandler}>
         <BrowserRouter>
-          <HeaderUser/>
+          <Header/>
           <main className='main'>
             <Routes>
               <Route path="/" element={<Landing/>} />
@@ -51,6 +52,7 @@ function App() {
 
               <Route path="/company" element={<Company />} />
               <Route path="/search" element={<Search />} />
+              <Route path="/messaging" element={<Messaging />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

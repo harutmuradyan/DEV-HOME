@@ -27,7 +27,38 @@
                 text-transform: uppercase;
                 font-weight: bold;
                 color:white;
+                font-size: 1rem;
+                &:hover {
+                    background-color:black;
+                }
             }
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .createJobs {
+        margin-top: 70px;
+        margin-bottom: 0px;
+        .createJobs-content {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            .createJobs-block {
+                width: 100%;
+                .createJobs-block__title {
+                    font-size: 1.5rem;
+                    margin-top: 15px;
+                }
+            }
+            .createJobs-linq {
+                width: 100%;
+                .createJobs-linq__item {
+                    height: 200px;
+                }
+            }
+        }
+    }   
 }

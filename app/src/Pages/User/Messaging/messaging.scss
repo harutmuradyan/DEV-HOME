@@ -1,0 +1,12 @@
+.messaging {
+    width: 100%;
+    padding: 80px 20px 20px 20px;
+    background-color:rgb(248, 246, 246);
+    display: flex;
+    justify-content: space-between;
+
+    .messagingUsers {
+        width: 30%;
+        height: 400px;
+    }
+}

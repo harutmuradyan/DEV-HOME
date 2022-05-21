@@ -5,9 +5,10 @@
     background-color:rgb(99, 99, 248);
     .header-content {
         display: flex;
+        justify-content: space-between;
         .header-content__logo {
             color: white;
-            flex-basis: 20%;
+            flex-basis: 30%;
             justify-content:flex-start;
             h1 {
                 cursor: pointer;
@@ -54,6 +55,35 @@
                     color:white;
                     border:solid 2px white;
                 }
+            }
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .header {
+        height: 200px;
+        padding-top: 5px;
+        .header-content {
+            display: block;
+            width: 100%;
+            .header-content__logo {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+            .header-content__nav {
+                width: 100%;
+            }
+            .header-content__btn {
+                width: 200px;
+                display: flex;
+                margin: 0 auto ;
             }
         }
     }

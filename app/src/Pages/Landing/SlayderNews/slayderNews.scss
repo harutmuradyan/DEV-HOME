@@ -1,13 +1,14 @@
 .slayderNews {
     max-width: 1440px;
     margin:100px 0 auto;
+    padding-bottom: 80px;
     .slayderNews-buttons {
         width: 100%;
         display: flex;
         justify-content:flex-end;
         padding-right: 60px;
         .slayderNews-buttons__item {
-            color:black;
+            color:rgb(99, 99, 248);
             background-color:white;
             font-size: 1.5rem;
             margin: 20px 5px 20px 5px;
@@ -15,6 +16,7 @@
             text-transform: uppercase;
             .slayderNews-buttons__item-icon {
                 padding: 0px 10px 0px 10px;
+                color: rgb(99, 99, 248);;
             }
         }
     }
@@ -38,12 +40,15 @@
                 background:rgb(99, 99, 248);
                 width: 90%;
                 margin: 0px 20px 0px 20px;
-                border-radius:25px;
+                border-radius:10px;
                 height: 50px;
                 color: white;
                 cursor: pointer;
                 text-transform: uppercase;
                 font-weight: bold;
+                &:hover {
+                    background-color:black;
+                }
             }
         }
         .slayderNews-cover {
@@ -54,4 +59,37 @@
             }
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .slayderNews {
+        margin-top: 90px;
+        margin-bottom: 0px;
+        padding-bottom: 60px;
+        .slayderNews-buttons {
+            .slayderNews-buttons__item {
+                margin: 10px 0px 10px 5px;
+                font-size: 1rem;
+            }          
+        }
+        .slayderNews-content {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            .slayderNews-block {
+                width: 100%;
+                .slayderNews-block__title {
+                    font-size: 1.5rem;
+                    margin-top:10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }               
+            }   
+            .slayderNews-cover {
+                width: 100%;
+            }        
+        } 
+    }  
 }

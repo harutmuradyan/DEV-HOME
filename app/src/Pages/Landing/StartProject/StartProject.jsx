@@ -7,7 +7,7 @@ const StartProject = () => {
             <div className="startProject-content">
                 <div className="startProject-block">
                     <h2 className="startProject-block__title">
-                        Միացիր ընկերներիդ և կոլոգաներիտ DEV HOME - ում  
+                        Միացիր ընկերներիդ և կոլոգաներիտ DEV HOME _ ում  
                     </h2>
                     <button className="startProject-block__linq">
                         Սկսել
