@@ -16,6 +16,14 @@
         width: 100%;
         .learningLessons-slides__block {
             display: flex;
+            overflow: auto;
+            outline: 1px dashed lightgray;
+            flex: none;
+            scroll-snap-type:both mandatory;
+            div {
+                scroll-snap-align: start;
+                flex: none;
+              }
         }
         .learningLessons-slides__btns {
             position: relative;
@@ -35,3 +43,6 @@
         }
     }
 }
+
+  
+  

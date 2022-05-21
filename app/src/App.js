@@ -22,6 +22,7 @@ import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
 import Company from './Pages/User/Company/Company';
 
 import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
+import Search from './Pages/User/Search/Search';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
               <Route path="/learning/item" element={<LearningItem />} />
 
               <Route path="/company" element={<Company />} />
+              <Route path="/search" element={<Search />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

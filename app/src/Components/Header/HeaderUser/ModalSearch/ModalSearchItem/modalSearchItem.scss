@@ -1,0 +1,25 @@
+.modalSearchItem {
+    display: flex;
+    cursor: pointer;
+    .modalSearchItem-icon {
+        padding: 5px 5px 5px 5px;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        color: rgb(99, 99, 248);
+    }
+    .modalSearchItem-name {
+        padding: 5px 5px 5px 5px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .modalSearchItem-profession {
+        padding: 5px 5px 5px 5px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .modalSearchItem-img {
+        width: 30px;
+        height: 30px;
+        margin-top: 12px;
+    }
+}

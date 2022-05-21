@@ -8,7 +8,7 @@
         .header-content__logo {
             color: white;
             flex-basis: 20%;
-            justify-content: start;
+            justify-content:flex-start;
             h1 {
                 cursor: pointer;
                 margin: 20px 0px 0px 20px;
@@ -18,7 +18,7 @@
             flex-basis: 60%;
             .header-content__block {
                 display: flex;
-                justify-content: center;
+                justify-content:center;
                 .header-content__item{
                     color: white;
                     cursor: pointer;
@@ -37,7 +37,7 @@
         .header-content__btn {
             flex-basis: 20%;
             display: flex;
-            justify-content: end;
+            justify-content:flex-end;
 
             button {
                 background-color: rgb(99, 99, 248);

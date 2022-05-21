@@ -8,10 +8,10 @@
     display: none;
     .profileUserContactModal-container {
         position: relative;
-        top: 70px;
-        width: 60%;
+        top: 150px;
+        width: 40%;
         margin: 0 auto;
-        height: 500px;
+        height: 300px;
         border-radius: 20px;
         background-color:white;
         .profileUserContactModal-header {
@@ -28,8 +28,41 @@
         }
         .profileUserContactModal-content {
             padding: 15px 15px 15px 15px;
-            height:380px ;
             overflow-y: scroll;
+            width: 100%;
+            .profileUserContactModal-content__header {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 10px 10px 10px;
+                .profileUserContactModal-content__title {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+                .profileUserContactModal-content__update {
+                    cursor: pointer;
+                }
+            }
+            .profileUserContactModal-content__blocks {
+                display: flex;
+                width: 100%;
+                .profileUserContactModal-content__blocks-icon {
+                    padding: 15px 15px 15px 15px;
+                }
+                .profileUserContactModal-content__blocks-logo {
+                    padding: 15px 15px 15px 15px;
+                }
+                .profileUserContactModal-content__block {
+                    padding: 5px 5px 5px 5px;
+                    width: 70%;
+                    .profileUserContactModal-content__block-title {
+
+                    }
+                    .profileUserContactModal-content__block-mail {
+
+                    }
+                }
+            }
         }
         .profileUserContactModal-footer {
             padding: 15px 15px 15px 15px;

@@ -1,0 +1,18 @@
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px 20px 20px;
+    background-color:rgb(248, 246, 246);
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .search-content {
+            width: 70%;
+        }
+        .search-footer{
+            width: 20%;
+        }
+    }
+}

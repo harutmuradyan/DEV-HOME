@@ -33,6 +33,8 @@ const LearningLessons = () => {
                     <LearningLesson/>
                     <LearningLesson/>
                     <LearningLesson/>
+                    <LearningLesson/>
+                    <LearningLesson/>
                 </div>
             </div>
         </div>

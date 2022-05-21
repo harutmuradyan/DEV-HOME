@@ -23,27 +23,7 @@ const ProfileUserBackgroundModal = (
                                      />
                 </div>
                 <div className="profileUserBackgroundModal-content">
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
+                    <input type="file"/>
                 </div>
                 <div className="profileUserBackgroundModal-footer">
                     <button className="profileUserBackgroundModal-footer__btn">Հաստատել</button>
