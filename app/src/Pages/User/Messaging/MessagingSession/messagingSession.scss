@@ -1,0 +1,79 @@
+.messagingSession {
+    min-height: 150px;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+    background-color:white; 
+    border:solid 1px grey;
+    .messagingSession-header {
+        display: flex;
+        width: 100%;
+        padding: 15px 20px 15px 20px;
+        justify-content: space-between;
+        .messagingSession-header__block {
+            .messagingSession-header__name {
+                font-size: 1rem;
+            }
+            .messagingSession-header__sessionOn {
+                display: flex;
+                width: 100%;
+                span {
+                    margin-top: 5px;
+                    margin-right: 5px;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius:50%;
+                    background-color:green;
+                }
+                p {
+                    color: grey;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .messagingSession-header__icon {
+            color:rgb(99, 99, 248);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+    .messagingSession-content {
+        height: 290px;
+        border-top:solid 1px grey;
+        width: 100%;
+        overflow-y: scroll;
+        padding: 10px 20px 10px 20px;
+    }
+    .messagingSession-new {
+        border-top:solid 1px grey;
+        border-bottom:solid 1px grey;
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        height: 100px;
+        .messagingSession-new__item {
+            width: 100%;
+            background-color:rgb(216, 213, 213);
+       }
+    }
+    .messagingSession-btns {
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .messagingSession-btns__sent {
+            padding: 10px 10px 10px 10px;
+            border-radius:10px;
+            cursor: pointer;
+            background-color:rgb(99, 99, 248);
+            color: white;
+        }
+        .messagingSession-btns__image {
+            background-color:white;
+            cursor: pointer;
+            padding: 10px 0px 10px 0px;
+            font-size: 1.2rem;
+            color: rgb(99, 99, 248);
+        }
+    }
+}
+

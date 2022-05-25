@@ -4,12 +4,12 @@ import './app.scss';
 import {  BrowserRouter,Routes,Route,} from "react-router-dom";
 import {ErrorBoundary} from 'react-error-boundary'
 
-import Header from './Components/Header/HeaderLayding/Header';
+//import Header from './Components/Header/HeaderLayding/Header';
 import Landing from './Pages/Landing/Landing';
 import Feed from './Pages/User/Feed/Feed';
 import Notifications from './Pages/User/Notifications/Notifications';
 import Network from './Pages/User/Network/Network';
-//import HeaderUser from './Components/Header/HeaderUser/HeaderUser';
+import HeaderUser from './Components/Header/HeaderUser/HeaderUser';
 import Registration from './Pages/Registration/Registration';
 import Login from './Pages/Login/Login';
 import Profile from './Pages/User/Profile/Profile';
@@ -32,7 +32,7 @@ function App() {
     <div className='app'>
       <ErrorBoundary FallbackComponent={ErrorHandler}>
         <BrowserRouter>
-          <Header/>
+          <HeaderUser/>
           <main className='main'>
             <Routes>
               <Route path="/" element={<Landing/>} />

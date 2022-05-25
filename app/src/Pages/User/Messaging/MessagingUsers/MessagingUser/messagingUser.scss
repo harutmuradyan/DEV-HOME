@@ -1,0 +1,30 @@
+.messagingUserContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+
+    &:hover {
+        background-color:rgb(216, 213, 213);
+        cursor: pointer;
+        border-left: solid 3px rgb(25, 148, 25);
+    }
+    .messagingUserContent-img {
+        width: 40px;
+        height: 40px;
+    }
+    .messagingUserContent-block {
+        .messagingUserContent-name {
+            font-size: 1rem;
+            padding-bottom: 3px;
+        }
+        .messagingUserContent-message {
+            font-size: 1rem;
+            color: grey;
+        }
+    }
+    .messagingUserContent-date {
+        font-size: 1rem;
+        color:grey;
+    }
+}

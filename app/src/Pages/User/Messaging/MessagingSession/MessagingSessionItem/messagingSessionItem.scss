@@ -1,0 +1,31 @@
+.messagingSessionItem {
+    width: 100%;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+
+    &:hover {
+        background-color:rgb(216, 213, 213);
+        cursor: pointer;
+    }
+    .messagingSessionItem-img {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+    }
+    .messagingSessionItem-block {
+        padding: 5px 10px 5px 10px;
+        .messagingSessionItem-name {
+            font-size: 1rem;
+            padding-bottom: 3px;
+        }
+        .messagingSessionItem-message {
+            font-size: 1rem;
+            color: grey;
+        }
+    }
+    .messagingSessionItem-date {
+        font-size: 1rem;
+        color:grey;
+        padding: 5px 10px 5px 10px;
+    }
+}
