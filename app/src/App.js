@@ -3,6 +3,7 @@ import './app.scss';
 
 import {  BrowserRouter,Routes,Route,} from "react-router-dom";
 import {ErrorBoundary} from 'react-error-boundary'
+import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
 
 //import Header from './Components/Header/HeaderLayding/Header';
 import Landing from './Pages/Landing/Landing';
@@ -20,10 +21,9 @@ import VacanciesItem from './Pages/User/Vacancies/VacanciesItem/VacanciesItem';
 import NotFound from './Components/NotFound/NotFound';
 import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
 import Company from './Pages/User/Company/Company';
-
-import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
 import Search from './Pages/User/Search/Search';
 import Messaging from './Pages/User/Messaging/Messaging';
+import Messenger from './Components/Messenger/Messenger';
 
 function App() {
 
@@ -56,6 +56,7 @@ function App() {
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
+          <Messenger/>
           <Footer/>
         </BrowserRouter>
       </ErrorBoundary>

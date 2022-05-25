@@ -13,7 +13,6 @@ import {    faUsers ,
 
 import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";
-import Messenger from "./Messenger/Messenger";
 import ModalSearch from "./ModalSearch/ModalSearch";
 
 
@@ -21,7 +20,6 @@ const HeaderUser = () => {
 
     const [userModal,setUserModal] = useState(false);
     const [servicesModal,setServicesModal] = useState(false);
-    const [messenger,setMessenger] = useState(false);
     const [modalSearch,setModalSearch] = useState(false);
 
     return (
@@ -72,15 +70,14 @@ const HeaderUser = () => {
                                     <span className="count"></span>
                                 </Link>
                             </li>
-
-                            <li className="headerUser-content__item" 
-                                onClick={() => {setMessenger(true)}}>
-                                <FontAwesomeIcon    icon={faMessage} 
-                                                    className="headerUser-content__item-icon"/>
-                                <span className="count"></span>
+                            <li className="headerUser-content__item"> 
+                                <Link   to="/messaging"
+                                        className="headerUser-content__item">
+                                    <FontAwesomeIcon    icon={faMessage} 
+                                                        className="headerUser-content__item-icon"/>
+                                    <span className="count"></span>
+                                </Link>
                             </li>
-                            <Messenger   messenger={messenger} 
-                                    setMessenger={setMessenger}/>
                             <li className="headerUser-content__item">
                                 <Link   to="/notification" 
                                         className="headerUser-content__item">
@@ -111,6 +108,8 @@ const HeaderUser = () => {
                             </li>
                         </ul>
                     </nav>
+                    <button >
+                    </button>
                 </div>
             </div>
         </header>

@@ -6,7 +6,7 @@ import { faClose ,faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 import Messag from "./Messag/Messag";
 
-const NewMessag = () => {
+const NewMessag = ({setNewMessage}) => {
     return (
         <div className="newMessag">
             <div className="newMessag-header">
@@ -15,11 +15,17 @@ const NewMessag = () => {
                         alt=""></img>
                 <p className="newMessag-header__name">Քրիստինե Խաչատրյան</p>
                 <FontAwesomeIcon    className="newMessage-header__close" 
-                                    icon={faClose}/>
+                                    icon={faClose}
+                                    
+                                    />
             </div>
             <div className="newMessag-container">
                 <Messag/>
-                
+                <Messag/>
+                <Messag/>
+                <Messag/>
+                <Messag/>
+                <Messag/>
                 <div className="newMessag-user__insertMess">
                     <input  className="newMessag-user__insertMess-text" 
                             placeholder="   Գրեք Տեքստը"/>
