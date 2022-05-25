@@ -22,6 +22,7 @@ const Messenger = () => {
                         alt=""
                         onClick={() => {setMessenger(true)}}
                         ></img>
+                <span className="messenger-btns__sessionOn"></span>
                 <p className="messenger-btns__title">Նամակագրություն</p>
                 <div className="messenger-btns__group">
                     <button className="messenger-btns__item">

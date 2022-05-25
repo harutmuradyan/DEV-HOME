@@ -10,6 +10,30 @@
         width: 30px;
         height: 30px;
     }
+    .messag-user__sessionOn {
+        width: 8px;
+        height: 8px;
+        display: block;
+        border-radius:10px;
+        background-color:green;
+        position: relative;
+        padding: 5px 5px 5px 5px;
+        top: 20px;
+        border:solid 1px white;
+        right: 30px;
+        &::after {
+            content:"";
+            display: block;
+            z-index: 1;
+            width: 5px;
+            height: 5px;
+            background:white;
+            position: relative;
+            border-radius:50%;
+            right: 2px;
+            bottom: 2px;
+        }
+    }
     .messag-user__time {
         font-size: 0.8rem;
     }

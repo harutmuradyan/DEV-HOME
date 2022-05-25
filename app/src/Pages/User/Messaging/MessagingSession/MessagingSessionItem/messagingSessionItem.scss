@@ -12,6 +12,30 @@
         height: 40px;
         margin-top: 5px;
     }
+    .messagingSessionItem__sessionOn {
+        width: 8px;
+        height: 8px;
+        display: block;
+        border-radius:10px;
+        background-color:green;
+        position: relative;
+        padding: 5px 5px 5px 5px;
+        top: 35px;
+        border:solid 1px white;
+        right: 13px;
+        &::after {
+            content:"";
+            display: block;
+            z-index: 1;
+            width: 5px;
+            height: 5px;
+            background:white;
+            position: relative;
+            border-radius:50%;
+            right: 2px;
+            bottom: 2px;
+        }
+    }
     .messagingSessionItem-block {
         padding: 5px 10px 5px 10px;
         .messagingSessionItem-name {

@@ -13,6 +13,7 @@ const NewMessag = ({setNewMessage}) => {
                 <img    className="newMessag-header__img" 
                         src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                         alt=""></img>
+                <span className="newMessag-header__sessionOn"></span>
                 <p className="newMessag-header__name">Քրիստինե Խաչատրյան</p>
                 <FontAwesomeIcon    className="newMessage-header__close" 
                                     icon={faClose}

@@ -7,6 +7,7 @@ const MessagingSessionItem = ({text}) => {
             <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                     alt=""
                     className="messagingSessionItem-img"></img>
+            <span className="messagingSessionItem__sessionOn"></span>
             <div className="messagingSessionItem-block">
                 <h2 className="messagingSessionItem-name">Լիլիթ Համբարցումյան</h2>
                 <p className="messagingSessionItem-message">{text}</p>

@@ -7,6 +7,7 @@ const MessagingUser = () => {
             <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                     alt=""
                     className="messagingUserContent-img"></img>
+            <span className="messagingUserContent__sessionOn"></span>
             <div className="messagingUserContent-block">
                 <h2 className="messagingUserContent-name">Լիլիթ Համբարցումյան</h2>
                 <p className="messagingUserContent-message">Այո իհարկե</p>
