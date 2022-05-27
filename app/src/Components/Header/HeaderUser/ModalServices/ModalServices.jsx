@@ -66,6 +66,8 @@ const ModalServices = ({servicesModal , setServicesModal}) => {
                 </nav>
                 <div className="modalServices-btns">
                     <button className="modalServices-btns__createCompany">Ստեծել կազմակերպության էջ</button>
+                    <button className="modalServices-btns__createCompany">Ստեծել Ուսման վայրի էջ</button>
+                    <button className="modalServices-btns__createCompany">Ստեծել խմբի էջ</button>
                 </div>
             </div>
         </div>

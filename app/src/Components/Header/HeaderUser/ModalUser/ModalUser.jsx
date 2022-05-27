@@ -6,7 +6,7 @@ import { faUpLong } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 
-const ModalUser = ({userModal}) => {
+const ModalUser = ({userModal , setUserModal}) => {
     return (
         <div className={userModal ? "modalUser active" : "modalUser"}>
             <div className="modalUser-header">
