@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import './messagingUsers.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,18 +7,27 @@ import {    faMessage ,
             faSearch , faBarsProgress} from "@fortawesome/free-solid-svg-icons";
 
 import MessagingUser from "./MessagingUser/MessagingUser";
+import MessagingUsersFunctionsModal from "./MessagingUsersFunctionsModal/MessagingUsersFunctionsModal";
 
 const MessagingUsers = () => {
+
+    const [messagingUsersFunctionsModal , setMessagingUsersFunctionsModal] = useState(false)
+
     return (
         <div className="messagingUsersContent">
             <div className="messagingUsersContent-header">
                 <h2 className="messagingUsersContent-header__title">Նամակներ</h2>
                 <div className="messagingUsersContent-header__block">
                     <FontAwesomeIcon    icon={faBars} 
-                                        className="messagingUsersContent-header__bars"/>
+                                        className="messagingUsersContent-header__bars"
+                                        onClick={() => {setMessagingUsersFunctionsModal(true)}}
+                                        />
                     <FontAwesomeIcon    icon={faMessage} 
                                         className="messagingUsersContent-header__message"/>
                 </div>
+                <MessagingUsersFunctionsModal   messagingUsersFunctionsModal={messagingUsersFunctionsModal}
+                                                setMessagingUsersFunctionsModal={setMessagingUsersFunctionsModal}
+                />
             </div>
             <div className="messagingUsersContent-search">
                     <FontAwesomeIcon    icon={faSearch} 

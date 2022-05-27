@@ -1,13 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import './messagingSession.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faBars , 
             faImage  } from "@fortawesome/free-solid-svg-icons";
 
+
 import MessagingSessionItem from "./MessagingSessionItem/MessagingSessionItem";
+import MessagingFunctionsModal from "./MessagingFunctionsModal/MessagingFunctionsModal";
 
 const MessagingSession = () => {
+
+    const [messagingFunctionsModal , setMessagingFunctionsModal] = useState(false);
+
     return (
         <div className="messagingSession">
             <div className="messagingSession-header">
@@ -19,8 +24,13 @@ const MessagingSession = () => {
                     </div>
                 </div>
                 <FontAwesomeIcon    icon={faBars} 
-                                    className="messagingSession-header__icon"/>
+                                    className="messagingSession-header__icon"
+                                    onClick={() => {setMessagingFunctionsModal(true)}}
+                                    />
+                <MessagingFunctionsModal    messagingFunctionsModal={messagingFunctionsModal} 
+                                            setMessagingFunctionsModal={setMessagingFunctionsModal}/>
             </div>
+            
             <div className="messagingSession-content">
                 <MessagingSessionItem text="packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"/>
                 <MessagingSessionItem text="packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"/>
