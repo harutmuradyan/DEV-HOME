@@ -16,8 +16,8 @@
                 border-radius: 20px;
                 margin: 10px 10px 10px 10px;
                 background-color:white;      
+                padding: 20px 20px 20px 20px;
                 .event-content__background-img {
-                    padding: 15px 15px 15px 15px;
                     width: 100%;
                     height: 350px;
                 }
@@ -27,29 +27,192 @@
                 min-height: 150px;
                 border-radius: 20px;
                 margin: 10px 10px 10px 10px;
-                background-color:white;  
+                background-color:white;
+                padding: 20px 20px 20px 20px;
+                .event-content__header-eventName {
+                    font-size: 1.2rem;
+                    padding-bottom: 5px;
+                }  
+                .event-content__header-companyName {
+                    font-size: 1rem;
+                    padding-bottom: 5px;
+                    color: grey;
+                }
+                .event-content__header-data {
+                    font-size: 1rem;
+                    padding-bottom: 5px;
+                    color: grey;
+                }
+                .event-content__header-address {
+                    font-size: 1rem;
+                    padding-bottom: 5px;
+                    color: grey;
+                }
+                .event-content__header-follower {
+                    font-size: 1rem;
+                    padding-bottom: 5px;
+                    color: grey;
+                }
+                .event-content__header-btn {
+                    background-color:white;
+                    color: rgb(99, 99, 248);
+                    cursor: pointer;
+                    .event-content__header-icon {
+                        margin-right: 10px;
+                        color: rgb(99, 99, 248);
+                    }
+                }
+                .event-content__header-btns {
+                    padding-top: 20px;
+                    .event-content__header-add {
+                        padding: 10px 20px 10px 20px;
+                        border-radius:10px;
+                        background-color:rgb(99, 99, 248);
+                        color: white;
+                        margin-right: 10px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        &:hover {
+                            background-color:rgb(50, 50, 214);
+                            color: white;
+                        }
+                    }
+                    .event-content__header-share {
+                        color:rgb(99, 99, 248);
+                        background-color:white;
+                        border:solid 1px rgb(99, 99, 248);
+                        border-radius:10px;
+                        padding: 10px 20px 10px 20px;
+                        margin-right: 10px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        &:hover {
+                            background-color:black;
+                            color: white;
+                        }
+                        .event-content__header-icon {
+                            margin-left: 5px;
+                        }
+                    }
+                    .event-content__header-complain {
+                        border-radius:100%;
+                        color:  rgb(99, 99, 248);
+                        border:solid 1px rgb(99, 99, 248);
+                        margin-right: 10px;
+                        background-color:white;
+                        padding: 10px 10px 10px 10px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
             }
             .event-content__desc {
                 width: 100%;
                 min-height: 150px;
                 border-radius: 20px;
                 margin: 10px 10px 10px 10px;
-                background-color:white;  
+                padding: 20px 20px 20px 20px;
+                background-color:white; 
+                .event-content__desc-title {
+                    font-size: 1rem;
+                    padding: 10px 0px 15px 0px;
+                    text-transform: uppercase;
+                }
+                .event-content__desc-text {
+                    color: grey;
+                } 
             }
-            .event-content__footer {
+            .event-content__company {
                 width: 100%;
                 min-height: 150px;
                 border-radius: 20px;
                 margin: 10px 10px 10px 10px;
-                background-color:white;  
+                background-color:white;
+                padding: 20px 20px 20px 20px;  
+                .event-content__company-block {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    .event-content__company-img {
+                        width: 120px;
+                        height: 100px;
+                        cursor: pointer;
+                    }
+                    .event-content__company-info {
+                        width: 70%;
+                        .event-content__company-name {
+                            font-size: 1rem;
+                            padding: 5px 5px 5px 5px;
+                        }
+                        .event-content__company-followers {
+                            margin-top: 5px;
+                            color: grey;
+                            font-size: 1rem;
+                            padding: 0px 5px 0px 5px;
+                        }
+                        .event-content__company-data {
+                            color: grey;
+                            margin-top: 5px;
+                            font-size: 1rem;
+                            padding: 0px 5px 0px 5px;
+                        }
+                    }
+                    .event-content__company-add {
+                        width: 20%;
+                        height: 40px;
+                        border:solid 1px rgb(99, 99, 248);
+                        background-color:white;
+                        text-transform: uppercase;
+                        padding: 10px 15px 10px 15px;
+                        border-radius:10px;
+                        color: rgb(99, 99, 248);
+                        cursor: pointer;
+                        &:hover {
+                            background-color:black;
+                            color: white;
+                        }
+                    }
+                }
+                .event-content__company-linq {
+                    color: grey;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
-        .eventSidebar {
+        .event-sidebar {
             width: 30%;
-            min-height: 150px;
+            height: 350px;
             border-radius: 20px;
             margin: 10px 10px 10px 10px;
             background-color:white;  
+            .event-sidebar__block {
+                padding: 15px 15px 15px 15px;
+                cursor: pointer; 
+                .event-sidebar__block-cover {
+                    width: 100%;
+                    height: 100%;
+                }
+                .event-sidebar__block-addEvant {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding: 10px 10px 10px 10px;
+                    border:solid 2px rgb(99, 99, 248);
+                    border-radius:10px;
+                    background-color:white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color:rgb(99, 99, 248);
+                    &:hover {
+                        background-color:black;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
 }
