@@ -1,0 +1,143 @@
+.learningItemView {
+    width: 100%;
+    position: fixed;
+    min-height: 150px;
+    background-color:black;
+    left: 0px;
+    top: 60px;
+    .learningItemView-header {
+        width: 100%;
+        height: 36px;
+        border-top:solid 1px white;
+        background-color: rgb(99, 99, 248);
+        .learningItemView-header__nav {
+            .learningItemView-header__nav-block {
+                display: flex;     
+                width: 100%;
+                justify-content: center;           
+                .learningItemView-header__nav-item {
+                    padding: 8px 10px 20px 10px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    &:hover {
+                        border-top:solid 3px black;
+                    }
+                }
+            }
+        }
+    }
+    .learningItemView-navbar {
+        height: 60px;
+        opacity: 0.8;
+        z-index: 1;
+        width: 100%;
+        background-color:black;
+        display: flex;
+        display: none;
+        justify-content: space-between;
+        .learningItemView-nav {
+            width: 20%;
+            .learningItemView-nav__oppen {
+                font-size: 1rem;
+                height: 100%;
+                color: white;
+                border:solid 1px white;
+                background-color:black;
+                cursor: pointer;
+                text-transform: uppercase;
+                width: 100%;
+                .learningItemView-nav__oppen-icon {
+                    margin-right: 10px;
+                }
+            }
+            .learningItemView-nav__content {
+                height: 391px;
+                overflow-y: scroll;
+                background-color:black;
+                display: none;
+                .learningItemView-nav__course {
+                    padding: 10px 10px 10px 10px;
+                    .learningItemView-nav__course-name {
+                        color: white;
+                        padding-bottom: 3px;
+                        font-size: 1rem;
+                    }
+                    .learningItemView-nav__course-direction {
+                        color: grey;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .learningItemView-navbar__title {
+            width: 60%;
+            display: flex;
+            border-top:solid 1px white;
+            border-bottom:solid 1px white;
+            padding: 15px 10px 5px 10px;
+            .learningItemView-navbar__title-name {
+                color: white;
+                font-size: 1.2rem;
+                padding: 0px 5px 0px 5px;
+            }
+            .learningItemView-navbar__title-direction {
+                color: grey;
+                font-size: 1.2rem;
+                padding: 0px 5px 0px 5px;
+            }
+        }
+        .learningItemView-btns {
+            width: 20%;
+            border:solid 1px white;
+            padding: 20px 0px 10px 0px;
+            display: flex;
+            justify-content: center;
+            .learningItemView-btn {
+                display: flex;
+                font-size: 1rem;
+                color: white;
+                background-color:black;
+                padding: 0px 10px 0px 10px;
+                cursor: pointer;
+                .learningItemView-btn__icon {
+                    padding-right: 5px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .learningItemView-content {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+        min-height: 150px;
+        background-color:rgb(36, 35, 35);
+        .learningItemView-content__background {
+            max-width: 750px;
+            height: 400px;
+            display: none;
+        }
+        .learningItemView-content__video {
+            max-width: 100%;
+            height: 400px;
+        }
+    }
+    .learningItemView-footer {
+        display: none;
+        width: 100%;
+        height: 50px;
+        background:black;
+        border:solid 1px white;
+    } 
+}
+
+
+.learningItemView-navbar.active {
+    display: flex;
+}
+.learningItemView-footer.active {
+    display: flex;
+}
