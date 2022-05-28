@@ -4,7 +4,8 @@ import './searchRezult.scss';
 //import SearchUsers from "./SearchUsers/SearchUsers";
 //import SearchCompanyes from "./SearchCompanyes/SearchCompanyes";
 //import SearchUniversity from "./SearchUniversity/SearchUniversity";
-import SearchPosts from "./SearchPosts/SearchPosts";
+//import SearchPosts from "./SearchPosts/SearchPosts";
+import SearchEvents from "./SearchEvents/SearchEvents";
 
 const SearchRezult = () => {
     return (
@@ -12,7 +13,8 @@ const SearchRezult = () => {
             {/**<SearchUsers/>**/}
             {/**<SearchCompanyes/>**/}
             {/**<SearchUniversity/>**/}
-            <SearchPosts/>
+            {/**<SearchPosts/>**/}
+            <SearchEvents/>
         </div>
     )
 }
