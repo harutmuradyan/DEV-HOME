@@ -24,6 +24,7 @@ import Company from './Pages/User/Company/Company';
 import Search from './Pages/User/Search/Search';
 import Messaging from './Pages/User/Messaging/Messaging';
 import Messenger from './Components/Messenger/Messenger';
+import Event from './Pages/User/Event/Event';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
               <Route path="/company" element={<Company />} />
               <Route path="/search" element={<Search />} />
               <Route path="/messaging" element={<Messaging />} />
+              <Route path="/event" element={<Event />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
