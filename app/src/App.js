@@ -25,6 +25,7 @@ import Search from './Pages/User/Search/Search';
 import Messaging from './Pages/User/Messaging/Messaging';
 import Messenger from './Components/Messenger/Messenger';
 import Event from './Pages/User/Event/Event';
+import University from './Pages/User/University/University';
 
 function App() {
 
@@ -39,22 +40,19 @@ function App() {
               <Route path="/" element={<Landing/>} />
               <Route path="/login" element={<Login/>} />
               <Route path="/registration" element={<Registration/>} />
-        
               <Route index path="/index" element={<Feed/>} />
               <Route path="/network" element={<Network />} />
               <Route path="/notification" element={<Notifications />} />
               <Route path="/profile" element={<Profile />} />
-
               <Route path="/vacancies" element={<Vacancies />} />
               <Route path="/vacancies/item" element={<VacanciesItem />} />
-
               <Route path="/learning" element={<Learning />} />
               <Route path="/learning/item" element={<LearningItem />} />
-
               <Route path="/company" element={<Company />} />
               <Route path="/search" element={<Search />} />
               <Route path="/messaging" element={<Messaging />} />
               <Route path="/event" element={<Event />} />
+              <Route path="/university" element={<University />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

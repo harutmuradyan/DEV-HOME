@@ -1,0 +1,63 @@
+{
+    "Users": [
+        {   
+            "id": 1,
+            "name": "Harut",
+            "firstName": "Muradyan",
+            "email" : "Harut4565@mail.com",
+            "tell" : "+374 94 66 38 44",
+            "profession" : "web developer",
+            "country" : "Armenia",
+            "city" : "Erevan",
+            "gender" : "",
+            "workplace" : [
+                "Masis tabak" , "Spayka"
+            ],
+            "education" : [
+                "NPUA" 
+            ],
+            "workExperIence" : [
+                "Masis tabak" , "Spayka"
+            ],
+            "skills" : [
+                "Html5","Css","Scss","Bootstrap4","JavaScript","React","Redux","SQL"
+            ],
+            "license" : [
+                "Loft","BeeOnCode"
+            ],
+            "backgroundImage" : "",
+            "posts" : [],
+            "image" : "",
+            "frends" : [],
+            "companyes" : [],
+            "notification" : []
+        }
+    ],
+    "companyes": [
+        { 
+            "id" : "1",
+            "name" : "Dev Home",
+            "email" : "devhomehr@mail.com",
+            "tell" : "+374 99 88 77",
+            "location" : "Բագրատունյաց փ3 ն6",
+            "website" : "http://devhome.come",
+            "coutry" : "Armenia",
+            "city" : "Erevan",
+            "logo" : "",
+            "background" : "",
+            "shortDescription" : "Նորաբաց կայք է որից կարող եք օգտվել",
+            "followers" : [],
+            "workers" : [],
+            "experiences" : [],
+            "professionalOrientation" : "",
+            "createdOrganization" : "",
+            "generalInformation" : "",
+            "posts" : ""
+        }
+    ],
+    "events" : [],
+    "lessons" : [],
+    "teachers" : [],
+    "university" : [],
+    "vacancies" : [] 
+}

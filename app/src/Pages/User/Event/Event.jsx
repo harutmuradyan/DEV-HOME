@@ -8,8 +8,8 @@ import {    faLink ,
 
 const Event = () => {
     return (
-        <div className="event">
-            <div className="event-container">
+        <div className="eventPage">
+            <div className="eventPage-container">
                 <div className="event-content">
                     <div className="event-content__background">
                         <img    className="event-content__background-img" 
