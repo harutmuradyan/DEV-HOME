@@ -6,7 +6,8 @@ import LearningItemPageContent from "./LearningItemPageContent/LearningItemPageC
 import LearningItemPageCourse from "./LearningItemPageCourse/LearningItemPageCourse";
 import LearningItemPageHeader from "./LearningItemPageHeader/LearningItemPageHeader";
 import LearningItemPageRandomItems from "./LearningItemPageRandomItems/LearningItemPageRandomItems";
-import LearningItemView from "./LearningItemView/LearningItemView";
+import LearningItemPlayer from "./LearningItemPlayer/LearningItemPlayer";
+
 
 const LearningItem = () => {
     return (
@@ -17,7 +18,7 @@ const LearningItem = () => {
                 </div>
             </div>
             <div>
-                <LearningItemView/>
+                <LearningItemPlayer/>
             </div>
             <div className="learningItemPage-conatiner">
                 <div className="learningItemPage-conatiner__content">
