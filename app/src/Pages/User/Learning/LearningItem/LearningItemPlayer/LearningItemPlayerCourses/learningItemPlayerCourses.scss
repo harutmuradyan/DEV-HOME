@@ -1,0 +1,12 @@
+.learningItemPlayer-nav__content {
+    height: 400px;
+    overflow-y: scroll;
+    background-color:black;
+    display: none;   
+    border-left:solid 1px white;
+    border-right:solid 1px white;
+}
+
+.learningItemPlayer-nav__content.active {
+    display: block;
+}

@@ -5,6 +5,7 @@
     background-color:black;
     left: 0px;
     top: 60px;
+    display: none;
     .learningItemPlayer-header {
         width: 100%;
         height: 36px;
@@ -30,7 +31,6 @@
     }
     .learningItemPlayer-navbar {
         height: 60px;
-        opacity: 0.8;
         z-index: 1;
         width: 100%;
         background-color:black;
@@ -50,24 +50,6 @@
                 width: 100%;
                 .learningItemPlayer-nav__oppen-icon {
                     margin-right: 10px;
-                }
-            }
-            .learningItemPlayer-nav__content {
-                height: 391px;
-                overflow-y: scroll;
-                background-color:black;
-                display: none;
-                .learningItemPlayer-nav__course {
-                    padding: 10px 10px 10px 10px;
-                    .learningItemPlayer-nav__course-name {
-                        color: white;
-                        padding-bottom: 3px;
-                        font-size: 1rem;
-                    }
-                    .learningItemPlayer-nav__course-direction {
-                        color: grey;
-                        font-size: 0.8rem;
-                    }
                 }
             }
         }

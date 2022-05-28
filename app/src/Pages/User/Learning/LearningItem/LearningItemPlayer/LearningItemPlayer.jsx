@@ -7,12 +7,15 @@ import {    faThumbsUp ,
             faRightToBracket , 
             faBookmark , 
             faBars} from "@fortawesome/free-solid-svg-icons";
+
+import LearningItemPlayerCourses from "./LearningItemPlayerCourses/LearningItemPlayerCourses";
             
 
 const LearningItemPlayer = () => {
 
     const [view , setView] = useState(false);
     const [play , setPlay] = useState(false);
+    const [playerCourseBar , setPlayerCourseBar] = useState(false);
 
     return (
         <div className="learningItemPlayer">
@@ -28,60 +31,14 @@ const LearningItemPlayer = () => {
             </div>
             <div className={view ? "learningItemPlayer-navbar active" : "learningItemPlayer-navbar"}>
                 <nav className="learningItemPlayer-nav">
-                    <button className="learningItemPlayer-nav__oppen">
+                    <button className="learningItemPlayer-nav__oppen"
+                            onClick={() => {setPlayerCourseBar(true)}}>
                         <FontAwesomeIcon    icon={faBars}
                                             className="learningItemPlayer-nav__oppen-icon"/>
                         Դասեր
                     </button>
-                    <ul className="learningItemPlayer-nav__content">
-                        <li className="learningItemPlayer-nav__course">
-                            <p className="learningItemPlayer-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemPlayer-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li><li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                        <li className="learningItemView-nav__course">
-                            <p className="learningItemView-nav__course-name">Դաս 1 </p>
-                            <p className="learningItemView-nav__course-direction">SQL Join</p>
-                        </li>
-                    </ul>
+                    <LearningItemPlayerCourses  playerCourseBar={playerCourseBar} 
+                                                setPlayerCourseBar={setPlayerCourseBar}/>
                 </nav>
                 <div className="learningItemPlayer-navbar__title">
                     <h2 className="learningItemPlayer-navbar__title-name">SQL course</h2>
@@ -121,7 +78,7 @@ const LearningItemPlayer = () => {
                 </video>
             </div>
             <div className={view ? "learningItemPlayer-footer active" : "learningItemPlayer-footer"}>
-                
+
             </div>
         </div>
     ) 
