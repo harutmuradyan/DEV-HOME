@@ -17,9 +17,9 @@ import Profile from './Pages/User/Profile/Profile';
 import Footer from './Components/Footer/Footer';
 import Vacancies from './Pages/User/Vacancies/Vacancies';
 import Learning from './Pages/User/Learning/Learning';
-import VacanciesItem from './Pages/User/Vacancies/VacanciesItem/VacanciesItem';
+import VacanciesItem from './Pages/User/VacanciesItem/VacanciesItem';
 import NotFound from './Components/NotFound/NotFound';
-import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
+import LearningItem from './Pages/User/LearningItem/LearningItem';
 import Company from './Pages/User/Company/Company';
 import Search from './Pages/User/Search/Search';
 import Messaging from './Pages/User/Messaging/Messaging';
@@ -29,6 +29,7 @@ import University from './Pages/User/University/University';
 import CreateUniversity from './Pages/User/CreateUniversity/CreateUniversity';
 import CreateCompany from './Pages/User/CreateCompany/CreateCompany';
 import CreateVacancies from './Pages/User/CreateVacancies/CreateVacancies';
+import CreateLesson from './Pages/User/CreateLesson/CreateLesson';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
               
               <Route path="/learning" element={<Learning />} />
               <Route path="/learning/item" element={<LearningItem />} />
+              <Route path="/createlesson" element={<CreateLesson />}/>
 
               <Route path="/company" element={<Company />} />
               <Route path='/createcompany' element={<CreateCompany/>}/>
