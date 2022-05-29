@@ -1,0 +1,133 @@
+.university-background {
+    min-height: 150px;
+    border-radius: 20px;
+    background-color:white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    .university-background__header {
+        width: 100%;
+        height: 200px;
+        .university-background__logo {
+            border-radius:100%;
+            border:solid 3px white;
+            position: relative;
+            bottom: 80px;
+            left: 60px;
+            width: 150px;
+            height: 150px;
+        }
+        .university-background__cover {
+            background-color: rgb(99, 99, 248);
+            border-radius:25px 25px 25px 25px;
+            height: 180px;
+            width: 100%;
+        }
+    }
+    .university-backgroundContent {
+        padding: 60px 40px 10px 40px;
+        .university-backgroundContent__name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding-bottom: 3px;
+        }
+        .university-backgroundContent__title {
+            color: grey;
+            padding-bottom: 5px;
+            font-size: 1rem;
+        }
+        .university-backgroundContent__conatacts {
+            display: flex;
+            padding: 5px 0px 5px 0px;
+            .university-backgroundContent__conatacts-city {
+                font-size: 1rem;
+                color: grey;
+                padding-right: 5px;
+            }
+            .university-backgroundContent__conatacts-country {
+                font-size: 1rem;
+                color: grey;
+                padding-right: 5px;
+            }
+            .university-backgroundContent__conatacts-followers {
+                font-size: 1rem;
+                color: grey;
+            }
+        }
+        .university-backgroundContent__student {
+            display: flex;
+            .university-backgroundContent__student-img {
+                width: 30px;
+                height: 30px;
+            }
+            .university-backgroundContent__student-user {
+                padding: 5px 5px 5px 5px;
+                color: grey;
+                font-size: 1rem;
+            }
+            .university-backgroundContent__student-count {
+                padding: 5px 2px 5px 2px;
+                color: grey;
+                font-size: 1rem;
+            }
+        }
+        .university-backgroundContent__btns {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px 10px 0px;
+            .university-backgroundContent__btns-left {
+                .university-backgroundContent__btns-follow {
+                    padding: 10px 30px 10px 30px;
+                    background-color:white;
+                    border:solid 1px rgb(99, 99, 248);
+                    color: rgb(99, 99, 248);
+                    border-radius:10px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color:black;
+                        color: white;
+                    }
+                }
+                .university-backgroundContent__btns-contact {
+                    padding: 10px 30px 10px 30px;
+                    background-color:rgb(99, 99, 248);
+                    color: white;
+                    border-radius:10px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                }
+            }
+            .university-backgroundContent__btns-right {
+                .university-backgroundContent__btns-student {
+                    padding: 10px 30px 10px 30px;
+                    background-color:white;
+                    color:rgb(99, 99, 248);
+                    border:solid 1px rgb(99, 99, 248);
+                    border-radius:10px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color:black;
+                        color: white;
+                    }
+                }
+                .university-backgroundContent__btns-experience {
+                    padding: 10px 30px 10px 30px;
+                    background-color:white;
+                    color:rgb(99, 99, 248);
+                    border:solid 1px rgb(99, 99, 248);
+                    border-radius:10px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color:black;
+                        color: white;
+                    }
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
