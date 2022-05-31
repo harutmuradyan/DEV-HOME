@@ -2,8 +2,8 @@
     "Users": [
         {   
             "id": 1,
-            "name": "Harut",
-            "firstName": "Muradyan",
+            "firstName": "Harut",
+            "lastName": "Muradyan",
             "email" : "Harut4565@mail.com",
             "tell" : "+374 94 66 38 44",
             "profession" : "web developer",

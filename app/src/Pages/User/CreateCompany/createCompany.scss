@@ -1,0 +1,157 @@
+.createCompany {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 30px 20px 30px;
+    background-color:rgb(248, 246, 246);
+    .createCompany-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .createCompany-content{
+            width: 60%;
+            min-height: 150px;
+            border-radius: 20px;
+            margin: 10px 10px 10px 10px;
+            background-color:white;      
+            padding: 20px 20px 20px 20px;
+            .createCompany-form {
+                width: 100%;
+                .createCompany-form__title {
+                    padding: 10px 10px 10px 10px;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    color: rgb(99, 99, 248);
+                }
+                .createCompany-form__block {
+                    width: 100%;
+                    padding: 10px 10px 10px 10px;
+                    .createCompany-form__block-content {
+                        width: 100%;
+                        padding: 10px 10px 10px 10px;
+                        .createCompany-form__label {
+                            width: 100%;
+                            display: block;
+                            padding:15px 0px 15px 0px;
+                            color: grey;
+                        }
+                        .createCompany-form__input {
+                            width: 100%;
+                            height: 35px;
+                            border-radius:5px;
+                            border:solid 1px grey;
+                            padding: 5px 0px 5px 0px;
+                        }
+                        .createCompany-form__select {
+                            width: 100%;
+                            height: 25px;
+                            border-radius:5px;
+                            border:solid 1px grey;
+                        }
+                        .createCompany-form__textare {
+                            width: 100%;
+                            height: 200px;
+                            border-radius:5px;
+                            border:solid 1px grey;
+                        }
+                        .createCompany-form__input-img {
+                            width: 100%;
+                            height: 200px;
+                            border:solid 1px grey;
+                            padding: 10px 10px 10px 10px;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                        
+                    }
+                    .createCompany-form__block-confirm {
+                        padding: 10px 10px 10px 10px;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        .createCompany-form__btn {
+                            width: 10%;
+                            background-color:white;
+                            padding-right:10px ;
+                            .createCompany-form__checkbox {
+                                
+                            }
+                        }
+                        .createCompany-form__text {
+                            width: 90%;
+                            color: rgb(99, 99, 248);
+                            text-transform: uppercase;
+                        }
+                    } 
+                }
+                .createCompany-form__sent {
+                    padding: 10px 20px 10px 20px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    .createCompany-form__sent-btn {
+                        background-color: rgb(99, 99, 248);
+                        padding: 15px 15px 15px 15px;
+                        color: white;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        .createCompany-view {
+            width: 30%;
+            height: 400px;
+            border-radius: 20px;
+            margin: 10px 10px 10px 10px;
+            background-color:white;      
+            padding: 20px 20px 20px 20px;
+            .createCompany-view__title {
+                padding: 10px 0px 10px 0px;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1rem;
+            }
+            .createCompany-view__content {
+                background-color:rgb(204, 202, 202);
+                height: 300px;
+                .createCompany-view__background {
+                    height: 100px;
+                    background-color:rgb(99, 99, 248);
+                    .createCompany-view__background {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .createCompany-view__logo {
+                    width: 80px;
+                    height: 80px;
+                    background-color:black;
+                    position: relative;
+                    bottom: 30px;
+                    left: 30px;
+                    border:solid 1px white;
+                }
+                .createCompany-view__about {
+                    padding-top: 5px;
+                    padding-left: 30px;
+                }
+                .createCompany-view__direction {
+                    padding-top: 5px;
+                    padding-left: 30px;
+                }
+                .createCompany-view__follow {
+                    padding-top: 5px;
+                    background-color:rgb(99, 99, 248);
+                    width: 50%;
+                    padding: 10px 10px 10px 10px;
+                    color: white;
+                    border-radius:10px;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+}
+
