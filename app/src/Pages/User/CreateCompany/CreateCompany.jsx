@@ -6,12 +6,14 @@ const CreateCompany = () => {
         <div className="createCompany">
             <div className="createCompany-container">
                 <div className="createCompany-content">
-                    <form className="createCompany-form" method="post">
+                    <form       className="createCompany-form" 
+                                method="post">
                         <div className="createCompany-form__block">
                             <h2 className="createCompany-form__title">Էջի մասին տվյալներ</h2>
                             <div className="createCompany-form__block-content">
                                 <label  className="createCompany-form__label" 
                                         for="companyname">Անվանում *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createCompany-form__input"
                                         required
@@ -21,6 +23,7 @@ const CreateCompany = () => {
                                         placeholder="   Կազ․ Անվանում"></input>
                                 <label  className="createCompany-form__label"
                                         for="tell">Հեռախոսահամար *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createCompany-form__input"
                                         required
@@ -30,6 +33,7 @@ const CreateCompany = () => {
                                         placeholder="   Կազ․ Հեռախոսահամար"></input>
                                 <label  className="createCompany-form__label"
                                         for="address">Գտնվելու վայր *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createCompany-form__input"
                                         required
@@ -39,6 +43,7 @@ const CreateCompany = () => {
                                         placeholder="   Կազ․ Գտնվելու վայրը"></input>
                                 <label  className="createCompany-form__label"
                                         for="url">Կազ`URL *  </label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createCompany-form__input"
                                         required
@@ -48,6 +53,7 @@ const CreateCompany = () => {
                                         placeholder="   Կազ․ Ինտերնետային կայքի հասցեն"></input>
                                 <label  className="createCompany-form__label"
                                         for="site">Ինտերնետային կայք *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createCompany-form__input"
                                         required
@@ -62,6 +68,7 @@ const CreateCompany = () => {
                             <div className="createCompany-form__block-content">
                                 <label  className="createCompany-form__label"
                                         for="direction">Ուղվածություն *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createCompany-form__input"
                                         required
@@ -71,6 +78,7 @@ const CreateCompany = () => {
                                         placeholder="   Կազ․ Աշխատանքային բնագավառը"></input>
                                 <label  className="createCompany-form__label"
                                         for="count">Աշխատակիցների քանակ *</label>
+                                <p className="createCompany-form__message">Ընտրեք որեվիցե մեկը</p>
                                 <select className="createCompany-form__select"
                                         name="count">
                                     <option     className="createCompany-form__select-option"
@@ -78,6 +86,7 @@ const CreateCompany = () => {
                                 </select>
                                 <label  className="createCompany-form__label"
                                         for="category">Կազմակերպության տիպ *</label>
+                                <p className="createCompany-form__message">Ընտրեք որեվիցե մեկը</p>
                                 <select className="createCompany-form__select"
                                         name="category">
                                     <option className="createCompany-form__select-option"
@@ -90,6 +99,7 @@ const CreateCompany = () => {
                             <div className="createCompany-form__block-content">
                                 <label  className="createCompany-form__label"
                                         name="logo">Ավելացնել Կազ․ լոգոն *</label>
+                                <p className="createCompany-form__message">Ավելացրեք IMG,PNG</p>
                                 <input  type="file" 
                                         className="createCompany-form__input-img"
                                         required
@@ -99,6 +109,7 @@ const CreateCompany = () => {
                                         ></input>
                                 <label  className="createCompany-form__label"
                                         for="background">Ավելացնել Կազ․ ետևի ֆոնի նկար *</label>
+                                <p className="createCompany-form__message">Ավելացրեք IMG,PNG</p>
                                 <input  type="file" 
                                         className="createCompany-form__input-img"
                                         required
@@ -108,6 +119,7 @@ const CreateCompany = () => {
                                         ></input>
                                 <label  className="createCompany-form__label"
                                         for="jobabout">Կազ. Նկարագրություն *</label>
+                                <p className="createCompany-form__message">Ավելացրեք 1999 տառ</p>
                                 <textarea   className="createCompany-form__textare"
                                             required
                                             name="jobabout"></textarea>

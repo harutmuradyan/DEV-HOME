@@ -9,12 +9,14 @@ const CreateVacancies = () => {
         <div className="createVacancies">
             <div className="createVacancies-container">
                 <div className="createVacancies-content">
-                    <form className="createVacancies-form" method="post">
+                    <form   className="createVacancies-form" 
+                            method="post">
                         <div className="createVacancies-form__block">
                             <h2 className="createVacancies-form__title">Մաս 1</h2>
                             <div className="createVacancies-form__block-content">
                                 <label  className="createVacancies-form__label" 
                                         for="jobename">Աշխատանքի անվանում *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createVacancies-form__input"
                                         required
@@ -24,6 +26,7 @@ const CreateVacancies = () => {
                                         placeholder="   Աշխատանքի անվանում"></input>
                                 <label  className="createVacancies-form__label"
                                         for="companyname">Կազմակերպության անվանում *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createVacancies-form__input"
                                         required
@@ -33,6 +36,7 @@ const CreateVacancies = () => {
                                         placeholder="   Կազ․ անվանում"></input>
                                 <label  className="createVacancies-form__label"
                                         for="jobaddress">Աշխ․ Գտնվելու վայր *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="text" 
                                         className="createVacancies-form__input"
                                         required
@@ -42,6 +46,7 @@ const CreateVacancies = () => {
                                         placeholder="   Աշխ․ Գտնվելու վայրը"></input>
                                 <label  className="createVacancies-form__label"
                                         for="jobtype">Աշխատանքի տեսակ *</label>
+                                <p className="createCompany-form__message">Ընտրեք որեվիցե մեկը</p>
                                 <select className="createVacancies-form__select"
                                         name="jobtype">
                                     <option     className="createVacancies-form__select-option"
@@ -49,6 +54,7 @@ const CreateVacancies = () => {
                                 </select>
                                 <label  className="createVacancies-form__label"
                                         for="jobtime">Աշխատանքային ժամեր *</label>
+                                <p className="createCompany-form__message">Ընտրեք որեվիցե մեկը</p>
                                 <select className="createVacancies-form__select"
                                         name="jobtime">
                                     <option     className="createVacancies-form__select-option"
@@ -62,9 +68,10 @@ const CreateVacancies = () => {
                             <div className="createVacancies-form__block-content">
                                 <label  className="createVacancies-form__label"
                                         for="about">Ավելացնել աշխատանքի Նկարագրություն *</label>
-                                    <textarea   className="createVacancies-form__textare"
-                                                required
-                                                name="about"></textarea>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
+                                <textarea   className="createVacancies-form__textare"
+                                            required
+                                            name="about"></textarea>
                                 <div className="createVacancies-form__btns">
                                     <p className="createVacancies-form__btns-title">Ավելացնել պահանջվող հմտություններ *</p>
                                     <div className="createVacancies-form__btns-content">
@@ -93,6 +100,7 @@ const CreateVacancies = () => {
                             <div className="createVacancies-form__block-content">
                                 <label  className="createVacancies-form__label"
                                         for="jobemail">Աշխատանքի էլեկտրոնային հասցե *</label>
+                                <p className="createCompany-form__message">Սխալ է լրացված</p>
                                 <input  type="email" 
                                         className="createVacancies-form__input"
                                         required
@@ -140,7 +148,7 @@ const CreateVacancies = () => {
                     </form>
                 </div>
                 <div className="createVacancies-view">
-                    
+                
                 </div>
             </div>
         </div>

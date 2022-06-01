@@ -10,9 +10,9 @@
     .feedPostPhotoModal-container {
         position: relative;
         top: 70px;
-        width: 60%;
+        width: 40%;
         margin: 0 auto;
-        height: 500px;
+        min-height: 150px;
         border-radius: 20px;
         background-color:white;
         .feedPostPhotoModal-header {
@@ -29,8 +29,94 @@
         }
         .feedPostPhotoModal-content {
             padding: 15px 15px 15px 15px;
-            height:380px ;
-            overflow-y: scroll;
+            width: 100%;
+            min-height: 200px;
+            margin: 0 auto;
+            .feedPostPhotoModal-content__block {
+                width: 100%;
+                padding: 10px 20px 10px 20px;
+                .feedPostPhotoModal-content__file {
+                    padding: 10px 10px 10px 10px;
+                    width: 100%;
+                    border:solid 1px grey;
+                    padding: 20px 20px 20px 20px;
+                    cursor: pointer;
+                }
+                .feedPostPhotoModal-content__btns {
+                    width: 100%;
+                    display: flex;
+                    .feedPostPhotoModal-content__close {
+                        width: 45%;
+                        background-color:white;
+                        border-radius:10px;
+                        color: grey;
+                        margin: 10px 10px 10px 10px;
+                        padding: 10px 10px 10px 10px;
+                        border:solid 1px grey;
+                        cursor: pointer;
+                    }
+                    .feedPostPhotoModal-content__success {
+                        width: 45%;
+                        background-color:rgb(99, 99, 248);
+                        margin: 10px 10px 10px 10px;
+                        padding: 10px 10px 10px 10px;
+                        border:solid 1px grey;  
+                        color: white;
+                        border-radius:10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .feedPostPhotoModal-content__container {
+                height:350px;
+                overflow-y: scroll;
+                border-radius:10px;
+                padding: 10px 10px 10px 10px;
+                .feedPostPhotoModal-content__header {
+                    width: 100%;
+                    display: flex;
+                    .feedPostPhotoModal-content__header-img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .feedPostPhotoModal-content__header-group {
+                        padding-left: 20px;
+                        .feedPostPhotoModal-content__header-name {
+                            font-size: 1.2rem;
+                            color: rgb(99, 99, 248);
+                            padding-bottom: 5px;
+                        }
+                        .feedPostPhotoModal-content__header-hideen {
+                            font-size: 0.8rem;
+                            border:solid 1px grey;
+                            border:solid 1px rgb(99, 99, 248);
+                            border-radius:10px;
+                            padding: 3px 10px 3px 10px;
+                        }
+                    }
+                }
+                .feedPostPhotoModal-content__view {
+                    .feedPostPhotoModal-content__view-about {
+                        padding: 10px 0px 10px 0px;
+                        margin: 20px 0px 0px 0px;
+                        border:solid 1px grey;
+                        width: 100%;
+                    }
+                    .feedPostPhotoModal-content__view-photo {
+                        width: 100%;
+                        height: 300px;
+                        background-color:black;
+                    }
+                    .feedPostPhotoModal-content__view-close {
+                        position: relative;
+                        color: white;
+                        top: 30px;
+                        left: 10px;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
         .feedPostPhotoModal-footer {
             padding: 15px 15px 15px 15px;

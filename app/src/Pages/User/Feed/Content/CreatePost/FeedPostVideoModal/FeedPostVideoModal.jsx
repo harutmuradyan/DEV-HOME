@@ -23,27 +23,38 @@ const FeedPostVideoModal = (
                                      />
                 </div>
                 <div className="feedPostVideoModal-content">
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
+                    <div className="feedPostVideoModal-content__block">
+                        <input  type="file" 
+                                className="feedPostVideoModal-content__file"></input>
+                        <div className="feedPostVideoModal-content__btns">
+                            <button className="feedPostVideoModal-content__close">Չեղարկել</button>
+                            <button className="feedPostVideoModal-content__success">Հաստատել</button>
+                        </div>
+                    </div>
+                    <div className="feedPostVideoModal-content__container">
+                        <div className="feedPostVideoModal-content__header">
+                            <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                                    alt="" 
+                                    className="feedPostVideoModal-content__header-img"></img>
+                            <div className="feedPostVideoModal-content__header-group">
+                                <p className="feedPostVideoModal-content__header-name">Անի Ղազարյան</p>
+                                <select className="feedPostVideoModal-content__header-hideen">
+                                    <option>Բոլորի համար</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className="feedPostVideoModal-content__view">
+                            <input  type="text" 
+                                    placeholder="   Ինչով եք ուզում կիսվել"
+                                    className="feedPostVideoModal-content__view-about"></input>
+                            
+                            <FontAwesomeIcon    icon={faClose} 
+                                                className="feedPostVideoModal-content__view-close"/>
+                            <img    alt=""
+                                    src=""  
+                                    className="feedPostVideoModal-content__view-video"></img>
+                        </div>
+                    </div>
                 </div>
                 <div className="feedPostVideoModal-footer">
                     <button className="feedPostVideoModal-footer__btn">Հաստատել</button>
