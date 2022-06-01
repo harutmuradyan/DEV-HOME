@@ -10,11 +10,6 @@
         justify-content: space-between;
         .createCompany-content{
             width: 60%;
-            min-height: 150px;
-            border-radius: 20px;
-            margin: 10px 10px 10px 10px;
-            background-color:white;      
-            padding: 20px 20px 20px 20px;
             .createCompany-form {
                 width: 100%;
                 .createCompany-form__title {
@@ -25,7 +20,11 @@
                 }
                 .createCompany-form__block {
                     width: 100%;
-                    padding: 10px 10px 10px 10px;
+                    min-height: 50px;
+                    border-radius: 20px;
+                    margin: 10px 10px 20px 10px;
+                    background-color:white;      
+                    padding: 20px 20px 20px 20px;
                     .createCompany-form__block-content {
                         width: 100%;
                         padding: 10px 10px 10px 10px;
@@ -70,11 +69,10 @@
                         width: 100%;
                         justify-content: space-between;
                         .createCompany-form__btn {
-                            width: 10%;
                             background-color:white;
                             padding-right:10px ;
                             .createCompany-form__checkbox {
-                                
+                                cursor: pointer;
                             }
                         }
                         .createCompany-form__text {
@@ -85,6 +83,11 @@
                     } 
                 }
                 .createCompany-form__sent {
+                    min-height: 50px;
+                    border-radius: 20px;
+                    margin: 10px 10px 10px 10px;
+                    background-color:white;      
+                    padding: 20px 20px 20px 20px;
                     padding: 10px 20px 10px 20px;
                     width: 100%;
                     display: flex;
@@ -94,6 +97,7 @@
                         padding: 15px 15px 15px 15px;
                         color: white;
                         border-radius: 10px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -106,13 +110,13 @@
             background-color:white;      
             padding: 20px 20px 20px 20px;
             .createCompany-view__title {
-                padding: 10px 0px 10px 0px;
+                padding: 10px 0px 20px 0px;
                 text-transform: uppercase;
                 text-align: center;
                 font-size: 1rem;
             }
             .createCompany-view__content {
-                background-color:rgb(204, 202, 202);
+                background-color:rgb(235, 231, 231);
                 height: 300px;
                 .createCompany-view__background {
                     height: 100px;
@@ -127,23 +131,25 @@
                     height: 80px;
                     background-color:black;
                     position: relative;
-                    bottom: 30px;
+                    bottom: 40px;
                     left: 30px;
                     border:solid 1px white;
                 }
                 .createCompany-view__about {
+                    font-size: 1rem;
                     padding-top: 5px;
                     padding-left: 30px;
                 }
                 .createCompany-view__direction {
                     padding-top: 5px;
+                    font-size: 1rem;
                     padding-left: 30px;
+                    color: rgb(99, 99, 248);    
                 }
                 .createCompany-view__follow {
                     padding-top: 5px;
                     background-color:rgb(99, 99, 248);
-                    width: 50%;
-                    padding: 10px 10px 10px 10px;
+                    padding: 10px 30px 10px 30px;
                     color: white;
                     border-radius:10px;
                     margin-top: 10px;

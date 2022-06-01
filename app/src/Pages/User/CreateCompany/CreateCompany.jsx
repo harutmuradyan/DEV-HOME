@@ -107,12 +107,10 @@ const CreateCompany = () => {
                                         value=""
                                         ></input>
                                 <label  className="createCompany-form__label"
-                                        for="about">Կազ. Նկարագրություն</label>
+                                        for="jobabout">Կազ. Նկարագրություն *</label>
                                 <textarea   className="createCompany-form__textare"
                                             required
-                                            name="about"
-                                            
-                                            ></textarea>
+                                            name="jobabout"></textarea>
                             </div>
                         </div>
                         <div className="createCompany-form__block">
@@ -144,9 +142,9 @@ const CreateCompany = () => {
                         <img    src=""
                                 alt=""
                                 className="createCompany-view__logo"></img>
-                        <p className="createCompany-view__about">Կարճ նկարագրություն</p>
                         <p className="createCompany-view__direction">Ուղվածություն</p>
-                        <p className="createCompany-view__follow">Հետևել</p>
+                        <p className="createCompany-view__about">Կարճ նկարագրություն</p>
+                        <button className="createCompany-view__follow">Հետևել</button>
                     </div>
                 </div>
             </div>
