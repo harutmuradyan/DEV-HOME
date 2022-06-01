@@ -23,27 +23,23 @@ const FeedPostArticleModal = (
                                      />
                 </div>
                 <div className="feedPostArticleModal-content">
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
-                    <p>Content</p>
+                    <div className="feedPostArticleModal-content__container">
+                        <div className="feedPostArticleModal-content__header">
+                            <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                                    alt="" 
+                                    className="feedPostArticleModal-content__header-img"></img>
+                            <div className="feedPostArticleModal-content__header-group">
+                                <p className="feedPostArticleModal-content__header-name">Անի Ղազարյան</p>
+                                <select className="feedPostArticleModal-content__header-hideen">
+                                    <option>Բոլորի համար</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className="feedPostArticleModal-content__view">
+                            <p className="feedPostArticleModal-content__view-title">Ինչով եք ուզում կիսվել `</p>
+                            <textarea  className="feedPostArticleModal-content__view-about"></textarea>
+                        </div>
+                    </div>
                 </div>
                 <div className="feedPostArticleModal-footer">
                     <button className="feedPostArticleModal-footer__btn">Հաստատել</button>
