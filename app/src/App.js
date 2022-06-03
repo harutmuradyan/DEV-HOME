@@ -30,9 +30,9 @@ import CreateUniversity from './Pages/User/CreateUniversity/CreateUniversity';
 import CreateCompany from './Pages/User/CreateCompany/CreateCompany';
 import CreateVacancies from './Pages/User/CreateVacancies/CreateVacancies';
 import CreateLesson from './Pages/User/CreateLesson/CreateLesson';
+import Skils from './Pages/User/Skils/Skils';
 
 function App() {
-
   return (
     <div className='app'>
       <ErrorBoundary FallbackComponent={ErrorHandler}>
@@ -68,6 +68,8 @@ function App() {
               <Route path="/university" element={<University />} />
               <Route path='/createuniversity' element={<CreateUniversity/>} />
               
+              <Route path="/skils" element={<Skils />}/>
+
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

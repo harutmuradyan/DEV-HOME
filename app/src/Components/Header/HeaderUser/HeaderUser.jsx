@@ -9,7 +9,8 @@ import {    faUsers ,
             faMessage , 
             faBell , 
             faBriefcase , 
-            faBars} from "@fortawesome/free-solid-svg-icons";
+            faBars,
+            faSearch} from "@fortawesome/free-solid-svg-icons";
 
 import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";
@@ -21,6 +22,7 @@ const HeaderUser = () => {
     const [userModal,setUserModal] = useState(false);
     const [servicesModal,setServicesModal] = useState(false);
     const [modalSearch,setModalSearch] = useState(false);
+    const [modalHeaderMenuBar, setModalHeaderMenuBar] = useState(false);
 
     return (
         <header className="header">
@@ -35,11 +37,23 @@ const HeaderUser = () => {
                     <div className="headerUser-content__search">
                         <ModalSearch    modalSearch={modalSearch} 
                                         setModalSearch={setModalSearch}/>
-                        <input  placeholder="  Փնտրել" 
-                                onClick={() => {setModalSearch(true)}}/>
+                        <button className="headerUser-content__search-btn">
+                            <FontAwesomeIcon    icon={faSearch} 
+                                                className="headerUser-content__search-icon"/>
+                            <input  placeholder="  Փնտրել" 
+                                    onClick={() => {setModalSearch(true)}}
+                                    className="headerUser-content__search-input"
+                                    />
+                        </button>
                     </div>
                     <nav className="headerUser-content__nav">
-                        <ul className="headerUser-content__block">
+                        <button className="headerUser-content__nav-btn">
+                            <FontAwesomeIcon    icon={faBars} 
+                                                className="headerUser-content__nav-icon"
+                                                onClick={() => {setModalHeaderMenuBar(true)}}
+                                                />
+                        </button>
+                        <ul className={modalHeaderMenuBar ? "headerUser-content__block active" : "headerUser-content__block"}>
                             <li className="headerUser-content__item">
                                 <Link to="/index">
                                     <FontAwesomeIcon    icon={faHome}  
