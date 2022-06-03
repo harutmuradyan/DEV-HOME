@@ -27,7 +27,7 @@
                 cursor: pointer;
             }
             p {
-                padding: 2px 0px 2px 0px;
+                padding: 5px 0px 2px 0px;
                 font-size: 0.8rem;
                 cursor: pointer;
                 color: grey;
@@ -42,7 +42,8 @@
             span {
                 display: flex;
                 justify-content:flex-end;
-                margin-top: 5px;
+                margin-top: 10px;
+                margin-bottom: 10px;
                 color: rgb(99, 99, 248);
                 cursor: pointer;
             }
@@ -149,3 +150,27 @@
 .red {  color:rgb(252, 11, 11);}
 .green { color:rgb(9, 247, 9);}
 .blue { color:rgb(6, 6, 250);}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .companyPost {
+        width: 100%;
+    }
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .companyPost {
+        .companyPost-content {
+            .companyPost-content__btns {
+                .companyPost-content__nav {
+                    flex-wrap: wrap;
+                    .companyPost-content__item {
+                        width: 50%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

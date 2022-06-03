@@ -33,7 +33,7 @@ const CompanyBackground = () => {
                     <img    className="company-backgroundContent__employee-img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
-                    <p className="company-backgroundContent__employee-user">Աշխատում է այստեղ</p>
+                    <p className="company-backgroundContent__employee-user">Աշխատում է ,</p>
                     <p className="company-backgroundContent__employee-count">և 5</p>
                 </div>
                 <div className="company-backgroundContent__btns">

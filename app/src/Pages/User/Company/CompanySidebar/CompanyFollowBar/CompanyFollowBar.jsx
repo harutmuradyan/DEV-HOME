@@ -7,11 +7,12 @@ const CompanyFollowBar = () => {
     return (
         <div className="companyFollowBar">
             <h2 className="companyFollowBar-title">Հետևեք նոր ԸՆկերությունների</h2>
-            
-            <CompanyFollowBarItem/>
-            <CompanyFollowBarItem/>
-            <CompanyFollowBarItem/>
-            <CompanyFollowBarItem/>
+            <div className="companyFollowBar-block">
+                <CompanyFollowBarItem/>
+                <CompanyFollowBarItem/>
+                <CompanyFollowBarItem/>
+                <CompanyFollowBarItem/>
+            </div>
         </div>
     )
 }

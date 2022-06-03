@@ -42,15 +42,21 @@
             .company-backgroundContent__conatacts-city {
                 font-size: 1rem;
                 color: grey;
+                padding-top: 3px;
+                padding-bottom: 3px;
                 padding-right: 5px;
             }
             .company-backgroundContent__conatacts-country {
                 font-size: 1rem;
+                padding-bottom: 3px;
+                padding-top: 3px;
                 color: grey;
                 padding-right: 5px;
             }
             .company-backgroundContent__conatacts-followers {
                 font-size: 1rem;
+                padding-bottom: 3px;
+                padding-top: 3px;
                 color: grey;
             }
         }
@@ -72,6 +78,7 @@
             }
         }
         .company-backgroundContent__btns {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             padding: 20px 0px 10px 0px;
@@ -128,6 +135,83 @@
                     margin-right: 5px;
                 }
             }
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .company-background {
+        .company-backgroundContent__btns {
+            width: 100%; 
+            .company-backgroundContent__btns-left {
+                .company-backgroundContent__btns-follow {
+                    font-size: 0.6rem;
+                    margin-top: 5px;
+                }
+                .company-backgroundContent__btns-contact {
+                    font-size: 0.6rem;
+                    margin-top: 5px;
+                }
+            }   
+            .company-backgroundContent__btns-right {
+                .company-backgroundContent__btns-employee {
+                    font-size: 0.6rem;
+                    width: 100%;
+                    margin-top: 5px;
+                }
+                .company-backgroundContent__btns-experience {
+                    font-size: 0.6rem;
+                    width: 100%;
+                    margin-top: 5px;
+                }
+            }    
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .company-background {
+        .company-background__header {
+            .company-background__cover {
+                height: 140px;
+                border-radius:10px 10px 10px 10px;
+            }
+            .company-background__logo {
+                width: 120px;
+                height: 120px;
+                bottom: 70px
+            } 
+        }
+        .company-backgroundContent {
+            padding: 30px 10px 10px 10px;
+        }
+        .company-backgroundContent__conatacts {
+            flex-wrap: wrap;
+        }
+        .company-backgroundContent__employee {
+            flex-wrap: wrap;
+        }
+        .company-backgroundContent__btns {
+            width: 100%; 
+            display: block;
+            .company-backgroundContent__btns-left {
+                .company-backgroundContent__btns-follow {
+                    width: 100px;
+                }
+                .company-backgroundContent__btns-contact {
+                    width: 100px;
+                }
+            }   
+            .company-backgroundContent__btns-right {
+                .company-backgroundContent__btns-employee {
+                    width: 100%;
+                }
+                .company-backgroundContent__btns-experience {
+                    width: 100%;
+                }
+            }    
         }
     }
 }

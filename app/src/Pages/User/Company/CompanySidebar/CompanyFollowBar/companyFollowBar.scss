@@ -10,6 +10,27 @@
         margin: 10px;
         text-align: center;
         border-bottom:solid 1px rgb(99, 99, 248);
-        padding: 10px 0px 10px 0px;  
+        padding: 20px 0px 20px 0px;  
     }
 } 
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $xl) {
+    .companyFollowBar {
+        .companyFollowBar-title {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .companyFollowBar {
+        .companyFollowBar-block {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
