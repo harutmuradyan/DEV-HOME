@@ -45,4 +45,20 @@
 }
 
   
-  
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .learningLessons {
+        .learningLessons-conatiner{
+            .learningLessons-title {
+                text-align: center;
+            }
+        }
+        .learningLessons-slides {
+            .learningLessons-slides__btns {
+                right: 0px;
+                bottom: 20px;
+            }
+        }
+    }
+}

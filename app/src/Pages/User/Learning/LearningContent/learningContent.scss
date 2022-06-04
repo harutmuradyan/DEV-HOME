@@ -49,3 +49,66 @@
         }
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .learningContent {
+        .learningContent-container {
+            display: flex;
+            width: 100%;
+            .learningContent-left {
+                width: 50%;
+                .learningContent-left__info {
+                    font-size: 1rem;
+                }
+                .learningContent-left__followers {
+                    font-size: 1rem;
+                }
+                .learningContent-left__start {
+                    font-size: 1rem;
+                    padding: 10px 30px;
+                }
+            }
+            .learningContent-right {
+                width: 50%;
+            }
+        }
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .learningContent {
+        .learningContent-container {
+            display: block;
+            width: 100%;
+            .learningContent-left {
+                width: 100%;
+                .learningContent-left__info {
+                    padding: 10px 10px 10px 10px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                .learningContent-left__followers {
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                .learningContent-left__start {
+                    font-size: 0.8rem;
+                    width: 100%;
+                    padding: 10px 20px;
+                }
+            }
+            .learningContent-right {
+                width: 70%;
+                padding: 0px;
+                margin: 0 auto;
+                height: 300px;
+            .learningContent-right__img {
+                width: 100%;
+                height: 100%;
+            }
+            }
+        }
+    }   
+}

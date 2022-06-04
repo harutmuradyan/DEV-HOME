@@ -15,7 +15,6 @@ const LearningTeachers = () => {
                 <LearningTeacher/>
                 <LearningTeacher/>
                 <LearningTeacher/>
-                <LearningTeacher/>
             </div>
         </div>
     )
