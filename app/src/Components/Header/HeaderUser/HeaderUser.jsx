@@ -22,7 +22,6 @@ const HeaderUser = () => {
     const [userModal,setUserModal] = useState(false);
     const [servicesModal,setServicesModal] = useState(false);
     const [modalSearch,setModalSearch] = useState(false);
-    const [modalHeaderMenuBar, setModalHeaderMenuBar] = useState(false);
 
     return (
         <header className="header">
@@ -47,13 +46,7 @@ const HeaderUser = () => {
                         </button>
                     </div>
                     <nav className="headerUser-content__nav">
-                        <button className="headerUser-content__nav-btn">
-                            <FontAwesomeIcon    icon={faBars} 
-                                                className="headerUser-content__nav-icon"
-                                                onClick={() => {setModalHeaderMenuBar(true)}}
-                                                />
-                        </button>
-                        <ul className={modalHeaderMenuBar ? "headerUser-content__block active" : "headerUser-content__block"}>
+                        <ul className="headerUser-content__block">
                             <li className="headerUser-content__item">
                                 <Link to="/index">
                                     <FontAwesomeIcon    icon={faHome}  
@@ -68,7 +61,7 @@ const HeaderUser = () => {
                                     <span className="count"></span>
                                 </Link>
                             </li>
-                            <li className="headerUser-content__item">
+                            <li className="headerUser-content__item item-close">
                                 <Link   to="/learning" 
                                         className="headerUser-content__item">
                                     <FontAwesomeIcon    icon={faGraduationCap} 
@@ -76,7 +69,7 @@ const HeaderUser = () => {
                                     <span className="count"></span>
                                 </Link>
                             </li>
-                            <li className="headerUser-content__item">
+                            <li className="headerUser-content__item item-close">
                                 <Link   to="/vacancies" 
                                         className="headerUser-content__item">
                                     <FontAwesomeIcon    icon={faBriefcase} 

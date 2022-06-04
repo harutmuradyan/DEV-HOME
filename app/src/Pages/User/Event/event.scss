@@ -32,6 +32,7 @@
                 .event-content__header-eventName {
                     font-size: 1.2rem;
                     padding-bottom: 5px;
+                    color: rgb(99, 99, 248);
                 }  
                 .event-content__header-companyName {
                     font-size: 1rem;
@@ -115,6 +116,7 @@
                 background-color:white; 
                 .event-content__desc-title {
                     font-size: 1rem;
+                    color: rgb(99, 99, 248);
                     padding: 10px 0px 15px 0px;
                     text-transform: uppercase;
                 }
@@ -158,7 +160,7 @@
                         }
                     }
                     .event-content__company-add {
-                        width: 20%;
+                        width: 30%;
                         height: 40px;
                         border:solid 1px rgb(99, 99, 248);
                         background-color:white;
@@ -185,13 +187,14 @@
         }
         .event-sidebar {
             width: 30%;
-            height: 350px;
+            height: 320px; 
             border-radius: 20px;
             margin: 10px 10px 10px 10px;
             background-color:white;  
             .event-sidebar__block {
                 padding: 15px 15px 15px 15px;
-                cursor: pointer; 
+                cursor: pointer;
+                height: 250px; 
                 .event-sidebar__block-cover {
                     width: 100%;
                     height: 100%;
@@ -200,18 +203,108 @@
                     width: 100%;
                     margin-bottom: 15px;
                     padding: 10px 10px 10px 10px;
-                    border:solid 2px rgb(99, 99, 248);
+                    border:solid 2px black;
                     border-radius:10px;
                     background-color:white;
                     text-transform: uppercase;
                     font-weight: bold;
-                    color:rgb(99, 99, 248);
+                    color:black;
                     &:hover {
                         background-color:black;
                         color: white;
                         cursor: pointer;
                     }
                 }
+            }
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .event {
+        width: 100%;
+        .event-container {
+            display: block;
+            .event-content {
+                width: 100%;
+                .event-content__background {
+                    height: 300px;
+                    .event-content__background-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .event-sidebar {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width : $xs) and (max-width : $lg) {
+    .event {
+        .event-container {
+            .event-content {
+                .event-content__background {
+                    height: 300px;
+                    .event-content__background-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .event {
+        width: 100%;
+        .event-container {
+            display: block;
+            .event-content {
+                width: 100%;
+                .event-content__background {
+                    height: 200px;
+                    .event-content__background-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .event-content__company {
+                    .event-content__company-block {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .event-content__company-img {
+                            width: 50%;
+                        }
+                        .event-content__company-info {
+                            width: 50%;
+                        }
+                        .event-content__company-add {
+                            margin-top: 10px;
+                            width: 100%;
+                        }
+                    }
+                    .event-content__company-linq {
+                        margin-top: 10px;
+                    }
+                }
+                .event-content__desc {
+                    .event-content__desc-title {
+                        text-align: center;
+                    }
+                }
+                .event-content__header-btns {
+                    .event-content__header-complain {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .event-sidebar {
+                width: 100%;
             }
         }
     }

@@ -165,7 +165,55 @@
                 }
             }
         }
-
     }
 }
 
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $xl) {
+    .createCompany {
+        .createCompany-container {
+            width: 100%;
+            .createCompany-content{
+                width: 60%;
+            }
+            .createCompany-view {
+                width: 35%;
+            }
+    
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .createCompany {
+        .createCompany-container {
+            width: 100%;
+            .createCompany-content{
+                width: 60%;
+            }
+            .createCompany-view {
+                width: 35%;
+            }
+    
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .createCompany {
+        padding: 80px 0px 20px 0px;
+        .createCompany-container {
+            width: 100%;
+            padding: 0;
+            display: block;
+            .createCompany-content{
+                width: 94%;
+            }
+            .createCompany-view {
+                width: 94%;
+            }
+    
+        }
+    }
+}
