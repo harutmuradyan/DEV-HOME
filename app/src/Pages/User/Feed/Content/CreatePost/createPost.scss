@@ -43,3 +43,25 @@
 .green {color: green;}
 .yellow {color: rgb(199, 199, 68);}
 .red {color: rgb(223, 81, 81);}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .content  {
+        .createPost-category {
+            .createPost-category_bar {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                .createPost-category__item {
+                    width: 45%;
+                    border:solid 1px grey;
+                    border-radius:10px;
+                    padding: 5px 5px 5px 5px;
+                    margin: 5px 5px 5px 5px;
+                }
+            }
+        }
+    }   
+}

@@ -14,6 +14,9 @@
                     text-transform: uppercase;
                 }
             }
+            .sidebar-container__blockContent {
+                
+            }
             .sidebar-container__seeMore {
                 padding: 20px 0px 20px 0px;
                 width: 80%;
@@ -27,6 +30,34 @@
                     cursor: pointer;
                 }
             } 
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .sidebar {
+        .sidebar-container {
+            .sidebar-container__block {
+                .sidebar-container__block-title {
+                    h2 {
+                        padding: 20px 10px 10px 10px;
+                    }
+                }
+                .sidebar-container__blockContent {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                .sidebar-container__seeMore {
+                    width: 35%;
+                    .sidebar-container__seeMore-btn {
+                        padding: 5px 0px 5px 0px;
+                    }
+                } 
+            }
         }
     }
 }

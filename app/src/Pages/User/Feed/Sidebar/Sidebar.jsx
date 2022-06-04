@@ -11,9 +11,11 @@ const Sidebar = () => {
                     <div className="sidebar-container__block-title">
                         <h2>Ավելացրեք Ձեր Էջում</h2>
                     </div>
-                    <CompanyFollow />
-                    <CompanyFollow />
-                    <CompanyFollow />
+                    <div className="sidebar-container__blockContent">
+                        <CompanyFollow />
+                        <CompanyFollow />
+                        <CompanyFollow />
+                    </div>
                     <div className="sidebar-container__seeMore">
                         <button className="sidebar-container__seeMore-btn">
                             Դիտել ավելին

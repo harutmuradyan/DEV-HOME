@@ -14,3 +14,18 @@
         }
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .goPremium {
+        .goPremium__title{
+            text-align: center;
+        }
+        .goPremium__block {
+            display: flex;
+            justify-content: center;
+            width:100%;
+        }
+    }
+}

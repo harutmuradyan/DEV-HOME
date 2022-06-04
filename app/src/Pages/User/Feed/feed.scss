@@ -11,10 +11,86 @@
             width: 20%;
         }
         .feed-container__content {
-            width: 60%;
+            width: 55%;
         }
         .feed-container__rightBlock {
-            width: 20%;
+            width: 25%;
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $xl) {
+    .feed {
+        padding: 80px 0px 20px 0px;
+        .feed-container {
+            .feed-container__leftBlock {
+                width: 20%;
+            }
+            .feed-container__content {
+                width: 55%;
+            }
+            .feed-container__rightBlock {
+                width: 25%;
+            }
+        }
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .feed {
+        .feed-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .feed-container__leftBlock {
+                width: 30%;
+            }
+            .feed-container__content {
+                width: 70%;
+            }
+            .feed-container__rightBlock {
+                width: 100%;
+            }
+        }
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .feed {
+        .feed-container {
+            .feed-container__leftBlock {
+                width: 100%;
+                padding: 0px 50px 0px 50px;
+            }
+            .feed-container__content {
+                width: 100%;
+                padding: 0px 50px 0px 50px;
+            }
+            .feed-container__rightBlock {
+                width: 100%;
+                padding: 0px 50px 0px 50px;
+            }
+        }
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .feed {
+        .feed-container {
+            .feed-container__leftBlock {
+                width: 100%;
+                padding: 0px 10px 0px 10px;
+            }
+            .feed-container__content {
+                width: 100%;
+                padding: 0px 10px 0px 10px;
+            }
+            .feed-container__rightBlock {
+                width: 100%;
+                padding: 0px 10px 0px 10px;
+            }
+        }
+    }   
 }
