@@ -14,3 +14,36 @@
         width: 20%;
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $md) and (max-width : $lg) {
+    .vacancies {
+        width: 100%;
+        .vacancies-leftBlock {
+            width: 30%;
+        }
+        .vacancies-content {
+            width: 65%;
+        }
+        .vacancies-rightBlock {
+            display: none;
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .vacancies {
+        display: block;
+        width: 100%;
+        .vacancies-leftBlock {
+            width: 100%;
+        }
+        .vacancies-content {
+            width: 100%;
+        }
+        .vacancies-rightBlock {
+            display: none;
+        }
+    }
+}

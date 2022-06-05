@@ -20,3 +20,24 @@
         }
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .search {
+        .search-container {
+            width: 100%;
+            .search-block {
+                width: 100%;
+                display: flex;
+                .search-block__content {
+                    width: 100%;
+                }
+                .search-block__footer{
+                    display: none;
+                }
+            }
+        }
+    }        
+}
+
