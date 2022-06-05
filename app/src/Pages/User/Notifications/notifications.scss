@@ -14,3 +14,36 @@
         width: 20%;
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $md) and (max-width : $lg) {
+    .notification {
+        width: 100%;
+        .notification-leftBlock {
+            width: 30%;
+        }
+        .notification-content {
+            width: 70%;
+        }
+        .notification-rightBlock {
+            display: none;
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .notification {
+        width: 100%;
+        display: block;
+        .notification-leftBlock {
+            width: 100%;
+        }
+        .notification-content {
+            width: 100%;
+        }
+        .notification-rightBlock {
+            display: none;
+        }
+    }
+}

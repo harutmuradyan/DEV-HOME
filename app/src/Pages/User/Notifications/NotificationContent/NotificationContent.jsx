@@ -9,10 +9,12 @@ const NotifikationContent = () => {
                     <img    className="noteficationContent-block__img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
-                    <p className="noteficationContent-block__text">
-                        <span className="noteficationContent-block__name">Խաչիկ Գասպարյան</span>
+                    <div className="noteficationContent-block__content">
+                        <h2 className="noteficationContent-block__name">Խաչիկ Գասպարյան</h2>
+                        <p className="noteficationContent-block__text">
                         hghsdghg    hghsdghgggh gghg    gghgghg gghgghghghg     gghgghghghghgg  hghsdghghghg    gghgghghghg
-                    </p>
+                        </p>
+                    </div>
                     <p className="noteficationContent-block__time">12.30</p>
                 </div>
 
@@ -20,10 +22,12 @@ const NotifikationContent = () => {
                     <img    className="noteficationContent-block__img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
-                    <p className="noteficationContent-block__text">
-                        <span className="noteficationContent-block__name">Խաչիկ Գասպարյան</span>
+                    <div className="noteficationContent-block__content">
+                        <h2 className="noteficationContent-block__name">Խաչիկ Գասպարյան</h2>
+                        <p className="noteficationContent-block__text">
                         hghsdghg    hghsdghgggh gghg    gghgghg gghgghghghg     gghgghghghghgg  hghsdghghghg    gghgghghghg
-                    </p>
+                        </p>
+                    </div>
                     <p className="noteficationContent-block__time">12.30</p>
                 </div>
 
@@ -31,10 +35,12 @@ const NotifikationContent = () => {
                     <img    className="noteficationContent-block__img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
-                    <p className="noteficationContent-block__text">
-                        <span className="noteficationContent-block__name">Խաչիկ Գասպարյան</span>
+                    <div className="noteficationContent-block__content">
+                        <h2 className="noteficationContent-block__name">Խաչիկ Գասպարյան</h2>
+                        <p className="noteficationContent-block__text">
                         hghsdghg    hghsdghgggh gghg    gghgghg gghgghghghg     gghgghghghghgg  hghsdghghghg    gghgghghghg
-                    </p>
+                        </p>
+                    </div>
                     <p className="noteficationContent-block__time">12.30</p>
                 </div>
 
@@ -42,10 +48,12 @@ const NotifikationContent = () => {
                     <img    className="noteficationContent-block__img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
-                    <p className="noteficationContent-block__text">
-                        <span className="noteficationContent-block__name">Խաչիկ Գասպարյան</span>
+                    <div className="noteficationContent-block__content">
+                        <h2 className="noteficationContent-block__name">Խաչիկ Գասպարյան</h2>
+                        <p className="noteficationContent-block__text">
                         hghsdghg    hghsdghgggh gghg    gghgghg gghgghghghg     gghgghghghghgg  hghsdghghghg    gghgghghghg
-                    </p>
+                        </p>
+                    </div>
                     <p className="noteficationContent-block__time">12.30</p>
                 </div>
 
@@ -53,10 +61,12 @@ const NotifikationContent = () => {
                     <img    className="noteficationContent-block__img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
-                    <p className="noteficationContent-block__text">
-                        <span className="noteficationContent-block__name">Խաչիկ Գասպարյան</span>
+                    <div className="noteficationContent-block__content">
+                        <h2 className="noteficationContent-block__name">Խաչիկ Գասպարյան</h2>
+                        <p className="noteficationContent-block__text">
                         hghsdghg    hghsdghgggh gghg    gghgghg gghgghghghg     gghgghghghghgg  hghsdghghghg    gghgghghghg
-                    </p>
+                        </p>
+                    </div>
                     <p className="noteficationContent-block__time">12.30</p>
                 </div>
             </div>

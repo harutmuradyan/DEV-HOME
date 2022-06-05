@@ -14,12 +14,16 @@
                 height: 60px;
                 cursor: pointer;
             }
-            .noteficationContent-block__text {
-                color: grey;
-                padding: 10px 20px 10px 20px;
-                cursor: pointer;
+            .noteficationContent-block__content {
+                .noteficationContent-block__text {
+                    color: grey;
+                    padding: 10px 20px 10px 20px;
+                    cursor: pointer;
+                }
                 .noteficationContent-block__name {
                     color: black;
+                    padding: 10px 20px 0px 20px;
+                    font-size: 1rem;
                     margin-right: 10px;
                     cursor: pointer;
                 }
@@ -29,4 +33,42 @@
             }
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .noteficationContent {
+        .noteficationContent-container {
+            .noteficationContent-block {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .noteficationContent-block__img {
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+                .noteficationContent-block__content {
+                    width: 82%;
+                    .noteficationContent-block__text {
+                        color: grey;
+                        padding: 10px 20px 0px 20px;
+                        cursor: pointer;
+                        font-size: 0.8rem;
+                    }
+                    .noteficationContent-block__name {
+                        color: black;
+                        padding: 10px 20px 0px 20px;
+                        font-size: 1rem;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+                .noteficationContent-block__time {
+                    padding: 20px 0px 20px 0px;
+                }
+            }
+        }
+    }   
 }

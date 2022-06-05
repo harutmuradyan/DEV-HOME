@@ -18,3 +18,48 @@
         height: 600px;
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $lg) and (max-width : $xl) {
+    .messaging {
+        .messagingUsers {
+            width: 35%;
+        }
+        .messagingItems {
+            width: 63%;
+        }
+        .messagingFooter {
+            display: none;
+        }
+    }
+}
+
+@media (min-width : $md) and (max-width : $lg) {
+    .messaging {
+        .messagingUsers {
+            width: 50%;
+        }
+        .messagingItems {
+            width: 50%;
+        }
+        .messagingFooter {
+            display: none;
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .messaging {
+        display: block;
+        .messagingUsers {
+            width: 100%;
+        }
+        .messagingItems {
+            width: 100%;
+        }
+        .messagingFooter {
+            display: none;
+        }
+    }
+}
