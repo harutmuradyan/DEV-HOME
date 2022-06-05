@@ -1,6 +1,9 @@
 import React from "react";
 import './profileExperienceItem.scss';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
+
 const ProfileExperienceItem = () => {
     return (
         <div className="profileExperienceItem">
@@ -14,6 +17,10 @@ const ProfileExperienceItem = () => {
                     <p>Postal communication DefinitionR</p>
                     <p>Սկինբ 2022 - ավարտ 2024</p>
                 </div>
+                <button className="profileExperienceItem-content__btn">
+                    <FontAwesomeIcon    className="profileExperienceItem-content__icon" 
+                                        icon={faPen}/>
+                </button>
             </div>
         </div>
     )

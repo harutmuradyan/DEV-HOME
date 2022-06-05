@@ -1,6 +1,8 @@
 .learningItemPageContent {
     padding: 10px 10px 10px 10px;
+    width: 100%;
     .learningItemPageContent-container {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         border-bottom:solid 1px rgb(99, 99, 248);
@@ -21,6 +23,7 @@
                 padding: 10px 10px 10px 10px;
                 margin-left: 10px;
                 margin-top: 10px;
+                border-radius:10px;
                 background-color:white;
                 border:solid 1px rgb(99, 99, 248);
                 color: rgb(99, 99, 248);
@@ -69,6 +72,7 @@
             padding: 0px 10px 10px 10px;
             .learningItemPageContent-instructor__block-name {
                 margin-bottom: 3px;
+                padding-bottom: 4px;
                 color: grey;
             }
             .learningItemPageContent-instructor__block-see {
@@ -88,6 +92,7 @@
             .learningItemPageContent-instructor__block-profession {
                 margin-bottom: 3px;
                 color: grey;
+                padding-bottom: 5px;
             }
         }
     }
@@ -95,4 +100,17 @@
 
 .desk {
     border-bottom:solid 1px rgb(99, 99, 248);
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .learningItemPageContent {
+        .learningItemPageContent-container {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 }

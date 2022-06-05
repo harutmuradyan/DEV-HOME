@@ -1,6 +1,9 @@
 import React from "react";
 import './profileUniversityItem.scss';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
+
 const ProfileUniversityItem = () => {
     return (
         <div className="profileUniversityItem">
@@ -14,6 +17,10 @@ const ProfileUniversityItem = () => {
                     <p>Postal communication DefinitionR</p>
                     <p>Սկինբ 2022 - ավարտ 2024</p>
                 </div>
+                <button className="profileUniversityItem-content__btn">
+                    <FontAwesomeIcon    className="profileUniversityItem-content__icon" 
+                                        icon={faPen}/>
+                </button>
             </div>
         </div>
     )

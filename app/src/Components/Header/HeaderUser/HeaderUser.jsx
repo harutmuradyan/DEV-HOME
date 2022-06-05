@@ -16,12 +16,12 @@ import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";
 import ModalSearch from "./ModalSearch/ModalSearch";
 
-
 const HeaderUser = () => {
 
     const [userModal,setUserModal] = useState(false);
     const [servicesModal,setServicesModal] = useState(false);
     const [modalSearch,setModalSearch] = useState(false);
+
 
     return (
         <header className="header">

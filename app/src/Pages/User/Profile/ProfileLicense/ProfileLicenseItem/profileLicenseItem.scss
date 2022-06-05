@@ -4,6 +4,7 @@
         margin: 5px 0px 5px 0px;
         display: flex;
         width: 100%;
+        justify-content: space-between;
         .profileLicenseItem-content__img {
             width: 50px;
             height: 50px;
@@ -28,5 +29,15 @@
                 color: grey;
             }
         }  
+        .profileLicenseItem-content__btn {
+            background-color:white;
+            margin: 0px 0px 0px 0px;
+            padding: 5px 0px 5px 0px;
+            color:  grey;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius:10px;
+            margin-right: 18px;
+        }
     }
 }

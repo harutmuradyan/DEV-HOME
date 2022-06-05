@@ -24,7 +24,7 @@
                 .sidebar-container__seeMore-btn {
                     width: 100%;
                     color: white;
-                    border-radius:25px;
+                    border-radius:10px;
                     background-color:rgb(99, 99, 248);
                     height: 30px;
                     cursor: pointer;
@@ -52,7 +52,7 @@ $xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
                     width: 100%;
                 }
                 .sidebar-container__seeMore {
-                    width: 35%;
+                    width: 30%;
                     .sidebar-container__seeMore-btn {
                         padding: 5px 0px 5px 0px;
                     }

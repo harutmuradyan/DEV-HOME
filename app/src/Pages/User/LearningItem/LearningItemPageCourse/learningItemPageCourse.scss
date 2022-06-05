@@ -17,3 +17,26 @@
         overflow-y:scroll;
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+
+@media (min-width : $md) and (max-width : $lg) {
+    .learningItemPageCourse {
+        width: 50%;
+        margin: 10px 5px 10px 5px;
+    }   
+}
+
+@media (min-width : $sm) and (max-width : $md) {
+    .learningItemPageCourse {
+        width: 60%;
+        margin: 10px 5px 10px 5px;
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .learningItemPageCourse {
+        width: 100%;
+    }   
+}

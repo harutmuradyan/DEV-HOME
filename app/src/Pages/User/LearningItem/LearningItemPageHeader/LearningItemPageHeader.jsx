@@ -12,21 +12,24 @@ const LearningItemPageHeader = () => {
                 <div className="learningItemPageHeader-left">
                     <p className="learningItemPageHeader-left__name">Secure Coding in Java</p>
                     <div className="learningItemPageHeader-left__info">
-                        <p>59.30վ</p>
+                        <p className="learningItemPageHeader-left__info-text">59.30վ</p>
                         <p>Դուրս է եկել Նոյեմբերի 3 - ին 2020</p>
                     </div>
                     <div className="learningItemPageHeader-left__star">
-                        <p>4.7</p>
-                        <FontAwesomeIcon    icon={faStar} 
-                                            className="learningItemPageHeader-left__star-item"/>
-                        <FontAwesomeIcon    icon={faStar} 
-                                            className="learningItemPageHeader-left__star-item"/>
-                        <FontAwesomeIcon    icon={faStar} 
-                                            className="learningItemPageHeader-left__star-item"/>
-                        <FontAwesomeIcon    icon={faStar} 
-                                            className="learningItemPageHeader-left__star-item"/>
-                        <FontAwesomeIcon    icon={faStar} 
-                                            className="learningItemPageHeader-left__star-item"/>
+                        <div className="learningItemPageHeader-left__star-block">
+                            <p className="learningItemPageHeader-left__star-value">4.7</p>
+                            <FontAwesomeIcon    icon={faStar} 
+                                                className="learningItemPageHeader-left__star-item"/>
+                            <FontAwesomeIcon    icon={faStar} 
+                                                className="learningItemPageHeader-left__star-item"/>
+                            <FontAwesomeIcon    icon={faStar} 
+                                                className="learningItemPageHeader-left__star-item"/>
+                            <FontAwesomeIcon    icon={faStar} 
+                                                className="learningItemPageHeader-left__star-item"/>
+                            <FontAwesomeIcon    icon={faStar} 
+                                                className="learningItemPageHeader-left__star-item"/>
+                            
+                        </div>
                         <p>Հավանել են (80)</p>
                         <p>Դիտում 12.300</p>
                     </div>

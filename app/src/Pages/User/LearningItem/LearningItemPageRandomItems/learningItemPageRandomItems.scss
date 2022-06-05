@@ -10,6 +10,28 @@
         margin: 10px;
         text-align: center;
         border-bottom:solid 1px rgb(99, 99, 248);
-        padding: 10px 0px 10px 0px;  
+        padding: 10px 0px 15px 0px;  
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+
+@media (min-width : $md) and (max-width : $lg) {
+    .learningItemPageRandomItems {
+        width: 50%;
+        margin: 10px 0px 10px 5px;
+    }   
+}
+
+@media (min-width : $sm) and (max-width : $md) {
+    .learningItemPageRandomItems {
+        width: 40%;
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .learningItemPageRandomItems {
+        width: 100%;
+    }   
 }

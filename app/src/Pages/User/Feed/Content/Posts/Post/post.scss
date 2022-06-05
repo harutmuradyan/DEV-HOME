@@ -38,14 +38,13 @@
             display: flex;
             justify-content:flex-end;
             background-color:white;
-
             .post-header__follow-btn {
                 width: 100%;
                 background-color:white;
                 border:solid 1px rgb(99, 99, 248);
                 font-size: 0.8rem;
-                height: 40px;
-                border-radius:25px;
+                height: 30px;
+                border-radius:10px;
                 cursor: pointer;
                 color:rgb(99, 99, 248);
                 &:hover {

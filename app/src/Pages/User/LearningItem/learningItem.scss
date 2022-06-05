@@ -25,3 +25,70 @@
         }
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $lg) and (max-width : $xl) {
+    .learningItemPage {
+        .learningItemPage-conatiner {
+            width: 100%;
+            .learningItemPage-conatiner__content {
+                width: 60%;
+            }
+            .learningItemPage-conatiner__sidebar {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (min-width : $md) and (max-width : $lg) {
+    .learningItemPage {
+        .learningItemPage-conatiner {
+            width: 100%;
+            display: block;
+            .learningItemPage-conatiner__content {
+                width: 100%;
+                padding: 20px 30px 20px 30px;
+            }
+            .learningItemPage-conatiner__sidebar {
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width : $sm) and (max-width : $md) {
+    .learningItemPage {
+        .learningItemPage-conatiner {
+            width: 100%;
+            display: block;
+            .learningItemPage-conatiner__content {
+                width: 100%;
+                padding: 20px 30px 20px 30px;
+            }
+            .learningItemPage-conatiner__sidebar {
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .learningItemPage {
+        .learningItemPage-conatiner {
+            width: 100%;
+            display: block;
+            .learningItemPage-conatiner__content {
+                width: 100%;
+                padding: 20px 30px 20px 30px;
+            }
+            .learningItemPage-conatiner__sidebar {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}

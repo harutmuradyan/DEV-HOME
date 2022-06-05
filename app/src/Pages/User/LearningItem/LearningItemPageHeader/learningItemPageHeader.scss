@@ -43,6 +43,9 @@
                 display: flex;
                 padding: 10px 10px 10px 10px;
                 cursor: pointer;
+                .learningItemPageHeader-left__star-block {
+                    display: flex;
+                }
                 .learningItemPageHeader-left__star-item {
                     padding: 0px 3px 0px 3px;
                     color:gold;
@@ -59,6 +62,142 @@
             .learningItemPageHeader-right__img {
                 width: 100%;
                 height: 100%;
+            }
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $md) and (max-width : $lg) {
+    .learningItemPageHeader {
+        .learningItemPageHeader-container {
+            display: flex;
+            width: 100%;
+            .learningItemPageHeader-left {
+                width: 60%;
+                .learningItemPageHeader-left__name {
+                    padding: 40px 10px 10px 10px;
+                    font-size: 1.6rem;
+                }
+                .learningItemPageHeader-left__start {
+                    font-size: 20px;
+                    margin-top: 10px;
+                    padding: 10px 10px;
+                }
+            }
+            .learningItemPageHeader-right {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (min-width : $sm) and (max-width : $md) {
+    .learningItemPageHeader {
+        .learningItemPageHeader-container {
+            display: flex;
+            width: 100%;
+            .learningItemPageHeader-left {
+                width: 60%;
+                .learningItemPageHeader-left__name {
+                    padding: 20px 10px 10px 10px;
+                    font-size: 1.1rem;
+                }
+                .learningItemPageHeader-left__start {
+                    font-size: 1rem;
+                    margin-top: 10px;
+                    padding: 10px 10px;
+                }
+                .learningItemPageHeader-left__info{
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+                .learningItemPageHeader-left__start {
+                    font-size: 0.8rem;
+                }
+                .learningItemPageHeader-left__star {
+                    display: block;
+                    padding: 10px 10px 10px 10px;
+                    .learningItemPageHeader-left__star-block {
+                        display: flex;
+                        .learningItemPageHeader-left__star-value {
+                            padding: 3px 3px 2px 3px;
+                        }
+                        .learningItemPageHeader-left__star-item {
+                            padding: 2px 3px 2px 3px;
+                            color:gold;
+                        }
+                    }
+                    p {
+                        padding-top: 5px;
+                        margin-right: 5px ;
+                    }
+                }
+            }
+            .learningItemPageHeader-right {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .learningItemPageHeader {
+        width: 100%;
+        .learningItemPageHeader-container {
+            display: block;
+            width: 100%;
+            .learningItemPageHeader-left {
+                width: 80%;
+                margin: 0 auto;
+                .learningItemPageHeader-left__name {
+                    padding: 20px 10px 10px 10px;
+                    font-size: 1.1rem;
+                    text-align: center;
+                }
+                .learningItemPageHeader-left__start {
+                    font-size: 1rem;
+                    padding: 10px 10px;
+                    width: 100%;
+                }
+                .learningItemPageHeader-left__info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+                .learningItemPageHeader-left__start {
+                    font-size: 0.8rem;
+                }
+                .learningItemPageHeader-left__star {
+                    display: block;
+                    padding: 10px 10px 10px 10px;
+                    .learningItemPageHeader-left__star-block {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        width: 50%;
+                        .learningItemPageHeader-left__star-value {
+                            padding: 3px 3px 2px 3px;
+                        }
+                        .learningItemPageHeader-left__star-item {
+                            padding: 2px 3px 2px 3px;
+                            color:gold;
+                        }
+                    }
+                    p {
+                        text-align: center;
+                        padding-top: 5px;
+                        margin-right: 5px ;
+                    }
+                }
+            }
+            .learningItemPageHeader-right {
+                width: 100%;
             }
         }
     }

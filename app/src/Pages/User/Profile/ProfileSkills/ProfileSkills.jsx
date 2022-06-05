@@ -17,19 +17,15 @@ const ProfileSkills= () => {
             <div className="profileSkills-header">
                 <h2 className="profileSkills-header__title">Հմտություններ</h2>
                 <div className="profileSkills-header__block">
-                    <button className="profileSkills-header__btns"
-                            onClick={() => {setProfileSkillsModal(true)}}>
-                        <FontAwesomeIcon    className="profileSkills-header__btn" 
-                                            icon={faAdd}/>
-                    </button>
-                    <button className="profileSkills-header__btns">
-                        <FontAwesomeIcon    className="profileSkills-header__btn" 
-                                            icon={faPen}/>
-                    </button>
                     <button className="profileSkills-header__btns">
                         Անցնել թեստ 
-                        <FontAwesomeIcon    className="profileSkills-header__btn" 
+                        <FontAwesomeIcon    className="profileSkills-header__icon" 
                                             icon={faPen}/>
+                    </button>
+                    <button className="profileSkills-header__btns"
+                            onClick={() => {setProfileSkillsModal(true)}}>
+                        <FontAwesomeIcon    className="profileSkills-header__icon" 
+                                            icon={faAdd}/>
                     </button>
                 </div>
             </div>
