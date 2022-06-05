@@ -18,7 +18,28 @@
         }
     }
     .users-container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .users {
+        .users-header  {
+            display: block;
+            .users-header__title {
+                padding:20px 0px 0px 0px;
+                text-align: center;
+            }
+            .users-header__more {
+                width: 100%;
+                margin: 0 auto;
+                padding:10px 10px 10px 10px;
+                text-align: center;
+            }
+        }
+    }   
 }

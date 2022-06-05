@@ -14,6 +14,7 @@ import ProfileAbout from "./ProfileAbout/ProfileAbout";
 import ProfileExperience from "./ProfileExperience/ProfileExperience";
 
 const Profile = () => {
+    
     return (
         <div className="profilePage">
             <div className="profilePage-container">

@@ -4,3 +4,13 @@
     width: 100%;
     justify-content:flex-start;
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .networkNotfications {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

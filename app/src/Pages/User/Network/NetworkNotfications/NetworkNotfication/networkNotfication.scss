@@ -36,3 +36,12 @@
         padding: 10px 10px 10px 10px;
     }
 }
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .networkNotification {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

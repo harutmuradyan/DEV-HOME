@@ -1,6 +1,7 @@
 .company {
-    width: 25%;
+    width: 33%;
     border-bottom:solid 2px white;
+    padding-bottom: 20px;
     .company-block {
         min-height: 70px;
         display: flex;
@@ -51,4 +52,22 @@
                 }
         }
     }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+
+@media (min-width : $sm) and (max-width : $md) {
+    .company {
+        width: 50%;
+        padding-bottom: 30px;
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .company {
+        margin: 0 auto;
+        padding-bottom: 30px;
+        width: 80%;
+    }   
 }
