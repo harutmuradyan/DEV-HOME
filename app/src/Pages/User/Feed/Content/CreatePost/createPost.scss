@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .createPost {
     padding: 20px 0 20px 0;
     .createPost-header {
@@ -9,7 +11,7 @@
             cursor: pointer;
         }
         .createPost-header__input {
-            border:solid 1px  rgb(99, 99, 248);
+            border:solid 1px  $backColor;
             margin-left: 20px;
             width: 100%;
             height: 50px;

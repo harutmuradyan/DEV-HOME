@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .post {
     background-color:white;
     border-radius:25px;
@@ -7,7 +9,7 @@
         padding: 10px 10px 10px 10px;
         display: flex;
         width: 100%;
-        border-bottom:solid 1px rgb(99, 99, 248);
+        border-bottom:solid 1px $backColor;
         .post-header__img {
             width: 60px;
             height: 50px;
@@ -21,7 +23,7 @@
             padding-left: 20px;
             width: 80%;
             h2 {
-                color:rgb(99, 99, 248);
+                color:$backColor;
                 font-size: 1rem;
                 cursor: pointer;
             }
@@ -41,12 +43,12 @@
             .post-header__follow-btn {
                 width: 100%;
                 background-color:white;
-                border:solid 1px rgb(99, 99, 248);
+                border:solid 1px $backColor;
                 font-size: 0.8rem;
                 height: 30px;
                 border-radius:10px;
                 cursor: pointer;
-                color:rgb(99, 99, 248);
+                color:$backColor;
                 &:hover {
                     background-color:black;
                     color: white;
@@ -63,7 +65,7 @@
                 justify-content:flex-end;
                 margin-top: 5px;
                 margin-bottom: 5px;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 cursor: pointer;
             }
         }

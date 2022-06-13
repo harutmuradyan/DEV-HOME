@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .messagingSession {
     min-height: 150px;
     border-radius: 10px;
@@ -32,7 +34,7 @@
             }
         }
         .messagingSession-header__icon {
-            color:rgb(99, 99, 248);
+            color:$backColor ;
             font-size: 1.2rem;
             cursor: pointer;
         }
@@ -64,7 +66,7 @@
             padding: 10px 10px 10px 10px;
             border-radius:10px;
             cursor: pointer;
-            background-color:rgb(99, 99, 248);
+            background-color:$backColor ;
             color: white;
         }
         .messagingSession-btns__image {
@@ -72,7 +74,7 @@
             cursor: pointer;
             padding: 10px 0px 10px 0px;
             font-size: 1.2rem;
-            color: rgb(99, 99, 248);
+            color: $backColor ;
         }
     }
 }

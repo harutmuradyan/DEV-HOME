@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .searchNavbar {
     min-height: 80px;
     border-radius: 20px;
@@ -12,7 +14,7 @@
                 padding: 10px 10px 10px 10px;
                 margin: 10px 10px 10px 10px;
                 cursor: pointer;
-                border:solid 1px rgb(99, 99, 248);
+                border:solid 1px $backColor;
                 border-radius:10px;
                 color: grey;
                 &:hover {

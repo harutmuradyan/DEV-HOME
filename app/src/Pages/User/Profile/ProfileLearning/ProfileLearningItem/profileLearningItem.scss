@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileLearningItem{
     .profileLearningItem-content {
         padding: 10px 10px 10px 10px;
@@ -19,7 +21,7 @@
             padding: 10px 0px 0px 10px;
             width: 70%;
             h2 {
-                color:rgb(99, 99, 248);
+                color:$backColor;
                 font-size: 1rem;
                 cursor: pointer;
             }

@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .universityContacts {
     display: flex;
     min-height: 150px;
@@ -24,7 +26,7 @@
                 width: 50%;
                 font-size: 0.9rem;
                 padding-right: 20px;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 text-transform: uppercase;
             }
             .universityContacts-block__text {
@@ -36,7 +38,7 @@
         .universityContacts-gps {
             width: 100%;
             height: 100%;
-            background-color:rgb(99, 99, 248);
+            background-color:$backColor;
         }
     }
 }

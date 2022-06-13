@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .vacanciesItemPageForm {
     padding: 20px 20px 20px 20px;
     .vacanciesItemPageForm-header {
@@ -6,7 +8,7 @@
         .vacanciesItemPageForm-header__info {
             .vacanciesItemPageForm-header__info-title {
                 margin-top:3px;
-                color:  #6363f8;
+                color:  $backColor;
             }
             .vacanciesItemPageForm-header__info-block {
                 display: flex;
@@ -22,10 +24,10 @@
             button {
                 width: 100%;
                 background-color:white;
-                border:solid 1px rgb(99, 99, 248);
+                border:solid 1px $backColor;
                 margin: 3px 0px 3px 0px;
                 padding: 10px 10px 10px 10px;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 border-radius:10px;
                 cursor: pointer;
                 &:hover {
@@ -62,7 +64,7 @@
     }
     .vacanciesItemPageForm-company {
         padding: 10px 10px 10px 10px;
-        border:solid 1px rgb(99, 99, 248);
+        border:solid 1px $backColor;
         border-radius:10px;  
         .vacanciesItemPageForm-company__block {
             display: flex;
@@ -78,10 +80,10 @@
             }
             .vacanciesItemPageForm-company__block-btn {
                 background-color:white;
-                border:solid 1px rgb(99, 99, 248);
+                border:solid 1px $backColor;
                 margin: 3px 0px 3px 0px;
                 padding: 10px 10px 10px 10px;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 border-radius:10px;
                 height: 40px;
                 cursor: pointer;

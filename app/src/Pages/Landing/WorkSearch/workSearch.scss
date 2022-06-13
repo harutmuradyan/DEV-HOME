@@ -1,8 +1,10 @@
+$backColor : rgb(110, 214, 121);
+
 .workSearch {
     width: 90%;
     display: flex;
     margin: 0 auto;
-    background-image:linear-gradient( rgb(84, 84, 167), rgb(110, 110, 248));
+    background-image:linear-gradient( rgb(110, 214, 121), rgb(64, 238, 81));
     min-height: 250px;
     padding:40px 0px 60px 0px;
     border-radius: 25px;
@@ -25,7 +27,7 @@
             flex-wrap: wrap;
             .workSearch-category__item {
                 width: 30%;
-                border:solid 1px rgb(99, 99, 248);
+                border:solid 1px $backColor ;
                 height: 50px;
                 border-radius:25px;
                 text-align: center;
@@ -33,10 +35,10 @@
                 margin: 10px 5px 0px 5px;
                 background-color:white;
                 color:black;
-                font-weight: bold;
                 text-transform: uppercase;
                 font-size:0.7rem;
                 cursor: pointer;
+                text-align: center;
             }
         }
         .workSeacrh-category__more {
@@ -47,7 +49,7 @@
             text-align: center;
             padding-top: 0px;
             margin: 10px 5px 0px 5px;
-            background-color:rgb(99, 99, 248);
+            background-color:$backColor ;
             color:white;
             font-weight: bold;
             text-transform: uppercase;

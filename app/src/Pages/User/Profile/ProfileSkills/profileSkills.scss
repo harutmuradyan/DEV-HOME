@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileSkills {
     min-height: 150px;
     border-radius: 20px;
@@ -7,7 +9,7 @@
     .profileSkills-header{
         display: flex;
         justify-content: space-between;
-        border-bottom:solid 1px rgb(99, 99, 248);
+        border-bottom:solid 1px $backColor;
         .profileSkills-header__title {
             text-transform: uppercase;
             font-size: 1rem;
@@ -20,7 +22,7 @@
                 background-color:white;
                 margin: 0px 0px 0px 10px;
                 padding: 10px 10px 10px 10px;
-                color:  rgb(99, 99, 248);
+                color:  $backColor;
                 font-size: 1.2rem;
                 cursor: pointer;
                 border-radius:10px;

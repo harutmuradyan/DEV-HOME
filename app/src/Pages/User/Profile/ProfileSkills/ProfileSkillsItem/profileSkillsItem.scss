@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileSkillsItem {
     .profileSkillsItem-content {
         padding: 10px 20px 10px 20px;
@@ -8,7 +10,7 @@
         .profileSkillsItem-content__info {
             width: 100%;
             h2 {
-                color:rgb(99, 99, 248);
+                color:$backColor ;
                 font-size: 1.2rem;
                 cursor: pointer;
                 span {

@@ -1,8 +1,10 @@
+$backColor : rgb(110, 214, 121);
+
 .footer {
     max-width:1440px;
     margin: 0 auto;
     min-height: 300px;
-    background-color:rgb(99, 99, 248);
+    background-color:$backColor;
     .footer-container {
         display: flex;
         .footer-logo {

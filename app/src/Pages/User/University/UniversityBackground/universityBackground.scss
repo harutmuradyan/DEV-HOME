@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .university-background {
     min-height: 150px;
     border-radius: 20px;
@@ -18,7 +20,7 @@
             height: 150px;
         }
         .university-background__cover {
-            background-color: rgb(99, 99, 248);
+            background-color: $backColor;
             border-radius:25px 25px 25px 25px;
             height: 180px;
             width: 100%;
@@ -79,8 +81,8 @@
                 .university-backgroundContent__btns-follow {
                     padding: 10px 30px 10px 30px;
                     background-color:white;
-                    border:solid 1px rgb(99, 99, 248);
-                    color: rgb(99, 99, 248);
+                    border:solid 1px $backColor;
+                    color: $backColor;
                     border-radius:10px;
                     margin-right: 5px;
                     cursor: pointer;
@@ -92,7 +94,7 @@
                 }
                 .university-backgroundContent__btns-contact {
                     padding: 10px 30px 10px 30px;
-                    background-color:rgb(99, 99, 248);
+                    background-color:$backColor;
                     color: white;
                     border-radius:10px;
                     cursor: pointer;
@@ -103,8 +105,8 @@
                 .university-backgroundContent__btns-student {
                     padding: 10px 30px 10px 30px;
                     background-color:white;
-                    color:rgb(99, 99, 248);
-                    border:solid 1px rgb(99, 99, 248);
+                    color:$backColor;
+                    border:solid 1px $backColor;
                     border-radius:10px;
                     cursor: pointer;
                     text-transform: uppercase;
@@ -116,8 +118,8 @@
                 .university-backgroundContent__btns-experience {
                     padding: 10px 30px 10px 30px;
                     background-color:white;
-                    color:rgb(99, 99, 248);
-                    border:solid 1px rgb(99, 99, 248);
+                    color:$backColor;
+                    border:solid 1px $backColor;
                     border-radius:10px;
                     cursor: pointer;
                     text-transform: uppercase;

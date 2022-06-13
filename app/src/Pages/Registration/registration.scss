@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .registration {
     width: 100%;
     display: flex;
@@ -10,11 +12,11 @@
         margin: 0 auto;
         padding: 40px 20px 40px 20px;
         border-radius:10px;
-        border:solid 1px  rgb(99, 99, 248);
+        border:solid 1px  $backColor;
         .registration-title{
             text-align: center;
             text-transform: uppercase;
-            color: rgb(99, 99, 248);
+            color: $backColor;
         }
         .registration-form {
             min-height: 200px;
@@ -35,7 +37,7 @@
                 .registration-form__input {
                     width: 100%;
                     padding-left: 20px;
-                    border:solid 1px  rgb(99, 99, 248);
+                    border:solid 1px  $backColor;
                     padding: 10px 10px 10px 10px;
                     cursor: pointer;
                 }

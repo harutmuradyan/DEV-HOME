@@ -1,8 +1,10 @@
+$backColor : rgb(110, 214, 121);
+
 .header {
     max-width:1440px;
     margin: 0 auto;
     height: 80px;
-    background-color:rgb(99, 99, 248);
+    background-color:$backColor;
     .header-content {
         display: flex;
         justify-content: space-between;
@@ -41,7 +43,7 @@
             justify-content:flex-end;
 
             button {
-                background-color: rgb(99, 99, 248);
+                background-color: $backColor;
                 border: solid 2px white;
                 width: 70%;
                 height: 2.5rem;

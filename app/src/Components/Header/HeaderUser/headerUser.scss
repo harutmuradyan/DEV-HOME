@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .header {
     width: 100%;
     display: flex;
@@ -6,7 +8,7 @@
         width: 100vw;
         margin: 0 auto;
         height: 60px;
-        background-color:rgb(99, 99, 248);
+        background-color:$backColor;
         position: fixed;
         z-index: 1;
         .headerUser-content {
@@ -26,7 +28,7 @@
             .headerUser-content__search {
                 margin-top: 10px;
                 .headerUser-content__search-btn {
-                    background-color:rgb(99, 99, 248);
+                    background-color:$backColor;
                     display: flex;
                     .headerUser-content__search-icon {
                         padding: 0px 10px 0px 10px;
@@ -94,7 +96,7 @@
                             padding: 0px 5px 0px 5px;
                             height: 40px;
                             margin-top: 10px;
-                            background-color:rgb(99, 99, 248);
+                            background-color:$backColor;
                             border:solid 1px white;
                             cursor: pointer;
                             color: white;

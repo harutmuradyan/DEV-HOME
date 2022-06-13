@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .vacanciesItem-block {
     padding: 10px 20px 10px 20px;
     display: flex;
@@ -32,7 +34,7 @@
         background-color:white;
         .vacanciesItem-block__save-btn {
             font-size: 1.2rem;
-            color: rgb(99, 99, 248);
+            color: $backColor;
             cursor: pointer;
             &:hover {
                 color: black;

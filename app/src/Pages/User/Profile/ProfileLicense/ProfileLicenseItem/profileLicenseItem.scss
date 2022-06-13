@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileLicenseItem {
     .profileLicenseItem-content {
         padding: 10px 20px 10px 20px;
@@ -18,7 +20,7 @@
             padding-left: 20px;
             width: 80%;
             h2 {
-                color:rgb(99, 99, 248);
+                color:$backColor;
                 font-size: 0.8rem;
                 cursor: pointer;
             }

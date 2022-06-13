@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileContent {
     min-height: 150px;
     border-radius: 20px;
@@ -22,7 +24,7 @@
                 cursor: pointer;
             }
             .profileContent-background__cover {
-                background-color: rgb(99, 99, 248);
+                background-color: $backColor;
                 border-radius:25px 25px 0px 0px;
                 height: 180px;
                 width: 100%;
@@ -49,7 +51,7 @@
                 color: grey;
                 .profileContent-info__phone {
                     background-color:white;
-                    color: rgb(79, 216, 79); 
+                    color: $backColor; 
                     margin-left: 10px;
                     text-transform: uppercase;
                     cursor: pointer;
@@ -68,7 +70,7 @@
                 cursor: pointer;
                 float: right;
                 background-color:white;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 border-radius:10px;
                 padding: 10px 10px 10px 10px;
                 position: relative;
@@ -111,7 +113,7 @@
         display: flex;
         justify-content: space-between;
         margin: 10px 40px 0px 40px;
-        border:solid 1px rgb(99, 99, 248);
+        border:solid 1px $backColor;
         border-radius:10px;  
         padding: 10px 10px 10px 10px;
         .profileContent-serachWork__block {
@@ -121,7 +123,7 @@
             .profileContent-serachWork__start {
                 background-color:white;
                 text-transform: uppercase;
-                color: rgb(79, 216, 79);
+                color: $backColor;
                 padding-top: 5px;
                 font-weight: bold;
                 cursor: pointer;
@@ -132,7 +134,7 @@
                 background-color:white;
                 padding: 10px 10px 10px 10px;
                 border-radius:10px;
-                color:  rgb(99, 99, 248);
+                color:  $backColor;
             }
         }
     }

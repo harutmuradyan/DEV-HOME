@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .createCompany {
     width: 100%;
     display: flex;
@@ -16,7 +18,7 @@
                     padding: 10px 10px 10px 10px;
                     font-size: 1rem;
                     text-transform: uppercase;
-                    color: rgb(99, 99, 248);
+                    color: $backColor;
                 }
                 .createCompany-form__block {
                     width: 100%;
@@ -85,7 +87,7 @@
                         }
                         .createCompany-form__text {
                             width: 90%;
-                            color: rgb(99, 99, 248);
+                            color: $backColor;
                             text-transform: uppercase;
                         }
                     } 
@@ -101,7 +103,7 @@
                     display: flex;
                     justify-content: flex-end;
                     .createCompany-form__sent-btn {
-                        background-color: rgb(99, 99, 248);
+                        background-color:$backColor;
                         padding: 15px 15px 15px 15px;
                         color: white;
                         border-radius: 10px;
@@ -128,7 +130,7 @@
                 height: 300px;
                 .createCompany-view__background {
                     height: 100px;
-                    background-color:rgb(99, 99, 248);
+                    background-color:$backColor;
                     .createCompany-view__background {
                         width: 100%;
                         height: 100%;
@@ -152,11 +154,11 @@
                     padding-top: 5px;
                     font-size: 1rem;
                     padding-left: 30px;
-                    color: rgb(99, 99, 248);    
+                    color: $backColor;    
                 }
                 .createCompany-view__follow {
                     padding-top: 5px;
-                    background-color:rgb(99, 99, 248);
+                    background-color:$backColor;
                     padding: 10px 30px 10px 30px;
                     color: white;
                     border-radius:10px;

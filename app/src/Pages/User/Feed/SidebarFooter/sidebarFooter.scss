@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .sidebarFooter {
     width: 100%;
     .sidebarFooter-container {
@@ -14,7 +16,7 @@
         }
         .sidebarFooter-block {
             padding: 10px 10px 10px 10px;
-            background-color: rgb(99, 99, 248);
+            background-color: $backColor;
             border-radius:0px 0px 25px 25px;
             h2 {
                 color:white;

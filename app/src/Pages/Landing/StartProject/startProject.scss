@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .startProject {
     max-width: 1440px;
     margin:100px 0 auto;
@@ -9,7 +11,7 @@
         .startProject-block {
             width: 40%;
             .startProject-block__title {
-                color:rgb(99, 99, 248);
+                color:$backColor;
                 width: 100%;
                 font-size: 2rem;
                 text-align: center;
@@ -18,7 +20,7 @@
                 font-weight: bold;
             }
             .startProject-block__linq {
-                background:rgb(99, 99, 248);
+                background:$backColor ;
                 width: 100%;
                 margin: 0px 10px 0px 10px;
                 border-radius:10px;

@@ -1,7 +1,9 @@
+$backColor : rgb(110, 214, 121);
+
 .vacanciesItemPageCollections {
     width: 100%;
     .vacanciesItemPageCollections-title {
-        background-color:rgb(99, 99, 248);
+        background-color:$backColor;
         font-size: 1rem;
         color: white;
         text-transform: uppercase;

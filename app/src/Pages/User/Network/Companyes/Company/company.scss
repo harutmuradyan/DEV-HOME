@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .company {
     width: 33%;
     border-bottom:solid 2px white;
@@ -6,7 +8,7 @@
         min-height: 70px;
         display: flex;
         justify-content: center;
-        background-color:rgb(99, 99, 248);
+        background-color:$backColor;
         border-radius: 20px 20px 0px 0px;
         margin: 10px 10px 10px 10px;
         .company-block__logo {
@@ -38,9 +40,9 @@
         padding-top: 10px;
         .company-frends__btn {
             width: 50%;
-            border:solid 1px rgb(99, 99, 248);
+            border:solid 1px $backColor;
             background-color:white;
-            color: rgb(99, 99, 248);
+            color: $backColor;
             text-transform: uppercase;
             border-radius:20px;
             height: 30px;

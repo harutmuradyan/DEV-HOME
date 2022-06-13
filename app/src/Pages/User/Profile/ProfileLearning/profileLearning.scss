@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileLearning {
     min-height: 150px;
     border-radius: 20px;
@@ -9,7 +11,7 @@
         text-transform: uppercase;
         margin: 10px;
         text-align: center;
-        border-bottom:solid 1px rgb(99, 99, 248);
+        border-bottom:solid 1px $backColor;
         padding: 10px 0px 10px 0px;  
     }
 }

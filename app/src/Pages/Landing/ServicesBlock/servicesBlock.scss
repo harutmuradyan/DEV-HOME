@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .servicesBlock {
     width: 90%;
     display: flex;
@@ -10,7 +12,7 @@
             font-size: 3rem;
             width: 100%;
             text-transform: uppercase;
-            color:rgb(99, 99, 248);
+            color:$backColor ;
             margin: 0px 0px 20px 0px;
         }
         .servicesBlock-content__links {
@@ -18,14 +20,14 @@
             .servicesBlock-content__item {
                 padding-left: 20px;
                 background-color:white;
-                color: rgb(99, 99, 248);
+                color: $backColor ;
                 text-transform: uppercase;
                 margin: 10px 0px 10px 0px;
                 height: 4rem;
                 text-align: left;
                 width: 100%;
                 cursor: pointer;
-                border:solid 2px rgb(99, 99, 248);
+                border:solid 2px $backColor ;
                 border-radius: 25px;
                 &:hover {
                     background-color:black;
@@ -33,7 +35,7 @@
                 }
                 .servicesBlock-content__item-icon {
                     float:right;
-                    color:rgb(99, 99, 248);
+                    color:$backColor ;
                     margin-right: 20px;
                     font-size: 1rem;
                 }

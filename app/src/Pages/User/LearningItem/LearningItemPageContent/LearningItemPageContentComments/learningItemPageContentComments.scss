@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .learningItemPageContentComments {
     .learningItemPageContentComments-title {
         font-size: 1.2rem;
@@ -18,8 +20,8 @@
             margin-left: 10px;
             margin-top: 10px;
             background-color: white;
-            border: solid 1px #6363f8;
-            color: #6363f8;
+            border: solid 1px $backColor ;
+            color: $backColor ;
             text-transform: uppercase;
             cursor: pointer;
             &:hover {

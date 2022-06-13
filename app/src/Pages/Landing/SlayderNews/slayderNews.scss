@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .slayderNews {
     max-width: 1440px;
     margin:100px 0 auto;
@@ -8,7 +10,7 @@
         justify-content:flex-end;
         padding-right: 60px;
         .slayderNews-buttons__item {
-            color:rgb(99, 99, 248);
+            color:$backColor;
             background-color:white;
             font-size: 1.2rem;
             margin: 20px 5px 20px 5px;
@@ -16,7 +18,7 @@
             text-transform: uppercase;
             .slayderNews-buttons__item-icon {
                 padding: 0px 10px 0px 10px;
-                color: rgb(99, 99, 248);
+                color: $backColor;
             }
         }
     }
@@ -28,7 +30,7 @@
         .slayderNews-block {
             width: 50%;
             .slayderNews-block__title {
-                color:rgb(99, 99, 248);
+                color:$backColor;
                 width: 100%;
                 font-size: 2rem;
                 text-align: center;
@@ -37,7 +39,7 @@
                 font-weight: bold;
             }
             .slayderNews-block__linq {
-                background:rgb(99, 99, 248);
+                background:$backColor;
                 width: 90%;
                 margin: 0px 20px 0px 20px;
                 border-radius:10px;

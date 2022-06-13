@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .companies {
     margin: 100px 0px 140px 0px;
     .companies-container {
@@ -11,7 +13,7 @@
             .companies-block__item {
                 width: 100px;
                 height: 55px;
-                background: rgb(99, 99, 248);
+                background: $backColor;
                 position: relative;
                 cursor: pointer;
                 margin: 10px;
@@ -24,7 +26,7 @@
                     left: 0;
                     border-left: 50px solid transparent;
                     border-right: 50px solid transparent;
-                    border-bottom: 25px solid rgb(99, 99, 248);
+                    border-bottom: 25px solid $backColor;
                 }
                 
                 &:after {
@@ -36,7 +38,7 @@
                     left: 0;
                     border-left: 50px solid transparent;
                     border-right: 50px solid transparent;
-                    border-top: 25px solid rgb(99, 99, 248);
+                    border-top: 25px solid $backColor;
                 }
             }
         }

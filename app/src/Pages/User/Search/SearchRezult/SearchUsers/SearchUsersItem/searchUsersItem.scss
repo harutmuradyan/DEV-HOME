@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .searchUsersItem {
     width: 100%;
     display: flex;
@@ -34,7 +36,7 @@
     .searchUsersItem-follow {
         width: 20%;
         height: 40px;
-        border:solid 1px rgb(99, 99, 248);
+        border:solid 1px $backColor;
         background-color:white;
         border-radius:10px;
         color: grey;

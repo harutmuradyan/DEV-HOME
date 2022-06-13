@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .vacanciesSearch {
     width: 100%;
     min-height: 250px;
@@ -28,13 +30,13 @@
             justify-content: center;
             .vacanciesSearch-block__btn-icon {
                 display: block;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 font-size: 1rem;
                 margin-right: 5px;
                 margin-top: 5px;
             }
             .vacanciesSearch-block__btn-input {
-                border:solid 1px rgb(99, 99, 248);
+                border:solid 1px $backColor;
                 height: 30px;
                 width: 100%;
                 border-radius:10px;
@@ -70,7 +72,7 @@
             font-weight: bold;
             text-transform: uppercase;
             font-size:0.8rem;
-            color: rgb(99, 99, 248);
+            color: $backColor;
             cursor: pointer;
         }
     }

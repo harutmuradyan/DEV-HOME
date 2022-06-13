@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .sidebar {
     width: 100%;
     .sidebar-container {
@@ -25,7 +27,7 @@
                     width: 100%;
                     color: white;
                     border-radius:10px;
-                    background-color:rgb(99, 99, 248);
+                    background-color:$backColor ;
                     height: 30px;
                     cursor: pointer;
                 }

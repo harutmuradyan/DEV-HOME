@@ -1,3 +1,6 @@
+$backColor : rgb(110, 214, 121);
+
+
 .profileAbout {
     min-height: 150px;
     border-radius: 20px;
@@ -8,7 +11,7 @@
         .profilAbout-block {
             display: flex;
             justify-content: space-between;
-            border-bottom:solid 1px rgb(99, 99, 248);
+            border-bottom:solid 1px $backColor;
             .profileAbout-block__title {
                 text-transform: uppercase;
                 font-size: 1rem;
@@ -16,7 +19,7 @@
             }
             .profileAbout-block__add {
                 background-color: white;
-                color:  rgb(99, 99, 248);
+                color:  $backColor;
                 padding: 5px 5px 5px 5px;
                 height: 35px;
                 width: 35px;

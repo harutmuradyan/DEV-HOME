@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .modalServices {
     position: fixed;
     top:60px;
@@ -19,13 +21,13 @@
             .modalServices-block__title {
                 width: 80%;
                 text-align: center;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 font-size: 1.2rem;
                 text-transform: uppercase;
             }
             .modalServices-block__icon {
                 width: 20%;
-                color: rgb(99, 99, 248);
+                color: $backColor;
                 font-size: 1.2rem;
                 cursor: pointer;
             }
@@ -55,7 +57,7 @@
                     padding: 20px 10px 20px 10px;
                     cursor: pointer;
                     .modalServices-content__item-icon {
-                        color:rgb(99, 99, 248);
+                        color:$backColor;
                         font-size: 1.2rem;
                     }
                     &:hover {

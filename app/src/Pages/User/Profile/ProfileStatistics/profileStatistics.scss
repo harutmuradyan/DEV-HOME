@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .profileStatistics {
     min-height: 150px;
     border-radius: 20px;
@@ -8,7 +10,7 @@
         text-transform: uppercase;
         font-size: 1rem;
         padding: 20px 20px 20px 20px;
-        border-bottom:solid 1px rgb(99, 99, 248);
+        border-bottom:solid 1px $backColor;
     }
     .profileStatistics-container {
         display: flex;
@@ -27,7 +29,7 @@
             }
             .profileStatistics-icon {
                 padding: 10px 10px 10px 10px;
-                color: rgb(99, 99, 248);
+                color:$backColor;
                 font-size: 1.2rem;   
             }
         }

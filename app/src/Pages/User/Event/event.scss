@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .event {
     width: 100%;
     display: flex;
@@ -32,7 +34,7 @@
                 .event-content__header-eventName {
                     font-size: 1.2rem;
                     padding-bottom: 5px;
-                    color: rgb(99, 99, 248);
+                    color: $backColor;
                 }  
                 .event-content__header-companyName {
                     font-size: 1rem;
@@ -56,11 +58,11 @@
                 }
                 .event-content__header-btn {
                     background-color:white;
-                    color: rgb(99, 99, 248);
+                    color: $backColor;
                     cursor: pointer;
                     .event-content__header-icon {
                         margin-right: 10px;
-                        color: rgb(99, 99, 248);
+                        color:$backColor;
                     }
                 }
                 .event-content__header-btns {
@@ -68,20 +70,20 @@
                     .event-content__header-add {
                         padding: 10px 20px 10px 20px;
                         border-radius:10px;
-                        background-color:rgb(99, 99, 248);
+                        background-color:$backColor;
                         color: white;
                         margin-right: 10px;
                         text-transform: uppercase;
                         cursor: pointer;
                         &:hover {
-                            background-color:rgb(50, 50, 214);
+                            background-color: $backColor;
                             color: white;
                         }
                     }
                     .event-content__header-share {
-                        color:rgb(99, 99, 248);
+                        color:$backColor;
                         background-color:white;
-                        border:solid 1px rgb(99, 99, 248);
+                        border:solid 1px $backColor;
                         border-radius:10px;
                         padding: 10px 20px 10px 20px;
                         margin-right: 10px;
@@ -97,8 +99,8 @@
                     }
                     .event-content__header-complain {
                         border-radius:100%;
-                        color:  rgb(99, 99, 248);
-                        border:solid 1px rgb(99, 99, 248);
+                        color:  $backColor;
+                        border:solid 1px $backColor;
                         margin-right: 10px;
                         background-color:white;
                         padding: 10px 10px 10px 10px;
@@ -116,7 +118,7 @@
                 background-color:white; 
                 .event-content__desc-title {
                     font-size: 1rem;
-                    color: rgb(99, 99, 248);
+                    color: $backColor;
                     padding: 10px 0px 15px 0px;
                     text-transform: uppercase;
                 }
@@ -162,12 +164,12 @@
                     .event-content__company-add {
                         width: 30%;
                         height: 40px;
-                        border:solid 1px rgb(99, 99, 248);
+                        border:solid 1px $backColor;
                         background-color:white;
                         text-transform: uppercase;
                         padding: 10px 15px 10px 15px;
                         border-radius:10px;
-                        color: rgb(99, 99, 248);
+                        color: $backColor;
                         cursor: pointer;
                         &:hover {
                             background-color:black;

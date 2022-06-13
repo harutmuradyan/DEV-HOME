@@ -36,11 +36,11 @@ const HeaderUser = () => {
                     <div className="headerUser-content__search">
                         <ModalSearch    modalSearch={modalSearch} 
                                         setModalSearch={setModalSearch}/>
-                        <button className="headerUser-content__search-btn">
+                        <button className="headerUser-content__search-btn"
+                                onClick={() => {setModalSearch(true)}}>
                             <FontAwesomeIcon    icon={faSearch} 
                                                 className="headerUser-content__search-icon"/>
                             <input  placeholder="  Փնտրել" 
-                                    onClick={() => {setModalSearch(true)}}
                                     className="headerUser-content__search-input"
                                     />
                         </button>

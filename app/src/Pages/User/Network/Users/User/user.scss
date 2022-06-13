@@ -1,3 +1,5 @@
+$backColor : rgb(110, 214, 121);
+
 .user {
     width: 33%;
     border-bottom:solid 2px white;
@@ -6,7 +8,7 @@
         min-height: 70px;
         display: flex;
         justify-content: center;
-        background-color:rgb(99, 99, 248);
+        background-color:$backColor;
         border-radius: 20px 20px 0px 0px;
         margin: 20px 10px 20px 10px;
         .user-block__logo {
@@ -43,7 +45,7 @@
             height: 30px;
             cursor: pointer;
             &:hover {
-                background-color:rgb(99, 99, 248);
+                background-color:$backColor;
             }
         }
     }
