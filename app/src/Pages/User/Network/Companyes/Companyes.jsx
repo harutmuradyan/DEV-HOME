@@ -1,9 +1,15 @@
 import React from "react";
 import './companyes.scss';
 
+import {useSelector} from 'react-redux'
+
 import Company from "./Company/Company";
 
 const Companyes = () => {
+
+    const {data} = useSelector((state) => state.company);
+    console.log(data) 
+
     return (
         <div className="companyes">
             <div className="companyes-header">
@@ -13,14 +19,16 @@ const Companyes = () => {
                 <button className="companyes-header__more">Դիտել ավելին</button>
             </div>
             <div className="companyes-container">
-                <Company/>
-                <Company/>
-                <Company/>
-                <Company/>
-                <Company/>
-                <Company/>
-                <Company/>
-                <Company/>
+                {
+                    data.map((el,index) => {
+                        return    <Company  key={el.id} 
+                                            name={el.name} 
+                                            shpere={el.shpere} 
+                                            logo={el.logo}
+                                            cover={el.cover}
+                                            />
+                    })
+                }
             </div>
         </div>
     )

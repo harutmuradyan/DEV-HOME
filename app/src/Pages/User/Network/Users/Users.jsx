@@ -1,9 +1,14 @@
 import React from "react";
 import './users.scss';
 
+import {useSelector} from 'react-redux'
+
 import User from "./User/User";
 
 const Users = () => {
+
+    const {data} = useSelector((state) => state.user);
+
     return (
         <div className="users">
             <div className="users-header">
@@ -13,14 +18,16 @@ const Users = () => {
                 <button className="users-header__more">Դիտել ավելին</button>
             </div>
             <div className="users-container">
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
+                {
+                    data.map((el,index) => {
+                        return  <User   key={el.id} 
+                                        name={el.name} 
+                                        logo={el.logo} 
+                                        cover={el.cover}
+                                        profession={el.profession}
+                                        />
+                    })
+                }
             </div>
         </div>
     )

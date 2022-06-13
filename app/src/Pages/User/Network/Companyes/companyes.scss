@@ -4,6 +4,7 @@
     .companyes-header {
         display: flex;
         justify-content: space-between;
+        padding: 10px;
         .companyes-header__title {
             margin:20px 10px 10px 10px;
             font-size: 1rem;
@@ -20,6 +21,7 @@
     .companyes-container {
         width: 100%;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
 }

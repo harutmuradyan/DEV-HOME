@@ -20,6 +20,7 @@
         }
     }
     .networkNotification-accept {
+        font-size: 1rem;
         margin: 10px 2px;
         background-color:rgb(113, 216, 113);
         border-radius:100%;
@@ -28,7 +29,8 @@
         cursor: pointer;
     }
     .networkNotification-close {
-        margin: 10px 2px;
+        font-size: 1rem;
+        margin: 10px 5px;
         cursor: pointer;
         background-color:rgb(248, 33, 33);
         border-radius:100%;
