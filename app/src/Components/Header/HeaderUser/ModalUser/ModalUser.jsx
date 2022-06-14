@@ -6,16 +6,16 @@ import { faUpLong } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 
-const ModalUser = ({userModal , setUserModal}) => {
+const ModalUser = ({userModal , logo , name , profession}) => {
     return (
         <div className={userModal ? "modalUser active" : "modalUser"}>
             <div className="modalUser-header">
                 <img    className="modalUser-header__img" 
-                        src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                        src={logo} 
                         alt=""></img>
                 <div className="modalUser-block">
-                    <h2 className="modalUser-block__name">Գագիկ Խաչատրյան</h2>
-                    <p className="modalUser-block__profesisons">WEB DEVELOPER</p>
+                    <h2 className="modalUser-block__name">{name}</h2>
+                    <p className="modalUser-block__profesisons">{profession}</p>
                 </div>
                 <FontAwesomeIcon    className="modalUser-header__close" 
                                     icon={faUpLong}

@@ -5,22 +5,35 @@ $backColor : rgb(110, 214, 121);
     .background-container {
         min-height: 150px;
         border-radius: 20px;
-        margin: 10px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
         background-color:white;
         .background-user {
             border-bottom:solid 2px white;
-            .background-user__block {
-                min-height: 70px;
+            .user-block {
+                height: 80px;
                 display: flex;
                 justify-content: center;
                 background-color:$backColor;
                 border-radius: 20px 20px 0px 0px;
-                .background-user__block-logo {
-                    position: relative;
-                    top: 40px;
-                    width: 60px;
-                    height: 60px;
-                    cursor: pointer;
+                margin: 10px 0px 20px 0px;
+                .user-block__cover {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px 20px 0px 0px;
+                }
+            }
+            .user-logo {
+                width: 33%;
+                height: 0px;
+                position: relative;
+                bottom:  60px;
+                margin: 0 auto;
+                cursor: pointer;
+                .user-logo__img {
+                    border:solid 1px black;
+                    border-radius:50%;  
+                    width: 100%;
+                    height: 80px;     
                 }
             }
             .background-user__name {

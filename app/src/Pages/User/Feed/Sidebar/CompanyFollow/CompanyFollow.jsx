@@ -1,17 +1,19 @@
 import React from "react";
 import './companyFollow.scss'
 
-const CompanyFollow = () => {
+const CompanyFollow = ({name,profession,logo,workplace}) => {
+
     return (
         <div className="companyFollow">
             <div className="companyFollow-content">
                 <div className="companyFollow-content__img">
-                    <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                    <img    src={logo} 
                             alt=""></img>
                 </div>
                 <div className="companyFollow-content__info">
-                    <h2>Քրիստինե Գրիգորյան</h2>
-                    <p>DEVOPS DEVELOPER</p>
+                    <h2>{name}</h2>
+                    <p>{profession}</p>
+                    <p>{workplace}</p>
                 </div>
             </div>
             <div className="companyFollow-btn">

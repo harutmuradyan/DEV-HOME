@@ -7,7 +7,7 @@ import User from "./User/User";
 
 const Users = () => {
 
-    const {data} = useSelector((state) => state.user);
+    const {users} = useSelector((state) => state.user);
 
     return (
         <div className="users">
@@ -19,7 +19,7 @@ const Users = () => {
             </div>
             <div className="users-container">
                 {
-                    data.map((el,index) => {
+                    users.map((el,index) => {
                         return  <User   key={el.id} 
                                         name={el.name} 
                                         logo={el.logo} 

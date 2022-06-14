@@ -7,8 +7,7 @@ import Company from "./Company/Company";
 
 const Companyes = () => {
 
-    const {data} = useSelector((state) => state.company);
-    console.log(data) 
+    const {companyes} = useSelector((state) => state.company);
 
     return (
         <div className="companyes">
@@ -20,7 +19,7 @@ const Companyes = () => {
             </div>
             <div className="companyes-container">
                 {
-                    data.map((el,index) => {
+                    companyes.map((el,index) => {
                         return    <Company  key={el.id} 
                                             name={el.name} 
                                             shpere={el.shpere} 

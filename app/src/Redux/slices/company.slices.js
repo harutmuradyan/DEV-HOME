@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = { 
-    data: [
+    companyes: [
         { 
             "id" : 1,
             "name" : "Software Development Company",

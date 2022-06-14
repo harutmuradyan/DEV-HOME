@@ -9,7 +9,7 @@ import {    faHeart ,
             faRightLong , 
             faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
-const Post = () => {
+const Post = ({postcover , name , logo , desc}) => {
 
     const [feedPostReactionOppen , setFeedPostReactionOppen] = useState(false);
     const [feedPostCommentOppen , setFeedPostCommentOppen] = useState(false);
@@ -35,17 +35,12 @@ const Post = () => {
             <div className="post-content">
                 <div className="post-content__title">
                     <p>
-                        is a workplace where you can be in 
-                        the know about crypto as the crypto 
-                        world is still new and ever-changing, 
-                        and there is an endless supply of i
-                        nnovative projects and features 
-                        to keep an eye on.  
+                        {desc}
                         <span>Դիտել ամբողջը</span>
                     </p>
                 </div>
                 <div className="post-content__photo">
-                    <img    src="https://images.pexels.com/photos/589840/pexels-photo-589840.jpeg?cs=srgb&dl=pexels-valiphotos-589840.jpg&fm=jpg" 
+                    <img    src={postcover} 
                             alt=""></img>
                 </div>
                 <div className="post-content__follow">

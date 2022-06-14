@@ -12,7 +12,7 @@ import FeedPostVideoModal from "./FeedPostVideoModal/FeedPostVideoModal";
 import FeedPostEventModal from "./FeedPostEventModal/FeedPostEventModal";
 import FeedPostArticleModal from "./FeedPostArticleModal/FeedPostArticleModal";
 
-const CreatePost = () => {
+const CreatePost = ({logo}) => {
 
     const [feedPostPhotoModal,setFeedPostPhotoModal] = useState(false);
     const [feedPostVideoModal,setFeedPostVideoModal] = useState(false);
@@ -23,7 +23,7 @@ const CreatePost = () => {
         <div className="createPost">
             <div className="createPost-header">
                 <img    className="createPost-header__logo" 
-                        src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                        src={logo} 
                         alt=""></img>
                 <input  className="createPost-header__input" 
                         placeholder="     Գրեք տեքստը"

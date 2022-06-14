@@ -2,6 +2,8 @@ import React , {useState} from "react";
 import { Link } from "react-router-dom";
 import './headerUser.scss';
 
+import { useSelector } from "react-redux";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faUsers , 
             faGraduationCap , 
@@ -22,6 +24,7 @@ const HeaderUser = () => {
     const [servicesModal,setServicesModal] = useState(false);
     const [modalSearch,setModalSearch] = useState(false);
 
+    const {users} = useSelector((state) => state.user);
 
     return (
         <header className="header">
@@ -95,9 +98,24 @@ const HeaderUser = () => {
                             </li>
                             <li     className="headerUser-content__item" 
                                     onClick={() => {setUserModal(true)}}>
-                                <ModalUser  userModal={userModal} />
-                                <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
-                                        alt="" className="headerUser-content__item-img"/>
+                                {   
+                                    users.filter((elem) => elem.id === 4).map((el) => {
+                                        return  <ModalUser      userModal={userModal}
+                                                                key={el.id}
+                                                                logo={el.logo}
+                                                                name={el.name}
+                                                                profession={el.profession}
+                                                                /> 
+                                    })
+                                }
+                                {   
+                                    users.filter((elem) => elem.id === 4).map((el) => {
+                                        return    <img  src={el.logo}
+                                                        key={el.id} 
+                                                        alt="" 
+                                                        className="headerUser-content__item-img"/>       
+                                    })
+                                }
                             </li>
                             <li     className="headerUser-content__item" 
                                     onClick={() => {setServicesModal(true)}}>
