@@ -18,7 +18,7 @@ import ModalUser from "./ModalUser/ModalUser";
 import ModalServices from "./ModalServices/ModalServices";
 import ModalSearch from "./ModalSearch/ModalSearch";
 
-const HeaderUser = () => {
+const HeaderUser = ({logined}) => {
 
     const [userModal,setUserModal] = useState(false);
     const [servicesModal,setServicesModal] = useState(false);
@@ -28,7 +28,7 @@ const HeaderUser = () => {
 
     return (
         <header className="header">
-            <div className="headerUser">
+            <div className={logined ? "headerUser active" : "headerUser"}>
                 <div className="headerUser-content">
                     <div className="headerUser-content__logo">
                         <Link   to="/index" 

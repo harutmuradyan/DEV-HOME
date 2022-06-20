@@ -11,6 +11,7 @@ $backColor : rgb(110, 214, 121);
         background-color:$backColor;
         position: fixed;
         z-index: 1;
+        display: none;
         .headerUser-content {
             width: 100%;
             margin: 0 auto;
@@ -113,6 +114,10 @@ $backColor : rgb(110, 214, 121);
             }
         }
     }
+}
+
+.headerUser.active {
+    display: block;
 }
 
 $xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;

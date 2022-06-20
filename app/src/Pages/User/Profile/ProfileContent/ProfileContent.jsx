@@ -11,7 +11,12 @@ import ProfileUserPhotoModal from "./ProfileUserPhotoModal/ProfileUserPhotoModal
 import ProfileUserContactModal from "./ProfileUserContactModal/ProfileUserContactModal";
 import ProfileSearchWorkBtnModal from "./ProfileSearchWorkBtnModal/ProfileSearchWorkBtnModal";
 
-const ProfileContent = () => {
+const ProfileContent = ({   logo , 
+                            cover , 
+                            name , 
+                            profession , 
+                            city , 
+                            earth   }) => {
 
     const [profileContentModal,setProfileContentModal] = useState(false);
     const [profileUserBackgroundModal,setProfileUserBackgroundModal] = useState(false);
@@ -24,21 +29,21 @@ const ProfileContent = () => {
             <div className="profileContent-background">
                 <div    className="profileContent-background__header">
                     <img    className="profileContent-background__cover" 
-                            src="" 
+                            src={cover} 
                             alt=""
                             onClick={() => {setProfileUserBackgroundModal(true)}}></img>
                     <img    className="profileContent-background__logo" 
-                            src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                            src={logo} 
                             alt=""
                             onClick={() => {setProfileUserPhotoModal(true)}}></img>
                 </div>
             </div>
             <div className="profileContent-info">
                 <div className="profileContent-info__left">
-                    <h2 className="profileContent-info__name">Արման Ղազարյան</h2>
-                    <p className="profileContent-info__profesion">WEB DEVELOPER</p>
+                    <h2 className="profileContent-info__name">{name}</h2>
+                    <p className="profileContent-info__profesion">{profession}</p>
                     <div className="profileContent-info__address">
-                        Երևան Հայաստան 
+                        {earth}  {city} 
                         <button className="profileContent-info__phone"
                                 onClick={() => {setProfileUserContactModal(true)}}>
                             Կապի տվյալներ

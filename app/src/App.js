@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{useState,Suspense} from 'react';
 import './app.scss';
 
-import {  BrowserRouter,Routes,Route,} from "react-router-dom";
-import {ErrorBoundary} from 'react-error-boundary'
+import {  BrowserRouter,
+          Routes,
+          Route,
+          Navigate,
+          Outlet  } from "react-router-dom";
+
+import { ErrorBoundary } from 'react-error-boundary'
 import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
 
-//import Header from './Components/Header/HeaderLayding/Header';
+import HeaderLayding from './Components/Header/HeaderLayding/HeaderLanding';
 import Landing from './Pages/Landing/Landing';
 import Feed from './Pages/User/Feed/Feed';
 import Notifications from './Pages/User/Notifications/Notifications';
@@ -31,50 +36,74 @@ import CreateCompany from './Pages/User/CreateCompany/CreateCompany';
 import CreateVacancies from './Pages/User/CreateVacancies/CreateVacancies';
 import CreateLesson from './Pages/User/CreateLesson/CreateLesson';
 import Skils from './Pages/User/Skils/Skils';
+import Spinner from './Components/Spinner/Spinner';
+import Admin from './Pages/Admin/Admin';
 
 function App() {
-  
+
+  const [logined,setLogined] = useState(false);
+  const [roleAdmin,setRoleAdmin] = useState(false);
+
+  const PublicRoute = () => {
+    return logined ? <Navigate to="/index" /> :<Outlet />;
+  }
+
+  const PrivateRoute = () => {
+    return logined ? <Outlet /> : <Navigate to="/" />;
+  }
+
+  const PrivetRouteAdmin = () => {
+    return logined && roleAdmin ? <Outlet/> : <Navigate to="/" />
+  }
+
   return (
-    <div className='app'>
+    <div className="app">
       <ErrorBoundary FallbackComponent={ErrorHandler}>
         <BrowserRouter>
-          <HeaderUser/>
-          <main className='main'>
-            <Routes>
-              <Route path="/" element={<Landing/>} />
+          {
+            logined ? <HeaderUser logined={logined}/> : <HeaderLayding logined={logined}/>
+          }
+          <main className="main">
+            <Suspense fallback={<Spinner/>}>
+              <Routes>      
+                <Route exact path='/' element={<PublicRoute/>}>
+                  <Route exact path="/" element={<Landing/>}/>        
+                  <Route path="/login" element={<Login/>} />
+                  <Route path="/registration" element={<Registration/>} />
+                </Route>
 
-              <Route path="/login" element={<Login/>} />
-              <Route path="/registration" element={<Registration/>} />
-              
-              <Route index path="/index" element={<Feed/>} />
-              <Route path="/network" element={<Network />} />
-              <Route path="/notification" element={<Notifications />} />
-              <Route path="/profile" element={<Profile />} />
+                <Route exact path="/" element={<PrivateRoute/>}>
+                  <Route index path="/index" element={<Feed/>} />
+                  <Route path="/network" element={<Network />} />
+                  <Route path="/notification" element={<Notifications />} />
+                  <Route path="/profile" element={<Profile />} />
+                  <Route path="/vacancies" element={<Vacancies />} />
+                  <Route path="/createvacancies" element={<CreateVacancies/>}/>
+                  <Route path="/vacancies/item" element={<VacanciesItem />} />
+                  <Route path="/learning" element={<Learning />} />
+                  <Route path="/learning/item" element={<LearningItem />} />
+                  <Route path="/createlesson" element={<CreateLesson />}/>
+                  <Route path="/company" element={<Company />} />
+                  <Route path="/createcompany" element={<CreateCompany/>}/>
+                  <Route path="/search" element={<Search />} />
+                  <Route path="/messaging" element={<Messaging />} />
+                  <Route path="/event" element={<Event />} />
+                  <Route path="/university" element={<University />} />
+                  <Route path="/createuniversity" element={<CreateUniversity/>} />
+                  <Route path="/skils" element={<Skils />}/>
+                </Route>
 
-              <Route path="/vacancies" element={<Vacancies />} />
-              <Route path="/createvacancies" element={<CreateVacancies/>}/>
-              <Route path="/vacancies/item" element={<VacanciesItem />} />
-              
-              <Route path="/learning" element={<Learning />} />
-              <Route path="/learning/item" element={<LearningItem />} />
-              <Route path="/createlesson" element={<CreateLesson />}/>
+                <Route path="/" exact element={<PrivetRouteAdmin/>}>
+                  <Route path="admin" element={<Admin/>} />
+                </Route>
 
-              <Route path="/company" element={<Company />} />
-              <Route path='/createcompany' element={<CreateCompany/>}/>
-
-              <Route path="/search" element={<Search />} />
-              <Route path="/messaging" element={<Messaging />} />
-              <Route path="/event" element={<Event />} />
-
-              <Route path="/university" element={<University />} />
-              <Route path='/createuniversity' element={<CreateUniversity/>} />
-              
-              <Route path="/skils" element={<Skils />}/>
-
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
           </main>
-          <Messenger/>
+          {
+            logined ? <Messenger/> : null 
+          }
           <Footer/>
         </BrowserRouter>
       </ErrorBoundary>
@@ -83,3 +112,6 @@ function App() {
 }
 
 export default App;
+
+
+

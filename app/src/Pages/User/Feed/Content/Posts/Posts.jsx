@@ -7,8 +7,8 @@ import Post from "./Post/Post";
 
 const Posts = () => {
 
-    const {posts} = useSelector((state) => state.userpost)
-
+    const {users} = useSelector((state) => state.user);
+ 
     return (
         <div className="posts">
             <div className="posts-filtr">
@@ -19,7 +19,7 @@ const Posts = () => {
             </div>
             <div className="posts-items">
                 {
-                    posts.filter((elem) => elem.id <= 10).map((el,index) => {
+                    users.filter((elem) => elem.id <= 10).map((el,index) => {
                         return <Post    key={el.id}
                                         logo={el.logo}
                                         postcover={el.postCover}
