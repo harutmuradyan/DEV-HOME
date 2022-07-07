@@ -9,29 +9,37 @@ import {    faHeart ,
             faRightLong , 
             faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
-const Post = ({postcover , name , logo , desc}) => {
+import { useSelector } from "react-redux";
+
+const Post = ({cover , desc , userId}) => {
 
     const [feedPostReactionOppen , setFeedPostReactionOppen] = useState(false);
     const [feedPostCommentOppen , setFeedPostCommentOppen] = useState(false);
 
+    const {users} = useSelector((state) => state.user);
+    
     return (
         <div className="post">
-            <div className="post-header">
-                <div className="post-header__img">
-                    <img    src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
-                            alt=""></img>
-                </div>
-                <div className="post-header__info">
-                    <h2>Քրիստինե Գրիգորյան</h2>
-                    <p>DEVOPS DEVELOPER</p>
-                    <p>1 օր</p>
-                </div>
-                <div className="post-header__follow">
-                    <button className="post-header__follow-btn">
-                        Հետևել
-                    </button>
-                </div>
-            </div>
+            {users.filter((u) => u.id === userId).map((e) => {
+                return (
+                    <div key={e.id} className="post-header">
+                        <div className="post-header__img">
+                            <img    src={e.logo} 
+                                    alt=""></img>
+                        </div>
+                        <div className="post-header__info">
+                            <h2>{e.name}</h2>
+                            <p>{e.profession}</p>
+                            <p>1 օր</p>
+                        </div>
+                        <div className="post-header__follow">
+                            <button className="post-header__follow-btn">
+                                Հետևել
+                            </button>
+                        </div>
+                    </div>
+                )
+            })}
             <div className="post-content">
                 <div className="post-content__title">
                     <p>
@@ -40,7 +48,7 @@ const Post = ({postcover , name , logo , desc}) => {
                     </p>
                 </div>
                 <div className="post-content__photo">
-                    <img    src={postcover} 
+                    <img    src={cover} 
                             alt=""></img>
                 </div>
                 <div className="post-content__follow">

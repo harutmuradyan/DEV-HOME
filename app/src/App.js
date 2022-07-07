@@ -41,7 +41,7 @@ import Admin from './Pages/Admin/Admin';
 
 function App() {
 
-  const [logined,setLogined] = useState(false);
+  const [logined,setLogined] = useState(true);
   const [roleAdmin,setRoleAdmin] = useState(false);
 
   const PublicRoute = () => {
