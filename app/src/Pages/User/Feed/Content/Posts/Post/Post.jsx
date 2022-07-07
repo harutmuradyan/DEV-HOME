@@ -11,13 +11,22 @@ import {    faHeart ,
 
 import { useSelector } from "react-redux";
 
-const Post = ({cover , desc , userId}) => {
+const Post = ({cover , desc , userId }) => {
 
     const [feedPostReactionOppen , setFeedPostReactionOppen] = useState(false);
     const [feedPostCommentOppen , setFeedPostCommentOppen] = useState(false);
+    const [follow,setFollow] = useState(false)
 
     const {users} = useSelector((state) => state.user);
     
+    const followHandler = () => {
+        if (follow === true) {
+            setFollow(false)
+        }else {
+            setFollow(true)
+        }
+    } 
+
     return (
         <div className="post">
             {users.filter((u) => u.id === userId).map((e) => {
@@ -33,8 +42,14 @@ const Post = ({cover , desc , userId}) => {
                             <p>1 օր</p>
                         </div>
                         <div className="post-header__follow">
-                            <button className="post-header__follow-btn">
-                                Հետևել
+                            <button className="post-header__follow-btn" onClick={followHandler}>
+                                {
+                                    follow 
+                                    ? 
+                                    <span>Հետևել</span> 
+                                    : 
+                                    <span>Հետեվում եք</span>
+                                }  
                             </button>
                         </div>
                     </div>
