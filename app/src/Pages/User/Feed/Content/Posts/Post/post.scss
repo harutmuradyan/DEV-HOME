@@ -76,27 +76,37 @@ $backColor : rgb(110, 214, 121);
                 max-height:400px;
             }
         }
-        .post-content__follow {
+        .post-content__block {
             margin-top: 10px;
             display: flex;
-            justify-content:flex-start;
-            .post-content__follow-peoples {
-                margin-top: 3px;
-                margin-left: 10px;
+            justify-content:space-between;
+            .post-content__reactions {
+                display: flex;
+                .post-content__reactions-user {
+                    margin-top: 3px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    color: grey;
+                    font-size: 0.8rem;
+                }
+                .post-content__reactions-count {
+                    margin-left: 10px;
+                    margin-top: 3px;
+                    cursor: pointer;
+                    color: grey;
+                    font-size: 0.8rem;
+                }
+                .post-content__reactions-icon {
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+            .post-content__comment-modal {
+                background-color:white;
                 cursor: pointer;
                 color: grey;
                 font-size: 0.8rem;
-            }
-            .post-content__follow-name {
-                margin-left: 10px;
-                margin-top: 3px;
-                cursor: pointer;
-                color: grey;
-                font-size: 0.8rem;
-            }
-            .post-content__follow-icon {
-                font-size: 1rem;
-                cursor: pointer;
+                padding-top: 2px;
             }
         }
         .post-content__btns {
@@ -126,6 +136,7 @@ $backColor : rgb(110, 214, 121);
                 margin: 10px 10px 10px 10px;
                 width: 30px;
                 height: 30px;
+                border-radius:50%
             }
             .post-content__comment-input {
                 border:solid 1px grey;
