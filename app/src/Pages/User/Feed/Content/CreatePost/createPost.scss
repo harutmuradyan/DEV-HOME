@@ -1,7 +1,10 @@
 $backColor : rgb(110, 214, 121);
 
 .createPost {
-    padding: 20px 0 20px 0;
+    padding: 20px 10px 20px 10px;
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+    background-color:white;
     .createPost-header {
         display: flex;
         margin: 0px 10px 10px 10px;

@@ -3,10 +3,10 @@ $backColor : rgb(110, 214, 121);
 .post {
     background-color:white;
     border-radius:25px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
     .post-header {
-        padding: 10px 10px 10px 10px;
+        padding: 10px 20px 10px 20px;
         display: flex;
         width: 100%;
         border-bottom:solid 1px $backColor;
@@ -24,13 +24,11 @@ $backColor : rgb(110, 214, 121);
             padding-left: 20px;
             width: 80%;
             h2 {
-                color:$backColor;
                 font-size: 1rem;
                 cursor: pointer;
             }
             p {
                 margin-top: 5px;
-                padding: 2px 0px 2px 0px;
                 font-size: 0.8rem;
                 cursor: pointer;
                 color: grey;
@@ -49,7 +47,11 @@ $backColor : rgb(110, 214, 121);
                 height: 30px;
                 border-radius:10px;
                 cursor: pointer;
-                color:$backColor;
+                
+                span {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
                 &:hover {
                     background-color:black;
                     color: white;
@@ -61,16 +63,19 @@ $backColor : rgb(110, 214, 121);
         padding: 10px 10px 10px 10px;
         .post-content__title {
             padding: 10px 10px 10px 10px;
-            span {
-                display: flex;
-                justify-content:flex-end;
+            p {
                 margin-top: 5px;
                 margin-bottom: 5px;
-                color: $backColor;
+                color: grey;
+                cursor: pointer;
+            }
+            .post-content__title-btn {
+                background-color:white;
                 cursor: pointer;
             }
         }
         .post-content__photo {
+            padding: 10px 10px 0px 10px;
             img {
                 width: 100%;
                 max-height:400px;
@@ -79,6 +84,7 @@ $backColor : rgb(110, 214, 121);
         .post-content__block {
             margin-top: 10px;
             display: flex;
+            padding: 10px;
             justify-content:space-between;
             .post-content__reactions {
                 display: flex;

@@ -1,9 +1,12 @@
 .posts {
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 0px;
     padding-bottom: 30px;
     .posts-filtr {
+        width: 100%;
+        border-radius: 20px;
+        background-color:white;
         margin-right: 10px;
-        padding: 10px 0px 10px 0px;
+        padding: 10px 20px 10px 10px;
         display: flex;
         justify-content:flex-end;
         .posts-filtr__title {
@@ -18,18 +21,6 @@
     }
     .posts-items {
 
-    }
-    .posts-seeMore {
-        display: flex;
-        justify-content:center;
-        .posts-seeMore__btn {
-            width: 50%;
-            height: 30px;
-            background-color:rgb(99, 99, 248);
-            border-radius:10px;
-            color: white;
-            cursor: pointer;
-        }
     }
 }
 

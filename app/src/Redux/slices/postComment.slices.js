@@ -2,11 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = { 
     postComment: [
-        {
-            "id" : 1,
-            "userId" : 1,
-            "desc" : "asd"
-        }
+        
     ]
 }
 
@@ -14,20 +10,19 @@ const postCommentSlice = createSlice({
     name: 'PostCommentSlice',
     initialState,
     reducers: {
-        addPlayer(state,action){
-            state.data = [
-                ...state.data,
+        addPostComment(state,action){
+            state.postComment = [
+                ...state.postComment,
                 {
                     id: action.payload.id,
-                    firstName: action.payload.firstName,
-                    lastName : action.payload.lastName,
-                    createdAt : action.payload.createdAt,
-                    teamName : action.payload.teamName
+                    userId : action.payload.userId,
+                    postId : action.payload.postId,
+                    desc : action.payload.desc
                 }
             ]
         },
     },
 })
 
-export const { addPlayer} = postCommentSlice.actions;
+export const { addPostComment } = postCommentSlice.actions;
 export default postCommentSlice.reducer;

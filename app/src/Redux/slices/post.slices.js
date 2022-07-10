@@ -27,20 +27,19 @@ const postSlice = createSlice({
     name: 'PostSlice',
     initialState,
     reducers: {
-        addPlayer(state,action){
-            state.data = [
-                ...state.data,
+        addPost(state,action){
+            state.posts = [
+                ...state.posts,
                 {
                     id: action.payload.id,
-                    firstName: action.payload.firstName,
-                    lastName : action.payload.lastName,
-                    createdAt : action.payload.createdAt,
-                    teamName : action.payload.teamName
+                    userId : action.payload.userId,
+                    desc : action.payload.desc,
+                    
                 }
             ]
         },
     },
 })
 
-export const { addPlayer} = postSlice.actions;
+export const { addPost} = postSlice.actions;
 export default postSlice.reducer;

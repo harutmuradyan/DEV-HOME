@@ -88,7 +88,7 @@ const Post = ({cover , desc , userId }) => {
     },[commentBar])
 
     const descHandler = useCallback( () => {
-        const shortDesc = desc.slice(0,80) + "...";
+        const shortDesc = desc.slice(0,90) + "...";
         return longDesc ? <span>{desc}</span> : <span>{shortDesc}</span>
     },[longDesc,desc])
 
@@ -100,7 +100,7 @@ const Post = ({cover , desc , userId }) => {
         }
     },[longDesc])
 
-    const commentHendler = useCallback( () => {
+    const commentHendler = useCallback( async () => {
         const newComment = {
             "id" : comment.length + 1,
             "userId" : currentUser,
@@ -144,10 +144,8 @@ const Post = ({cover , desc , userId }) => {
             })}
             <div className="post-content">
                 <div className="post-content__title">
-                    <p>
-                        {descHandler()} 
-                        <span onClick={longDescHandler}>Դիտել ամբողջը</span>
-                    </p>
+                    <p> {descHandler()} </p>
+                    <button className="post-content__title-btn" onClick={longDescHandler}>Դիտել ամբողջը</button>
                 </div>
                 <div className="post-content__photo">
                     <img    src={cover} 

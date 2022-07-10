@@ -1,10 +1,55 @@
 .comment {
-    display: flex;
+    width: 100%;
+    margin-top: 3px;
+    padding: 10px;
     .comment-user {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         .comment-user__img {
             width: 35px;
             height: 35px;
             border-radius:50%;
+            cursor: pointer;
+        }
+        .comment-user__container{
+            display: flex;
+            background-color:rgb(245, 241, 241);
+            width: 92%;
+            justify-content: space-between;
+            .comment-user__name {
+                font-size: 1rem;
+                padding: 10px 10px 5px 10px;
+                cursor: pointer;
+            }
+            .comment-user__block {
+                display: flex;
+                .comment-date {
+                    padding: 10px 10px 10px 10px;
+                    font-size: 0.8rem;
+                    color: grey;
+                }
+                .comment-bar {
+                    padding: 10px 10px 10px 10px;
+                    background-color:rgb(245, 241, 241);
+                    cursor: pointer;
+                    .comment-bar__icon {
+                        font-size: 1.2rem;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+    .comment-desc {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .comment-desc__text {
+            color: black;
+            background-color:rgb(245, 241, 241);
+            width: 92%;
+            padding: 5px 10px 20px 10px;
         }
     }
 }

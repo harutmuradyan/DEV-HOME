@@ -1,9 +1,13 @@
 import React from "react";
 import './comment.scss'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useSelector } from "react-redux";
 
-const Comment = ({id , desc , userid}) => {
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+const Comment = ({desc , userid}) => {
     
     const {users} = useSelector((state) => state.user);
 
@@ -16,11 +20,21 @@ const Comment = ({id , desc , userid}) => {
                                 <img    src={e.logo} 
                                         alt="" 
                                         className="comment-user__img"></img>
+                                <div className="comment-user__container">
+                                    <h2 className="comment-user__name">{e.name}</h2>
+                                    <div className="comment-user__block">
+                                        <p className="comment-date">3 օր առաջ</p>
+                                        <button className="comment-bar">
+                                            <FontAwesomeIcon    icon={faBars} 
+                                                                className="comment-bar__icon"/>
+                                        </button>
+                                    </div>
+                                </div>
                         </div>
             })}
-            <p className="comment-id">{id}</p>
-            <p className="comment-desc">{desc}</p>
-            <p className="comment-userid">{userid}</p>
+            <div className="comment-desc">
+                <p className="comment-desc__text">{desc}</p>
+            </div>
         </div>
     )
 }

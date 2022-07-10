@@ -1,5 +1,7 @@
 .post-content__comments {
     display: none;
+    width:100%;
+    padding: 10px 0px 10px 0px;
 }
 .post-content__comments.active {
     display: block;
