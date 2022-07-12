@@ -26,7 +26,7 @@ const CreateComment = ({commentBar ,postId}) => {
         }))
         
         setChangeComment('')
-    },[changeComment,postId,currentUser])
+    },[dispatch, postId, changeComment,currentUser])
 
     return (
         <div className={commentBar ? "post-content__comment active" : "post-content__comment"}>

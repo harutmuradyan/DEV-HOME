@@ -4,13 +4,11 @@ import './feedPostPhotoModal.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
-
-
 const FeedPostPhotoModal = (
     {   feedPostPhotoModal,
         setFeedPostPhotoModal   }
-    ) => {
-    
+    ) => {    
+
     return (
         <div className={feedPostPhotoModal ? "feedPostPhotoModal active" : "feedPostPhotoModal"} 
              onClick={() => {setFeedPostPhotoModal(false)}} >

@@ -99,7 +99,7 @@ const HeaderUser = ({logined}) => {
                             <li     className="headerUser-content__item" 
                                     onClick={() => {setUserModal(true)}}>
                                 {   
-                                    users.filter((elem) => elem.id === 4).map((el) => {
+                                    [...users].filter((elem) => elem.id === 4).map((el) => {
                                         return  <ModalUser      userModal={userModal}
                                                                 key={el.id}
                                                                 logo={el.logo}
@@ -109,7 +109,7 @@ const HeaderUser = ({logined}) => {
                                     })
                                 }
                                 {   
-                                    users.filter((elem) => elem.id === 4).map((el) => {
+                                    [...users].filter((elem) => elem.id === 4).map((el) => {
                                         return    <img  src={el.logo}
                                                         key={el.id} 
                                                         alt="" 

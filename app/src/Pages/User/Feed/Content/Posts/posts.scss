@@ -19,8 +19,12 @@
             cursor: pointer;
         }
     }
-    .posts-items {
-
+    .posts-container {
+        .posts-section {
+        }
+        .posts-section.active {
+            display: block;
+        }
     }
 }
 

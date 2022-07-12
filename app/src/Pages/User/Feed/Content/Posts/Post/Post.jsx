@@ -98,7 +98,7 @@ const Post = ({cover , desc , userId , id}) => {
 
     return (
         <div className="post">
-            {users.filter((u) => u.id === userId).map((e) => {
+            {[...users].filter((u) => u.id === userId).map((e) => {
                 return (
                     <div key={e.id} className="post-header">
                         <div className="post-header__img">

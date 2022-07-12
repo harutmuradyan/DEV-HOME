@@ -11,11 +11,13 @@ const Comments = ({commentsModal ,postId}) => {
     
     return (
         <div className={commentsModal ? "post-content__comments active" : "post-content__comments"}>
-            {postComment.filter((c) => c.postId === postId).map((e) =>
+            {
+                postComment.filter((c) => c.postId === postId).map((e) =>
                 <Comment    key={e.id} 
                             desc={e.desc} 
                             userid={e.userId}/>
-            )}
+                )
+            }
         </div>
     )
 }

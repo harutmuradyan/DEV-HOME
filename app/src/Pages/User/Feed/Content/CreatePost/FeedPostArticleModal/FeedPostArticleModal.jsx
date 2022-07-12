@@ -31,7 +31,7 @@ const FeedPostArticleModal = (
                 setChangePostArcticel('')
                 setFeedPostArticleModal(false)
         
-    },[currentUser,changePostArcticel])
+    },[currentUser,changePostArcticel,setFeedPostArticleModal,setChangePostArcticel ,dispatch])
 
     return (
         <div className={feedPostArticleModal ? "feedPostArticleModal active" : "feedPostArticleModal"} 
@@ -47,7 +47,7 @@ const FeedPostArticleModal = (
                 </div>
                 <div className="feedPostArticleModal-content">
                     <div className="feedPostArticleModal-content__container">
-                        {users.filter((u) => u.id === currentUser).map((e) => {
+                        {[...users].filter((u) => u.id === currentUser).map((e) => {
                             return    <div    className="feedPostArticleModal-content__header"
                                                 key={e.id}>
                                         <img    src={e.logo} 

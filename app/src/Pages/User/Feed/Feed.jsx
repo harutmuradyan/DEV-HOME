@@ -18,7 +18,7 @@ const Feed = () => {
             <div className="feed-container">
                 <div className="feed-container__leftBlock">
                     {   
-                        users.filter((elem) => elem.id === 4).map((el) => {
+                        [...users].filter((elem) => elem.id === 4).map((el) => {
                             return  <Background     key={el.id}
                                                     name={el.name} 
                                                     profession={el.profession}
