@@ -135,35 +135,6 @@ $backColor : rgb(110, 214, 121);
                 }
             } 
         }
-        .post-content__comment {
-            display: flex;
-            display: none;
-            .post-content__comment-img {
-                margin: 10px 10px 10px 10px;
-                width: 30px;
-                height: 30px;
-                border-radius:50%
-            }
-            .post-content__comment-input {
-                border:solid 1px grey;
-                border-radius:10px;
-                width: 90%;
-                cursor:pointer;
-                padding: 10px 10px 10px 10px;
-            }
-            .post-content__comment-btn {
-                padding: 10px 10px 10px 10px;
-                background-color:white;
-                .post-content__comment-icon {
-                    color: grey;
-                    cursor: pointer;
-                }
-            }
-        }
-        .post-content__comment.active {
-            display: block;
-            display: flex;
-        }
         .post-content__reaction {
             position: relative;
             z-index: 1;

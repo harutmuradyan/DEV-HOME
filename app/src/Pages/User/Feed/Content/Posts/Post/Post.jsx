@@ -2,6 +2,7 @@ import React,{useState , useCallback} from "react";
 import './post.scss'
 
 import Comments from "./Comments/Comments";
+import CreateComment from "./CreateComment/CreateComment";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faHeart , 
@@ -13,23 +14,18 @@ import {    faHeart ,
 
 import { useSelector } from "react-redux";
 
-const Post = ({cover , desc , userId }) => {
-
+const Post = ({cover , desc , userId , id}) => {
     const [reactionBar , setReactionBar] = useState(false);
     const [commentBar , setCommentBar] = useState(false);
-    const [follow,setFollow] = useState(false);
+    const [followUser,setFollowUser] = useState(false);
     const [longDesc,setlongDesc] = useState(false);
     const [like,setLike] = useState(false);
     const [likeCount,setLikeCount] = useState(0);
     const [heart,setHeart] = useState(false);
     const [heartCount,setHeartCount] = useState(0);
-    const [changeComment,setChangeComment] = useState("");
-    const [comment,setComment] = useState([]);
     const [commentsModal,setCommentsModal] = useState(false);
 
     const {users} = useSelector((state) => state.user);
-
-    const currentUser = 4;
 
     const likeHandler = useCallback( () => {
         if (like === false) {
@@ -56,12 +52,12 @@ const Post = ({cover , desc , userId }) => {
     },[heart,heartCount])
 
     const followHandler = useCallback( () => {
-        if (follow === true) {
-            setFollow(false)
+        if (followUser === true) {
+            setFollowUser(false)
         }else {
-            setFollow(true)
+            setFollowUser(true)
         }
-    },[follow])
+    },[followUser])
 
     const commentsModalHandler = useCallback( () => {
         if (commentsModal === true) {
@@ -100,20 +96,6 @@ const Post = ({cover , desc , userId }) => {
         }
     },[longDesc])
 
-    const commentHendler = useCallback( async () => {
-        const newComment = {
-            "id" : comment.length + 1,
-            "userId" : currentUser,
-            "desc" : changeComment
-        }
-        setComment(
-            (prev) => {
-                return [...prev,newComment ]
-            }
-        )
-        setChangeComment('')
-    },[changeComment,comment,currentUser])
-
     return (
         <div className="post">
             {users.filter((u) => u.id === userId).map((e) => {
@@ -131,7 +113,7 @@ const Post = ({cover , desc , userId }) => {
                         <div className="post-header__follow">
                             <button className="post-header__follow-btn" onClick={followHandler}>
                                 {
-                                    follow 
+                                    followUser 
                                     ? 
                                     <span>Հետեվում եք</span>
                                     : 
@@ -166,7 +148,7 @@ const Post = ({cover , desc , userId }) => {
                         <p className="post-content__reactions-count">{heartCount} {likeCount} </p>
                     </div>
                     <button className="post-content__comment-modal"
-                            onClick={commentsModalHandler}>{comment.length} Մեկնաբանություններ</button>
+                            onClick={commentsModalHandler}>Մեկնաբանություններ</button>
                 </div>
                 <div className={reactionBar ? "post-content__reaction active" : "post-content__reaction"}>
                     <FontAwesomeIcon    icon={faHeart}  
@@ -208,31 +190,8 @@ const Post = ({cover , desc , userId }) => {
                         </li>
                     </ul>
                 </div>
-                <div className={commentBar ? "post-content__comment active" : "post-content__comment"}>
-                    {
-                        users.filter((u) => u.id === currentUser).map((e) => {
-                            return  <img    className="post-content__comment-img" 
-                                            key={e.id}
-                                            src={e.logo} 
-                                            alt=""></img>
-                        })
-                    }
-                    <input  className="post-content__comment-input" 
-                            placeholder="Մեկնաբանություն"
-                            value={changeComment} 
-                            onChange={(e) => {setChangeComment(e.target.value)}}
-                            />
-                    <button className="post-content__comment-btn">
-                        <FontAwesomeIcon    icon={faPaperPlane} 
-                                            className="post-content__comment-icon"
-                                            onClick={commentHendler}
-                                            />
-                    </button>
-                </div>
-                
-                <Comments   comment={comment} 
-                            commentsModal={commentsModal}
-                            />
+                <CreateComment commentBar={commentBar} postId={id} />
+                <Comments    commentsModal={commentsModal} postId={id}/>
                
             </div>
         </div>

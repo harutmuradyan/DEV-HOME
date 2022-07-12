@@ -25,9 +25,10 @@ const CreatePost = ({logo}) => {
                 <img    className="createPost-header__logo" 
                         src={logo} 
                         alt=""></img>
-                <input  className="createPost-header__input" 
-                        placeholder="     Գրեք տեքստը"
-                        onClick={() => {setFeedPostArticleModal(true)}}></input>
+                <button  className="createPost-header__button" 
+                        onClick={() => {setFeedPostArticleModal(true)}}>
+                            <span>Գրեք տեքստը</span>
+                </button>
             </div>
             <div className="createPost-category">
                 <ul className="createPost-category_bar">

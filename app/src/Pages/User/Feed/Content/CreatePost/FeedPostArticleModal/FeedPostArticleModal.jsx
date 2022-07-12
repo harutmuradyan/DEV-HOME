@@ -24,10 +24,9 @@ const FeedPostArticleModal = (
     const postArcticelHandler = useCallback ( async () => {
         
         await   dispatch(addPost( { 
-                id:Math.floor(Math.random() * 3000),
-                userId:currentUser , 
-                desc:changePostArcticel,
-                
+                    id:Math.floor(Math.random() * 3000),
+                    userId:currentUser , 
+                    desc:changePostArcticel,
                 }))
                 setChangePostArcticel('')
                 setFeedPostArticleModal(false)
