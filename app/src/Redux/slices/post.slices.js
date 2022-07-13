@@ -5,7 +5,8 @@ const initialState = {
         { 
             "id" : 1,
             "userId" : 1,
-            "like" : 33, 
+            "like" : 33,
+            "video": null, 
             "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             "cover" : "https://www.janbasktraining.com/blog/uploads/images/2019/03/How-to-Be-More-Assertive-at-Work-Pro-tips-2019-info-Banner01.jpg"
         },
@@ -13,6 +14,7 @@ const initialState = {
             "id" : 2,
             "userId" : 2,
             "like" : 50,
+            "video": null, 
             "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             "cover" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXiokoNR44hzOnjjAHxdvo2O1tNM8Jej6Aw&usqp=CAU"
         },
@@ -20,6 +22,7 @@ const initialState = {
             "id" : 3,
             "userId" : 3,
             "like" :5,
+            "video": null, 
             "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             "cover" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnqnU5teCaph0WTbI42O0sEKCkvx9mA5jBQ&usqp=CAU"
         }
@@ -37,7 +40,8 @@ const postSlice = createSlice({
                     id: action.payload.id,
                     userId : action.payload.userId,
                     desc : action.payload.desc,
-                    
+                    cover : action.payload.cover,
+                    video : action.payload.video
                 }
             ]
         },

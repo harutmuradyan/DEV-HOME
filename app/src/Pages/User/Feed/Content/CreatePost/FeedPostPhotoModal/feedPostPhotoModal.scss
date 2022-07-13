@@ -8,11 +8,13 @@
     display: none;
     z-index: 1;
     .feedPostPhotoModal-container {
+        padding: 5px 5px 5px 5px;
         position: relative;
+        overflow-y: scroll;
         top: 70px;
         width: 40%;
         margin: 0 auto;
-        min-height: 150px;
+        height:400px;
         border-radius: 20px;
         background-color:white;
         .feedPostPhotoModal-header {
@@ -26,6 +28,7 @@
             .feedPostPhotoModal-header__icon {
                 cursor: pointer;
             }
+
         }
         .feedPostPhotoModal-content {
             padding: 15px 15px 15px 15px;
@@ -68,8 +71,6 @@
                 }
             }
             .feedPostPhotoModal-content__container {
-                height:350px;
-                overflow-y: scroll;
                 border-radius:10px;
                 padding: 10px 10px 10px 10px;
                 .feedPostPhotoModal-content__header {
@@ -78,6 +79,7 @@
                     .feedPostPhotoModal-content__header-img {
                         width: 50px;
                         height: 50px;
+                        border-radius:50%;
                     }
                     .feedPostPhotoModal-content__header-group {
                         padding-left: 20px;

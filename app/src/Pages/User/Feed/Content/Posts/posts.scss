@@ -21,6 +21,7 @@
     }
     .posts-container {
         .posts-section {
+            display:none;
         }
         .posts-section.active {
             display: block;

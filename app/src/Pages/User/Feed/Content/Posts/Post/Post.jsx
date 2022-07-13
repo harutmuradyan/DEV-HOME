@@ -14,7 +14,7 @@ import {    faHeart ,
 
 import { useSelector } from "react-redux";
 
-const Post = ({cover , desc , userId , id}) => {
+const Post = ({cover , desc , userId , id  , video}) => {
     const [reactionBar , setReactionBar] = useState(false);
     const [commentBar , setCommentBar] = useState(false);
     const [followUser,setFollowUser] = useState(false);
@@ -130,8 +130,14 @@ const Post = ({cover , desc , userId , id}) => {
                     <button className="post-content__title-btn" onClick={longDescHandler}>Դիտել ամբողջը</button>
                 </div>
                 <div className="post-content__photo">
-                    <img    src={cover} 
+                    <img    src={cover}
                             alt=""></img>
+                </div>
+                <div className="post-content__video">
+                    <video  controls
+                            autoplay>
+                        <source src={video}></source>
+                    </video>
                 </div>
                 <div className="post-content__block">
                     <div className="post-content__reactions">
