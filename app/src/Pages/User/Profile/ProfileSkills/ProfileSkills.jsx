@@ -8,9 +8,15 @@ import {    faAdd ,
 import ProfileSkillsItem from "./ProfileSkillsItem/ProfileSkillsItem";
 import ProfileSkillsModal from "./ProfileSkillsModal/ProfileSkillsModal";
 
+import { useSelector } from "react-redux";
+
 const ProfileSkills= () => {
 
     const [profileSkillsModal,setProfileSkillsModal] = useState(false);
+
+    const {skills} = useSelector((state) => state.skill)
+
+    const currentUser = 4;
 
     return (
         <div className="profileSkills">
@@ -29,9 +35,15 @@ const ProfileSkills= () => {
                     </button>
                 </div>
             </div>
-            <ProfileSkillsItem/>
-            <ProfileSkillsItem/>
-            <ProfileSkillsItem/>
+            
+            {
+                [...skills].filter((e) => e.userId === currentUser).sort((a, b) => b.id - a.id).map((e) => {
+                    return  <ProfileSkillsItem  key={e.id}
+                                                skillName={e.skillName}
+                                                like={e.like}       
+                    />  
+                })
+            }
 
             <ProfileSkillsModal     profileSkillsModal={profileSkillsModal} 
                                     setProfileSkillsModal={setProfileSkillsModal}/>

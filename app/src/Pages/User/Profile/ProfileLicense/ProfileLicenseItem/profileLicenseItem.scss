@@ -2,14 +2,14 @@ $backColor : rgb(110, 214, 121);
 
 .profileLicenseItem {
     .profileLicenseItem-content {
-        padding: 10px 20px 10px 20px;
+        padding: 5px 5px 5px 5px;
         margin: 5px 0px 5px 0px;
         display: flex;
-        width: 100%;
         justify-content: space-between;
+        width: 100%;
         .profileLicenseItem-content__img {
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
             cursor: pointer;   
             img {
                 width: 100%;
@@ -19,13 +19,14 @@ $backColor : rgb(110, 214, 121);
         .profileLicenseItem-content__info {
             padding-left: 20px;
             width: 80%;
+            padding: 10px 0px 20px 0px;
             h2 {
-                color:$backColor;
-                font-size: 0.8rem;
+                color:black;
+                font-size: 1rem;
                 cursor: pointer;
             }
             p {
-                padding: 2px 0px 2px 0px;
+                padding: 5px 0px 5px 0px;
                 font-size: 0.8rem;
                 cursor: pointer;
                 color: grey;
@@ -34,12 +35,12 @@ $backColor : rgb(110, 214, 121);
         .profileLicenseItem-content__btn {
             background-color:white;
             margin: 0px 0px 0px 0px;
-            padding: 5px 0px 5px 0px;
+            padding: 5px 5px 5px 5px;
             color:  grey;
             font-size: 1.2rem;
             cursor: pointer;
             border-radius:10px;
-            margin-right: 18px;
+            margin-right: 24px;
         }
     }
 }

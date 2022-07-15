@@ -4,18 +4,24 @@ import './profileLicenseItem.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 
-const ProfileLicenseItem = () => {
+const ProfileLicenseItem = ({   startLearning , 
+                                endLearning , 
+                                logo , 
+                                companyName , 
+                                universityName , 
+                                profession}) => {
     return (
         <div className="profileLicenseItem">
             <div className="profileLicenseItem-content">
                 <div className="profileLicenseItem-content__img">
-                    <img    src="https://avatars.githubusercontent.com/u/1463944?s=280&v=4" 
+                    <img    src={logo} 
                             alt=""></img>
                 </div>
                 <div className="profileLicenseItem-content__info">
-                    <h2>Code Academy</h2>
-                    <p>Postal communication DefinitionR</p>
-                    <p>Սկինբ 2022 - ավարտ 2024</p>
+                    <h2>{companyName ? companyName : ""}</h2>
+                    <h2>{universityName ? universityName : ""}</h2>
+                    <p>{profession}</p>
+                    <p>Սկինբ {startLearning} - ավարտ {endLearning}</p>
                 </div>
                 <button className="profileLicenseItem-content__btn">
                     <FontAwesomeIcon    className="profileLicenseItem-content__icon" 

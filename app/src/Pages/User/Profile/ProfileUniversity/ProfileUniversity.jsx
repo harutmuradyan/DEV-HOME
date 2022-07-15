@@ -7,9 +7,15 @@ import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import ProfileUniversityItem from "./ProfileUniversityItem/ProfileUniversityItem";
 import ProfileUniversityModal from "./ProfileUniversityModal/ProfileUniversityModal";
 
+import { useSelector } from "react-redux";
+
 const ProfileUniversity = () => {
 
     const [profileUniversityModal,setProfileUniversityModal] = useState(false);
+
+    const {placesOfLearning} = useSelector((state) => state.placeOfLearning)
+
+    const currentUser = 4;
 
     return (
         <div className="profileUniversity">
@@ -24,9 +30,18 @@ const ProfileUniversity = () => {
                 </div>
             </div>
 
-            <ProfileUniversityItem/>
-            <ProfileUniversityItem/>
-            <ProfileUniversityItem/>
+            {
+                [...placesOfLearning].filter((e) => e.userId === currentUser).sort((a, b) => b.id - a.id).map((e) => {
+                    return <ProfileUniversityItem   key={e.id}
+                                                    universityName={e.universityName}
+                                                    startLearning={e.startLearning}
+                                                    endLearning={e.endLearning}
+                                                    profession={e.profession}
+                                                    logo={e.logo}                   
+                    />  
+                })
+            }
+
 
             <ProfileUniversityModal     profileUniversityModal={profileUniversityModal} 
                                         setProfileUniversityModal={setProfileUniversityModal}/>

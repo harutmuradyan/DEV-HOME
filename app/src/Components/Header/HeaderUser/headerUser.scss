@@ -1,9 +1,10 @@
-$backColor : rgb(110, 214, 121);
+$backColor : white;
 
 .header {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color:white;
     .headerUser {
         width: 100vw;
         margin: 0 auto;
@@ -13,14 +14,14 @@ $backColor : rgb(110, 214, 121);
         z-index: 1;
         display: none;
         .headerUser-content {
-            width: 100%;
+            width: 95vw;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             max-width: 1440px;
             .headerUser-content__logo {
                 width: 20%;
-                color: white;
+                color: grey;
                 h1 {
                     cursor: pointer;
                     margin: 10px 0px 0px 20px;
@@ -36,7 +37,7 @@ $backColor : rgb(110, 214, 121);
                         margin-top: 10px;
                         font-size: 1.3rem;
                         cursor: pointer;
-                        color: white;
+                        color: grey;
                     }
                     .headerUser-content__search-input {
                         position: absolute;
@@ -84,7 +85,7 @@ $backColor : rgb(110, 214, 121);
                         .headerUser-content__item-icon {
                             margin: 20px 5px 10px 5px;
                             padding-left: 25px;
-                            color:white;
+                            color:grey;
                         }
                         .headerUser-content__item-img {
                             width: 40px;
@@ -98,7 +99,7 @@ $backColor : rgb(110, 214, 121);
                             padding: 0px 5px 0px 5px;
                             height: 40px;
                             margin-top: 10px;
-                            background-color:$backColor;
+                            background-color:grey;
                             border:solid 1px white;
                             cursor: pointer;
                             color: white;
