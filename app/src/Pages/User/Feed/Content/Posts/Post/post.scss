@@ -76,10 +76,25 @@ $backColor : rgb(110, 214, 121);
         }
         .post-content__photo {
             padding: 10px 10px 0px 10px;
+            display: none;
             img {
                 width: 100%;
                 max-height:400px;
             }
+        }
+        .post-content__photo.active {
+            display: block;
+        }
+        .post-content__video {
+            padding: 10px 10px 0px 10px;
+            display: none;
+            video {
+                width: 100%;
+                max-height:400px;
+            }
+        }
+        .post-content__video.active {
+            display: block;
         }
         .post-content__block {
             margin-top: 10px;

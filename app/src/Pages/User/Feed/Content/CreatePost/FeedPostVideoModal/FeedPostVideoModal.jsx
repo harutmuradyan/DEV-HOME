@@ -71,7 +71,7 @@ const FeedPostVideoModal = (
                     </div>
                     <div className="feedPostVideoModal-content__container">
                         {
-                            users.filter((u) => u.id === currentUser).map((e) => {
+                            [...users].filter((u) => u.id === currentUser).map((e) => {
                                 return <div className="feedPostVideoModal-content__header"
                                             key={e.id}>
                                             <img    src={e.logo} 
@@ -101,8 +101,7 @@ const FeedPostVideoModal = (
                                 fileVideo &&
                                 
                                 <video  className="feedVideoPhotoModal-content__view-video"
-                                        controls
-                                        autoplay>
+                                        controls >
                                     <source     src={fileVideo}
                                                 type="video/mp4" />
                                 </video> 

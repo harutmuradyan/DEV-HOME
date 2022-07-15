@@ -24,7 +24,7 @@ const Profile = () => {
             <div className="profilePage-container">
                 <div className="profilePage-content">
                     {
-                        users.filter(el => el.id === 4).map((el) => {
+                        [...users].filter(el => el.id === 4).map((el) => {
                             return  <ProfileContent key={el.id}
                                                     logo={el.logo}
                                                     cover={el.cover}

@@ -19,7 +19,7 @@ const Users = () => {
             </div>
             <div className="users-container">
                 {
-                    users.map((el,index) => {
+                    [...users].map((el,index) => {
                         return  <User   key={el.id} 
                                         name={el.name} 
                                         logo={el.logo} 

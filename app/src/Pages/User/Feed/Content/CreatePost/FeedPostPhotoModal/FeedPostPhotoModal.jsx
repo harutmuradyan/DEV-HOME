@@ -71,7 +71,7 @@ const FeedPostPhotoModal = (
                     </div>
                     <div className="feedPostPhotoModal-content__container">
                         {
-                            users.filter((u) => u.id === currentUser).map((e) => {
+                            [...users].filter((u) => u.id === currentUser).map((e) => {
                                 return <div className="feedPostPhotoModal-content__header"
                                             key={e.id}>
                                             <img    src={e.logo} 

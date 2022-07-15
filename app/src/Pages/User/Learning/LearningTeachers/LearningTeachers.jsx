@@ -3,7 +3,12 @@ import './learningTeachers.scss';
 
 import LearningTeacher from "./LearningTeacher/LearningTeacher";
 
+import { useSelector } from "react-redux";
+
 const LearningTeachers = () => {
+
+    const {users} = useSelector((state) => state.user)
+
     return (
         <div className="learningTeachers">
             <div className="learningTeachers-header">
@@ -11,10 +16,14 @@ const LearningTeachers = () => {
                 <button className="learningTeachers-header__btn">Դիտել ավելին</button>
             </div>
             <div className="learningTeachers-block">
-                <LearningTeacher/>
-                <LearningTeacher/>
-                <LearningTeacher/>
-                <LearningTeacher/>
+                {
+                    [...users].filter((u) => u.teacher === true).map((e) => {
+                        return <LearningTeacher     key={e.id}
+                                                    name={e.name} 
+                                                    profession={e.profession} 
+                                                    logo={e.logo}/>
+                    })
+                }
             </div>
         </div>
     )

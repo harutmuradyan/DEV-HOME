@@ -5,7 +5,17 @@ import LearningContent from "./LearningContent/LearningContent";
 import LearningLessons from "./LearningLessons/LearningLessons";
 import LearningTeachers from "./LearningTeachers/LearningTeachers";
 
+import { useSelector } from "react-redux";
+
 const Learning = () => {
+
+    const {lessons} = useSelector((state) => state.lesson)
+    /*
+    "groupName" : "C# lessons",
+    "teacherName" : "Jon Soon",
+    "teacherId" : 1,
+    "lessonsGroup" : [*/
+
     return (
         <div className="learningPage">
             <div className="learningPage-conatiner">
@@ -13,11 +23,14 @@ const Learning = () => {
                     <LearningContent/>
                 </div>
                 <div className="learningPage-container">
-                    <LearningLessons/>
-                    <LearningLessons/>
-                    <LearningTeachers/>
-                    <LearningLessons/>
-                    <LearningLessons/>
+                    <LearningTeachers/> 
+                    {
+                        [...lessons].map((l) => {
+                            return <LearningLessons key={l.groupId} 
+                                                    groupName={l.groupName}
+                                                    lessonsGroup={l.lessonsGroup} />            
+                        })
+                    }
                 </div>
             </div>
         </div>

@@ -129,13 +129,12 @@ const Post = ({cover , desc , userId , id  , video}) => {
                     <p> {descHandler()} </p>
                     <button className="post-content__title-btn" onClick={longDescHandler}>Դիտել ամբողջը</button>
                 </div>
-                <div className="post-content__photo">
+                <div className={cover ? "post-content__photo active" : "post-content__photo"}>
                     <img    src={cover}
                             alt=""></img>
                 </div>
-                <div className="post-content__video">
-                    <video  controls
-                            autoplay>
+                <div className={video ? "post-content__video active" : "post-content__video"}>
+                    <video  controls>
                         <source src={video}></source>
                     </video>
                 </div>

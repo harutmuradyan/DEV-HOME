@@ -14,7 +14,7 @@ const Content = () => {
         <div className="content">
             <div className="content-container">
                 {
-                    users.filter((elem) => elem.id === 4).map((el,index) => {
+                    [...users].filter((elem) => elem.id === 4).map((el,index) => {
                         return  <CreatePost     key={el.id}
                                                 logo={el.logo}
                                                 />

@@ -18,7 +18,7 @@ const Sidebar = () => {
                     </div>
                     <div className="sidebar-container__blockContent">
                         {
-                            users.filter((elem) => elem.id <= 5).map((el,index) => {
+                            [...users].filter((elem) => elem.id <= 5).map((el,index) => {
                                 return  <CompanyFollow  key={el.id}
                                                         name={el.name} 
                                                         profession={el.profession}

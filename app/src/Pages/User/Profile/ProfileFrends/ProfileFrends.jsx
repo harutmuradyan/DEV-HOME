@@ -13,7 +13,7 @@ const ProfileFrends = () => {
         <div className="profileFrends">
             <h2 className="profileFrends-title">Գտեք նոր ընկերներ</h2>
             {
-                users.filter(el => el.id <= 5).map((el) => {
+                [...users].filter(el => el.id <= 5).map((el) => {
                     return  <ProfileAddFrends   key={el.id}
                                                 logo={el.logo}
                                                 name={el.name}

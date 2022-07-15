@@ -19,7 +19,7 @@ const Companyes = () => {
             </div>
             <div className="companyes-container">
                 {
-                    companyes.map((el,index) => {
+                    [...companyes].map((el,index) => {
                         return    <Company  key={el.id} 
                                             name={el.name} 
                                             shpere={el.shpere} 
