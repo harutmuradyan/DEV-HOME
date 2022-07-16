@@ -21,7 +21,9 @@ const LearningTeachers = () => {
                         return <LearningTeacher     key={e.id}
                                                     name={e.name} 
                                                     profession={e.profession} 
-                                                    logo={e.logo}/>
+                                                    logo={e.logo}
+                                                    userId={e.id}
+                                                    />
                     })
                 }
             </div>

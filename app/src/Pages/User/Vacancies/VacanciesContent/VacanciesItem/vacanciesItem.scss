@@ -4,6 +4,11 @@ $backColor : rgb(110, 214, 121);
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: space-between;
+    .vacanciesItem-link {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     .vacanciesItem-block__img {
         margin-top: 10px;
         width: 60px;

@@ -36,6 +36,7 @@ const LearningLessons = ({groupName, lessonsGroup}) => {
                                                     name={l.name}
                                                     title={l.title}
                                                     cover={l.cover}
+                                                    teacher={l.teacher}
                             />
                         })
                     }                    

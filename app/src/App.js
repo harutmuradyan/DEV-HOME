@@ -82,9 +82,9 @@ function App() {
                   
                   <Route path="/vacancies" element={<Vacancies />} />
                   <Route path="/createvacancies" element={<CreateVacancies/>}/>
-                  <Route path="/vacancies/item" element={<VacanciesItem />} />
+                  <Route path="/vacancie/:id" element={<VacanciesItem />} />
                   <Route path="/learning" element={<Learning />} />
-                  <Route path="/learning/item" element={<LearningItem />} />
+                  <Route path="/learning/:id" element={<LearningItem />} />
                   <Route path="/createlesson" element={<CreateLesson />}/>
                   <Route path="/company" element={<Company />} />
                   <Route path="/createcompany" element={<CreateCompany/>}/>

@@ -4,21 +4,36 @@ import './VacanciesItemPageForm.scss';
 import VacanciesItemPageSendOnlineModal from "./VacanciesItemPageSendOnlineModal/VacanciesItemPageSendOnlineModal";
 import VacanciesItemPageSendSvModal from "./VacanciesItemPageSendSvModal/VacanciesItemPageSendSvModal";
 
-const VacanciesItemPageForm = () => {
+import { useSelector } from "react-redux";
+import SuccessBtn from "../../../../../Components/UI/SuccessBtn/SuccessBtn";
+
+const VacanciesItemPageForm = ({    city ,
+                                    country,
+                                    WorkConditions,
+                                    createDay,
+                                    workCategory,
+                                    workName,
+                                    typeOfWork,
+                                    WorkHours,
+                                    desc,
+                                    jobDuties,
+                                    necessarySkills,
+                                    companyId  }) => {
 
     const [vacanciesItemPageSendOnlineModal,setVacanciesItemPageSendOnlineModal] = useState(false);
     const [vacanciesItemPageSendSvModal,setVacanciesItemPageSendSvModal] = useState(false);
+
+    const {companyes} = useSelector((state) => state.company)
 
     return (
         <div className="vacanciesItemPageForm">
             <div className="vacanciesItemPageForm-header">
                 <div className="vacanciesItemPageForm-header__info">
-                    <h2 className="vacanciesItemPageForm-header__info-title">Freelance React Developer</h2>
+                    <h2 className="vacanciesItemPageForm-header__info-title">{workName}</h2>
                     <div className="vacanciesItemPageForm-header__info-block">
-                        <p>Հայաստան</p>
-                        <p>Երևան</p>
-                        <p>Աշխատանք տանից</p>
-                        <p>12 ժամ</p>
+                        <p>{country}</p>
+                        <p>{city}</p>
+                        <p>{createDay}</p>
                     </div>
                 </div>
                 <div className="vacanciesItemPageForm-header__btns">
@@ -30,63 +45,54 @@ const VacanciesItemPageForm = () => {
                 <ul className="vacanciesItemPageForm-nav__block">
                     <li className="vacanciesItemPageForm-nav__block-item">
                         <span>Մակարդակ :</span>
-                        Միջին
+                        {typeOfWork}
                     </li>
                     <li className="vacanciesItemPageForm-nav__block-item">
                         <span>Աշխատանքի պայմաններ :</span>
-                        Մշտական
+                        {WorkConditions}
                     </li>
                     <li className="vacanciesItemPageForm-nav__block-item">
                         <span>Կատեգորիա :</span>
-                        Ծրագրավորում
+                        {workCategory}
                     </li>
                     <li className="vacanciesItemPageForm-nav__block-item">
                         <span>Աշխատանքի տեսակը :</span>
-                        Ամբողջ դրույք
+                        {WorkHours}
                     </li>
                 </ul>
             </nav>
             <div className="vacanciesItemPageForm-block">
                 <h3 className="vacanciesItemPageForm-title">Աշխատանքի նկարագրություն՝</h3>
-                <p className="vacanciesItemPageForm-text">Are you GAME to JUMP INTO MAGENTA and be our new DevOps Engineer?</p>
+                <p className="vacanciesItemPageForm-text">{desc}</p>
             </div>
             <div className="vacanciesItemPageForm-block">
                 <h3 className="vacanciesItemPageForm-title">Աշխատանքային պարտականություններ</h3>
-                <p className="vacanciesItemPageForm-text">Select and deploy appropriate CI/CD tools
-                Set up new tools and required infrastructure
-                Provision, secure and own infrastructure using Docker, Kubernetes and service meshes.
-                Monitor the infrastructure and respond to security incidents and alerts.
-                Encourage and build automated processes</p>
+                <p className="vacanciesItemPageForm-text">{jobDuties}</p>
             </div>
             <div className="vacanciesItemPageForm-block">
                 <h3 className="vacanciesItemPageForm-title">Անհրաժեշտ հմտություններ</h3>
-                <p className="vacanciesItemPageForm-text">
-                BS or MS in Computer Science or related field;
-                2+ years of experience in deploying and managing medium/large scale distributed systems;
-                Experience in Linux and Windows-based infrastructure;
-                Knowledge in modern configuration management tools (Ansible, Terraform, Packer, SaltStack);
-                Experience in setting up CI/CD pipelines(TeamCity/TFS/GitLab/Octopus…)
-                Scripting experience: (PowerShell/Bash/Python/Ruby…)
-                Experience with cloud infrastructure (Azure/GCP…)
-                Experience using container technologies (Docker, Kubernetes, Elixir)
-                Passionate about learning and adopting new technologies that will ease your day-to-day job;
-                Is magenta your favorite color?
-                Are you a team player?
-                </p>
+                <p className="vacanciesItemPageForm-text">{necessarySkills}</p>
             </div>
-            <div className="vacanciesItemPageForm-company">
-                <div className="vacanciesItemPageForm-company__block">
-                    <div className="vacanciesItemPageForm-company__block">
-                        <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png"
-                            alt=""
-                            className="vacanciesItemPageForm-company__block-img"></img>
-                        <h4 className="vacanciesItemPageForm-company__block-name">Toptal Digitain</h4>
-                    </div>
-                    <button className="vacanciesItemPageForm-company__block-btn">Հետևալ</button>
-                </div>
-                <p className="vacanciesItemPageForm-company__emploee">3000 Աշխատող</p>
-                <p className="vacanciesItemPageForm-company__info">Toptal is a network of the world's top talent in business, design, and technology that enables companies to scale their teams, on demand. With $200+ million in annual revenue and over 40% year-over-year growth, Toptal is the largest fully distributed workforce in the world.</p>
-            </div>
+            {
+                companyes.filter((c) => c.id === companyId).map((c) => {               
+                    return  <div className="vacanciesItemPageForm-company"
+                                key={c.id}>
+                                <div className="vacanciesItemPageForm-company__block">
+                                    <div className="vacanciesItemPageForm-company__block">
+                                        <img src={c.logo}
+                                            alt=""
+                                            className="vacanciesItemPageForm-company__block-img"></img>
+                                        <h4 className="vacanciesItemPageForm-company__block-name">{c.name}</h4>
+                                    </div>
+                                    <div className="vacanciesItemPageForm-header__btns">
+                                        <SuccessBtn text="Հետևել"/>
+                                    </div>
+                                </div>
+                                <p className="vacanciesItemPageForm-company__emploee">3000 Աշխատող</p>
+                                <p className="vacanciesItemPageForm-company__info">Toptal is a network of the world's top talent in business, design, and technology that enables companies to scale their teams, on demand. With $200+ million in annual revenue and over 40% year-over-year growth, Toptal is the largest fully distributed workforce in the world.</p>
+                            </div>
+                }) 
+            }
             <VacanciesItemPageSendOnlineModal       vacanciesItemPageSendOnlineModal={vacanciesItemPageSendOnlineModal} 
                                                     setVacanciesItemPageSendOnlineModal={setVacanciesItemPageSendOnlineModal}/>
             <VacanciesItemPageSendSvModal           vacanciesItemPageSendSvModal={vacanciesItemPageSendSvModal} 

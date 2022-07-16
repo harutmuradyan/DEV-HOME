@@ -1,11 +1,14 @@
 $backColor : rgb(110, 214, 121);
 
 .vacanciesItemPageForm {
+    width: 100%;
     padding: 20px 20px 20px 20px;
     .vacanciesItemPageForm-header {
         display: flex;
+        width: 100%;
         justify-content: space-between;
         .vacanciesItemPageForm-header__info {
+            width: 70%;
             .vacanciesItemPageForm-header__info-title {
                 margin-top:3px;
                 color:  $backColor;
@@ -21,6 +24,7 @@ $backColor : rgb(110, 214, 121);
             }
         }
         .vacanciesItemPageForm-header__btns {
+            width: 30%;
             button {
                 width: 100%;
                 background-color:white;
