@@ -1,7 +1,21 @@
-import React from "react";
+import React,{useState,useCallback} from "react";
 import './company.scss';
 
+import DarkBtn from "../../../../../Components/UI/DarkBtn/DarkBtn";
+import LightBtn from "../../../../../Components/UI/LightBtn/LightBtn";
+
 const Company = ({name,shpere,logo,cover}) => {
+
+    const [followCompany,setFollowCompany] = useState(false);
+
+    const followHandler = useCallback( () => {
+        if (followCompany === true) {
+            setFollowCompany(false)
+        }else {
+            setFollowCompany(true)
+        }
+    },[followCompany])
+
     return (
         <div className="company">
             <div className="company-block">
@@ -16,7 +30,13 @@ const Company = ({name,shpere,logo,cover}) => {
             <h2 className="company-name">{name}</h2>
             <p className="company-sphere">{shpere}</p>
             <div className="company-follow">
-                <button className="company-follow__btn">Հետևել</button>
+                {
+                    followCompany   ? <LightBtn text="Հետևում եք" 
+                                                followHandler={followHandler}/> 
+                                    : <DarkBtn  text="Հետևեք"
+                                                followHandler={followHandler}
+                                />
+                }
             </div>
         </div>
     )

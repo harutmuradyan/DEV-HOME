@@ -1,9 +1,21 @@
-import React from "react";
+import React,{useState , useCallback} from "react";
 import './befriendUser.scss'
 
 import { Link  } from "react-router-dom";
+import SuccessBtn from "../../UI/SuccessBtn/SuccessBtn";
+import LightBtn from "../../UI/LightBtn/LightBtn";
 
 const BefriendUser = ({name,profession,logo,workplace,id}) => {
+
+    const [followUser,setFollowUser] = useState(false);
+
+    const followHandler = useCallback( () => {
+        if (followUser === true) {
+            setFollowUser(false)
+        }else {
+            setFollowUser(true)
+        }
+    },[followUser])
 
     return (
         <div className="befriendUser">
@@ -21,9 +33,13 @@ const BefriendUser = ({name,profession,logo,workplace,id}) => {
             </div>
             </Link>
             <div className="befriendUser-btn">
-                <button className="befriendUser-content__follow">
-                    Հետևել
-                </button>
+                {
+                    followUser  ? <SuccessBtn   text="Հետևեք " 
+                                                followHandler={followHandler}/> 
+                                : <LightBtn     text="Հետևում եք"
+                                                followHandler={followHandler}
+                                />
+                }
             </div>
         </div>
     )

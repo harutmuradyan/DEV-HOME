@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faBars , 
             faImage  } from "@fortawesome/free-solid-svg-icons";
 
+import { useSelector } from "react-redux";
 
 import MessagingSessionItem from "./MessagingSessionItem/MessagingSessionItem";
 import MessagingFunctionsModal from "./MessagingFunctionsModal/MessagingFunctionsModal";
@@ -13,16 +14,25 @@ const MessagingSession = () => {
 
     const [messagingFunctionsModal , setMessagingFunctionsModal] = useState(false);
 
+    const currentUser = 4;
+
+    const {users} = useSelector((state) => state.user)
+
     return (
         <div className="messagingSession">
             <div className="messagingSession-header">
-                <div className="messagingSession-header__block">
-                    <h2 className="messagingSession-header__name">Աննա Մանգասարյան</h2>
-                    <div className="messagingSession-header__sessionOn">
-                        <span></span>
-                        <p>Կայքում է</p>
-                    </div>
-                </div>
+                {
+                    users.filter((u) => u.id === currentUser).map((u) => {
+                        return  <div    className="messagingSession-header__block"
+                                        key={u.id}>
+                                    <h2 className="messagingSession-header__name">{u.name}</h2>
+                                    <div className="messagingSession-header__sessionOn">
+                                        <span></span>
+                                        <p>Կայքում է</p>
+                                    </div>
+                                </div>
+                    })
+                }
                 <FontAwesomeIcon    icon={faBars} 
                                     className="messagingSession-header__icon"
                                     onClick={() => {setMessagingFunctionsModal(true)}}

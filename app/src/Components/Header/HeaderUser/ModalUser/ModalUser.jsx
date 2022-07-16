@@ -6,23 +6,25 @@ import { faUpLong } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 
-const ModalUser = ({userModal , logo , name , profession}) => {
+const ModalUser = ({userModal , logo , name , profession , userId}) => {
     return (
         <div className={userModal ? "modalUser active" : "modalUser"}>
             <div className="modalUser-header">
-                <img    className="modalUser-header__img" 
-                        src={logo} 
-                        alt=""></img>
-                <div className="modalUser-block">
-                    <h2 className="modalUser-block__name">{name}</h2>
-                    <p className="modalUser-block__profesisons">{profession}</p>
-                </div>
+                <Link to={{pathname:`/profile/${userId}`,  userId }}>
+                    <img    className="modalUser-header__img" 
+                            src={logo} 
+                            alt=""></img>
+                    <div className="modalUser-block">
+                        <h2 className="modalUser-block__name">{name}</h2>
+                        <p className="modalUser-block__profesisons">{profession}</p>
+                    </div>
+                </Link>
                 <FontAwesomeIcon    className="modalUser-header__close" 
                                     icon={faUpLong}
                                     />
             </div>
             <div className="modalUser-page">
-                <Link   to="/profile" 
+                <Link   to={{pathname:`/profile/${userId}`,  userId }}
                         className="modalUser-page__linq">
                     <button className="modalUser-page__btn">
                         Օգտվողի էջ

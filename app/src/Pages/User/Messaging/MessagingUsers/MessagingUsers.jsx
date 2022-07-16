@@ -9,9 +9,13 @@ import {    faMessage ,
 import MessagingUser from "./MessagingUser/MessagingUser";
 import MessagingUsersFunctionsModal from "./MessagingUsersFunctionsModal/MessagingUsersFunctionsModal";
 
+import { useSelector } from "react-redux";
+
 const MessagingUsers = () => {
 
     const [messagingUsersFunctionsModal , setMessagingUsersFunctionsModal] = useState(false)
+
+    const {users} = useSelector((state) => state.user)
 
     return (
         <div className="messagingUsersContent">
@@ -38,19 +42,13 @@ const MessagingUsers = () => {
                                         className="messagingUsersContent-search__sort"/>
             </div>
             <div className="messagingUsersContent-users">
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
-                <MessagingUser/>
+                {
+                    users.map((u) => {
+                        return  <MessagingUser  key={u.id} 
+                                                name={u.name} 
+                                                logo={u.logo}/>
+                    })
+                }
             </div>
         </div>
     )

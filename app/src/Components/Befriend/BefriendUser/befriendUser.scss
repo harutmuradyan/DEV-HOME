@@ -21,39 +21,22 @@ $backColor : rgb(110, 214, 121);
             width: 80%;
             h2 {
                 color:black;
-                font-size: 0.8rem;
+                font-size: 1rem;
                 cursor: pointer;
             }
             p {
                 margin-top: 2px;
-                padding: 2px 0px 2px 0px;
-                font-size: 0.7rem;
+                font-size: 0.9rem;
                 cursor: pointer;
                 color: grey;
             }
         }
     }  
     .befriendUser-btn {
-        width: 70%;
-        margin: 0 auto;
+        width: 100%;
         display: flex;
-        justify-content:flex-end;
+        justify-content: center;
         background-color:white;
         padding: 0px 10px 0px 10px;
-        .befriendUser-content__follow {
-            width: 100%;
-            background-color:white;
-            border:solid 1px $backColor;
-            font-size: 0.7rem;
-            height: 30px;
-            text-transform: uppercase;
-            border-radius:10px;
-            cursor: pointer;
-            color:$backColor;
-            &:hover {
-                background-color:black;
-                color: white;
-            }
-        }
     }
 }

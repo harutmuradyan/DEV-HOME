@@ -8,6 +8,7 @@ import experianceReducer from './slices/experience.slices';
 import placeOfLearningReducer from './slices/placesOfLearning.slices';
 import licenseReducer from './slices/license.slices';
 import skillReducer from './slices/skills.slices';
+import vacancieReducer from './slices/vacancie.slices';
 
 export const store = configureStore({
     reducer:{
@@ -19,6 +20,7 @@ export const store = configureStore({
          experiance : experianceReducer,
          placeOfLearning : placeOfLearningReducer,
          license : licenseReducer,
-         skill : skillReducer
+         skill : skillReducer,
+         vacancie : vacancieReducer
     }
 })

@@ -3,6 +3,8 @@ import './post.scss'
 
 import Comments from "./Comments/Comments";
 import CreateComment from "./CreateComment/CreateComment";
+import SuccessBtn from "../../../../../../Components/UI/SuccessBtn/SuccessBtn";
+import LightBtn from "../../../../../../Components/UI/LightBtn/LightBtn";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faHeart , 
@@ -14,6 +16,7 @@ import {    faHeart ,
 
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 
 const Post = ({cover , desc , userId , id  , video}) => {
     const [reactionBar , setReactionBar] = useState(false);
@@ -101,9 +104,10 @@ const Post = ({cover , desc , userId , id  , video}) => {
         <div className="post">
             {[...users].filter((u) => u.id === userId).map((e) => {
                 return (
-                    <div key={e.id} className="post-header">
+                    <div    key={e.id} 
+                            className="post-header">
                         <Link   to={{pathname:`/profile/${userId}`,  userId }}
-                                className="post-header">
+                                className="post-link">
                             <div className="post-header__img">
                                 <img    src={e.logo} 
                                         alt=""></img>
@@ -115,15 +119,12 @@ const Post = ({cover , desc , userId , id  , video}) => {
                             </div>
                         </Link>
                         <div className="post-header__follow">
-                            <button className="post-header__follow-btn" onClick={followHandler}>
-                                {
-                                    followUser 
-                                    ? 
-                                    <span>Հետեվում եք</span>
-                                    : 
-                                    <span>Հետևել</span> 
-                                }  
-                            </button>
+                            {
+                                followUser  ? <SuccessBtn   text="Հետևեք"
+                                                            followHandler={followHandler}/>
+                                            : <LightBtn     text="Հետևում եք"
+                                                            followHandler={followHandler}/>
+                            }
                         </div>
                     </div>
                 )

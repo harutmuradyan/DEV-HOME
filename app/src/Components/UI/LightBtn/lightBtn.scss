@@ -1,0 +1,15 @@
+.lightBtn {
+    margin: 10px 10px 10px 10px;
+    border:solid 1px grey;
+    width: 50%;
+    background-color:white;
+    color: grey;
+    border-radius:15px;
+    height: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    .icon-close {
+        margin-right: 3px;
+    }
+}

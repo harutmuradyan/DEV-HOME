@@ -1,9 +1,8 @@
 import React from "react";
 import './networkNotfication.scss'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {    faClose , 
-            faCheck } from "@fortawesome/free-solid-svg-icons";
+import SuccessBtn from "../../../../../Components/UI/SuccessBtn/SuccessBtn";
+import LightBtn from "../../../../../Components/UI/LightBtn/LightBtn";
 
 
 const NetworkNotification = () => {
@@ -16,10 +15,10 @@ const NetworkNotification = () => {
                 <p className="networkNotification-block__name">Քրիստինե Խաչատրյան</p>
                 <p className="networkNotification-block__work">Developer</p>
             </div>
-            <FontAwesomeIcon    className="networkNotification-accept" 
-                                icon={faCheck}/>
-            <FontAwesomeIcon    className="networkNotification-close" 
-                                icon={faClose}/>
+            <SuccessBtn text="Հաստատել" 
+                        acceptIcon="acceptIcon"/>
+            <LightBtn   text="Չեղարկել"
+                        closeIcon="closeIcon"></LightBtn>
         </div>
     )
 }

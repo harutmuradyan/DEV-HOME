@@ -12,6 +12,7 @@
     .messagingUserContent-img {
         width: 40px;
         height: 40px;
+        border-radius:100%;
     }
     .messagingUserContent__sessionOn {
         width: 8px;
@@ -37,6 +38,7 @@
         }
     }
     .messagingUserContent-block {
+        width: 100%;
         .messagingUserContent-name {
             font-size: 1rem;
             padding-bottom: 3px;

@@ -102,6 +102,7 @@ const HeaderUser = ({logined}) => {
                                     [...users].filter((elem) => elem.id === 4).map((el) => {
                                         return  <ModalUser      userModal={userModal}
                                                                 key={el.id}
+                                                                userId={el.id}
                                                                 logo={el.logo}
                                                                 name={el.name}
                                                                 profession={el.profession}

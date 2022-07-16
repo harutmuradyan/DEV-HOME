@@ -4,22 +4,22 @@ const initialState = {
     companyes: [
         { 
             "id" : 1,
-            "name" : "Software Development Company",
-            "shpere" : "Web Developerment",
+            "name" : "NPUA ARMENIA",
+            "shpere" : "ARMENIAN IT",
             "logo" : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/corporate-company-logo-design-template-2402e0689677112e3b2b6e0f399d7dc3_screen.jpg?ts=1561532453",
             "cover" : "https://www.janbasktraining.com/blog/uploads/images/2019/03/How-to-Be-More-Assertive-at-Work-Pro-tips-2019-info-Banner01.jpg"
         },
         { 
             "id" : 2,
-            "name" : "Easy-Tech",
-            "shpere" : "Android Developerment",
+            "name" : "EPH ARMENIA",
+            "shpere" : "BIZNES comunity",
             "logo" : "https://dcassetcdn.com/design_img/3886078/29377/25245433/tgwgj2wz3d5ah66223s4sd8e0a_thumbnail.png",
             "cover" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJMuCLvhmAe0zYd9wC-atMZE5J4A8VUZWIbgHFSCawpkXokkh-AX-NDWwFZ-9wzEOjg&usqp=CAU"
         },
         { 
             "id" : 3,
-            "name" : "adesso - IT & Business Consultancy",
-            "shpere" : "Soft Developerment",
+            "name" : "Petakan Qolej",
+            "shpere" : "MIjin Masnagitakan",
             "logo" : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/corporate-company-logo-design-template-2402e0689677112e3b2b6e0f399d7dc3_screen.jpg?ts=1561532453",
             "cover" : "https://cdn-images.zety.com/pages/how_to_address_a_cover_letter_uk_2.jpg?w=1950&h=500&fit=crop&auto=compress"
         },

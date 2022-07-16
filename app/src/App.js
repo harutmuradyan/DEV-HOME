@@ -36,8 +36,8 @@ import CreateCompany from './Pages/User/Company/CreateCompany/CreateCompany';
 import CreateLesson from './Pages/User/Learning/CreateLesson/CreateLesson';
 import CreateUniversity from './Pages/User/University/CreateUniversity/CreateUniversity';
 import CreateVacancies from './Pages/User/Vacancies/CreateVacancies/CreateVacancies';
-import VacanciesItem from './Pages/User/Vacancies/VacanciesContent/VacanciesItem/VacanciesItem';
 import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
+import VacanciesItem from './Pages/User/Vacancies/VacanciesItem/VacanciesItem';
 
 function App() {
 

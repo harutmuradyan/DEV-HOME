@@ -5,7 +5,7 @@ $backColor : rgb(110, 214, 121);
     position: fixed;
     right: 0px;
     z-index: 1;
-    background-color:$backColor;
+    background-color:grey;
     min-height: 40px;
     border-radius:10px 10px 0px 0px;
     bottom:0px;
@@ -52,7 +52,7 @@ $backColor : rgb(110, 214, 121);
             .messenger-btns__item {
                 font-size: 1rem;
                 margin: 0px 5px 0px 5px;
-                background-color:$backColor;
+                background-color:grey;
                 color: white;
                 cursor: pointer;
             }
