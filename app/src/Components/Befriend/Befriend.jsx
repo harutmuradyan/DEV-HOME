@@ -1,35 +1,35 @@
 import React from "react";
-import './sidebar.scss';
+import './befriend.scss';
 
 import {useSelector} from 'react-redux'
+import BefriendUser from "./BefriendUser/BefriendUser";
 
-import CompanyFollow from "./CompanyFollow/CompanyFollow";
-
-const Sidebar = () => {
+const Befriend = () => {
 
     const {users} = useSelector((state) => state.user);
 
     return (
-        <div className="sidebar">
-            <div className="sidebar-container">
-                <div className="sidebar-container__block">
-                    <div className="sidebar-container__block-title">
+        <div className="befriend">
+            <div className="befriend-container">
+                <div className="befriend-container__block">
+                    <div className="befriend-container__block-title">
                         <h2>Ավելացրեք Ձեր Էջում</h2>
                     </div>
-                    <div className="sidebar-container__blockContent">
+                    <div className="befriend-container__blockContent">
                         {
                             [...users].filter((elem) => elem.id <= 5).map((el,index) => {
-                                return  <CompanyFollow  key={el.id}
+                                return  <BefriendUser   key={el.id}
+                                                        id={el.id}
                                                         name={el.name} 
                                                         profession={el.profession}
                                                         logo={el.logo}
                                                         workplace={el.workplace}
-                                                        />
+                                                    />
                             })
                         }
                     </div>
-                    <div className="sidebar-container__seeMore">
-                        <button className="sidebar-container__seeMore-btn">
+                    <div className="befriend-container__seeMore">
+                        <button className="befriend-container__seeMore-btn">
                             Դիտել ավելին
                         </button>
                     </div>
@@ -39,4 +39,4 @@ const Sidebar = () => {
     )
 }
 
-export default Sidebar;
+export default Befriend;

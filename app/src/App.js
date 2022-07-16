@@ -22,22 +22,22 @@ import Profile from './Pages/User/Profile/Profile';
 import Footer from './Components/Footer/Footer';
 import Vacancies from './Pages/User/Vacancies/Vacancies';
 import Learning from './Pages/User/Learning/Learning';
-import VacanciesItem from './Pages/User/VacanciesItem/VacanciesItem';
 import NotFound from './Components/NotFound/NotFound';
-import LearningItem from './Pages/User/LearningItem/LearningItem';
 import Company from './Pages/User/Company/Company';
 import Search from './Pages/User/Search/Search';
 import Messaging from './Pages/User/Messaging/Messaging';
 import Messenger from './Components/Messenger/Messenger';
 import Event from './Pages/User/Event/Event';
 import University from './Pages/User/University/University';
-import CreateUniversity from './Pages/User/CreateUniversity/CreateUniversity';
-import CreateCompany from './Pages/User/CreateCompany/CreateCompany';
-import CreateVacancies from './Pages/User/CreateVacancies/CreateVacancies';
-import CreateLesson from './Pages/User/CreateLesson/CreateLesson';
 import Skils from './Pages/User/Skils/Skils';
 import Spinner from './Components/Spinner/Spinner';
 import Admin from './Pages/Admin/Admin';
+import CreateCompany from './Pages/User/Company/CreateCompany/CreateCompany';
+import CreateLesson from './Pages/User/Learning/CreateLesson/CreateLesson';
+import CreateUniversity from './Pages/User/University/CreateUniversity/CreateUniversity';
+import CreateVacancies from './Pages/User/Vacancies/CreateVacancies/CreateVacancies';
+import VacanciesItem from './Pages/User/Vacancies/VacanciesContent/VacanciesItem/VacanciesItem';
+import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
 
 function App() {
 
@@ -77,6 +77,9 @@ function App() {
                   <Route path="/network" element={<Network />} />
                   <Route path="/notification" element={<Notifications />} />
                   <Route path="/profile" element={<Profile />} />
+
+                  <Route path="/profile/:id" element={<Profile />} />
+                  
                   <Route path="/vacancies" element={<Vacancies />} />
                   <Route path="/createvacancies" element={<CreateVacancies/>}/>
                   <Route path="/vacancies/item" element={<VacanciesItem />} />

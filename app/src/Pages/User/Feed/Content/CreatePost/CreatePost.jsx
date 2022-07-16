@@ -11,8 +11,9 @@ import FeedPostPhotoModal from "./FeedPostPhotoModal/FeedPostPhotoModal";
 import FeedPostVideoModal from "./FeedPostVideoModal/FeedPostVideoModal";
 import FeedPostEventModal from "./FeedPostEventModal/FeedPostEventModal";
 import FeedPostArticleModal from "./FeedPostArticleModal/FeedPostArticleModal";
+import { Link } from "react-router-dom";
 
-const CreatePost = ({logo}) => {
+const CreatePost = ({logo , userId}) => {
 
     const [feedPostPhotoModal,setFeedPostPhotoModal] = useState(false);
     const [feedPostVideoModal,setFeedPostVideoModal] = useState(false);
@@ -22,9 +23,11 @@ const CreatePost = ({logo}) => {
     return (
         <div className="createPost">
             <div className="createPost-header">
-                <img    className="createPost-header__logo" 
-                        src={logo} 
-                        alt=""></img>
+                <Link to={{pathname:`/profile/${userId}`,  userId }}>
+                    <img    className="createPost-header__logo" 
+                            src={logo} 
+                            alt=""></img>
+                </Link>
                 <button  className="createPost-header__button" 
                         onClick={() => {setFeedPostArticleModal(true)}}>
                             <span>Գրեք տեքստը</span>

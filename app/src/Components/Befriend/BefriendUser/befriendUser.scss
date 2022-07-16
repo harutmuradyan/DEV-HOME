@@ -1,12 +1,12 @@
 $backColor : rgb(110, 214, 121);
 
-.profileAddFrends {
-    .profileAddFrends-content {
+.befriendUser {
+    .befriendUser-content {
         padding: 10px 10px 10px 10px;
         margin: 5px 0px 5px 0px;
         display: flex;
         width: 100%;
-        .profileAddFrends-content__img {
+        .befriendUser-content__img {
             width: 50px;
             height: 50px;
             cursor: pointer;   
@@ -16,41 +16,43 @@ $backColor : rgb(110, 214, 121);
                 height:  100%;
             }
         }
-        .profileAddFrends-content__info {
+        .befriendUser-content__info {
             padding-left: 20px;
             width: 80%;
             h2 {
-                color:$backColor;
+                color:black;
                 font-size: 0.8rem;
                 cursor: pointer;
             }
             p {
+                margin-top: 2px;
                 padding: 2px 0px 2px 0px;
-                font-size: 0.8rem;
+                font-size: 0.7rem;
                 cursor: pointer;
                 color: grey;
             }
         }
     }  
-    .profileAddFrends-btn {
-        width: 100%;
+    .befriendUser-btn {
+        width: 70%;
+        margin: 0 auto;
         display: flex;
         justify-content:flex-end;
         background-color:white;
         padding: 0px 10px 0px 10px;
-        .profileAddFrends-content__follow {
+        .befriendUser-content__follow {
             width: 100%;
             background-color:white;
             border:solid 1px $backColor;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             height: 30px;
+            text-transform: uppercase;
             border-radius:10px;
             cursor: pointer;
-            text-transform: uppercase;
             color:$backColor;
             &:hover {
                 background-color:black;
-                color:white;
+                color: white;
             }
         }
     }

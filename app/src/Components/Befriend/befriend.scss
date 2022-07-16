@@ -1,14 +1,14 @@
 $backColor : rgb(110, 214, 121);
 
-.sidebar {
+.befriend {
     width: 100%;
-    .sidebar-container {
+    .befriend-container {
         min-height: 150px;
         border-radius: 20px;
         margin: 10px 0px 10px 0px;
         background-color:white;  
-        .sidebar-container__block {
-            .sidebar-container__block-title {
+        .befriend-container__block {
+            .befriend-container__block-title {
                 h2 {
                     text-align: center;
                     padding: 10px 10px 10px 10px;
@@ -17,14 +17,14 @@ $backColor : rgb(110, 214, 121);
                     color: $backColor;
                 }
             }
-            .sidebar-container__blockContent {
+            .befriend-container__blockContent {
                 
             }
-            .sidebar-container__seeMore {
+            .befriend-container__seeMore {
                 padding: 20px 0px 20px 0px;
                 width: 80%;
                 margin: 0 auto;
-                .sidebar-container__seeMore-btn {
+                .befriend-container__seeMore-btn {
                     width: 100%;
                     color: white;
                     border-radius:10px;

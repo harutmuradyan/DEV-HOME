@@ -3,7 +3,7 @@ import './notifications.scss';
 
 import NotifikationContent from "./NotificationContent/NotificationContent";
 import NotifikationSertings from "./NotifikationSertings/NotificationSertings";
-import NotifikationSidebar from "./NotifikationSidebar/NotifikationSidebar";
+import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 
 const Notifications = () => {
     return (
@@ -15,7 +15,7 @@ const Notifications = () => {
                 <NotifikationContent/>
             </div>
             <div className="notification-rightBlock">
-                <NotifikationSidebar/>
+                <SidebarFooter/>
             </div>
         </div>
     )

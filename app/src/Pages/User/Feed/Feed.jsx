@@ -5,21 +5,24 @@ import {useSelector} from 'react-redux'
 
 import Content from "./Content/Content";
 import GoNewSkill from "./GoNewSkill/GoNewSkill";
-import Sidebar from "./Sidebar/Sidebar";
-import SidebarFooter from "./SidebarFooter/SidebarFooter";
+import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import Background from "./Background/Background";
+import Befriend from "../../../Components/Befriend/Befriend";
 
 const Feed = () => {
 
     const {users} = useSelector((state) => state.user);
+
+    const currentUser = 4;
 
     return (
         <div className="feed">
             <div className="feed-container">
                 <div className="feed-container__leftBlock">
                     {   
-                        [...users].filter((elem) => elem.id === 4).map((el) => {
+                        [...users].filter((elem) => elem.id === currentUser).map((el) => {
                             return  <Background     key={el.id}
+                                                    userId={el.id}
                                                     name={el.name} 
                                                     profession={el.profession}
                                                     cover={el.cover}
@@ -33,7 +36,7 @@ const Feed = () => {
                     <Content/>
                 </div>
                 <div className="feed-container__rightBlock">
-                    <Sidebar/>
+                    <Befriend/>
                     <SidebarFooter/>
                 </div>
             </div>

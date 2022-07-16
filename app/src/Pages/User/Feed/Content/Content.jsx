@@ -10,12 +10,15 @@ const Content = () => {
 
     const {users} = useSelector((state) => state.user)
 
+    const currentUser = 4;
+
     return (
         <div className="content">
             <div className="content-container">
                 {
-                    [...users].filter((elem) => elem.id === 4).map((el,index) => {
+                    [...users].filter((elem) => elem.id === currentUser).map((el) => {
                         return  <CreatePost     key={el.id}
+                                                userId={el.id}
                                                 logo={el.logo}
                                                 />
                     })

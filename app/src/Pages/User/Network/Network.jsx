@@ -7,8 +7,8 @@ import {    faUserFriends ,
 
 import Companyes from "./Companyes/Companyes";
 import Users from "./Users/Users";
-import NetworkSidebar from "./NetworcSidebar/MetworkSidebar";
 import NetworkNotfications from "./NetworkNotfications/NetworkNotfications";
+import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 
 const Network = () => {
     return (
@@ -41,7 +41,7 @@ const Network = () => {
                             </li>
                         </ul>
                     </nav>
-                    <NetworkSidebar/>
+                    <SidebarFooter/>
                 </div>
             </div>
         </div>

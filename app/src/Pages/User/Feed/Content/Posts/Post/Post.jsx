@@ -13,6 +13,7 @@ import {    faHeart ,
             faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Post = ({cover , desc , userId , id  , video}) => {
     const [reactionBar , setReactionBar] = useState(false);
@@ -101,15 +102,18 @@ const Post = ({cover , desc , userId , id  , video}) => {
             {[...users].filter((u) => u.id === userId).map((e) => {
                 return (
                     <div key={e.id} className="post-header">
-                        <div className="post-header__img">
-                            <img    src={e.logo} 
-                                    alt=""></img>
-                        </div>
-                        <div className="post-header__info">
-                            <h2>{e.name}</h2>
-                            <p>{e.profession}</p>
-                            <p>1 օր</p>
-                        </div>
+                        <Link   to={{pathname:`/profile/${userId}`,  userId }}
+                                className="post-header">
+                            <div className="post-header__img">
+                                <img    src={e.logo} 
+                                        alt=""></img>
+                            </div>
+                            <div className="post-header__info">
+                                <h2>{e.name}</h2>
+                                <p>{e.profession}</p>
+                                <p>1 օր</p>
+                            </div>
+                        </Link>
                         <div className="post-header__follow">
                             <button className="post-header__follow-btn" onClick={followHandler}>
                                 {

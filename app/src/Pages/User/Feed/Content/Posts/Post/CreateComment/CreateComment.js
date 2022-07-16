@@ -43,10 +43,10 @@ const CreateComment = ({commentBar ,postId}) => {
                     value={changeComment} 
                     onChange={(e) => {setChangeComment(e.target.value)}}
                     />
-            <button className="post-content__comment-btn">
+            <button className="post-content__comment-btn"
+                    onClick={commentHendler}>
                 <FontAwesomeIcon    icon={faPaperPlane} 
                                     className="post-content__comment-icon"
-                                    onClick={commentHendler}
                                     />
             </button>
         </div>

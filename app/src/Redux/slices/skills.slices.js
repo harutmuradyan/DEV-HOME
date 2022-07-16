@@ -9,13 +9,13 @@ const initialState = {
             "like" : 26
         },
         { 
-            "id" : 1,
+            "id" : 2,
             "userId" : 4,
             "skillName" : "Node JS",
             "like" : 67
         },
         { 
-            "id" : 1,
+            "id" : 3,
             "userId" : 4,
             "skillName" : "Bootstrap 4",
             "like" : 77
