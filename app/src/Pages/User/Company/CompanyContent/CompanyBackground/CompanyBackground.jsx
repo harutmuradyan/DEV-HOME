@@ -4,7 +4,14 @@ import CompanyBackgroundEmployeeModal from "./CompanyBackgroundEmployeeModal/Com
 
 import CompanyBackgroundExperienceModal from "./CompanyBackgroundExperienceModal/CompanyBackgroundExperienceModal";
 
-const CompanyBackground = () => {
+const CompanyBackground = ({    backgroundDesc ,
+                                logo ,
+                                name , 
+                                cover,
+                                followerCount,
+                                city,
+                                country,
+                                employee }) => {
 
     const [companyBackgroundExperienceModal,setCompanyBackgroundExperienceModal] = useState(false);
     const [companyBackgroundEmployeeModal,setCompanyBackgroundEmployeeModal] = useState(false);
@@ -13,28 +20,28 @@ const CompanyBackground = () => {
         <div className="company-background">
             <div className="company-background__header">
                 <img    className="company-background__cover" 
-                        src="" 
+                        src={cover} 
                         alt=""
                         ></img>
                 <img    className="company-background__logo" 
-                        src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
+                        src={logo} 
                         alt=""
                         ></img>
             </div>
             <div className="company-backgroundContent">
-                <p className="company-backgroundContent__name">Rock Berry</p>
-                <p className="company-backgroundContent__title">Rock Berry is engaged in the cultivation of high-quality varieties of berries in Armenia.</p>
+                <p className="company-backgroundContent__name">{name}</p>
+                <p className="company-backgroundContent__title">{backgroundDesc}</p>
                 <div className="company-backgroundContent__conatacts">
-                    <p className="company-backgroundContent__conatacts-country">Հայստան</p>
-                    <p className="company-backgroundContent__conatacts-city">Երևան</p>
-                    <p className="company-backgroundContent__conatacts-followers">700 Հետևորդ</p>
+                    <p className="company-backgroundContent__conatacts-country">{country}</p>
+                    <p className="company-backgroundContent__conatacts-city">{city}</p>
+                    <p className="company-backgroundContent__conatacts-followers">{followerCount} Հետևորդ</p>
                 </div>
                 <div className="company-backgroundContent__employee">
                     <img    className="company-backgroundContent__employee-img" 
                             src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" 
                             alt=""></img>
                     <p className="company-backgroundContent__employee-user">Աշխատում է ,</p>
-                    <p className="company-backgroundContent__employee-count">և 5</p>
+                    <p className="company-backgroundContent__employee-count">և {employee}</p>
                 </div>
                 <div className="company-backgroundContent__btns">
                     <div className="company-backgroundContent__btns-left">

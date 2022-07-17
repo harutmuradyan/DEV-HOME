@@ -5,6 +5,7 @@ const initialState = {
         { 
             "id" : 1,
             "userId" : 1,
+            "companyId" : null,
             "like" : 33,
             "video": null, 
             "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -13,6 +14,7 @@ const initialState = {
         { 
             "id" : 2,
             "userId" : 2,
+            "companyId" : null,
             "like" : 50,
             "video": null, 
             "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -21,11 +23,30 @@ const initialState = {
         { 
             "id" : 3,
             "userId" : 3,
+            "companyId" : null,
             "like" :5,
             "video": null, 
             "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             "cover" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnqnU5teCaph0WTbI42O0sEKCkvx9mA5jBQ&usqp=CAU"
-        }
+        },
+        { 
+            "id" : 4,
+            "userId" : null,
+            "companyId" : 1,
+            "like" : 33,
+            "video": null, 
+            "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+            "cover" : "https://www.janbasktraining.com/blog/uploads/images/2019/03/How-to-Be-More-Assertive-at-Work-Pro-tips-2019-info-Banner01.jpg"
+        },
+        { 
+            "id" : 5,
+            "userId" : null,
+            "companyId" : 2,
+            "like" : 33,
+            "video": null, 
+            "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+            "cover" : "https://www.janbasktraining.com/blog/uploads/images/2019/03/How-to-Be-More-Assertive-at-Work-Pro-tips-2019-info-Banner01.jpg"
+        },
     ]
 }
 

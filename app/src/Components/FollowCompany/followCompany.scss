@@ -1,12 +1,13 @@
 $backColor : rgb(110, 214, 121);
 
-.companyFollowBar {
+.followCompany {
+    width: 100%;
     min-height: 150px;
     border-radius: 20px;
     margin: 10px 10px 0px 10px;
     background-color:white;
     padding: 0px 0px 10px 0px;
-    .companyFollowBar-title {
+    .followCompany-title {
         font-size: 1rem;
         text-transform: uppercase;
         margin: 10px;

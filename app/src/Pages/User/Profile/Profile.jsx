@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import ProfileContent from "./ProfileContent/ProfileContent";
-import ProfileLearning from "./ProfileLearning/ProfileLearning";
 import ProfileStatistics from "./ProfileStatistics/ProfileStatistics";
 import ProfileAddPost from "./ProfileAddPost/ProfileAddPost";
 import ProfileUniversity from "./ProfileUniversity/ProfileUniversity";
@@ -16,6 +15,7 @@ import ProfileAbout from "./ProfileAbout/ProfileAbout";
 import ProfileExperience from "./ProfileExperience/ProfileExperience";
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import Befriend from "../../../Components/Befriend/Befriend";
+import OfferOfLessons from "../../../Components/OfferOfLessons/OfferOfLessons";
 
 const Profile = () => {
     
@@ -53,7 +53,7 @@ const Profile = () => {
                 </div>
                 <div className="profilePage-sidebar">
                     <Befriend/>
-                    <ProfileLearning/>
+                    <OfferOfLessons/>
                     <SidebarFooter/>
                 </div>
             </div>

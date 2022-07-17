@@ -1,0 +1,36 @@
+$backColor : rgb(110, 214, 121);
+
+.offerOfLessonsItem{
+    .offerOfLessonsItem-content {
+        padding: 10px 10px 10px 10px;
+        margin: 5px 0px 5px 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .offerOfLessonsItem-content__img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            background-color:black;   
+            img {
+                width: 100%;
+                height:  100%;
+            }
+        }
+        .offerOfLessonsItem-content__info {
+            padding: 10px 0px 0px 10px;
+            width: 70%;
+            h2 {
+                color:$backColor;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            p {
+                padding: 10px 0px 2px 0px;
+                font-size: 0.8rem;
+                cursor: pointer;
+                color: grey;
+            }
+        }
+    }  
+}

@@ -3,7 +3,12 @@ import CompanyPost from "./CompanyPost/CompanyPost";
 
 import './companyPosts.scss';
 
-const CompanyPosts = () => {
+import { useSelector } from "react-redux";
+
+const CompanyPosts = ({compId}) => {
+
+    const {posts} = useSelector((state) => state.post)
+
     return (
         <div className="companyPosts">
             <div className="companyPosts-filtr">
@@ -13,8 +18,16 @@ const CompanyPosts = () => {
                 </select>
             </div>
             <div className="companyPosts-items">
-                <CompanyPost/>
-                <CompanyPost/>
+                {
+                    [...posts].filter((p) => p.companyId === compId).map((p) => (
+                        <CompanyPost    key={p.id}
+                                        id={p.id}
+                                        cover={p.cover}
+                                        video={p.video}
+                                        desc={p.desc}
+                        />
+                    ))
+                }
             </div>
         </div>
     )

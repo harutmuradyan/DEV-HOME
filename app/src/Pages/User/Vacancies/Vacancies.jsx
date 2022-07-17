@@ -4,6 +4,7 @@ import './vacancies.scss';
 import VacanciesContent from "./VacanciesContent/VacanciesContent";
 import VacanciesSertings from "./VacanciesSertings/VacanciesSertings";
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
+import FollowCompany from "../../../Components/FollowCompany/FollowCompany";
 
 const Vacancies = () => {
     return (
@@ -15,6 +16,7 @@ const Vacancies = () => {
                 <VacanciesContent/>
             </div>
             <div className="vacancies-rightBlock">
+                <FollowCompany/>
                 <SidebarFooter/>
             </div>
         </div>

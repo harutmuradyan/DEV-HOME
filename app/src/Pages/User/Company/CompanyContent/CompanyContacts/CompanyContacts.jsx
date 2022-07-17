@@ -1,34 +1,30 @@
 import React from "react";
 import './companyContacts.scss';
 
-const CompanyContacts = () => {
+const CompanyContacts = ({webSites , tell , shpere , employee , createDay}) => {
     return (
         <div className="companyContacts">
             <div className="companyContacts-container">
                 <h2 className="companyContacts-title">Կապ մեզ հետ</h2>
                 <div className="companyContacts-block">
                     <p className="companyContacts-block__title">Ինտերնետային կայք</p>
-                    <p className="companyContacts-block__text">http://rockberryWEB.ru/</p>
+                    <p className="companyContacts-block__text">{webSites}</p>
                 </div>
                 <div className="companyContacts-block">
                     <p className="companyContacts-block__title">Հեռախոսահամար</p>
-                    <p className="companyContacts-block__text">+374 94 22 22 22</p>
+                    <p className="companyContacts-block__text">{tell}</p>
                 </div>
                 <div className="companyContacts-block">
                     <p className="companyContacts-block__title">Ուղվածություն</p>
-                    <p className="companyContacts-block__text">Քաղցրավենիք</p>
-                </div>
-                <div className="companyContacts-block">
-                    <p className="companyContacts-block__title">Գտնվելու վայր</p>
-                    <p className="companyContacts-block__text">Ք․Երևան Մաշտոցի 20</p>
+                    <p className="companyContacts-block__text">{shpere}</p>
                 </div>
                 <div className="companyContacts-block">
                     <p className="companyContacts-block__title">Ստեղծվել է</p>
-                    <p className="companyContacts-block__text">2020</p>
+                    <p className="companyContacts-block__text">{createDay}</p>
                 </div>
                 <div className="companyContacts-block">
                     <p className="companyContacts-block__title">Աշխատակիցների քանակ</p>
-                    <p className="companyContacts-block__text">51-200</p>
+                    <p className="companyContacts-block__text">{employee}</p>
                 </div>
             </div>
             <div className="companyContacts-container">

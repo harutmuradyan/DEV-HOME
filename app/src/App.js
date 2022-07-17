@@ -76,17 +76,14 @@ function App() {
                   <Route index path="/index" element={<Feed/>} />
                   <Route path="/network" element={<Network />} />
                   <Route path="/notification" element={<Notifications />} />
-                  <Route path="/profile" element={<Profile />} />
-
                   <Route path="/profile/:id" element={<Profile />} />
-                  
                   <Route path="/vacancies" element={<Vacancies />} />
                   <Route path="/createvacancies" element={<CreateVacancies/>}/>
                   <Route path="/vacancie/:id" element={<VacanciesItem />} />
                   <Route path="/learning" element={<Learning />} />
                   <Route path="/learning/:id" element={<LearningItem />} />
                   <Route path="/createlesson" element={<CreateLesson />}/>
-                  <Route path="/company" element={<Company />} />
+                  <Route path="/company/:id" element={<Company />} />
                   <Route path="/createcompany" element={<CreateCompany/>}/>
                   <Route path="/search" element={<Search />} />
                   <Route path="/messaging" element={<Messaging />} />

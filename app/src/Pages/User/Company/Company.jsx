@@ -1,8 +1,8 @@
 import React from "react";
+import FollowCompany from "../../../Components/FollowCompany/FollowCompany";
 import './company.scss';
 
 import CompanyContent from "./CompanyContent/CompanyContent";
-import CompanySidebar from "./CompanySidebar/CompanySidebar";
 
 const Company = () => {
     return (
@@ -12,7 +12,7 @@ const Company = () => {
                     <CompanyContent/>
                 </div>
                 <div className="companyPage-sidebar">
-                    <CompanySidebar/>
+                    <FollowCompany/>
                 </div>
             </div>
         </div>
