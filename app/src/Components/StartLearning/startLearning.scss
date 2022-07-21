@@ -1,0 +1,114 @@
+.startLearning {
+    background-color:white;
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    .startLearning-container {
+        display: flex;
+        width: 100%;
+        .startLearning-left {
+            width: 70%;
+            padding: 10px 10px 10px 10px;
+            .startLearning-left__info {
+                padding: 50px 10px 10px 10px;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: rgb(99, 99, 248);
+            }
+            .startLearning-left__followers {
+                padding: 10px 10px 10px 10px;
+                color: grey;
+                font-size: 1.2rem;
+            }
+            .startLearning-left__start {
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 25px;
+                color: rgb(44, 231, 91);
+                margin-top: 10px;
+                padding: 20px 50px;
+                position: relative;
+                background-color:white;
+                border:solid 1px rgb(44, 231, 91);
+                &:hover {
+                    background-color:rgb(44, 231, 91);
+                    color: white;
+                }
+            }
+        }
+        .startLearning-right {
+            width: 30%;
+            padding: 10px 10px 10px 10px;
+            .startLearning-right__img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .learningContent {
+        .learningContent-container {
+            display: flex;
+            width: 100%;
+            .learningContent-left {
+                width: 50%;
+                .learningContent-left__info {
+                    font-size: 1rem;
+                }
+                .learningContent-left__followers {
+                    font-size: 1rem;
+                }
+                .learningContent-left__start {
+                    font-size: 1rem;
+                    padding: 10px 30px;
+                }
+            }
+            .learningContent-right {
+                width: 50%;
+            }
+        }
+    }   
+}
+
+@media (min-width : $xs) and (max-width : $md) {
+    .learningContent {
+        .learningContent-container {
+            display: block;
+            width: 100%;
+            .learningContent-left {
+                width: 100%;
+                .learningContent-left__info {
+                    padding: 10px 10px 10px 10px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                .learningContent-left__followers {
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                .learningContent-left__start {
+                    font-size: 0.8rem;
+                    width: 100%;
+                    padding: 10px 20px;
+                }
+            }
+            .learningContent-right {
+                width: 70%;
+                padding: 0px;
+                margin: 0 auto;
+                height: 300px;
+            .learningContent-right__img {
+                width: 100%;
+                height: 100%;
+            }
+            }
+        }
+    }   
+}

@@ -1,0 +1,118 @@
+$backColor : rgb(110, 214, 121);
+
+.learningAbout {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    .learningAbout-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom:solid 1px $backColor ;
+    }
+    .learningAbout-block {
+        padding: 10px 0px 20px 0px;
+        margin-bottom: 25px;
+        .learningAbout-block__titleDesk {
+            padding: 10px 10px 10px 10px;
+            font-size: 1.2rem;
+            text-transform: uppercase;   
+        }
+        .learningAbout-block__moreDeskCenter {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .learningAbout-block__moreDesk {
+                padding: 10px 10px 10px 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+                border-radius:10px;
+                background-color:white;
+                border:solid 1px $backColor ;
+                color: $backColor ;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
+            }
+        }
+        .learningAbout-block__textDesk {
+            padding: 10px 10px 10px 10px;
+            font-size: 1rem;
+            color: grey;
+        }
+        .learningAbout-nav {
+            padding: 10px 10px 10px 10px;
+            .learningAbout-nav__item {
+                padding: 3px 0px 3px 0px;
+                color: grey;
+                .learningAbout-nav__item-icon {
+                    margin-right: 10px;
+                    font-size: 1.2rem;
+                    color: $backColor ;
+                }
+            }
+        }
+    }
+    .learningAbout-instructor {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        .learningAbout-instructor__title {
+            padding: 10px 10px 10px 10px;
+            text-transform: uppercase;
+        }
+        .learningAbout-instructor__block {
+            display: flex;
+            padding: 10px 10px 10px 10px;
+            .learningAbout-instructor__block-img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .learningAbout-instructor__blocks {
+            padding: 0px 10px 10px 10px;
+            .learningAbout-instructor__block-name {
+                margin-bottom: 3px;
+                padding-bottom: 4px;
+                color: grey;
+            }
+            .learningAbout-instructor__block-see {
+                color: grey;
+                cursor: pointer;
+                background-color:white;
+                width: 100%;
+                border:solid 1px $backColor ;
+                padding: 5px 0px 5px 0px;
+                border-radius:10px; 
+                color: $backColor ;
+                &:hover {
+                    background-color:black;
+                    color: white;   
+                }
+            }
+            .learningAbout-instructor__block-profession {
+                margin-bottom: 3px;
+                color: grey;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+.desk {
+    border-bottom:solid 1px $backColor ;
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+
+@media (min-width : $xs) and (max-width : $sm) {
+    .learningItemPageContent {
+        .learningItemPageContent-container {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

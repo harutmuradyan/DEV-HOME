@@ -11,10 +11,13 @@ const Posts = () => {
     
     console.log(posts)
 
-    const [lastPost , setLastPost] = useState(true);
-    const [popularPost , setPopularPost] = useState(false);
+    const [toggleState, setToggleState] = useState(1);
 
-    const filterLastPostHandler = useCallback ( () => {
+    const toggleTab = (index) => {
+        setToggleState(index);
+      };
+
+    const LastPostHandler = useCallback ( () => {
         const lastPost =  [...posts].sort((a, b) => b.id - a.id);
 
         return lastPost.map( (el) => {
@@ -28,7 +31,7 @@ const Posts = () => {
         })
     },[posts])
 
-    const filterPopularPostHandler = useCallback ( () => {
+    const PopularPostHandler = useCallback ( () => {
         const popularPost =  [...posts].filter((e) => e.like >= 50).sort((a, b) => b.id - a.id);
         return popularPost.map( (el) => {
             return <Post    key={el.id}
@@ -40,45 +43,26 @@ const Posts = () => {
         })
     },[posts])
 
-    const filterLastPost = useCallback ( () => {
-        if (lastPost === true && popularPost === true) {
-            setPopularPost(false)
-            setLastPost(false)
-        } else if (lastPost === true && popularPost && false) {
-            setLastPost(false)
-            popularPost(false)
-        } else {
-            setLastPost(true)
-            popularPost(false)
-        }
-    },[lastPost,popularPost])
+    
 
-    const filterPopularPost = useCallback ( () => {
-        if (popularPost === false && lastPost === true) {
-            setPopularPost(true)
-            setLastPost(false)
-        }else {
-            setPopularPost(false)
-            setLastPost(false)
-        }
-    },[popularPost,lastPost])
+    
 
     return (
         <div className="posts">
             <div className="posts-items">
                 <div className="posts-filtr">
                 <p className="posts-filtr__title">Դասակարգել</p>
-                <ul className="posts-filtr__category">
-                    <li onClick={filterLastPost}>Վերջինը</li>
-                    <li onClick={filterPopularPost}>Շատ հավանած</li>
-                </ul>
+                <div className="posts-filtr__category">
+                    <button onClick={() => toggleTab(1)}>Վերջինը</button>
+                    <button onClick={() => toggleTab(2)}>Շատ հավանած</button>
+                </div>
             </div>
             <div className="posts-container">
-                <div className={lastPost ? "posts-section active" : "posts-section"}>
-                    {filterLastPostHandler()}
+                <div className={toggleState === 1 ? "posts-section active" : "posts-section"}>
+                    <LastPostHandler/>
                 </div>
-                <div className={popularPost ? "posts-section active" : "posts-section"}>
-                    {filterPopularPostHandler()}
+                <div className={toggleState === 2 ? "posts-section active" : "posts-section"}>
+                    <PopularPostHandler/>
                 </div>
             </div>
             </div>

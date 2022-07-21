@@ -1,10 +1,8 @@
 import React from "react";
+import SearchNavbar from "../../../Components/SearchNavbar/SearchNavbar";
+import SearchRezult from "../../../Components/SearchRezult/SearchRezult";
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import './search.scss';
-
-
-import SearchNavbar from "./SearchNavbar/SearchNavbar";
-import SearchRezult from "./SearchRezult/SearchRezult";
 
 const Search = () => {
     return (

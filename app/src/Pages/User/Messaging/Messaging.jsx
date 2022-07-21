@@ -1,10 +1,8 @@
 import React from "react";
 import './messaging.scss';
 
-import MessagingSession from "./MessagingSession/MessagingSession";
-import MessagingUsers from "./MessagingUsers/MessagingUsers";
-import MessangingFooter from "./MessangingFooter/MessangingFooter";
-
+import MessagingSession from "../../../Components/MessagingSession/MessagingSession";
+import MessagingUsers from "../../../Components/MessagingUsers/MessagingUsers";
 
 const Messaging = () => {
     return (
@@ -16,7 +14,7 @@ const Messaging = () => {
                 <MessagingSession/>
             </div>
             <div className="messagingFooter">
-                <MessangingFooter/>
+                
             </div>
         </div>
     )

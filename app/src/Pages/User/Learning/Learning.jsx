@@ -1,11 +1,11 @@
 import React from "react";
 import './learning.scss';
 
-import LearningContent from "./LearningContent/LearningContent";
 
 import { useSelector } from "react-redux";
 import Teachers from "../../../Components/Teachers/Teachers";
 import LearningLessons from "../../../Components/LearningLessons/LearningLessons";
+import StartLearning from "../../../Components/StartLearning/StartLearning";
 
 const Learning = () => {
 
@@ -15,7 +15,7 @@ const Learning = () => {
         <div className="learningPage">
             <div className="learningPage-conatiner">
                 <div className="learningPage-container">
-                    <LearningContent/>
+                    <StartLearning/>
                 </div>
                 <div className="learningPage-container">
                     <Teachers/> 

@@ -1,0 +1,46 @@
+$backColor : rgb(110, 214, 121);
+
+.experienceItem {
+    .experienceItem-content {
+        padding: 5px 20px 5px 20px;
+        margin: 5px 0px 5px 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .experienceItem-content__img {
+            width: 80px;
+            height: 80px;
+            cursor: pointer;   
+            img {
+                width: 100%;
+                height:  100%;
+            }
+        }
+        .experienceItem-content__info {
+            padding-left: 20px;
+            width: 80%;
+            padding: 10px 0px 20px 0px;
+            h2 {
+                color:black;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            p {
+                padding: 5px 0px 5px 0px;
+                font-size: 0.8rem;
+                cursor: pointer;
+                color: grey;
+            }
+        }  
+        .experienceItem-content__btn {
+            background-color:white;
+            margin: 0px 0px 0px 0px;
+            padding: 5px 5px 5px 5px;
+            color:  grey;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius:10px;
+            margin-right: 24px;
+        }
+    }
+}

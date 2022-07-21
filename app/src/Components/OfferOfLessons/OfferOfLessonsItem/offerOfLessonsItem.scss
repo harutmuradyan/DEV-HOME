@@ -32,5 +32,16 @@ $backColor : rgb(110, 214, 121);
                 color: grey;
             }
         }
+        .offerOfLessonsItem-content__save {
+            .offerOfLessonsItem-content__save-icon {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                cursor:pointer;
+                color:$backColor;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
     }  
 }

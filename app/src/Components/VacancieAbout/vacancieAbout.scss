@@ -1,0 +1,109 @@
+$backColor : rgb(110, 214, 121);
+
+.vacancieAbout {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    .vacancieAbout-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .vacancieAbout-header__info {
+            width: 70%;
+            .vacancieAbout-header__info-title {
+                margin-top:3px;
+                color:  $backColor;
+            }
+            .vacancieAbout-header__info-block {
+                display: flex;
+                p {
+                    margin: 3px 0px 3px 0px;
+                    margin-right: 5px;
+                    color: grey;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .vacancieAbout-header__btns {
+            width: 30%;
+            button {
+                width: 100%;
+                background-color:white;
+                border:solid 1px $backColor;
+                margin: 3px 0px 3px 0px;
+                padding: 10px 10px 10px 10px;
+                color: $backColor;
+                border-radius:10px;
+                cursor: pointer;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
+            }
+        }
+    }
+    .vacancieAbout-nav {
+        .vacancieAbout-nav__block {
+            .vacancieAbout-nav__block-item {
+                color:grey;
+                font-size: 1rem;
+                span {
+                    color: black;
+                    font-size: 1rem;
+                    margin-right: 5px;
+                }
+            }
+        } 
+    }
+    .vacancieAbout-block {
+        padding: 10px 0px 10px 0px;
+        .vacancieAbout-title {
+            padding: 10px 0px 10px 0px;
+            font-size: 1rem;
+        }
+        .vacancieAbout-text {
+            padding: 10px 10px 10px 10px;
+            font-size: 0.8rem;
+            color: grey;
+        }
+    }
+    .vacancieAbout-company {
+        padding: 10px 10px 10px 10px;
+        border:solid 1px $backColor;
+        border-radius:10px;  
+        .vacancieAbout-company__block {
+            display: flex;
+            justify-content: space-between;
+            .vacancieAbout-company__block-img {
+                width: 60px;
+                height: 60px;
+            }
+            .vacancieAbout-company__block-name {
+                font-size: 1.2rem;
+                margin-top: 12px;
+                margin-left: 10px;
+            }
+            .vacancieAbout-company__block-btn {
+                background-color:white;
+                border:solid 1px $backColor;
+                margin: 3px 0px 3px 0px;
+                padding: 10px 10px 10px 10px;
+                color: $backColor;
+                border-radius:10px;
+                height: 40px;
+                cursor: pointer;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
+            }
+        }
+        .vacancieAbout-company__emploee {
+            color: grey;
+            margin: 5px 0px 3px 0px;
+        }
+        .vacancieAbout-company__info {
+            color: grey;
+            margin: 5px 0px 3px 0px;
+        }
+    }
+}

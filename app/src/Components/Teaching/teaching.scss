@@ -1,0 +1,32 @@
+$backColor : rgb(110, 214, 121);
+
+.teaching {
+    min-height: 150px;
+    border-radius: 20px;
+    margin: 10px 10px 0px 10px;
+    background-color:white;
+    padding: 10px 20px 0px 20px;
+    .teaching-header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:solid 1px $backColor;
+        .teaching-header__title {
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 20px 20px 20px 20px;
+        }
+        .teaching-header__block {
+            margin-right: 30px;
+            margin-top:10px;
+            .teaching-header__btn{
+                background-color:white;
+                margin: 0px 0px 0px 10px;
+                padding: 10px 10px 10px 10px;
+                color: $backColor;
+                font-size: 1.2rem;
+                cursor: pointer;
+                border-radius:10px;
+            }
+        }
+    }
+}

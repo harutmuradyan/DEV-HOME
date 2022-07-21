@@ -17,19 +17,19 @@ const Company = ({name,shpere,logo,cover}) => {
     },[followCompany])
 
     return (
-        <div className="company">
-            <div className="company-block">
-                <img    className="company-block__cover"
+        <div className="companyItem">
+            <div className="companyItem-block">
+                <img    className="companyItem-block__cover"
                         alt=""
                         src={cover}>
                 </img>
-                <img    className="company-block__logo" 
+                <img    className="companyItem-block__logo" 
                         src={logo} 
                         alt=""></img>
             </div>
-            <h2 className="company-name">{name}</h2>
-            <p className="company-sphere">{shpere}</p>
-            <div className="company-follow">
+            <h2 className="companyItem-name">{name}</h2>
+            <p className="companyItem-sphere">{shpere}</p>
+            <div className="companyItem-follow">
                 {
                     followCompany   ? <LightBtn text="Հետևում եք" 
                                                 followHandler={followHandler}/> 

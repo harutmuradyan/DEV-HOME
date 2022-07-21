@@ -1,12 +1,13 @@
 import React from "react";
+import LearningAbout from "../../../Components/LearningAbout/LearningAbout";
+import ListCourse from "../../../Components/ListCourse/ListCourse";
+import OfferOfLessons from "../../../Components/OfferOfLessons/OfferOfLessons";
+import Player from "../../../Components/Player/Player";
+import StartLearning from "../../../Components/StartLearning/StartLearning";
 import './learningItem.scss';
 
 
-import LearningItemPageContent from "./LearningItemPageContent/LearningItemPageContent";
-import LearningItemPageCourse from "./LearningItemPageCourse/LearningItemPageCourse";
-import LearningItemPageHeader from "./LearningItemPageHeader/LearningItemPageHeader";
-import LearningItemPageRandomItems from "./LearningItemPageRandomItems/LearningItemPageRandomItems";
-import LearningItemPlayer from "./LearningItemPlayer/LearningItemPlayer";
+
 
 
 const LearningItem = () => {
@@ -14,19 +15,19 @@ const LearningItem = () => {
         <div className="learningItemPage">
             <div className="learningItemPage-conatiner">
                 <div className="learningItemPage-header">
-                    <LearningItemPageHeader/>
+                    <StartLearning/>
                 </div>
             </div>
             <div>
-                <LearningItemPlayer/>
+                <Player/>
             </div>
             <div className="learningItemPage-conatiner">
                 <div className="learningItemPage-conatiner__content">
-                    <LearningItemPageContent/>
+                    <LearningAbout/>
                 </div>
                 <div className="learningItemPage-conatiner__sidebar">
-                    <LearningItemPageCourse/>
-                    <LearningItemPageRandomItems/>
+                    <ListCourse/>  
+                    <OfferOfLessons/>
                 </div>
             </div>
         </div>

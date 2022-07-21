@@ -1,0 +1,26 @@
+$backColor : rgb(110, 214, 121);
+
+.listCourseItem {
+    display: flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-between;
+    .listCourseItem-icon {
+        font-size: 1.2rem;
+        color: $backColor;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+    .listCourseItem-block {
+        cursor: pointer;
+        .listCourseItem-block__name {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: grey;
+        }
+        .listCourseItem-block__clock {
+            color: grey;
+        }
+    }
+}

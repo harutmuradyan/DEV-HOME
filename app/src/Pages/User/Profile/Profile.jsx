@@ -5,18 +5,21 @@ import { useSelector } from "react-redux";
 
 import { useParams } from "react-router-dom";
 
-import ProfileContent from "./ProfileContent/ProfileContent";
-import ProfileStatistics from "./ProfileStatistics/ProfileStatistics";
-import ProfileAddPost from "./ProfileAddPost/ProfileAddPost";
-import ProfileUniversity from "./ProfileUniversity/ProfileUniversity";
-import ProfileLicense from "./ProfileLicense/ProfileLicense";
-import ProfileSkills from "./ProfileSkills/ProfileSkills";
+import ProfileContent from "../../../Components/ProfileContent/ProfileContent";
 
-import ProfileExperience from "./ProfileExperience/ProfileExperience";
+import License from "../../../Components/License/License"
+
+import AddSkills from "../../../Components/AddSkills/AddSkills";
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import Befriend from "../../../Components/Befriend/Befriend";
 import OfferOfLessons from "../../../Components/OfferOfLessons/OfferOfLessons";
 import AboutDesc from "../../../Components/AboutDesc/AboutDesc";
+import Experience from "../../../Components/Experience/Experience";
+import Statistics from "../../../Components/Statistics/Statistics";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import Teaching from "../../../Components/Teaching/Teaching";
 
 const Profile = () => {
     
@@ -44,13 +47,29 @@ const Profile = () => {
                             />
                         })
                     }
-                    <ProfileStatistics />
+                    <Statistics />
                     <AboutDesc/>
-                    <ProfileAddPost/>
-                    <ProfileExperience/>
-                    <ProfileUniversity/>
-                    <ProfileSkills/>
-                    <ProfileLicense/>
+                    <div className="profileAddPost">
+                        <h2 className="profileAddPost-title">գործողություններ</h2>
+                        <div className="profileAddPost-container">
+                            <div className="profileAddPost-block">
+                                <FontAwesomeIcon    className="profileAddPost-icon" 
+                                                    icon={faUserFriends}/>
+                                <div className="profileAddPost-text">
+                                    <p>1900 Հետևողներ</p>
+                                </div>
+                            </div>
+                            <div className="profileAddPost-block">
+                                <div className="profileAddPost-btn">
+                                    <button>Ավելացնել գրառում</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <Experience/>
+                    <Teaching/>
+                    <AddSkills/>
+                    <License/>
                 </div>
                 <div className="profilePage-sidebar">
                     <Befriend/>

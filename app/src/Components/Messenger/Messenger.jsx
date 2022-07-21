@@ -6,8 +6,8 @@ import {    faUpLong ,
             faMessage , 
             faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import MessengerBtns from "./MessengerBtns/MessengerBtns";
 import NewMessag from "./NewMessag/NewMessag";
+import MessagingUser from "../MessagingUsers/MessagingUser/MessagingUser";
 
 const Messenger = () => {
 
@@ -43,7 +43,7 @@ const Messenger = () => {
                         <input  className="messenger-search__input" 
                                 placeholder="    Փնտրել"/>
                     </div>
-                    <MessengerBtns/>
+                    <MessagingUser/>
                 </div>
             </div>
             <div className={newMessage ? "messenger-newMessage active" : "messenger-newMessage"}>
