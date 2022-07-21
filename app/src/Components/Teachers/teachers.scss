@@ -1,0 +1,60 @@
+.teachers {
+    background-color:white;
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    .teachers-header {
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        .teachers-header__title {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+        .teachers-header__btn {
+            background-color:white;
+            border:solid 1px black;
+            padding: 10px 10px 10px 10px;
+            cursor: pointer;
+            &:hover {
+                background-color:black;
+                color: white;
+                border:solid 1px white; 
+            }
+        }
+    }
+    .teachers-block {
+        width: 100%;
+        display: flex;
+    } 
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .learningTeachers {
+        .learningTeachers-header {
+            padding: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            .learningTeachers-header__title {
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                margin-top: 8px;
+            }
+            .learningTeachers-header__btn {
+                padding: 7px 5px 7px 5px;
+            }
+        }
+        .learningTeachers-block {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        } 
+    }
+}

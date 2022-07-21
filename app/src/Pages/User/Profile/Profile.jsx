@@ -11,11 +11,12 @@ import ProfileAddPost from "./ProfileAddPost/ProfileAddPost";
 import ProfileUniversity from "./ProfileUniversity/ProfileUniversity";
 import ProfileLicense from "./ProfileLicense/ProfileLicense";
 import ProfileSkills from "./ProfileSkills/ProfileSkills";
-import ProfileAbout from "./ProfileAbout/ProfileAbout";
+
 import ProfileExperience from "./ProfileExperience/ProfileExperience";
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import Befriend from "../../../Components/Befriend/Befriend";
 import OfferOfLessons from "../../../Components/OfferOfLessons/OfferOfLessons";
+import AboutDesc from "../../../Components/AboutDesc/AboutDesc";
 
 const Profile = () => {
     
@@ -44,7 +45,7 @@ const Profile = () => {
                         })
                     }
                     <ProfileStatistics />
-                    <ProfileAbout/>
+                    <AboutDesc/>
                     <ProfileAddPost/>
                     <ProfileExperience/>
                     <ProfileUniversity/>

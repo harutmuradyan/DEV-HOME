@@ -1,7 +1,8 @@
 import React from "react";
+import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import './search.scss';
 
-import SearchFooter from "./SearchFooter/SearchFooter";
+
 import SearchNavbar from "./SearchNavbar/SearchNavbar";
 import SearchRezult from "./SearchRezult/SearchRezult";
 
@@ -17,7 +18,7 @@ const Search = () => {
                         <SearchRezult/>
                     </div>
                     <div className="search-block__footer">
-                        <SearchFooter />
+                       <SidebarFooter />
                     </div>
                 </div>
             </div>

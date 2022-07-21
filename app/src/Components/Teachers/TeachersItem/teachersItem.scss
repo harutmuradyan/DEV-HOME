@@ -1,0 +1,75 @@
+.teachersItem {
+    width: 25%;
+    margin: 10px 10px 10px 10px;
+    background-color:black;
+    cursor: pointer;
+    .teachersItem-img {
+        width: 100%;
+        height: 250px;
+    }
+    .teachersItem-name {
+        text-align: center;
+        font-size: 0.9rem;
+        color: white;
+        padding: 3px 10px 2px 10px;
+    }
+    .teachersItem-profesion {
+        color: white;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 3px 10px 2px 10px;
+    }
+    .teachersItem-follow {
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        .teachersItem-follow__btn{
+            color: white;
+            background-color:black;
+            width: 100%;
+            border:solid 1px white;
+            padding: 10px 10px 10px 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+$xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+
+@media (min-width : $xs) and (max-width : $md) {
+    .learningTeacher {
+        width: 10%;
+        .learningTeacher-img {
+            height: 200px;
+        }
+    }
+}
+
+@media (min-width : $xs) and (max-width : $lg) {
+    .learningTeacher {
+        width: 40%;
+        .learningTeacher-img {
+            height: 150px;
+        }
+        .learningTeacher-name {
+            font-size: 0.8rem;
+        }
+        .learningTeacher-profesion {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width : $xs) {
+    .learningTeacher {
+        width: 30%;
+        .learningTeacher-img {
+            height: 150px;
+        }
+        .learningTeacher-name {
+            font-size: 0.8rem;
+        }
+        .learningTeacher-profesion {
+            font-size: 0.8rem;
+        }
+    }
+}

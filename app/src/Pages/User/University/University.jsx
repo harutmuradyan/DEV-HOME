@@ -1,18 +1,20 @@
 import React from "react";
 import './university.scss';
 
-import UniversityAbout from "./UniversityAbout/UniversityAbout";
-import UniversityBackground from "./UniversityBackground/UniversityBackground";
-import UniversityContacts from "./UniversityContacts/UniversityContacts";
+import Contacts from "../../../Components/Contacts/Contacts";
+
+
+import AboutDesc from "../../../Components/AboutDesc/AboutDesc";
+import BackgroundSection from "../../../Components/BackgroundSection/BackgroundSection";
 
 const University = () => {
     return (
         <div className="university">
             <div className="university-container">
                 <div className="university-content">
-                    <UniversityBackground/>
-                    <UniversityContacts/>
-                    <UniversityAbout/>
+                    <BackgroundSection/>
+                    <Contacts/>
+                    <AboutDesc/>
                 </div>
                 <div className="university-sidebar">
                     

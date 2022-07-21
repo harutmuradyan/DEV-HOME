@@ -1,0 +1,29 @@
+.createComment {
+    display: flex;
+    display: none;
+    .createComment-img {
+        margin: 10px 10px 10px 10px;
+        width: 30px;
+        height: 30px;
+        border-radius:50%
+    }
+    .createComment-input {
+        border:solid 1px grey;
+        border-radius:10px;
+        width: 90%;
+        cursor:pointer;
+        padding: 10px 10px 10px 10px;
+    }
+    .createComment-btn {
+        padding: 10px 10px 10px 10px;
+        background-color:white;
+        .createComment-icon {
+            color: grey;
+            cursor: pointer;
+        }
+    }
+}
+.createComment.active {
+    display: block;
+    display: flex;
+}

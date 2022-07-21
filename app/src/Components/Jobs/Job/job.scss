@@ -1,0 +1,49 @@
+$backColor : rgb(110, 214, 121);
+
+.job-block {
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    .job-link {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .job-block__img {
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .job-block__content {
+        width: 90%;
+        color: grey;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        .job-block__content-name {
+            color: black;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .job-block__content-text {
+            color: grey;
+            padding: 3px 0px 3px 0px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+    }
+    .job-block__save {
+        padding: 20px 20px 20px 20px;
+        background-color:white;
+        .job-block__save-btn {
+            font-size: 1.2rem;
+            color: $backColor;
+            cursor: pointer;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}

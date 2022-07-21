@@ -6,9 +6,100 @@
     background-color:rgb(248, 246, 246);
     .notification-leftBlock {
         width: 20%;
+        .notifikationSertings { 
+            .notifikationSertings-container {
+                min-height: 150px;
+                border-radius: 20px;
+                margin: 10px 10px 0px 10px;
+                background-color:white;
+                .notifikationSertings-container__title {
+                    padding: 20px 10px 10px 10px;
+                    text-align: center;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    border-bottom:solid 1px grey;
+                }
+                .notifikationSertings-container__text {
+                    padding: 10px 10px 10px 10px;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: grey;
+                }
+            }
+        }
     }
     .notification-content {
         width: 50%;
+        .notification {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 80px 20px 20px 20px;
+            background-color:rgb(248, 246, 246);
+            .notification-leftBlock {
+                width: 20%;
+                .notifikationSertings { 
+                    .notifikationSertings-container {
+                        min-height: 150px;
+                        border-radius: 20px;
+                        margin: 10px 10px 0px 10px;
+                        background-color:white;
+                        .notifikationSertings-container__title {
+                            padding: 20px 10px 10px 10px;
+                            text-align: center;
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            border-bottom:solid 1px grey;
+                        }
+                        .notifikationSertings-container__text {
+                            padding: 10px 10px 10px 10px;
+                            font-size: 1rem;
+                            text-align: center;
+                            color: grey;
+                        }
+                    }
+                }
+            }
+            .notification-content {
+                width: 50%;
+            }
+            .notification-rightBlock {
+                width: 20%;
+            }
+        }
+        
+        $xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
+        
+        @media (min-width : $md) and (max-width : $lg) {
+            .notification {
+                width: 100%;
+                .notification-leftBlock {
+                    width: 30%;
+                }
+                .notification-content {
+                    width: 70%;
+                }
+                .notification-rightBlock {
+                    display: none;
+                }
+            }
+        }
+        
+        @media (min-width : $xs) and (max-width : $md) {
+            .notification {
+                width: 100%;
+                display: block;
+                .notification-leftBlock {
+                    width: 100%;
+                }
+                .notification-content {
+                    width: 100%;
+                }
+                .notification-rightBlock {
+                    display: none;
+                }
+            }
+        }
     }
     .notification-rightBlock {
         width: 20%;

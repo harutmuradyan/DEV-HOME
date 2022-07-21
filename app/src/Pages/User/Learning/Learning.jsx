@@ -2,19 +2,14 @@ import React from "react";
 import './learning.scss';
 
 import LearningContent from "./LearningContent/LearningContent";
-import LearningLessons from "./LearningLessons/LearningLessons";
-import LearningTeachers from "./LearningTeachers/LearningTeachers";
 
 import { useSelector } from "react-redux";
+import Teachers from "../../../Components/Teachers/Teachers";
+import LearningLessons from "../../../Components/LearningLessons/LearningLessons";
 
 const Learning = () => {
 
     const {lessons} = useSelector((state) => state.lesson)
-    /*
-    "groupName" : "C# lessons",
-    "teacherName" : "Jon Soon",
-    "teacherId" : 1,
-    "lessonsGroup" : [*/
 
     return (
         <div className="learningPage">
@@ -23,7 +18,7 @@ const Learning = () => {
                     <LearningContent/>
                 </div>
                 <div className="learningPage-container">
-                    <LearningTeachers/> 
+                    <Teachers/> 
                     {
                         [...lessons].map((l) => {
                             return <LearningLessons key={l.groupId} 

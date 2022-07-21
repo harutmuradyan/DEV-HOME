@@ -3,9 +3,9 @@ import './spinner.scss';
 
 const Spinner = () => {
   return (
-    <div className='loader-wrapper'>
-        <div className='loader'>
-            <div className='loader loader-inner'></div>
+    <div className='spinner-wrapper'>
+        <div className='spinner'>
+            <div className='spinner loader-inner'></div>
         </div>
     </div>
   )

@@ -5,10 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {    faUserFriends , 
             faBuilding} from "@fortawesome/free-solid-svg-icons";
 
-import Companyes from "./Companyes/Companyes";
-import Users from "./Users/Users";
-import NetworkNotfications from "./NetworkNotfications/NetworkNotfications";
+
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
+import Companyes from "../../../Components/Companyes/Companyes";
+import Users from "../../../Components/Users/Users";
+import ToAskNotfications from "../../../Components/ToAskNotfications/ToAskNotfications";
 
 const Network = () => {
     return (
@@ -17,7 +18,7 @@ const Network = () => {
                 <div className="networkPage-content">
                     <div className="networkPage-content__notification">
                         <p className="networkPage-content__notification-title">Նոր ընկերության առաջարկներ չկան</p>
-                        <NetworkNotfications/>                        
+                        <ToAskNotfications/>           
                     </div>
                     <div className="networkPage-content__users">
                         <Companyes/>

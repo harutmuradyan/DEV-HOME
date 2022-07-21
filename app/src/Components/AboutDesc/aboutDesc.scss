@@ -1,0 +1,44 @@
+$backColor : rgb(110, 214, 121);
+
+
+.aboutDesc {
+    min-height: 150px;
+    border-radius: 20px;
+    padding: 10px 20px 0px 20px;
+    margin: 10px 10px 0px 10px;
+    background-color:white;
+    .aboutDesc-container {
+        .aboutDesc-block {
+            display: flex;
+            justify-content: space-between;
+            border-bottom:solid 1px $backColor;
+            .aboutDesc-block__title {
+                text-transform: uppercase;
+                font-size: 1rem;
+                padding: 20px 20px 20px 20px;
+            }
+            .aboutDesc-block__add {
+                background-color: white;
+                color:  $backColor;
+                padding: 5px 5px 5px 5px;
+                height: 35px;
+                width: 35px;
+                border-radius:10px;
+                margin-right: 30px;
+                margin-top: 10px;
+                font-size: 1.2rem;
+                &:hover {
+                    background-color:black;
+                    color: white;
+                }
+            }
+        }
+        .aboutDesc-text {
+            display: block;
+            padding: 20px 0px 20px 10px;
+            margin-left: 10px;
+            color: grey;
+            font-size: 0.8rem;
+        }
+    }
+}

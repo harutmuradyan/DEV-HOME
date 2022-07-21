@@ -12,6 +12,9 @@
         }
         .feed-container__content {
             width: 70%;
+            .feed-content__block {
+                padding: 0px 20px 10px 20px
+            } 
         }
         .feed-container__rightBlock {
             width: 22%;

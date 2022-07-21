@@ -1,9 +1,9 @@
-.loader-wrapper {
+.spinner-wrapper {
     position: fixed;
     top: 100px;
     width: 60px;
     height: 60px;
-    .loader {
+    .spinner {
         box-sizing: border-box;
         width: 100%;
         height: 100%;
@@ -12,7 +12,7 @@
         border-bottom-color:rgb(236, 86, 148) ;
         border-radius:50%;
         animation:  rotate 5s linear infinite;
-        .loader-inner {
+        .spinner-inner {
             border-top-color:rgb(83, 250, 83);
             border-bottom-color:white ;
             animation-duration: 2.5s;

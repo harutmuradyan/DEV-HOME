@@ -1,17 +1,17 @@
-.companyPage {
+.company {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 80px 30px 20px 30px;
     background-color:rgb(248, 246, 246);
-    .companyPage-container {
+    .company-container {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        .companyPage-content {
+        .company-content {
             width: 65%;
         }
-        .companyPage-sidebar {
+        .company-sidebar {
             width: 25%;
         }
     }    

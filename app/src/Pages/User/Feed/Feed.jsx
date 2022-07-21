@@ -3,11 +3,14 @@ import './feed.scss';
 
 import {useSelector} from 'react-redux'
 
-import Content from "./Content/Content";
-import GoNewSkill from "./GoNewSkill/GoNewSkill";
+
+import Posts from "../../../Components/Posts/Posts";
+import CreatePost from "../../../Components/CreatePost/CreatePost";
+
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
-import Background from "./Background/Background";
 import Befriend from "../../../Components/Befriend/Befriend";
+import GoNewSkill from "../../../Components/GoNewSkill/GoNewSkill";
+import StatisticsSidebar from "../../../Components/StatisticsSidebar/StatisticsSidebar";
 
 const Feed = () => {
 
@@ -21,19 +24,31 @@ const Feed = () => {
                 <div className="feed-container__leftBlock">
                     {   
                         [...users].filter((elem) => elem.id === currentUser).map((el) => {
-                            return  <Background     key={el.id}
-                                                    userId={el.id}
-                                                    name={el.name} 
-                                                    profession={el.profession}
-                                                    cover={el.cover}
-                                                    logo={el.logo}
+                            return  <StatisticsSidebar  key={el.id}
+                                                        userId={el.id}
+                                                        name={el.name} 
+                                                        profession={el.profession}
+                                                        cover={el.cover}
+                                                        logo={el.logo}
                                                     /> 
                         })
                     }
                     <GoNewSkill/>
                 </div>
                 <div className="feed-container__content">
-                    <Content/>
+                    <div className="feed-content__block">
+                        {
+                            [...users].filter((elem) => elem.id === currentUser).map((el) => {
+                                return  <CreatePost     key={el.id}
+                                                        userId={el.id}
+                                                        logo={el.logo}
+                                                        />
+                            })
+                        }
+                    </div>
+                    <div className="feed-content__block">
+                        <Posts />
+                    </div>
                 </div>
                 <div className="feed-container__rightBlock">
                     <Befriend/>

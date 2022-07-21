@@ -32,12 +32,12 @@ import University from './Pages/User/University/University';
 import Skils from './Pages/User/Skils/Skils';
 import Spinner from './Components/Spinner/Spinner';
 import Admin from './Pages/Admin/Admin';
-import CreateCompany from './Pages/User/Company/CreateCompany/CreateCompany';
-import CreateLesson from './Pages/User/Learning/CreateLesson/CreateLesson';
-import CreateUniversity from './Pages/User/University/CreateUniversity/CreateUniversity';
-import CreateVacancies from './Pages/User/Vacancies/CreateVacancies/CreateVacancies';
-import LearningItem from './Pages/User/Learning/LearningItem/LearningItem';
-import VacanciesItem from './Pages/User/Vacancies/VacanciesItem/VacanciesItem';
+import CreateCompany from './Pages/User/CreateCompany/CreateCompany';
+import CreateLesson from './Pages/User/CreateLesson/CreateLesson';
+import CreateUniversity from './Pages/User/CreateUniversity/CreateUniversity';
+import CreateVacancies from './Pages/User/CreateVacancies/CreateVacancies';
+import VacanciesItem from './Pages/User/VacanciesItem/VacanciesItem';
+import LearningItem from './Pages/User/LearningItem/LearningItem'
 
 function App() {
 
