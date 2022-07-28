@@ -1,14 +1,11 @@
 import React from "react";
 import './profile.scss';
-
 import { useSelector } from "react-redux";
-
 import { useParams } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import ProfileContent from "../../../Components/ProfileContent/ProfileContent";
-
 import License from "../../../Components/License/License"
-
 import AddSkills from "../../../Components/AddSkills/AddSkills";
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import Befriend from "../../../Components/Befriend/Befriend";
@@ -16,19 +13,13 @@ import OfferOfLessons from "../../../Components/OfferOfLessons/OfferOfLessons";
 import AboutDesc from "../../../Components/AboutDesc/AboutDesc";
 import Experience from "../../../Components/Experience/Experience";
 import Statistics from "../../../Components/Statistics/Statistics";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import Teaching from "../../../Components/Teaching/Teaching";
 
 const Profile = () => {
     
     const {users} = useSelector((state) => state.user);
-
     const {id} = useParams();
-    
     const userId = +id;
-
     const currentUser = 4;
 
     return (

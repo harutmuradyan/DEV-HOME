@@ -101,8 +101,8 @@ const companySlice = createSlice({
     initialState,
     reducers: {
         addPlayer(state,action){
-            state.data = [
-                ...state.data,
+            state.companyes = [
+                ...state.companyes,
                 {
                     id: action.payload.id,
                     firstName: action.payload.firstName,

@@ -1,56 +1,32 @@
-import React,{useState,useCallback} from "react";
-import './feedPostPhotoModal.scss';
-
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
-
-import { useSelector , useDispatch} from "react-redux";
-import { addPost } from "../../../Redux/slices/post.slices";
+import { useSelector } from "react-redux";
+import './feedPostPhotoModal.scss';
+import { useCreatePost } from "../../../Utils/Hooks/useCreatePost";
 
 const FeedPostPhotoModal = (
     {   feedPostPhotoModal,
         setFeedPostPhotoModal   }
     ) => {    
 
-    const [filePhoto, setFilePhoto] = useState();
-    const [changeText , setChangeText] = useState("");
+    const { addPostPhotoHandler,
+            changeTextPostPhotohandler,
+            closeFilePostHandler,
+            changePhotoPosthandler,
+            stopPropagation,
+            filePostPhoto,
+            textPostPhoto  } = useCreatePost();
     
     const {users} = useSelector((state) => state.user)
 
-    const dispatch = useDispatch();
-
     const currentUser = 4;
-
-    const changePhotohandler = useCallback ( async (e) => {
-        await   setFilePhoto(URL.createObjectURL(e.target.files[0]));
-    },[setFilePhoto])
-
-    const closePhotoHandler = useCallback ( async () => {
-        await    setFilePhoto("")
-    },[setFilePhoto])
-
-    const changeTexthandler = useCallback ( async (e) => {
-        await   setChangeText(e.target.value);
-    },[setChangeText])
-
-    const postPhotoHandler = useCallback( async () => {
-        await   dispatch(addPost( { 
-            id:Math.floor(Math.random() * 6000),
-            userId:currentUser , 
-            desc:changeText,
-            cover: filePhoto,
-            video : null
-        }))
-        setChangeText("")
-        setFilePhoto(null)
-        setFeedPostPhotoModal(false)
-    },[filePhoto, changeText, dispatch, setFeedPostPhotoModal , setChangeText])
 
     return (
         <div className={feedPostPhotoModal ? "feedPostPhotoModal active" : "feedPostPhotoModal"} 
              onClick={() => {setFeedPostPhotoModal(false)}} >
             <div className="feedPostPhotoModal-container" 
-                 onClick={(e) => {e.stopPropagation()}}>
+                 onClick={stopPropagation}>
                 <div className="feedPostPhotoModal-header">
                     <h2 className="feedPostPhotoModal-header__title">Ավելացնել գրառում նկարով</h2>
                     <FontAwesomeIcon icon={faClose} 
@@ -62,7 +38,7 @@ const FeedPostPhotoModal = (
                     <div className="feedPostPhotoModal-content__block">
                         <input  type="file"        
                                 className="feedPostPhotoModal-content__file"
-                                onChange={changePhotohandler}
+                                onChange={changePhotoPosthandler}
                                 ></input>
                         <div className="feedPostPhotoModal-content__btns">
                             <button className="feedPostPhotoModal-content__close">Չեղարկել</button>
@@ -89,17 +65,17 @@ const FeedPostPhotoModal = (
                         <div className="feedPostPhotoModal-content__view">
                             <input  type="text" 
                                     placeholder="   Ինչով եք ուզում կիսվել"
-                                    onChange={changeTexthandler}
-                                    value={changeText}
+                                    onChange={changeTextPostPhotohandler}
+                                    value={textPostPhoto}
                                     className="feedPostPhotoModal-content__view-about"></input>
                             
                             <FontAwesomeIcon    icon={faClose} 
                                                 className="feedPostPhotoModal-content__view-close"
-                                                onClick={closePhotoHandler}
+                                                onClick={closeFilePostHandler}
                                                 />
                             {
-                                filePhoto &&
-                                <img    src={filePhoto} 
+                                filePostPhoto &&
+                                <img    src={filePostPhoto} 
                                         alt="" 
                                         className="feedPostPhotoModal-content__view-photo"></img>
                             }         
@@ -108,7 +84,7 @@ const FeedPostPhotoModal = (
                 </div>
                 <div className="feedPostPhotoModal-footer">
                     <button className="feedPostPhotoModal-footer__btn"
-                            onClick={postPhotoHandler}>Տեղադրել</button>
+                            onClick={addPostPhotoHandler}>Տեղադրել</button>
                 </div>
             </div>
         </div>

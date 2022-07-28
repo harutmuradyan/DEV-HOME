@@ -1,0 +1,31 @@
+$backColorMorning : white;
+$backColorNight : black;
+$backColorSectionMorning : rgb(248, 246, 246);
+$backColorSectionNight : rgb(87, 87, 87);
+$textColorMorning : "";
+$textColorNight : "";
+$textColorSection : "";
+$btnColorSuccess : "";
+$btnColorLight : "";
+$btnColorDanger : "";
+$btnColorDark : ""; 
+$backColorModal : "";
+
+.themeNight {
+    background-color:$backColorNight;
+    div {
+        background-color:$backColorSectionNight;
+
+        h2 {
+            color: white;
+        }
+    }
+}
+
+.themeMorning {
+    background-color:$backColorMorning;
+    div {
+        background-color:$backColorSectionMorning;
+    }
+}
+

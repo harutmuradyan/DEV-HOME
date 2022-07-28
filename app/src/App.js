@@ -1,5 +1,5 @@
 import React,{useState,Suspense} from 'react';
-import './app.scss';
+import './styles/app.scss';
 
 import {  BrowserRouter,
           Routes,

@@ -1,27 +1,23 @@
 import React from "react";
-import './feed.scss';
-
 import {useSelector} from 'react-redux'
-
-
+import './feed.scss';
 import Posts from "../../../Components/Posts/Posts";
 import CreatePost from "../../../Components/CreatePost/CreatePost";
-
 import SidebarFooter from "../../../Components/SidebarFooter/SidebarFooter";
 import Befriend from "../../../Components/Befriend/Befriend";
 import GoNewSkill from "../../../Components/GoNewSkill/GoNewSkill";
 import StatisticsSidebar from "../../../Components/StatisticsSidebar/StatisticsSidebar";
 
+
 const Feed = () => {
 
     const {users} = useSelector((state) => state.user);
-
     const currentUser = 4;
 
     return (
         <div className="feed">
             <div className="feed-container">
-                <div className="feed-container__leftBlock">
+                <div className="feed-sidebarLeft">
                     {   
                         [...users].filter((elem) => elem.id === currentUser).map((el) => {
                             return  <StatisticsSidebar  key={el.id}
@@ -35,8 +31,8 @@ const Feed = () => {
                     }
                     <GoNewSkill/>
                 </div>
-                <div className="feed-container__content">
-                    <div className="feed-content__block">
+                <div className="feed-content">
+                    <div className="feed-block">
                         {
                             [...users].filter((elem) => elem.id === currentUser).map((el) => {
                                 return  <CreatePost     key={el.id}
@@ -46,11 +42,11 @@ const Feed = () => {
                             })
                         }
                     </div>
-                    <div className="feed-content__block">
+                    <div className="feed-block">
                         <Posts />
                     </div>
                 </div>
-                <div className="feed-container__rightBlock">
+                <div className="feed-sidebarRight">
                     <Befriend/>
                     <SidebarFooter/>
                 </div>

@@ -1,20 +1,16 @@
 import React,{useState} from "react";
-import './license.scss';
-
+import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdd } from "@fortawesome/free-solid-svg-icons";
-
+import './license.scss';
 import LicenseItem from "./LicenseItem/LicenseItem";
 import ProfileLicenseModal from "./ProfileLicenseModal/ProfileLicenseModal";
 
-import { useSelector } from "react-redux";
 
 const License = () => {
 
     const [profileLicenseModal,setProfileLicenseModal] = useState(false);
-
     const {licenses} = useSelector((state) => state.license)
-
     const currentUser = 4;
 
     return (

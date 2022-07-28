@@ -1,4 +1,4 @@
-.profileExperienceModal {
+.experienceSertings {
     position: fixed;
     top:0;
     left: 0;    
@@ -6,7 +6,7 @@
     height: 100vw;
     background-color:rgba(0, 0, 0, 0.918);
     display: none;
-    .profileExperienceModal-container {
+    .experienceSertings-container {
         position: relative;
         top: 70px;
         width: 60%;
@@ -14,28 +14,31 @@
         height: 500px;
         border-radius: 20px;
         background-color:white;
-        .profileExperienceModal-header {
+        .experienceSertings-header {
             padding: 15px 15px 15px 15px;
             display: flex;
             justify-content: space-between;
-            .profileExperienceModal-header__title {
+            .experienceSertings-header__title {
                 color: black;
                 font-size: 1rem;
             }
-            .profileExperienceModal-header__icon {
+            .experienceSertings-header__icon {
                 cursor: pointer;
             }
         }
-        .profileExperienceModal-content {
+        .experienceSertings-content {
             padding: 15px 15px 15px 15px;
             height:380px ;
             overflow-y: scroll;
+            .experienceSertings-input {
+                border: solid 1px grey;
+            }
         }
-        .profileExperienceModal-footer {
+        .experienceSertings-footer {
             padding: 15px 15px 15px 15px;
             display: flex;
             justify-content:flex-end;
-            .profileExperienceModal-footer__btn {
+            .experienceSertings-footer__btn {
                 cursor: pointer;
                 padding: 15px 15px 15px 15px;
                 background-color:rgb(99, 99, 248);
@@ -46,6 +49,6 @@
     }
 }
 
-.profileExperienceModal.active {
+.experienceSertings.active {
     display: block;
 }

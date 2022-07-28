@@ -2,46 +2,47 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 80px 20px 20px 20px;
+    padding: 80px 0px 20px 0px;
     background-color:rgb(248, 246, 246);
     .feed-container {
-        width: 100%;
+        width: 80%;
         display: flex;
-        .feed-container__leftBlock {
+        .feed-sidebarLeft {
             width: 22%;
         }
-        .feed-container__content {
-            width: 70%;
-            .feed-content__block {
+        .feed-content {
+            width: 53%;
+            .feed-block {
                 padding: 0px 20px 10px 20px
             } 
         }
-        .feed-container__rightBlock {
-            width: 22%;
+        .feed-sidebarRight {
+            width: 25%;
         }
     }
 }
 
 $xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
 
-@media (min-width : $xs) and (max-width : $xl) {
+@media (min-width : lg) and (max-width : $xl) {
     .feed {
         padding: 80px 0px 20px 0px;
         .feed-container {
+            width: 90%;
             .feed-container__leftBlock {
-                width: 20%;
+                width: 25%;
             }
             .feed-container__content {
-                width: 57%;
+                width: 50%;
             }
             .feed-container__rightBlock {
-                width: 23%;
+                width: 25%;
             }
         }
     }   
 }
 
-@media (min-width : $xs) and (max-width : $lg) {
+@media (min-width : $md) and (max-width : $lg) {
     .feed {
         .feed-container {
             width: 100%;
@@ -60,7 +61,7 @@ $xs:320px; $sm:576px; $md:768px;$lg:992px; $xl:1200px;
     }   
 }
 
-@media (min-width : $xs) and (max-width : $md) {
+@media (min-width : $sm) and (max-width : $md) {
     .feed {
         .feed-container {
             .feed-container__leftBlock {

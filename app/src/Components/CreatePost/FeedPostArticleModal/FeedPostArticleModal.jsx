@@ -1,12 +1,9 @@
-import React,{useState,useCallback} from "react";
+import React from "react";
 import './feedPostArticleModal.scss';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
-
-import { useDispatch,useSelector } from "react-redux";
-
-import { addPost } from "../../../Redux/slices/post.slices";
+import { useSelector } from "react-redux";
+import { useCreatePost } from "../../../Utils/Hooks/useCreatePost";
 
 const FeedPostArticleModal = (
     {   feedPostArticleModal,
@@ -14,30 +11,17 @@ const FeedPostArticleModal = (
     ) => {
     
     const {users} = useSelector((state) => state.user);
-
-    const dispatch = useDispatch();
-
     const currentUser = 4;
-
-    const [changePostArcticel,setChangePostArcticel] = useState();
-
-    const postArcticelHandler = useCallback ( async () => {
-        
-        await   dispatch(addPost( { 
-                    id:Math.floor(Math.random() * 3000),
-                    userId:currentUser , 
-                    desc:changePostArcticel,
-                }))
-                setChangePostArcticel('')
-                setFeedPostArticleModal(false)
-        
-    },[currentUser,changePostArcticel,setFeedPostArticleModal,setChangePostArcticel ,dispatch])
+    const { textPostArcticel,
+            addPostArcticelHandler,
+            changeTextPostArcticelhandler,
+            stopPropagation   } = useCreatePost();
 
     return (
         <div className={feedPostArticleModal ? "feedPostArticleModal active" : "feedPostArticleModal"} 
              onClick={() => {setFeedPostArticleModal(false)}} >
             <div className="feedPostArticleModal-container" 
-                 onClick={(e) => {e.stopPropagation()}}>
+                 onClick={stopPropagation}>
                 <div className="feedPostArticleModal-header">
                     <h2 className="feedPostArticleModal-header__title">Գրել Հոդված</h2>
                     <FontAwesomeIcon icon={faClose} 
@@ -64,15 +48,15 @@ const FeedPostArticleModal = (
                         <div className="feedPostArticleModal-content__view">
                             <p className="feedPostArticleModal-content__view-title">Ինչով եք ուզում կիսվել `</p>
                             <textarea   className="feedPostArticleModal-content__view-about"
-                                        onChange={(e) => {setChangePostArcticel(e.target.value)}}
-                                        value={changePostArcticel}
+                                        onChange={changeTextPostArcticelhandler}
+                                        value={textPostArcticel}
                                         ></textarea>
                         </div>
                     </div>
                 </div>
                 <div className="feedPostArticleModal-footer">
                     <button     className="feedPostArticleModal-footer__btn"
-                                onClick={postArcticelHandler}>Հաստատել</button>
+                                onClick={addPostArcticelHandler}>Հաստատել</button>
                 </div>
             </div>
         </div>
