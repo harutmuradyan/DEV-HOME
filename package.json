@@ -1,0 +1,28 @@
+{
+  "name": "dev-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harutmuradyan/DEV-HOME.git"
+  },
+  "author": "Harut Muradyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harutmuradyan/DEV-HOME/issues"
+  },
+  "homepage": "https://github.com/harutmuradyan/DEV-HOME#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
