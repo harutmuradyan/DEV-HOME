@@ -1,21 +1,17 @@
-import React,{useState,Suspense} from 'react';
-import './styles/app.scss';
-
+import React,{Suspense} from 'react';
 import {  BrowserRouter,
           Routes,
-          Route,
-          Navigate,
-          Outlet  } from "react-router-dom";
-
+          Route  } from "react-router-dom";
 import { ErrorBoundary } from 'react-error-boundary'
 import { ErrorHandler } from './Components/ErrorHandler/ErrorHandler';
+import { useCurrentUser } from './Utils/Hooks/useCurrentUser';
+import { RoutesApp } from './Routes/RoutesApp';
 
-import HeaderLayding from './Components/Header/HeaderLayding/HeaderLanding';
+import './styles/app.scss';
 import Landing from './Pages/Landing/Landing';
 import Feed from './Pages/User/Feed/Feed';
 import Notifications from './Pages/User/Notifications/Notifications';
 import Network from './Pages/User/Network/Network';
-import HeaderUser from './Components/Header/HeaderUser/HeaderUser';
 import Registration from './Pages/Registration/Registration';
 import Login from './Pages/Login/Login';
 import Profile from './Pages/User/Profile/Profile';
@@ -26,7 +22,6 @@ import NotFound from './Components/NotFound/NotFound';
 import Company from './Pages/User/Company/Company';
 import Search from './Pages/User/Search/Search';
 import Messaging from './Pages/User/Messaging/Messaging';
-import Messenger from './Components/Messenger/Messenger';
 import Event from './Pages/User/Event/Event';
 import University from './Pages/User/University/University';
 import Skils from './Pages/User/Skils/Skils';
@@ -40,29 +35,15 @@ import VacanciesItem from './Pages/User/VacanciesItem/VacanciesItem';
 import LearningItem from './Pages/User/LearningItem/LearningItem'
 
 function App() {
+  const {CurrentUserHeader , CurrentUserMessenger} = useCurrentUser();
+  const {PublicRoute , PrivateRoute , PrivetRouteAdmin} = RoutesApp();
 
-  const [logined,setLogined] = useState(true);
-  const [roleAdmin,setRoleAdmin] = useState(false);
-
-  const PublicRoute = () => {
-    return logined ? <Navigate to="/index" /> :<Outlet />;
-  }
-
-  const PrivateRoute = () => {
-    return logined ? <Outlet /> : <Navigate to="/" />;
-  }
-
-  const PrivetRouteAdmin = () => {
-    return logined && roleAdmin ? <Outlet/> : <Navigate to="/" />
-  }
 
   return (
     <div className="app">
       <ErrorBoundary FallbackComponent={ErrorHandler}>
         <BrowserRouter>
-          {
-            logined ? <HeaderUser logined={logined}/> : <HeaderLayding logined={logined}/>
-          }
+          <CurrentUserHeader/>
           <main className="main">
             <Suspense fallback={<Spinner/>}>
               <Routes>      
@@ -101,9 +82,7 @@ function App() {
               </Routes>
             </Suspense>
           </main>
-          {
-            logined ? <Messenger/> : null 
-          }
+          <CurrentUserMessenger/>
           <Footer/>
         </BrowserRouter>
       </ErrorBoundary>

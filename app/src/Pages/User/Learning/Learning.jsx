@@ -19,11 +19,11 @@ const Learning = () => {
                 </div>
                 <div className="learningPage-container">
                     <Teachers/> 
-                    {
-                        [...lessons].map((l) => {
-                            return <LearningLessons key={l.groupId} 
-                                                    groupName={l.groupName}
-                                                    lessonsGroup={l.lessonsGroup} />            
+                        {
+                            [...lessons].map((l) => {
+                                return <LearningLessons key={l.groupId} 
+                                                        groupName={l.groupName}
+                                                        lessonsGroup={l.lessonsGroup} />            
                         })
                     }
                 </div>
