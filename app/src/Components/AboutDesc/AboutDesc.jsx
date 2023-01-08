@@ -25,7 +25,7 @@ const AboutDesc = () => {
                 </div>
                 <p className="aboutDesc-text">Այստեղ պետք է լինի Ձեր մասին , Ձեր կոմիղ տրամադրված ինքնակենսագրականը</p>
             </div>
-            <AboutDescUpdate    AboutDescUpdate={aboutDescUpdate} 
+            <AboutDescUpdate    aboutDescUpdate={aboutDescUpdate} 
                                 setAboutDescUpdate={setAboutDescUpdate}/>
         </div>
     )
